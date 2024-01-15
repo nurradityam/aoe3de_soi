@@ -1,0 +1,11 @@
+<stringmods>
+  <StringTable>
+    <Language name="English">
+        <string _locid="599931" symbol="cStringCivNameAceh">Aceh</string>
+        <string _locid="599932" symbol="cStringCivRolloverAceh">&lt;color=1.0, 1.0, 0.0&gt;Civilization bonus:&lt;/color&gt;\nRainforest Native Civilization - Cannot gather Gold. They do use Gold however, and they obtain it by purchasing chests of coin with Food and Wood at the Western Trade Post.\n&lt;color=1.0, 1.0, 0.0&gt;Unique units:&lt;/color&gt;\nCarib Blowgunner, Lokono Clubman, Carib Prowler, Kalinago Axe Fighter, Carib Mantlet, Taino Pepper Bomber and Alligators.\n&lt;color=1.0, 1.0, 0.0&gt;Unique buildings:&lt;/color&gt;\nWestern Trade Post is a market that allows the Caribs to purchase chests of coin, Caribbean Tree Plot is an infinite source of wood that benefits from all woodcutting upgrades, and Native Gathering House trains units (mostly cavalry) from other tribes.\n&lt;color=1.0, 1.0, 0.0&gt;Unique Ceremonies:&lt;/color&gt;\nWater Ceremony and Carib Race Ceremony\n\nAt the time of Spanish contact, the Caribs were one of the dominant groups in the Caribbean, which owes its name to them. They lived throughout northeastern South America, Trinidad and Tobago, Barbados, the Windward Islands, Dominica, and possibly the southern Leeward Islands.</string>
+        <string _locid="599933" symbol="cStringCultureMalay">Malay</string>
+        <string _locid="599934">Paijo The Great</string>
+      
+     </Language>
+   </StringTable>
+</stringmods>

@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>599934</nameID>
+   <tooltipID>41717</tooltipID>
+   <forcedciv>Aceh</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>resources/images/icons/singleplayer/cpai_avatar_british.png</icon>
+   <chatset>elizabeth</chatset>
+   <playerNames> 
+      <nameID>599934<civ>Aceh</civ></nameID>
+	</playerNames>
+</AI>
