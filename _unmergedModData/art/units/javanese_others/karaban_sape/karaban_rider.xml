@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_hat</definebone>
+	<definebone>bone_shield</definebone>
+	<definebone>Bip01 Head</definebone>
+	<definebone>bone_spear</definebone>
+	<definebone>Bip01 Prop1</definebone>
+	<attachment>
+		hat
+		<component>
+			hat0
+			<assetreference type="GrannyModel">
+				<file>units\javanese_infantry\carok\carok_hat</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>hat0</component>
+		</anim>
+	</attachment>
+	<attachment>
+		spear
+		<component>
+			spear
+			<assetreference type="GrannyModel">
+				<file>soi\3d_models\celurit\celurit</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>spear</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\javanese_infantry\carok\carok_2</file>
+				</assetreference>
+				<attach a="hat" frombone="bone_hat" tobone="Bip01 Head" syncanims="0"/>
+				<attach a="spear" frombone="bone_spear" tobone="Bip01 Prop1" syncanims="0"/>
+			</normal>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+		</assetreference>
+
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\human_sword_death_a</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.83</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+		<anim>
+			Death_havoc_spin
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_spin</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarmWalk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarmHoe
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarmSow
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarmWeed
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarm
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+				<weight>50</weight>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.33</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.57</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+				<weight>50</weight>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.29</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.46</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.62</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.75</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+				<weight>60</weight>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.25</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.47</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+				<weight>20</weight>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.41</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.51</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.80</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.91</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+				<weight>20</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death_by_havoc
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_death</file>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_deathB</file>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_deathC</file>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_deathD</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death_havoc_flail
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\havoc_flail</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			jog
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			run
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_idle</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			HandAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_attackA</file>
+				<tag type="Attack">0.52</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_attackB</file>
+				<tag type="Attack">0.53</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\Charge\swordmen_charge_attackC</file>
+				<tag type="Attack">0.48</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\villager\villager_male_bored3</file>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\villager\villager_male_bored4</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+</animfile>

@@ -1,0 +1,168 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<attachment>
+		base smoke
+		<component>
+			smoke base
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapsesmoke01.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke base</component>
+		</anim>
+	</attachment>
+	<attachment>
+		base smoke2
+		<component>
+			smoke wave
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_wave.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke wave</component>
+		</anim>
+	</attachment>
+	<attachment>
+		base smoke3
+		<component>
+			smoke wave center
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_wave02.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke wave center</component>
+		</anim>
+	</attachment>
+	<attachment>
+		collapse_smoke
+		<component>
+			collapse_smoke
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_a.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>collapse_smoke</component>
+		</anim>
+	</attachment>
+	<attachment>
+		bone_grasstop
+		<component>
+			grasshopper
+			<assetreference type="ParticleSystem">
+				<file>terrain\great_plains\grasshoppers.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>grasshopper</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attach pollen
+		<component>
+			pollen
+			<notshadowcaster/>
+			<assetreference type="ParticleSystem">
+				<file>terrain\great_plains\pollen.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>pollen</component>
+		</anim>
+	</attachment>
+
+	
+	
+	<component>
+		tower
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\great_plains\green_grass01</file>
+				</assetreference>
+				<attach a="attach pollen" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>Terrain\underbrush\underbrush_borneo_grass_01</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>Terrain\underbrush\underbrush_borneo_grass_01</file>
+				</assetreference>
+				<attach a="bone_grasstop" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\great_plains\green_grass01</file>
+				</assetreference>
+			</data>
+		</logic>
+		<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\asian_civs\shrine\shrine_ground</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.00</width>
+				<height>6.00</height>
+		</decal>
+	</component>
+	<component>
+		towerDeath
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\great_plains\green_grass01</file>
+				</assetreference>
+				<attach a="attach pollen" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>Terrain\underbrush\underbrush_borneo_grass_01</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>Terrain\underbrush\underbrush_borneo_grass_01</file>
+				</assetreference>
+				<attach a="bone_grasstop" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\great_plains\green_grass01</file>
+				</assetreference>
+			</data>
+		</logic>
+		<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\asian_civs\shrine\shrine_ground</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.00</width>
+				<height>6.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tower</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>nuggets\abandoned_cabin\abandoned_cabin_deathAnim</file>
+		</assetreference>
+		<component>towerDeath</component>
+		<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

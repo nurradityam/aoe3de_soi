@@ -1,0 +1,110 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="46491">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>20.0</maxrange>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38134">HandAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim>
+	</action>
+	<action>
+		<name stringid="42178">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="SHatoban">1.0</rate>
+	</action>
+	<action>
+		<name stringid="42136">ChopAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>GatherChop</anim>
+		<maxrange>1</maxrange>
+		<rate type="SHatoban">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="69151">Hunting</name>
+		<type>Hunting</type>
+		<maxrange>0</maxrange>
+		<rate type="SHatoban">1.0</rate>
+	</action>
+	<action>
+		<name stringid="69183">NoWork</name>
+		<type>NoWork</type>
+		<maxrange>10</maxrange>
+		<rate type="SHatoban">1.0</rate>
+		<typedmaxrange type="SHatoban">0</typedmaxrange>
+	</action>
+	<tactic>
+		Melee
+		<action>Heal</action>
+		<action>Gather</action>
+		<action>Hunting</action>
+		<action>NoWork</action>
+		<action priority="90">ChopAttack</action>
+		<action priority="25">HandAttack</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<transition>
+			<tactic>Stealth</tactic>
+			<length>2</length>
+			<anim>Cover_In</anim>
+			<exit>1</exit>
+		</transition>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Stealth
+		<action>Stealth</action>
+		<checkifcanstealth range="20.0">1</checkifcanstealth>
+		<speedmodifier>0.5</speedmodifier>
+		<active>0</active>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<transition>
+			<tactic>Melee</tactic>
+			<length>0.8</length>
+			<anim>Cover_Out</anim>
+			<exit>1</exit>
+			<automatic>1</automatic>
+			<commandautomatic>1</commandautomatic>
+		</transition>
+		<autoretarget>0</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+</tactics>

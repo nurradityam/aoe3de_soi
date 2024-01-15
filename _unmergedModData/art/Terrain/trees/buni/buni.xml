@@ -1,0 +1,54 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>ponderosa_a_death</definebone>
+	<definebone>ponderosa_b_death</definebone>
+	<definebone>ponderosa_c_death</definebone>
+	<component>
+		tree
+			<assetreference type="GrannyModel">
+				<file>terrain\trees\tree_ponderosa_c</file>
+					<replacetexture>
+						<from>terrain\trees\tree_ponderosa pine</from>
+						<to>Terrain\trees\buni\buni</to>
+					</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>2.00</width>
+			<height>2.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+			<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_ponderosa_c.dmg">
+				<file>terrain\trees\tree_ponderosa_c_death</file>
+					<replacetexture>
+						<from>terrain\trees\tree_ponderosa pine</from>
+						<to>Terrain\trees\buni\buni</to>
+					</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>2.00</width>
+			<height>2.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

@@ -1,0 +1,72 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Salt_peter
+		<logic type="Variation">
+			<data>
+						<assetreference type="GrannyModel">
+							<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_dung_01</file>
+									<replacetexture>
+										<from>buildings\asian_civs\spc\saltpeter_site\saltpeter_diffuse</from>
+										<to>buildings\native_settlements\madura\salt</to>
+									</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_dung_02</file>
+									<replacetexture>
+										<from>buildings\asian_civs\spc\saltpeter_site\saltpeter_diffuse</from>
+										<to>buildings\native_settlements\madura\salt</to>
+									</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_accessory_06</file>
+									<replacetexture>
+										<from>buildings\asian_civs\spc\saltpeter_site\saltpeter_diffuse</from>
+										<to>buildings\native_settlements\madura\salt</to>
+									</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_accessory_07</file>
+									<replacetexture>
+										<from>buildings\asian_civs\spc\saltpeter_site\saltpeter_diffuse</from>
+										<to>buildings\native_settlements\madura\salt</to>
+									</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_accessory_01</file>
+									<replacetexture>
+										<from>buildings\asian_civs\spc\saltpeter_site\saltpeter_diffuse</from>
+										<to>buildings\native_settlements\madura\salt</to>
+									</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal/>
+					<lowpoly/>
+				</logic>
+				<decal>
+						<effecttype>bump</effecttype>
+						<texture>buildings\native_settlements\madura\salt_land</texture>
+						<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+						<bumptexture>buildings\mill\farmland_bump</bumptexture>
+						<width>6.00</width>
+						<height>6.00</height>
+				</decal>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Salt_peter</component>
+	</anim>
+</animfile>

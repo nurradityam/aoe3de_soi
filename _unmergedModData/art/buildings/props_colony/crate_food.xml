@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<submodel>
+		european_crates
+		<component>
+			props_colony
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_a_bucket</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_b_bucket</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_c_bucket</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>4.00</width>
+				<height>4.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>props_colony</component>
+		</anim>
+	</submodel>
+	<submodel>
+		native_crates
+		<component>
+			nat_props_colony
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_food_crates_large_a</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_food_crates_large_b</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_food_crates_large_c</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>3.00</width>
+				<height>3.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>nat_props_colony</component>
+		</anim>
+	</submodel>
+	<submodel>
+		asian_crates
+		<component>
+			asian_crates
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_crate_large_a</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_crate_large_b</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\food_crate_large_c</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>4.00</width>
+				<height>4.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>asian_crates</component>
+		</anim>
+	</submodel>
+	<component>
+		food_shipment
+		<logic type="Culture">
+			<easterneurope>
+				<submodelref ref="asian_crates"/>
+			</easterneurope>
+			<mediterranean>
+				<submodelref ref="european_crates"/>
+			</mediterranean>
+			<westerneurope>
+				<submodelref ref="european_crates"/>
+			</westerneurope>
+			<iroquois>
+				<submodelref ref="native_crates"/>
+			</iroquois>
+			<aztec>
+				<submodelref ref="native_crates"/>
+			</aztec>
+			<sioux>
+				<submodelref ref="native_crates"/>
+			</sioux>
+			<japanese>
+				<submodelref ref="asian_crates"/>
+			</japanese>
+			<chinese>
+				<submodelref ref="asian_crates"/>
+			</chinese>
+			<indian>
+				<submodelref ref="asian_crates"/>
+			</indian>
+		</logic>
+	</component>
+</animfile>

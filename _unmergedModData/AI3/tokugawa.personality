@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>09915</nameID>
+   <tooltipID>09911</tooltipID>
+   <forcedciv>Pirate</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_madura</icon>
+   <chatset>kangxi</chatset>
+   <playerNames>
+      <nameID>09915<civ>Pirate</civ></nameID> 
+	</playerNames>
+</AI>

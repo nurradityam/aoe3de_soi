@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<randomMaps displayNameID="90139" imagepath="ui\random_map\soi_maps" helpTextID="90140" cannotReplace="">
+  <map>Alas Purwa</map>
+  <map>Bengawan Solo</map>
+  <map>Great Post Road</map>
+  <map>Jayakarta</map>
+  <map>Kali Opak</map>
+  <map>Muria</map>
+  <map>Parahyangan</map>
+  <map>Pulau Seribu</map>
+  <map>Rainforest</map>
+  <map>Rawa Pening</map>
+  <map>Segara Kidul</map>
+  <map>Serang</map>
+  <map>Surabaya</map>
+  <map>Pasai</map>
+</randomMaps>

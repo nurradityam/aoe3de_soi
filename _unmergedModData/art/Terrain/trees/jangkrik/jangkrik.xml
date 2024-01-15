@@ -1,0 +1,82 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>borneo_palm_01_death</definebone>
+	<definebone>borneo_palm_02_death</definebone>
+	<definebone>borneo_palm_03_death</definebone>
+	<definebone>borneo_palm_04_death</definebone>
+	<definebone>borneo_palm_lp_01_death</definebone>
+	<definebone>borneo_palm_lp_02_death</definebone>
+	<definebone>borneo_palm_lp_03_death</definebone>
+	<definebone>borneo_palm_lp_04_death</definebone>
+	<attachment>
+		fog
+		<component>
+			swampfog
+			<assetreference type="GrannyModel">
+				<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_flies</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_flies_anim</file>
+			</assetreference>
+			<component>swampfog</component>
+		</anim>
+	</attachment>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\underbrush\underbrush_forest_bush1</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+		</logic>
+				<attach a="fog" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_01.dmg">
+							<file>terrain\underbrush\underbrush_forest_bush1</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

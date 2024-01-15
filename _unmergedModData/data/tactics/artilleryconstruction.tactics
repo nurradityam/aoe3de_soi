@@ -1,0 +1,67 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name>MalayRentaka</name>
+		<type>Spawn</type>
+		<rate type="SRentaka">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MalayLela</name>
+		<type>Spawn</type>
+		<rate type="SLela">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MalayPenggawa</name>
+		<type>Spawn</type>
+		<rate type="SPenggawa">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MalayMahalela</name>
+		<type>Spawn</type>
+		<rate type="SMahalela">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MalayEkorLotong</name>
+		<type>Spawn</type>
+		<rate type="SEkorLotong">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MalayLadaSicupak</name>
+		<type>Spawn</type>
+		<rate type="SLadaSicupak">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>MalayRentaka</action>
+		<action>MalayLela</action>
+		<action>MalayPenggawa</action>
+		<action>MalayMahalela</action>
+		<action>MalayEkorLotong</action>
+		<action>MalayLadaSicupak</action>
+	</tactic>
+</tactics>

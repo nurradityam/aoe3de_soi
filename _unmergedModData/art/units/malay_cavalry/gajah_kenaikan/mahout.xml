@@ -1,0 +1,240 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bip01 prop1</definebone>
+	<definebone>bone_gun</definebone>
+	<definebone>Bip02 Prop1</definebone>
+	<definebone>bone_sword</definebone>
+	<attachment>
+		guns
+		<component>
+			gun
+			<assetreference type="GrannyModel">
+				<file>units\infantry_ranged\janissary\jannisary_gun_guard</file>
+					<replacetexture>
+						<from>units\infantry_ranged\janissary\jannisary_guard</from>
+						<to>units\malay_infantry\shared\istinggar_musket</to>
+					</replacetexture>
+					<replacetexture>
+						<from>units\infantry_ranged\janissary\janisary_guard_b</from>
+						<to>units\malay_infantry\shared\istinggar_musket_1_b</to>
+					</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>gun</component>
+		</anim>
+	</attachment>
+	<attachment>
+		hats
+		<component>
+			hat
+			<logic type="Tech">
+				<none>
+					<assetreference type="GrannyModel">
+						<file>units\knights\attachments_me\cone_helmets</file>
+					</assetreference>
+				</none>
+				<helmetbronze>
+					<assetreference type="GrannyModel">
+						<file>units\knights\attachments_me\cone_helmet</file>
+					</assetreference>
+				</helmetbronze>
+				<helmetdamask>
+					<assetreference type="GrannyModel">
+						<file>units\knights\attachments_me\cone_helmet</file>
+							<replacetexture>
+								<from>units\knights\attachments_me\cone_helmet</from>
+								<to>units\knights\attachments_me\cone_helmet_2</to>
+							</replacetexture>
+					</assetreference>
+				</helmetdamask>
+			</logic>
+		</component>
+		<anim>
+			Idle
+			<component>hat</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>units\spc\sahin\sahin_spc</file>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l</from>
+								<to>units\malay_infantry\istinggar\istinggar_1</to>
+							</replacetexture>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l_b</from>
+								<to>units\malay_infantry\istinggar\istinggar_1_b</to>
+							</replacetexture>
+				</assetreference>
+			</none>
+			<bugischainmail>
+				<assetreference type="GrannyModel">
+					<file>units\spc\sahin\sahin_spc</file>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l</from>
+								<to>units\malay_infantry\istinggar\istinggar_2</to>
+							</replacetexture>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l_b</from>
+								<to>units\malay_infantry\istinggar\istinggar_2_b</to>
+							</replacetexture>
+				</assetreference>
+			</bugischainmail>
+			<turkcataphract>
+				<assetreference type="GrannyModel">
+					<file>units\spc\Sahin\sahin_spc</file>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l</from>
+								<to>units\malay_infantry\istinggar\istinggar_3</to>
+							</replacetexture>
+							<replacetexture>
+								<from>units\spc\sahin\sahin_l_b</from>
+								<to>units\malay_infantry\istinggar\istinggar_3_b</to>
+							</replacetexture>
+				</assetreference>
+			</turkcataphract>
+		</logic>
+		<attach a="guns" frombone="Bip01_AttachRt" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="hats" frombone="bone_hat" tobone="Bip01 HEAD" syncanims="0"/>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_trample
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_havoc
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_B</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_D</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_E</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_B</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_D</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_E</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_B</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_D</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_E</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_Ranged
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\volley\volley_standing_fire</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_Ranged_Reload
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\volley\volley_standing_reload</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

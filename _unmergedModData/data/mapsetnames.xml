@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mapsetnames>
+	<set name="fastrandom"/>
+	<set name="randommaps"/>
+	<set name="Largerandommaps"/>
+	<set name="asianrandom"/>
+	<set name="indonesianrandom"/>
+		<set name="Alas Purwa"/>
+		<set name="Bengawan Solo"/>
+		<set name="Great Post Road"/>
+		<set name="Jayakarta"/>
+		<set name="Kali Opak"/>
+		<set name="Muria"/>
+		<set name="Parahyangan"/>
+		<set name="Pulau Seribu"/>
+		<set name="Rainforest"/>
+		<set name="Rawa Pening"/>
+		<set name="Segara Kidul"/>
+		<set name="Serang"/>
+		<set name="Surabaya"/>
+		<set name="Pasai"/>
+	<mpscenarioimagepath name="ui\random_map\scenario"/>
+</mapsetnames>

@@ -1,0 +1,16 @@
+<!-- converted from XMB to XML -->
+
+<mix>
+	<icon>terrain\mix\jimmy</icon>
+	<paint mode="turbulence" freq="0.15" octaves="10" persistence="0.5">
+		<texture weight="1">jawa\ground_city_jawa_1</texture>
+		<texture weight="1">jawa\ground_forest_jawa_1</texture>
+	</paint>
+	<objects mode="turbulence" freq="0.7" octaves="10" persistence="0.7" emptyweight="60" posoffset="0.5">
+		<model weight="3">terrain\underbrush\underbrush_forest_fern1</model>
+		<model weight="2">terrain\saguenay\fern01</model>
+		<model weight="3">terrain\saguenay\fern02</model>
+		<model weight="2">terrain\saguenay\fern03</model>
+		<model weight="3">terrain\saguenay\fern04</model>
+	</objects>
+</mix>

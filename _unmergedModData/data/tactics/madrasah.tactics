@@ -1,0 +1,49 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="69158">SpawnUlama</name>
+		<type>Maintain</type>
+		<rate type="SUlama">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnUlama2</name>
+		<type>Maintain</type>
+		<rate type="SUlama2">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38133">RangedAttack</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.01</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Arrow</projectile>
+		<numberofprojectiles>3.0</numberofprojectiles>
+		<impacteffect>effects\impacts\arrow</impacteffect>
+		<rate type="Unit">1.0 </rate>
+	</action>
+	<tactic>
+		Normal
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<action priority="100">RangedAttack</action>
+		<action>SpawnUlama</action>
+		<action>SpawnUlama2</action>
+	</tactic>
+</tactics>

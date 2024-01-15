@@ -1,0 +1,219 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>borneo_canopy_01_death</definebone>
+	<definebone>borneo_palm_01_death</definebone>
+	<definebone>borneo_palm_02_death</definebone>
+	<definebone>borneo_canopy_02_death</definebone>
+	<definebone>borneo_canopy_03_death</definebone>
+	<definebone>borneo_canopy_04_death</definebone>
+	<definebone>borneo_palm_03_death</definebone>
+	<definebone>borneo_palm_04_death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_01</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_01</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_02</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_02</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_03</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_04</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_03</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_04</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_a</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_b</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_c</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_a</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_b</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_c</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm1_a</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_01</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_02</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_03</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_04</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_01</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_04</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_03</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+</animfile>

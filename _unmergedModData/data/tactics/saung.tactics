@@ -1,0 +1,110 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="38133">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.01</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<rate type="Unit">1.0 </rate>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38121">AntiShipAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttackShip</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<perfectaccuracy>1</perfectaccuracy>
+		<rate type="AbstractWarship">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="48954">RangedHP</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>12</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.5</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedHPfar</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>15</maxrange>
+		<minrange>12</minrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.2</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedDamage</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>12</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.3</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedDamagefar</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>15</maxrange>
+		<minrange>12</minrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="43019">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<action priority="100">AntiShipAttack</action>
+		<action priority="25">RangedAttack</action>
+		<action>AutoGatherFood</action>
+		<action>RangedHP</action>
+		<action>RangedDamage</action>
+		<action>RangedHPfar</action>
+		<action>RangedDamagefar</action>
+	</tactic>
+</tactics>

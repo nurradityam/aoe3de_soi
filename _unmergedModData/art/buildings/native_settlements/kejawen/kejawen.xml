@@ -1,0 +1,118 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Aztec Buildings
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</file>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</from>
+										<to>buildings\native_settlements\kejawen\kejawen</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan_bump</from>
+										<to>buildings\native_settlements\kejawen\kejawen_b</to>
+									</replacetexture>
+				</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+					<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>9.00</width>
+					<height>9.00</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>nuggets\asian\abandoned_shrine\abandoned_shrine_death</file>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</from>
+										<to>buildings\native_settlements\kejawen\kejawen</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan_bump</from>
+										<to>buildings\native_settlements\kejawen\kejawen_b</to>
+									</replacetexture>
+				</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+					<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>9.00</width>
+					<height>9.00</height>
+				</decal>
+			</data>
+			<!--<data>
+				<assetreference type="GrannyModel">
+					<file>buildings\asian_civs\monastery\india\age_1\india_monastery_age1_con_stage3</file>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</from>
+										<to>buildings\native_settlements\kejawen\kejawen</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan_bump</from>
+										<to>buildings\native_settlements\kejawen\kejawen_b</to>
+									</replacetexture>
+				</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>buildings\asian_civs\monastery\footprint_japan_monastery</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+					<width>9.00</width>
+					<height>9.00</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>buildings\asian_civs\monastery\india\age_2\india_monastery_age2_con_stage3</file>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</from>
+										<to>buildings\native_settlements\kejawen\kejawen</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan_bump</from>
+										<to>buildings\native_settlements\kejawen\kejawen_b</to>
+									</replacetexture>
+				</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>buildings\asian_civs\monastery\footprint_japan_monastery</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+					<width>9.00</width>
+					<height>9.00</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>buildings\asian_civs\monastery\india\age_4\india_monastery_age4_con_stage3</file>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan</from>
+										<to>buildings\native_settlements\kejawen\kejawen</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\asian\abandoned_shrine_deccan\abandoned_shrine_deccan_bump</from>
+										<to>buildings\native_settlements\kejawen\kejawen_b</to>
+									</replacetexture>
+				</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>buildings\asian_civs\monastery\footprint_japan_monastery</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+					<width>9.00</width>
+					<height>9.00</height>
+				</decal>
+			</data>-->
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Aztec Buildings</component>
+	</anim>
+</animfile>

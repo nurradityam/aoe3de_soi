@@ -1,0 +1,299 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>HS Bone Hoof Back Rt</definebone>
+	<definebone>HS Bone Hoof Back Lt</definebone>
+	<definebone>HS Bone Master</definebone>
+	<submodel>
+		black
+		<attachment>
+			Horse_Dust
+			<component>
+				Horse_Dust
+				<assetreference type="ParticleSystem">
+					<file>effects\Animal Particles\Horse_Dust.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>Horse_Dust</component>
+			</anim>
+		</attachment>
+		<attachment>
+			Horse_Debris
+			<component>
+				Horse_Debris
+				<assetreference type="ParticleSystem">
+					<file>effects\Animal Particles\Horse_Debris.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>Horse_Debris</component>
+			</anim>
+		</attachment>
+		<component>
+			black
+			<assetreference type="GrannyModel">
+				<file>units\animals\horse\wild_horse_black</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.50</width>
+				<height>2.00</height>
+			</decal>
+		</component>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_canter</file>
+				<tag type="FootstepLeft" footprinttype="Horse">1.00</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.70</tag>
+			</assetreference>
+			<component>black</component>
+		</anim>
+		<anim>
+			Jog
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_jog</file>
+				<tag type="FootstepLeft" footprinttype="Horse">0.80</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.94</tag>
+			</assetreference>
+			<component>black</component>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_gallop</file>
+				<tag type="FootstepLeft" footprinttype="Horse">0.80</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.94</tag>
+			</assetreference>
+			<component>black</component>
+		</anim>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_A</file>
+				<weight>40</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_B</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_C</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_D</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_F</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_G</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_H</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_I</file>
+				<weight>40</weight>
+			</assetreference>
+			<component>black</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_bored_A</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_E</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_A</file>
+				<weight>50</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_I</file>
+				<weight>50</weight>
+			</assetreference>
+			<component>black</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathA</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.63</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathB</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.76</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathC</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.52</tag>
+			</assetreference>
+			<component>black</component>
+		</anim>
+	</submodel>
+	<submodel>
+		brown
+		<attachment>
+			Horse_Dust
+			<component>
+				Horse_Dust
+				<assetreference type="ParticleSystem">
+					<file>effects\Animal Particles\Horse_Dust.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>Horse_Dust</component>
+			</anim>
+		</attachment>
+		<attachment>
+			Horse_Debris
+			<component>
+				Horse_Debris
+				<assetreference type="ParticleSystem">
+					<file>effects\Animal Particles\Horse_Debris.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>Horse_Debris</component>
+			</anim>
+		</attachment>
+		<component>
+			brown
+			<assetreference type="GrannyModel">
+				<file>units\animals\horse\wild_horse_brown</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.50</width>
+				<height>2.00</height>
+			</decal>
+		</component>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_canter</file>
+				<tag type="FootstepLeft" footprinttype="Horse">1.00</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.70</tag>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+		<anim>
+			Jog
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_jog</file>
+				<tag type="FootstepLeft" footprinttype="Horse">0.80</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.94</tag>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_gallop</file>
+				<tag type="FootstepLeft" footprinttype="Horse">0.80</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.94</tag>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_A</file>
+				<weight>40</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_B</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_C</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_D</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_F</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_G</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_H</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_I</file>
+				<weight>40</weight>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_bored_A</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_E</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_A</file>
+				<weight>50</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_idle_I</file>
+				<weight>50</weight>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathA</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.63</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathB</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.76</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\cavalry\horse_deathC</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.52</tag>
+			</assetreference>
+			<component>brown</component>
+		</anim>
+	</submodel>
+	<component>
+		<logic type="Variation">
+			<data>
+				<submodelref ref="black"/>
+			</data>
+			<data>
+				<submodelref ref="brown"/>
+			</data>
+		</logic>
+	</component>
+</animfile>

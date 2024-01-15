@@ -1,0 +1,25 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SDombaGarut">
+		<soundtype name="Creation">
+			<soundset name="SheepSelect"/>
+		</soundtype>
+		<soundtype name="Select">
+			<soundset name="SheepSelect"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="SheepDie"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="SheepAcknowledge"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="SheepSelect"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

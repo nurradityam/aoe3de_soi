@@ -1,0 +1,90 @@
+<animfile>
+		<component>
+			child
+			<assetreference type="GrannyModel">
+					<file>units\animals\tapir\tapir_child</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture>shadows_selections\shadow_circle_32x32</texture>
+				<selectedtexture>shadows_selections\selection_oval_16x32</selectedtexture>
+				<width>0.75</width>
+				<height>1.25</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_idlea</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_boreda</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_deatha</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.76</tag>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Graze
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_grazea</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			LayDown
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_laydown</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			LayDownIdle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_laydown_idleA</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			GetUp
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_getup</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			LayDownBored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_laydown_boredA</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_runa</file>
+				<tag type="FootstepLeft" footprinttype="AnimalLeft" footprintbone="BONE_LT_FOOT">0.94</tag>
+				<tag type="FootstepRight" footprinttype="AnimalRight" footprintbone="BONE_RT_FOOT">0.16</tag>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\tapir_male_walkA</file>
+				<tag type="FootstepLeft" footprinttype="AnimalLeft" footprintbone="BONE_LT_FOOT">0.00</tag>
+				<tag type="FootstepRight" footprinttype="AnimalLeft" footprintbone="BONE_LT_FOOT">0.50</tag>
+			</assetreference>
+			<component>child</component>
+		</anim>
+</animfile>

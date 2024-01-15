@@ -1,0 +1,105 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SOrangKampung">
+		<soundtype name="Select">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="Aceh_Villager_Select"/>
+				</choice>
+				<choice name="1">
+					<soundset name="Aceh_Female_Villager_Select"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Grunt">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleGrunt"/>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleGrunt"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Death">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleDeath"/>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleDeath"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="SettlerBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<variationlogic>
+				<choice name="0">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="Aceh_Villager_Acknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="Aceh_Villager_Attack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="Aceh_Villager_Build"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="Aceh_Villager_Hunting"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="Aceh_Villager_Cut"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="Aceh_Villager_Mining"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="Aceh_Villager_Farming"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="Aceh_Villager_Crate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="Aceh_Villager_Fruit"/>
+						</choice>
+					</targetlogic>
+				</choice>
+				<choice name="1">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="Aceh_Female_Villager_Acknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="Aceh_Female_Villager_Attack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="Aceh_Female_Villager_Build"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="Aceh_Female_Villager_Hunting"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="Aceh_Female_Villager_Cut"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="Aceh_Female_Villager_Mining"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="Aceh_Female_Villager_Farming"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="Aceh_Female_Villager_Crate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="Aceh_Female_Villager_Fruit"/>
+						</choice>
+					</targetlogic>
+				</choice>
+			</variationlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

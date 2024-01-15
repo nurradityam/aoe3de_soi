@@ -1,0 +1,533 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="80817">Aceh21</name>
+		<type>Maintain</type>
+		<rate type="SInongBalee">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="31180">Aceh22</name>
+		<type>Maintain</type>
+		<rate type="CrateofXP">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="70086">Aceh23</name>
+		<type>Maintain</type>
+		<rate type="ypGoatFat">1.0</rate>
+		<!--<rate type="SHouseMalay">1.0</rate>-->
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80813">Aceh31</name>
+		<type>Maintain</type>
+		<rate type="SPemuras">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="90118">Aceh32</name>
+		<type>Maintain</type>
+		<rate type="SOrangKampung">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="26021">Aceh33</name>
+		<type>Maintain</type>
+		<rate type="CrateofFood">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Aceh41</name>
+		<type>Maintain</type>
+		<rate type="SLadaSicupak">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Aceh42</name>
+		<type>Maintain</type>
+		<rate type="SDeMarsose">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81305">Aceh43</name>
+		<type>Maintain</type>
+		<rate type="SHulubalang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Aceh51</name>
+		<type>Maintain</type>
+		<rate type="SEkorLotong">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81313">Aceh52</name>
+		<type>Maintain</type>
+		<rate type="SGajahKenaikan">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81832">Aceh53</name>
+		<type>Maintain</type>
+		<rate type="SPenggawa">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80825">Aceh54</name>
+		<type>Maintain</type>
+		<rate type="SSipai">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="31180">Minangkabau21</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="90118">Minangkabau22</name>
+		<type>Maintain</type>
+		<rate type="SGembalaGajah">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="26021">Minangkabau23</name>
+		<type>Maintain</type>
+		<rate type="SSaudagar">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="70086">Minangkabau31</name>
+		<type>Maintain</type>
+		<rate type="SInang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80817">Minangkabau32</name>
+		<type>Maintain</type>
+		<rate type="SPanguluAdat">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80813">Minangkabau33</name>
+		<type>Maintain</type>
+		<rate type="SRentaka">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Minangkabau41</name>
+		<type>Maintain</type>
+		<rate type="SKudaBelazuardi">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Minangkabau42</name>
+		<type>Maintain</type>
+		<rate type="SLela">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81305">Minangkabau43</name>
+		<type>Maintain</type>
+		<rate type="SMercNaposobulung">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Minangkabau51</name>
+		<type>Maintain</type>
+		<rate type="SHulubalang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81313">Minangkabau52</name>
+		<type>Maintain</type>
+		<rate type="SDubalang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81832">Minangkabau53</name>
+		<type>Maintain</type>
+		<rate type="SBatin">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80825">Minangkabau54</name>
+		<type>Maintain</type>
+		<rate type="SPaderi">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="31180">Johor21</name>
+		<type>Maintain</type>
+		<rate type="SSerdadu">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="90118">Johor22</name>
+		<type>Maintain</type>
+		<rate type="SConstructionWagon">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="26021">Johor23</name>
+		<type>Maintain</type>
+		<rate type="CrateofWood">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="70086">Johor31</name>
+		<type>Maintain</type>
+		<rate type="SIstinggar">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80817">Johor32</name>
+		<type>Maintain</type>
+		<rate type="SKudaTizi">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80813">Johor33</name>
+		<type>Maintain</type>
+		<rate type="SLembing">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Johor41</name>
+		<type>Maintain</type>
+		<rate type="SAskarBugis">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Johor42</name>
+		<type>Maintain</type>
+		<rate type="SMahalela">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81305">Johor43</name>
+		<type>Maintain</type>
+		<rate type="STerakol">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Johor51</name>
+		<type>Maintain</type>
+		<rate type="SAskarMinang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81313">Johor52</name>
+		<type>Maintain</type>
+		<rate type="SAskarIndia">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81832">Johor53</name>
+		<type>Maintain</type>
+		<rate type="SAskarCina">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80825">Johor54</name>
+		<type>Maintain</type>
+		<rate type="STimbalanSetia">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="31180">Malaya21</name>
+		<type>Maintain</type>
+		<rate type="Musketeer">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="90118">Malaya22</name>
+		<type>Maintain</type>
+		<rate type="SCivet">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="26021">Malaya23</name>
+		<type>Maintain</type>
+		<rate type="Sepoy">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="70086">Malaya31</name>
+		<type>Maintain</type>
+		<rate type="SAskarMinang">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80817">Malaya32</name>
+		<type>Maintain</type>
+		<rate type="SBumiputra">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80813">Malaya33</name>
+		<type>Maintain</type>
+		<rate type="SPenggawa">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Malaya41</name>
+		<type>Maintain</type>
+		<rate type="SAskarCina">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Malaya42</name>
+		<type>Maintain</type>
+		<rate type="SSerdadu">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81305">Malaya43</name>
+		<type>Maintain</type>
+		<rate type="SMercSikhRifleman">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Malaya51</name>
+		<type>Maintain</type>
+		<rate type="SGajahKenaikan">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81313">Malaya52</name>
+		<type>Maintain</type>
+		<rate type="SKudaBelazuardi">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81832">Malaya53</name>
+		<type>Maintain</type>
+		<rate type="SRoyalMarine">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80825">Malaya54</name>
+		<type>Maintain</type>
+		<rate type="SMercPendekar">2.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="31180">Lingga21</name>
+		<type>Maintain</type>
+		<rate type="SOrangKampung">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="90118">Lingga22</name>
+		<type>Maintain</type>
+		<rate type="SSerdadu">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="26021">Lingga23</name>
+		<type>Maintain</type>
+		<rate type="SHulubalang">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="70086">Lingga31</name>
+		<type>Maintain</type>
+		<rate type="SPemuras">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80817">Lingga32</name>
+		<type>Maintain</type>
+		<rate type="SRentaka">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80813">Lingga33</name>
+		<type>Maintain</type>
+		<rate type="SFlankeur">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Lingga41</name>
+		<type>Maintain</type>
+		<rate type="ypWaterBuffalo">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Lingga42</name>
+		<type>Maintain</type>
+		<rate type="SMercTumbukLada">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81305">Lingga43</name>
+		<type>Maintain</type>
+		<rate type="SOrangSelat">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">Lingga51</name>
+		<type>Maintain</type>
+		<rate type="SLasykarRumi">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81313">Lingga52</name>
+		<type>Maintain</type>
+		<rate type="SMercPucukRebung">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="81832">Lingga53</name>
+		<type>Maintain</type>
+		<rate type="SPelalawanGun">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80825">Lingga54</name>
+		<type>Maintain</type>
+		<rate type="SDatukKaya">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<tactic>
+		Normal
+		<action>Aceh21</action>
+		<action>Aceh22</action>
+		<action>Aceh23</action>
+		<action>Aceh31</action>
+		<action>Aceh32</action>
+		<action>Aceh33</action>
+		<action>Aceh41</action>
+		<action>Aceh42</action>
+		<action>Aceh43</action>
+		<action>Aceh51</action>
+		<action>Aceh52</action>
+		<action>Aceh53</action>
+		<action>Aceh54</action>
+		<action>Minangkabau21</action>
+		<action>Minangkabau22</action>
+		<action>Minangkabau23</action>
+		<action>Minangkabau31</action>
+		<action>Minangkabau32</action>
+		<action>Minangkabau33</action>
+		<action>Minangkabau41</action>
+		<action>Minangkabau42</action>
+		<action>Minangkabau43</action>
+		<action>Minangkabau51</action>
+		<action>Minangkabau52</action>
+		<action>Minangkabau53</action>
+		<action>Minangkabau54</action>
+		<action>Johor21</action>
+		<action>Johor22</action>
+		<action>Johor23</action>
+		<action>Johor31</action>
+		<action>Johor32</action>
+		<action>Johor33</action>
+		<action>Johor41</action>
+		<action>Johor42</action>
+		<action>Johor43</action>
+		<action>Johor51</action>
+		<action>Johor52</action>
+		<action>Johor53</action>
+		<action>Johor54</action>
+		<action>Malaya21</action>
+		<action>Malaya22</action>
+		<action>Malaya23</action>
+		<action>Malaya31</action>
+		<action>Malaya32</action>
+		<action>Malaya33</action>
+		<action>Malaya41</action>
+		<action>Malaya42</action>
+		<action>Malaya43</action>
+		<action>Malaya51</action>
+		<action>Malaya52</action>
+		<action>Malaya53</action>
+		<action>Malaya54</action>
+		<action>Lingga21</action>
+		<action>Lingga22</action>
+		<action>Lingga23</action>
+		<action>Lingga31</action>
+		<action>Lingga32</action>
+		<action>Lingga33</action>
+		<action>Lingga41</action>
+		<action>Lingga42</action>
+		<action>Lingga43</action>
+		<action>Lingga51</action>
+		<action>Lingga52</action>
+		<action>Lingga53</action>
+		<action>Lingga54</action>
+	</tactic>
+</tactics>

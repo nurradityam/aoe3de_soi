@@ -1,0 +1,385 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_1d</definebone>
+	<definebone>bone_debris_1e</definebone>
+	<definebone>bone_debris_1f</definebone>
+	<definebone>bone_debris_1g</definebone>
+	<definebone>bone_debris_1h</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_2d</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<definebone>bone_debris_3c</definebone>
+	<definebone>bone_debris_3d</definebone>
+	<definebone>bone_debris_3e</definebone>
+	<definebone>bone_debris_3f</definebone>
+	<definebone>bone_debris_3g</definebone>
+	<definebone>bone_debris_3h</definebone>
+	<definebone>bone_debris_3i</definebone>
+	<definebone>bone_debris_3j</definebone>
+	<definebone>bone_debris_4a</definebone>
+	<definebone>bone_debris_4b</definebone>
+	<definebone>bone_debris_4c</definebone>
+	<definebone>bone_debris_4d</definebone>
+	<definebone>bone_debris_4e</definebone>
+	<definebone>bone_debris_4f</definebone>
+	<definebone>bone_debris_4g</definebone>
+	<definebone>bone_debris_4h</definebone>
+	<definebone>bone_debris_4i</definebone>
+	<definebone>bone_debris_4j</definebone>
+	<definebone>bone_debris_4k</definebone>
+	<definebone>bone_debris_4l</definebone>
+	<definebone>bone_debris_4m</definebone>
+	
+	
+	<submodel>
+		constrution_stage1
+		<attachment>
+			base smoke 1
+			<component>
+				base smoke 1
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 2
+			<component>
+				base smoke 2
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 3
+			<component>
+				base smoke 3
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_fort.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke 3</component>
+			</anim>
+		</attachment>
+		<component>
+			construction
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\5x5_stage1</file>
+			</assetreference>
+			<attach a="base smoke 1" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction</component>
+		</anim>
+	</submodel>
+	<submodel>
+		constrution_stage2
+		<attachment>
+			base smoke 1
+			<component>
+				base smoke 1
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 2
+			<component>
+				base smoke 2
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 3
+			<component>
+				base smoke 3
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_fort.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke 3</component>
+			</anim>
+		</attachment>
+		<component>
+			construction
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\5x5_stage2</file>
+			</assetreference>
+			<attach a="base smoke 1" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction</component>
+		</anim>
+	</submodel>
+	<submodel>
+		east_fort_con
+		<attachment>
+			con
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\5x5_stage2</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+		<attachment>
+			building
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>buildings\spc\ossuary\spc_ossuary</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 1
+			<component>
+				base smoke 1
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 2
+			<component>
+				base smoke 2
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 3
+			<component>
+				base smoke 3
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_fort.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke 3</component>
+			</anim>
+		</attachment>
+		<component>
+			east_fort
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\6x6_stage2</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\fort\east_fort_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>15.75</width>
+				<height>15.75</height>
+				<xoffset>-0.15</xoffset>
+				<zoffset>-0.20</zoffset>
+			</decal>
+			<attach a="con" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="building" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 1" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>east_fort</component>
+		</anim>
+	</submodel>
+
+	<submodel>
+	spc_ossuary
+		<attachment>
+			collapse smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 1
+			<component>
+				base smoke 1
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 2
+			<component>
+				base smoke 2
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke 3
+			<component>
+				base smoke 3
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_fort.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>base smoke 3</component>
+			</anim>
+		</attachment>
+		<component>
+			spc_ossuary
+			<logic type="Destruction">
+				<p1>
+					<assetreference type="GrannyModel" shape="spc_ossuary">
+						<file>buildings\spc\ossuary\spc_ossuary_damaged</file>
+					</assetreference>
+				</p1>
+				<p99>
+					<assetreference type="GrannyModel" shape="spc_ossuary">
+						<file>buildings\spc\ossuary\spc_ossuary</file>
+					</assetreference>
+				</p99>
+			</logic>
+		</component>
+		<component>
+			spc_ossuary_death
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>buildings\spc\ossuary\spc_ossuary_deathModel</file>
+					</assetreference>
+				</normal>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\spc\ossuary\spc_ossuary_ground</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>buildings\spc\ossuary\spc_ossuary_ground_bumpmap</bumptexture>
+				<width>14.00</width>
+				<height>14.00</height>
+			</decal>
+		</component>
+		<anim>
+			idle
+			<component>spc_ossuary</component>
+			<simskeleton>
+				<model>buildings\spc\ossuary\spc_ossuary_damaged</model>
+				<damagetemplate>buildings\spc\ossuary\spc_ossuary.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>buildings\spc\ossuary\spc_ossuary_deathAnim</file>
+			</assetreference>
+			<component>spc_ossuary_death</component>
+			<attach a="collapse smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 1" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke 3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<component>
+		ossuarymodel
+			<logic type="BuildingCompletion">
+				<p0>
+					<submodelref ref="constrution_stage1"/>
+				</p0>
+				<p33>
+					<submodelref ref="constrution_stage2"/>
+				</p33>
+				<p66>
+					<submodelref ref="east_fort_con"/>
+				</p66>
+				<p100>
+					<submodelref ref="spc_ossuary"/>
+				</p100>
+			</logic>
+	</component>
+</animfile>

@@ -1,0 +1,433 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<submodel>
+		male
+		<component>
+			ModelComp
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>units\animals\water_buffalo\water_buffalo_light_med</file>
+					</assetreference>
+				</normal>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.50</width>
+				<height>2.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleA</file>
+				<weight>30</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleB</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleC</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleD</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleE</file>
+				<weight>20</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleF</file>
+				<weight>10</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_walk</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_death</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.58</tag>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarm
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDown
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IntoGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDownIdle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GetUp
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_OutofGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+	</submodel>
+	<submodel>
+		brown
+		<component>
+			ModelComp
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>units\animals\water_buffalo\water_buffalo_light_skinny</file>
+					</assetreference>
+				</normal>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.50</width>
+				<height>2.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleA</file>
+				<weight>30</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleB</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleC</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleD</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleE</file>
+				<weight>20</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleF</file>
+				<weight>10</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_walk</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_death</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.58</tag>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarm
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDown
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IntoGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDownIdle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GetUp
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_OutofGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+	</submodel>
+	<submodel>
+		child
+		<component>
+			child
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>units\animals\bison\bison_child</file>
+							<replacetexture>
+								<from>units\animals\bison\bison_calf</from>
+								<to>units\javanese_others\kebo_bule\kebo_anak</to>
+							</replacetexture>
+					</assetreference>
+				</normal>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.00</width>
+				<height>1.50</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_idlea</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_boreda</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_walka</file>
+				<tag type="FootstepLeft" footprinttype="Horse">0.29</tag>
+				<tag type="FootstepRight" footprinttype="Horse">0.55</tag>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_deatha</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.75</tag>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			GatherFarm
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_grazea</file>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_grazeB</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			LayDown
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_laydowna</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			LayDownIdle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_laydown_idlea</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+		<anim>
+			GetUp
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\bison_getupa</file>
+			</assetreference>
+			<component>child</component>
+		</anim>
+	</submodel>
+	<submodel>
+		dark
+		<component>
+			ModelComp
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>units\animals\water_buffalo\water_buffalo_light</file>
+					</assetreference>
+				</normal>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.50</width>
+				<height>2.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleA</file>
+				<weight>30</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleB</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleC</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleD</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleE</file>
+				<weight>20</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IdleF</file>
+				<weight>10</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_walk</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_death</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.58</tag>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GatherFarm
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDown
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_IntoGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			LayDownIdle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeA</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeB</file>
+				<weight>33</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_grazeC</file>
+				<weight>33</weight>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			GetUp
+			<assetreference type="GrannyAnim">
+				<file>animation_library\quads\cow_OutofGraze</file>
+			</assetreference>
+			<component>ModelComp</component>
+		</anim>
+	</submodel>
+	<component>
+		<logic type="Variation">
+			<data>
+				<submodelref ref="male"/>
+			</data>
+			<data>
+				<submodelref ref="brown"/>
+			</data>
+			<data>
+				<submodelref ref="child"/>
+			</data>
+			<data>
+				<submodelref ref="dark"/>
+			</data>
+		</logic>
+	</component>
+</animfile>

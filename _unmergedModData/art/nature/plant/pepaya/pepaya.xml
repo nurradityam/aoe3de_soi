@@ -1,0 +1,28 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		berry bush
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\carolinas\underbrush_palmetto_small_1</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\carolinas\underbrush_palmetto_small_2</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>terrain\carolinas\underbrush_palmetto_small_3</file>
+				</assetreference>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		idle
+		<component>berry bush</component>
+	</anim>
+</animfile>

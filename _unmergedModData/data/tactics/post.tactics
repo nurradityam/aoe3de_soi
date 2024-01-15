@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="48954">RangedHP</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>12</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.5</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedHPfar</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>15</maxrange>
+		<minrange>12</minrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.2</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedDamage</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>12</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.3</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">RangedDamagefar</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>15</maxrange>
+		<minrange>12</minrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>RangedHP</action>
+		<action>RangedDamage</action>
+		<action>RangedHPfar</action>
+		<action>RangedDamagefar</action>
+	</tactic>
+</tactics>

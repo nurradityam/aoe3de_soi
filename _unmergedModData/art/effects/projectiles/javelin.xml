@@ -1,0 +1,29 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bone01</definebone>
+	<attachment>
+		Attachment
+		<component>
+			attachment_javelin
+			<assetreference type="GrannyModel">
+				<file>effects\projectiles\javelin</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>attachment_javelin</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>effects\projectiles\60</file>
+		</assetreference>
+				<attach a="Attachment" frombone="whatever" tobone="Bone01" syncanims="1"/>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+	</anim>
+</animfile>

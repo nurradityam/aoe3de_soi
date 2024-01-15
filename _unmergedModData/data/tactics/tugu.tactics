@@ -1,0 +1,47 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="68988">RainbowIron</name>
+		<type>AutoGather</type>
+		<rate type="Fame">0.15</rate>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="68988">RainbowFood</name>
+		<type>AutoGather</type>
+		<rate type="Food">0.25</rate>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="68988">RainbowCoin</name>
+		<type>AutoGather</type>
+		<rate type="Gold">0.25</rate>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="68988">RainbowWood</name>
+		<type>AutoGather</type>
+		<rate type="Wood">0.25</rate>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="68988">RainbowXP</name>
+		<type>AutoGather</type>
+		<rate type="XP">0.15</rate>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<tactic>
+		Normal
+		<action>RainbowIron</action>
+		<action>RainbowFood</action>
+		<action>RainbowCoin</action>
+		<action>RainbowWood</action>
+		<action>RainbowXP</action>
+	</tactic>
+</tactics>

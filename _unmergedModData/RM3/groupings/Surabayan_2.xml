@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>12</width>
+	<height>14</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="231" posx ="0.9513" posz ="-9.8076" orientx ="0.1969" orienty ="0.0000" orientz ="-0.9804">ypSMJesuitAccessory</unit>
+		<unit variation ="80" posx ="0.8411" posz ="-7.8263" orientx ="-0.3827" orienty ="0.0000" orientz ="0.9239">SNativeJawa</unit>
+		<unit variation ="0" posx ="1.7204" posz ="-9.5988" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock3</unit>
+		<unit variation ="10" posx ="-6.0953" posz ="-7.1366" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SocketWetanan</unit>
+		<unit variation ="117" posx ="4.1370" posz ="-7.6611" orientx ="0.9944" orienty ="0.0000" orientz ="-0.1058">SNativeTree1</unit>
+		<unit variation ="0" posx ="-1.1715" posz ="-5.2089" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0000">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="6.3934" posz ="-5.6681" orientx ="-0.7071" orienty ="0.0000" orientz ="0.7071">SPCPathBlock3</unit>
+		<unit variation ="102" posx ="4.0582" posz ="-6.3757" orientx ="0.9906" orienty ="0.0000" orientz ="0.1371">SNativeTree1</unit>
+		<unit variation ="40" posx ="4.1412" posz ="-3.6630" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="23" posx ="-1.0737" posz ="-3.9284" orientx ="-0.7841" orienty ="0.0000" orientz ="-0.6206">SNativeTree1</unit>
+		<unit variation ="69" posx ="-1.9795" posz ="-3.0271" orientx ="0.3415" orienty ="0.0000" orientz ="0.9399">SNativeVillager</unit>
+		<unit variation ="14" posx ="0.8545" posz ="-4.8485" orientx ="-0.3072" orienty ="0.0000" orientz ="0.9516">SNativeVillager</unit>
+		<unit variation ="83" posx ="1.2515" posz ="-3.9465" orientx ="-0.9887" orienty ="0.0000" orientz ="0.1500">SNativeVillager</unit>
+		<unit variation ="109" posx ="-1.4931" posz ="-2.5734" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="163" posx ="-1.2011" posz ="-1.9758" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">Campfire</unit>
+		<unit variation ="169" posx ="-5.3076" posz ="-2.3666" orientx ="0.2794" orienty ="0.0000" orientz ="-0.9602">ypSMJesuitAccessory</unit>
+		<unit variation ="132" posx ="1.9434" posz ="-2.6372" orientx ="-0.9970" orienty ="0.0000" orientz ="-0.0779">ypSMJesuitAccessory</unit>
+		<unit variation ="221" posx ="0.6209" posz ="-1.7061" orientx ="-0.9788" orienty ="0.0000" orientz ="-0.2048">SNativeVillager</unit>
+		<unit variation ="68" posx ="-10.5080" posz ="-2.2891" orientx ="-0.7670" orienty ="0.0000" orientz ="-0.6416">SNativeTree1</unit>
+		<unit variation ="0" posx ="-6.1983" posz ="-2.3036" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="-9.3709" posz ="1.1342" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SPCPathBlock3</unit>
+		<unit variation ="47" posx ="-8.6847" posz ="-0.8137" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="0" posx ="8.6142" posz ="0.5974" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0000">SPCPathBlock3</unit>
+		<unit variation ="97" posx ="-4.6629" posz ="-0.8400" orientx ="0.0496" orienty ="0.0000" orientz ="0.9988">SNativeVillager</unit>
+		<unit variation ="58" posx ="-4.4766" posz ="0.3752" orientx ="-0.4778" orienty ="0.0000" orientz ="-0.8784">SNativeVillager</unit>
+		<unit variation ="160" posx ="-0.0472" posz ="0.2332" orientx ="0.7131" orienty ="0.0000" orientz ="-0.7011">ypSMJesuitAccessory</unit>
+		<unit variation ="99" posx ="-2.9910" posz ="0.3629" orientx ="0.7856" orienty ="0.0000" orientz ="0.6188">ypSMJesuitAccessory</unit>
+		<unit variation ="233" posx ="6.4807" posz ="0.1111" orientx ="-0.7895" orienty ="0.0000" orientz ="0.6138">SNativeTree1</unit>
+		<unit variation ="251" posx ="-0.5357" posz ="2.4297" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="110" posx ="3.7902" posz ="3.1612" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeJawa</unit>
+		<unit variation ="59" posx ="-3.3217" posz ="2.9674" orientx ="-0.4091" orienty ="0.0000" orientz ="-0.9125">SNativeTree1</unit>
+		<unit variation ="219" posx ="-3.2710" posz ="2.4116" orientx ="0.1144" orienty ="0.0000" orientz ="-0.9934">SNativeTree1</unit>
+		<unit variation ="60" posx ="-8.2589" posz ="2.3605" orientx ="0.0403" orienty ="0.0000" orientz ="-0.9992">ypSMJesuitAccessory</unit>
+		<unit variation ="149" posx ="7.2154" posz ="1.0535" orientx ="0.9921" orienty ="0.0000" orientz ="-0.1256">ypSMJesuitAccessory</unit>
+		<unit variation ="121" posx ="-9.2012" posz ="2.1516" orientx ="-0.9482" orienty ="0.0000" orientz ="0.3176">SNativeTree1</unit>
+		<unit variation ="137" posx ="6.4700" posz ="2.0400" orientx ="0.6753" orienty ="0.0000" orientz ="0.7375">ypSMJesuitAccessory</unit>
+		<unit variation ="132" posx ="-5.5235" posz ="3.0553" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="99" posx ="-7.4437" posz ="3.6228" orientx ="-0.9989" orienty ="0.0000" orientz ="0.0461">ypSMJesuitAccessory</unit>
+		<unit variation ="140" posx ="7.6098" posz ="4.5476" orientx ="-0.8079" orienty ="0.0000" orientz ="-0.5893">SNativeTree1</unit>
+		<unit variation ="0" posx ="-6.8251" posz ="7.1840" orientx ="-0.7071" orienty ="0.0000" orientz ="0.7071">SPCPathBlock3</unit>
+		<unit variation ="109" posx ="-2.7149" posz ="8.0807" orientx ="0.7071" orienty ="0.0000" orientz ="-0.7071">SNativeJawa</unit>
+		<unit variation ="15" posx ="-4.7851" posz ="5.2318" orientx ="-0.9710" orienty ="0.0000" orientz ="-0.2390">SNativeTree1</unit>
+		<unit variation ="236" posx ="-5.4085" posz ="6.1890" orientx ="-0.7286" orienty ="0.0000" orientz ="-0.6849">SNativeTree1</unit>
+		<unit variation ="103" posx ="-6.3129" posz ="5.0223" orientx ="0.7478" orienty ="0.0000" orientz ="-0.6640">SNativeTree1</unit>
+		<unit variation ="80" posx ="-0.6473" posz ="5.0297" orientx ="0.5522" orienty ="0.0000" orientz ="0.8337">SNativeTree1</unit>
+		<unit variation ="43" posx ="-0.1429" posz ="6.7875" orientx ="-0.9972" orienty ="0.0000" orientz ="0.0744">SNativeTree1</unit>
+		<unit variation ="150" posx ="3.5534" posz ="6.1409" orientx ="-0.9901" orienty ="0.0000" orientz ="-0.1406">SNativeVillager</unit>
+		<unit variation ="164" posx ="2.1823" posz ="5.6768" orientx ="-0.3990" orienty ="0.0000" orientz ="0.9169">SNativeVillager</unit>
+		<unit variation ="148" posx ="-2.7318" posz ="6.3456" orientx ="0.9913" orienty ="0.0000" orientz ="-0.1319">SNativeTree1</unit>
+		<unit variation ="83" posx ="-1.8971" posz ="6.5016" orientx ="0.0337" orienty ="0.0000" orientz ="-0.9994">SNativeTree1</unit>
+		<unit variation ="0" posx ="8.9039" posz ="8.3022" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0000">SPCPathBlock3</unit>
+		<unit variation ="81" posx ="-3.5191" posz ="7.3795" orientx ="0.4391" orienty ="0.0000" orientz ="0.8985">SNativeTree1</unit>
+		<unit variation ="153" posx ="-1.7029" posz ="7.1592" orientx ="0.3497" orienty ="0.0000" orientz ="-0.9369">SNativeTree1</unit>
+		<unit variation ="213" posx ="-2.5372" posz ="7.0831" orientx ="0.9092" orienty ="0.0000" orientz ="0.4163">SNativeTree1</unit>
+		<unit variation ="47" posx ="5.1907" posz ="7.2056" orientx ="0.6681" orienty ="0.0000" orientz ="0.7441">SNativeTree1</unit>
+		<unit variation ="223" posx ="5.4771" posz ="7.2276" orientx ="-0.0931" orienty ="0.0000" orientz ="-0.9957">SNativeTree1</unit>
+		<unit variation ="109" posx ="3.7026" posz ="9.1559" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="0" posx ="-1.1021" posz ="9.4279" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="3.6546" posz ="10.2063" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SPCPathBlock2</unit>
+		<unit variation ="0" posx ="6.4102" posz ="11.2504" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock2</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\ground4_ama">
+			<block startx ="-4" startz ="0" endx ="-4" endz ="1"></block>
+			<block startx ="-3" startz ="-1" endx ="-3" endz ="1"></block>
+			<block startx ="-2" startz ="-5" endx ="-2" endz ="1"></block>
+			<block startx ="-1" startz ="-6" endx ="-1" endz ="1"></block>
+			<block startx ="0" startz ="-6" endx ="0" endz ="1"></block>
+			<block startx ="1" startz ="-5" endx ="1" endz ="1"></block>
+			<block startx ="2" startz ="1" endx ="2" endz ="1"></block>
+			<block startx ="-3" startz ="2" endx ="-3" endz ="2"></block>
+			<block startx ="-2" startz ="2" endx ="-2" endz ="2"></block>
+			<block startx ="-1" startz ="2" endx ="-1" endz ="2"></block>
+			<block startx ="0" startz ="2" endx ="0" endz ="3"></block>
+			<block startx ="1" startz ="2" endx ="1" endz ="3"></block>
+			<block startx ="2" startz ="2" endx ="2" endz ="2"></block>
+		</tilegroup>
+		<heights>
+			<tiles x ="-6" z ="-7">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="0">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+		</heights>
+	</tiles>
+</grouping>

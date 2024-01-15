@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>13</width>
+	<height>13</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="13" posx ="-7.1141" posz ="-9.9135" orientx ="0.7073" orienty ="0.0000" orientz ="0.7069">PropsNative</unit>
+		<unit variation ="13" posx ="-3.9653" posz ="-10.8779" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="0" posx ="-7.6718" posz ="-8.2398" orientx ="0.7080" orienty ="0.0000" orientz ="0.7062">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="-2.8986" posz ="-9.5302" orientx ="0.3809" orienty ="0.0000" orientz ="-0.9246">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="-4.0568" posz ="-9.1123" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="34" posx ="-5.8351" posz ="-8.7694" orientx ="0.9973" orienty ="-0.0042" orientz ="0.0734">SNativeHorse</unit>
+		<unit variation ="106" posx ="-2.5851" posz ="-9.0692" orientx ="-0.9249" orienty ="0.0051" orientz ="-0.3802">SNativeHorse</unit>
+		<unit variation ="0" posx ="-9.8680" posz ="-3.7648" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0012">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="3.1357" posz ="-4.9301" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SocketGayo</unit>
+		<unit variation ="107" posx ="-3.9769" posz ="-4.2307" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativeGayo</unit>
+		<unit variation ="13" posx ="-9.8567" posz ="-5.2454" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0003">PropsNative</unit>
+		<unit variation ="90" posx ="-8.2731" posz ="-4.7846" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="238" posx ="-8.6907" posz ="-3.3747" orientx ="-0.8909" orienty ="0.0000" orientz ="0.4543">SNativeMalayGatherer</unit>
+		<unit variation ="2" posx ="-9.4107" posz ="-2.6864" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="130" posx ="-4.2086" posz ="-1.8491" orientx ="0.0010" orienty ="0.0000" orientz ="1.0000">SNativeMalayVillager</unit>
+		<unit variation ="5" posx ="-3.8992" posz ="-0.3847" orientx ="-0.1543" orienty ="0.0000" orientz ="-0.9880">SNativeMalayVillager</unit>
+		<unit variation ="0" posx ="8.4558" posz ="2.7589" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0012">SPCPathBlock3</unit>
+		<unit variation ="5" posx ="3.5726" posz ="1.8424" orientx ="0.9239" orienty ="0.0000" orientz ="-0.3827">PropsNative</unit>
+		<unit variation ="6" posx ="2.5342" posz ="1.9182" orientx ="0.9239" orienty ="0.0000" orientz ="-0.3827">PropsNative</unit>
+		<unit variation ="10" posx ="-1.9585" posz ="1.3550" orientx ="0.9239" orienty ="0.0000" orientz ="-0.3827">PropsNative</unit>
+		<unit variation ="139" posx ="-0.7599" posz ="0.3834" orientx ="0.9917" orienty ="0.0000" orientz ="0.1288">SNativeGayoStoryTelling</unit>
+		<unit variation ="172" posx ="-8.7964" posz ="0.3094" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="46" posx ="5.3775" posz ="0.3415" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="181" posx ="-3.6847" posz ="3.4793" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeGayo</unit>
+		<unit variation ="13" posx ="8.8483" posz ="3.4011" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0003">PropsNative</unit>
+		<unit variation ="234" posx ="1.6779" posz ="2.6118" orientx ="0.9994" orienty ="0.0000" orientz ="-0.0339">SNativeGayoFence</unit>
+		<unit variation ="223" posx ="4.5764" posz ="3.5573" orientx ="-0.6763" orienty ="0.0000" orientz ="0.7366">SNativeMalayGatherer</unit>
+		<unit variation ="175" posx ="6.1862" posz ="3.3420" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="42" posx ="3.0352" posz ="4.0378" orientx ="0.9084" orienty ="0.0000" orientz ="0.4182">SNativeMalayGatherer</unit>
+		<unit variation ="131" posx ="0.9657" posz ="4.8255" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="157" posx ="4.0592" posz ="4.4072" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="13" posx ="6.6838" posz ="8.0168" orientx ="0.3830" orienty ="0.0000" orientz ="0.9238">PropsNative</unit>
+		<unit variation ="0" posx ="5.4711" posz ="7.9270" orientx ="0.3838" orienty ="0.0000" orientz ="0.9234">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="-1.1206" posz ="8.6772" orientx ="-0.3816" orienty ="0.0000" orientz ="0.9243">SPCPathBlock3</unit>
+		<unit variation ="13" posx ="1.1634" posz ="8.6689" orientx ="-0.3824" orienty ="0.0000" orientz ="0.9240">PropsNative</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\new_england\ground4_ne">
+			<block startx ="-4" startz ="-3" endx ="-4" endz ="0"></block>
+			<block startx ="-3" startz ="-4" endx ="-3" endz ="-3"></block>
+			<block startx ="-3" startz ="1" endx ="-3" endz ="2"></block>
+			<block startx ="-2" startz ="-4" endx ="-2" endz ="-4"></block>
+			<block startx ="-2" startz ="2" endx ="-2" endz ="2"></block>
+			<block startx ="-1" startz ="-4" endx ="-1" endz ="-4"></block>
+			<block startx ="-1" startz ="2" endx ="-1" endz ="2"></block>
+			<block startx ="1" startz ="2" endx ="1" endz ="2"></block>
+			<block startx ="2" startz ="0" endx ="2" endz ="0"></block>
+			<block startx ="2" startz ="2" endx ="2" endz ="2"></block>
+			<block startx ="-1" startz ="3" endx ="-1" endz ="3"></block>
+			<block startx ="0" startz ="3" endx ="0" endz ="3"></block>
+			<block startx ="1" startz ="3" endx ="1" endz ="3"></block>
+			<block startx ="3" startz ="0" endx ="3" endz ="2"></block>
+			<block startx ="4" startz ="1" endx ="4" endz ="2"></block>
+		</tilegroup>
+		<tilegroup type ="PassableLand" subtype ="terrain\props\east_colony">
+			<block startx ="-3" startz ="-1" endx ="-3" endz ="-1"></block>
+			<block startx ="-2" startz ="-3" endx ="-2" endz ="1"></block>
+			<block startx ="-1" startz ="-3" endx ="-1" endz ="-3"></block>
+			<block startx ="-1" startz ="0" endx ="-1" endz ="1"></block>
+			<block startx ="0" startz ="0" endx ="0" endz ="1"></block>
+			<block startx ="1" startz ="0" endx ="1" endz ="1"></block>
+		</tilegroup>
+	</tiles>
+</grouping>

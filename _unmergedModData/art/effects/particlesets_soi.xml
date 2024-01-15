@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<particlesetdef>
+	<particleset name="pemurasshot">
+		<particle filename="units\artillery\cannon\cannon_small_sparks.particle" bone="R Hand"/>
+		<particle filename="units\artillery\cannon\cannon_small_smoke_puff_a.particle" bone="R Hand"/>
+		<particle filename="units\artillery\cannon\cannon_small_smoke_puff_b.particle" bone="R Hand"/>
+	</particleset>
+</particlesetdef>

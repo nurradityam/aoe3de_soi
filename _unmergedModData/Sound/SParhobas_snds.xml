@@ -1,0 +1,105 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SParhobas">
+		<soundtype name="Select">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="TobaVillagerMaleSelect"/>
+				</choice>
+				<choice name="1">
+					<soundset name="TobaVillagerFemaleSelect"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Grunt">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleGrunt"/>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleGrunt"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Death">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleDeath"/>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleDeath"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="SettlerBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<variationlogic>
+				<choice name="0">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="TobaVillagerMaleAcknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="TobaVillagerMaleAttack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="TobaVillagerMaleBuild"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="TobaVillagerMaleGatherMeat"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="TobaVillagerMaleGatherWood"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="TobaVillagerMaleGatherCoin"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="TobaVillagerMaleFarm"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="TobaVillagerMaleGatherCrate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="TobaVillagerMaleGatherFruit"/>
+						</choice>
+					</targetlogic>
+				</choice>
+				<choice name="1">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="TobaVillagerFemaleAcknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="TobaVillagerFemaleAttack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="TobaVillagerFemaleBuild"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="TobaVillagerFemaleGatherMeat"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="TobaVillagerFemaleGatherWood"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="TobaVillagerFemaleGatherCoin"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="TobaVillagerFemaleFarm"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="TobaVillagerFemaleGatherCrate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="TobaVillagerFemaleGatherFruit"/>
+						</choice>
+					</targetlogic>
+				</choice>
+			</variationlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

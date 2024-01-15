@@ -1,0 +1,131 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>juniper a death</definebone>
+	<definebone>juniper b death</definebone>
+	<definebone>juniper c death</definebone>
+	<definebone>oak e death</definebone>
+	<definebone>oak f death</definebone>
+	<definebone>oak g death</definebone>
+	<definebone>lp juniper a death</definebone>
+	<definebone>lp juniper b death</definebone>
+	<definebone>lp juniper c death</definebone>
+	<definebone>lp oak a death</definebone>
+	<definebone>lp oak b death</definebone>
+	<definebone>lp oak c death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<v4 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_oak_e</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+			<v5 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_oak_f</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v5>
+			<v6 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_oak_g</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v6>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v4 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_oak_e.dmg">
+							<file>terrain\trees\tree_oak_e_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+			<v5 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_oak_f.dmg">
+							<file>terrain\trees\tree_oak_f_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v5>
+			<v6 weight="3">
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_oak_g.dmg">
+							<file>terrain\trees\tree_oak_g_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\angsana\angsana</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v6>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

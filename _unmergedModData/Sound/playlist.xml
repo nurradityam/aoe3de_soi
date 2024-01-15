@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<playlists>
+	<playlist name="Primary">
+		<!--<musicset name="s01">
+			<file volume="1.6" mood="normal">music\soi\standard\Patriot.mp3</file>
+		</musicset>-->
+		<musicset name="s01">
+			<file volume="1.2" mood="normal">music\soi\standard\Kompang.mp3</file>
+		</musicset>
+		<musicset name="s02">
+			<file volume="1.4" mood="normal">music\soi\standard\Joget Sipinang Muda.mp3</file>
+		</musicset>
+		<musicset name="s03">
+			<file volume="1.4" mood="normal">music\soi\standard\Kenek Kenek Udang.mp3</file>
+		</musicset>
+		<musicset name="s04">
+			<file volume="1.4" mood="normal">music\soi\standard\Lanang Sipaku Lanang.mp3</file>
+		</musicset>
+		<musicset name="s05">
+			<file volume="1.2" mood="normal">music\soi\standard\Sabilulungan.mp3</file>
+		</musicset>
+		<musicset name="s06">
+			<file volume="1.4" mood="normal">music\soi\standard\Serune Kalee.mp3</file>
+		</musicset>
+		<musicset name="s07">
+			<file volume="1.4" mood="normal">music\soi\standard\Ayam Didik.mp3</file>
+		</musicset>
+		<musicset name="s08">
+			<file volume="1.4" mood="normal">music\soi\standard\Kebo Giro.mp3</file>
+		</musicset>
+		<musicset name="s09">
+			<file volume="1.4" mood="normal">music\soi\standard\Gambus Jodoh.mp3</file>
+		</musicset>
+		<musicset name="s13">
+			<file volume="1.4" mood="normal">music\soi\standard\Saronin.mp3</file>
+		</musicset>
+		<musicset name="s10">
+			<file volume="1.4" mood="normal">music\soi\standard\Ayun Ambing.mp3</file>
+		</musicset>
+		<musicset name="s11">
+			<file volume="1.4" mood="normal">music\soi\standard\Selendang Mak Inang.mp3</file>
+		</musicset>
+		<musicset name="s12">
+			<file volume="1.2" mood="normal">music\soi\standard\Sorban Palid.mp3</file>
+		</musicset>
+		<musicset name="s02">
+			<file volume="1.6" mood="normal">music\soi\standard\Ladrang Balabak.mp3</file>
+		</musicset>
+	</playlist>
+	<playlist name="battle">
+		<file volume="1.9">music\soi\battle\Gending Majapahit.mp3</file>
+		<file volume="1.9">music\soi\battle\Machete Standoff.mp3</file>
+		<file volume="1.9">music\soi\battle\Dog Fight.mp3</file>
+		<file volume="1.9">music\soi\battle\Drug Lab.mp3</file>
+	</playlist>
+	<playlist name="WonGame">
+		<file volume="1.5" mood="normal">music\soi\interface\Geef Mij Maar Nasi Goreng.mp3</file>
+	</playlist>
+	<playlist name="WonGameRevOrTrade">
+		<file volume="1.5" mood="normal">music\soi\interface\Melati Suci.mp3</file>
+	</playlist>
+	<playlist name="LostGame">
+		<file volume="1.5" mood="normal">music\soi\interface\Gugur Bunga.mp3</file>
+	</playlist>
+</playlists>

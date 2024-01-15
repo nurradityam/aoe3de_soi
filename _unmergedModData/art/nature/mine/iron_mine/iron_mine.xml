@@ -1,0 +1,28 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		bigproptexas
+		<logic type="Variation">
+			<v0>
+				<assetreference type="GrannyModel">
+					<file>terrain\new_england\prop_newengland_a</file>
+				</assetreference>
+			</v0>
+		</logic>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>buildings\gold_mine\gold_mine_wetground</texture>
+			<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+			<width>13.00</width>
+			<height>13.00</height>
+			<xoffset>0.00</xoffset>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>bigproptexas</component>
+	</anim>
+</animfile>

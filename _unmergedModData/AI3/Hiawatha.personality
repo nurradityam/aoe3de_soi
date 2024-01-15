@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>09934</nameID>
+   <tooltipID>09935</tooltipID>
+   <forcedciv>XPIroquois</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_iroquois</icon>
+   <chatset>hiawatha</chatset>
+   <playerNames>
+      <nameID>09934<civ>XPIroquois</civ></nameID> 
+	</playerNames>
+</AI>

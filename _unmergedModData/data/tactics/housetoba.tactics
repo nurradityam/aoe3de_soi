@@ -1,0 +1,15 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="68973">MaintainOrangKampung</name>
+		<type>Maintain</type>
+		<rate type="ypWaterBuffalo">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>MaintainOrangKampung</action>
+	</tactic>
+</tactics>

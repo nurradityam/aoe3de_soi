@@ -1,0 +1,63 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>juniper a death</definebone>
+	<definebone>juniper b death</definebone>
+	<definebone>juniper c death</definebone>
+	<definebone>oak e death</definebone>
+	<definebone>oak f death</definebone>
+	<definebone>oak g death</definebone>
+	<definebone>lp juniper a death</definebone>
+	<definebone>lp juniper b death</definebone>
+	<definebone>lp juniper c death</definebone>
+	<definebone>lp oak a death</definebone>
+	<definebone>lp oak b death</definebone>
+	<definebone>lp oak c death</definebone>
+	<component>
+		tree
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_oak_d</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\sonokeling\sonokeling</to>
+							</replacetexture>
+						</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_oak_d.dmg">
+							<file>terrain\trees\tree_oak_d_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_oak</from>
+								<to>Terrain\trees\sonokeling\sonokeling</to>
+							</replacetexture>
+						</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

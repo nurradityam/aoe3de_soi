@@ -1,0 +1,189 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="38135">MeleeHandAttack</name>
+		<type>Attack</type>
+		<maxrange>0.50</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack_melee</anim>
+		<idleanim>Idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="42873">GuardianAttack</name>
+		<type>Attack</type>
+		<maxrange>0.50</maxrange>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack_melee</anim>
+		<idleanim>Idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="38118">BuildingAttack</name>
+		<type>Attack</type>
+		<rangedlogic>1</rangedlogic>
+		<maxrange>6</maxrange>
+		<rate type="LogicalTypeShipsAndBuildings">1.0</rate>
+		<attackaction>1</attackaction>
+		<speedboost>1</speedboost>
+		<anim>Raze_attack</anim>
+		<idleanim>Raze_idle</idleanim>
+		<projectile>TorchProjectile</projectile>
+		<impacteffect>effects\impacts\torch</impacteffect>
+	</action>
+	<action>
+		<name stringid="38142">TrampleHandAttack</name>
+		<type>Attack</type>
+		<maxrange>0.50</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Attack_trample</anim>
+		<idleanim>Idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="38137">DefendHandAttack</name>
+		<type>Attack</type>
+		<maxrange>0.50</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Attack_melee</anim>
+		<idleanim>Idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="48957">ConvertGuardian</name>
+		<type>ConvertGuardian</type>
+		<active>0</active>
+		<maxrange>16</maxrange>
+		<anim>Pickup</anim>
+		<rate type="Guardian">1.0</rate>
+		<rof>1.000000</rof>
+	</action>
+	<action>
+		<name stringid="90119">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68961">EconomicAura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>4000</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="68961">EconomicAura2</name>
+		<type>AutoRangedModify</type>
+		<maxrange>4000</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>0</active>
+	</action>
+	<!--<action>
+		<name stringid="48954">TreeHP</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<targetenemy>1</targetenemy>
+		<targetgaia>1</targetgaia>
+		<maxrange>3000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>10.00</modifymultiplier>
+		<modifyabstracttype>Tree</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>-->
+	<tactic>
+		Melee
+		<action priority="100">BuildingAttack</action>
+		<action priority="75">GuardianAttack</action>
+		<action priority="25">MeleeHandAttack</action>
+		<action>EconomicAura</action>
+		<action>EconomicAura2</action>
+		<action>AutoGatherCoin</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Trample
+		<speedmodifier>0.5</speedmodifier>
+		<action>AutoGatherCoin</action>
+		<action priority="100">BuildingAttack</action>
+		<action priority="75">GuardianAttack</action>
+		<action priority="25">TrampleHandAttack</action>
+		<action>EconomicAura</action>
+		<action>EconomicAura2</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Highstep</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Defend
+		<action>AutoGatherCoin</action>
+		<action priority="100">BuildingAttack</action>
+		<action priority="75">GuardianAttack</action>
+		<action priority="25">DefendHandAttack</action>
+		<action>EconomicAura</action>
+		<action>EconomicAura2</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+</tactics>

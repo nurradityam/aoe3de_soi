@@ -1,0 +1,233 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>palm a death</definebone>
+	<definebone>palm b death</definebone>
+	<definebone>palm c death</definebone>
+	<definebone>palm1 a death</definebone>
+	<definebone>palm1 b death</definebone>
+	<definebone>palm1 c death</definebone>
+	<definebone>lp palm a death</definebone>
+	<definebone>lp palm b death</definebone>
+	<definebone>lp palm c death</definebone>
+	<definebone>lp palm1 a death</definebone>
+	<definebone>lp palm1 b death</definebone>
+	<definebone>lp palm1 c death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm1_a</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm1_b</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm1_c</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+			<v4>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_a</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+			<v5>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_b</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v5>
+			<v6>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_palm_c</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v6>
+			<v7>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_01</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v7>
+			<v8>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_02</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v8>
+			<v9>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_03</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v9>
+			<v10>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_04</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v10>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm1_a.dmg">
+							<file>terrain\trees\tree_palm1_a_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm1_b.dmg">
+							<file>terrain\trees\tree_palm1_b_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm1_c.dmg">
+							<file>terrain\trees\tree_palm1_c_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+			<v4>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm_a.dmg">
+							<file>terrain\trees\tree_palm_a_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+			<v5>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm_b.dmg">
+							<file>terrain\trees\tree_palm_b_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v5>
+			<v6>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\Damage\tree_palm_c.dmg">
+							<file>terrain\trees\tree_palm_c_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v6>
+			<v7>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_01.dmg">
+							<file>Terrain\trees\tree_borneo_palm_01_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v7>
+			<v8>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_02.dmg">
+							<file>Terrain\trees\tree_borneo_palm_02_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v8>
+			<v9>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_03.dmg">
+							<file>Terrain\trees\tree_borneo_palm_03_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v9>
+			<v10>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_04.dmg">
+							<file>Terrain\trees\tree_borneo_palm_04_death</file>
+						</assetreference>
+					</normal>
+				</logic>
+			</v10>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

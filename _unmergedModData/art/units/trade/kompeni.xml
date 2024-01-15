@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_hat</definebone>
+	<definebone>bone_gun</definebone>
+	<definebone>bone_cloak</definebone>
+	<definebone>SPINE1</definebone>
+	<definebone>bip01 Prop1</definebone>
+	<attachment>
+		hat
+		<component>
+			hat
+			<assetreference type="GrannyModel">
+				<file>soi\3d_models\european_shako\shako_kompeni</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>hat</component>
+		</anim>
+	</attachment>
+	<attachment>
+		torch
+		<include>effects\projectiles\torch.xml</include>
+	</attachment>
+	<attachment>
+		gun
+		<component>
+			gun
+			<assetreference type="GrannyModel">
+				<file>units\infantry_ranged\colonial_militia\colonial_militia_gun</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>gun</component>
+		</anim>
+	</attachment>
+	<attachment>
+		epaulettes
+		<component>
+			epaulettes
+			<assetreference type="GrannyModel">
+				<file>soi\3d_models\european_epaulettes\epaulettes_kompeni</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>epaulettes</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\infantry_ranged\colonial_militia\colonial_militia</file>
+						<replacetexture>
+							<from>units\infantry_ranged\colonial_militia\colonial_militia</from>
+							<to>units\javanese_infantry\kompeni\kompeni</to>
+						</replacetexture>
+						<replacetexture>
+							<from>units\infantry_ranged\colonial_militia\colonial_militia_b</from>
+							<to>units\javanese_infantry\kompeni\kompeni_b</to>
+						</replacetexture>
+				</assetreference>
+			</normal>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+		<attach a="gun" frombone="bone_gun" tobone="bip01 Prop1" syncanims="0"/>
+		<attach a="epaulettes" frombone="bone_cloak" tobone="SPINE1" syncanims="0"/>
+		<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\idle_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\walk_crossbow_upper</file>
+			<file>animation_library\shared\walk_generic_lower</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

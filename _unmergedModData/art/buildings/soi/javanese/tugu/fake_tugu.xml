@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone01</definebone>
+	<attachment>
+        body
+			<include>buildings\soi\javanese\tugu\tugu_building.xml</include>
+	</attachment>
+	<component>
+	 	ModelComp
+               <assetreference type="GrannyModel">
+					<file>buildings\soi\javanese\tugu\60</file>
+               </assetreference>
+		<attach a="body" frombone="whatever" tobone="Bone01" syncanims="1"/>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<component>ModelComp</component>
+	</anim>
+</animfile>

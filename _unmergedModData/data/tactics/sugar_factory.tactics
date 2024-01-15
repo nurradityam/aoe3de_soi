@@ -1,0 +1,42 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="68971">SpawnFoodMangkunegara</name>
+		<type>Maintain</type>
+		<rate type="CrateofFoodJava">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">SpawnWoodMangkunegara</name>
+		<type>Maintain</type>
+		<rate type="CrateofWoodJava">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="68971">SpawnCoinMangkunegara</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoinJava">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69776">SpawnCrates</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoinLarge">1</rate>
+		<rate type="CrateofWoodLarge">1</rate>
+		<rate type="CrateofFoodLarge">1</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		Normal
+		<action>SpawnFoodMangkunegara</action>
+		<action>SpawnWoodMangkunegara</action>
+		<action>SpawnCoinMangkunegara</action>
+		<action>SpawnCrates</action>
+	</tactic>
+</tactics>

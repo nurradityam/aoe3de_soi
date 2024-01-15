@@ -1,0 +1,52 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>HS Bone Hoof Back Rt</definebone>
+	<definebone>HS Bone Hoof Back Lt</definebone>
+	<definebone>HS Bone Master</definebone>
+	<attachment>
+		Horse_Debris
+		<anim>
+			Idle
+			<component/>
+		</anim>
+	</attachment>
+	<attachment>
+		Horse_Dust
+		<anim>
+			Idle
+			<component/>
+		</anim>
+	</attachment>
+	<component>
+		covered_wagon_horse
+		<assetreference type="GrannyModel">
+			<file>units\villagers\covered_wagon\covered_wagon_horse</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_idle_generic_a</file>
+		</assetreference>
+		<component>covered_wagon_horse</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_bored_generic_a</file>
+		</assetreference>
+		<component>covered_wagon_horse</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_canter_generic_a</file>
+		</assetreference>
+		<component>covered_wagon_horse</component>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+	</anim>
+</animfile>

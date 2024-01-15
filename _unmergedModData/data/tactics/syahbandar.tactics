@@ -1,0 +1,254 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="69158">SpawnInvisibleA</name>
+		<type>Maintain</type>
+		<rate type="SInvisibleA">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnInvisibleB</name>
+		<type>Maintain</type>
+		<rate type="SInvisibleB">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnInvisibleC</name>
+		<type>Maintain</type>
+		<rate type="SInvisibleC">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnInvisibleD</name>
+		<type>Maintain</type>
+		<rate type="SInvisibleD">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="69158">SpawnFood1</name>
+		<type>Maintain</type>
+		<rate type="CrateofFood">3.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnFood2a</name>
+		<type>Maintain</type>
+		<rate type="CrateofFoodLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnFood2b</name>
+		<type>Maintain</type>
+		<rate type="CrateofFood">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnFood3a</name>
+		<type>Maintain</type>
+		<rate type="CrateofFoodLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnFood3b</name>
+		<type>Maintain</type>
+		<rate type="CrateofFood">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnFood4</name>
+		<type>Maintain</type>
+		<rate type="CrateofFoodLarge">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood1</name>
+		<type>Maintain</type>
+		<rate type="CrateofWood">3.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood2a</name>
+		<type>Maintain</type>
+		<rate type="CrateofWoodLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood2b</name>
+		<type>Maintain</type>
+		<rate type="CrateofWood">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood3a</name>
+		<type>Maintain</type>
+		<rate type="CrateofWoodLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood3b</name>
+		<type>Maintain</type>
+		<rate type="CrateofWood">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnWood4</name>
+		<type>Maintain</type>
+		<rate type="CrateofWoodLarge">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin1</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">3.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin2a</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoinLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin2b</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin3a</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoinLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin3b</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnCoin4</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoinLarge">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	
+	<action>
+		<name stringid="69158">BonusGoat1</name>
+		<type>Maintain</type>
+		<rate type="ypGoat">3.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">BonusGoat2</name>
+		<type>Maintain</type>
+		<rate type="ypGoat">4.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">BonusGoat3</name>
+		<type>Maintain</type>
+		<rate type="ypGoatFat">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">BonusWaterBuffalo</name>
+		<type>Maintain</type>
+		<rate type="ypWaterBuffalo">2.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="48954">SaudagarHP</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>3000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>2.00</modifymultiplier>
+		<modifyprotoid>SSaudagar</modifyprotoid>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>SaudagarHP</action>
+		<action>SpawnInvisibleA</action>
+		<action>SpawnInvisibleB</action>
+		<action>SpawnInvisibleC</action>
+		<action>SpawnInvisibleD</action>
+		<action>SpawnFood1</action>
+		<action>SpawnFood2a</action>
+		<action>SpawnFood2b</action>
+		<action>SpawnFood3a</action>
+		<action>SpawnFood3b</action>
+		<action>SpawnFood4</action>
+		<action>SpawnWood1</action>
+		<action>SpawnWood2a</action>
+		<action>SpawnWood2b</action>
+		<action>SpawnWood3a</action>
+		<action>SpawnWood3b</action>
+		<action>SpawnWood4</action>
+		<action>SpawnCoin1</action>
+		<action>SpawnCoin2a</action>
+		<action>SpawnCoin2b</action>
+		<action>SpawnCoin3a</action>
+		<action>SpawnCoin3b</action>
+		<action>SpawnCoin4</action>
+		<action>BonusGoat1</action>
+		<action>BonusGoat2</action>
+		<action>BonusGoat3</action>
+		<action>BonusWaterBuffalo</action>
+	</tactic>
+</tactics>

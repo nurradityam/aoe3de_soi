@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>09928</nameID>
+   <tooltipID>09929</tooltipID>
+   <forcedciv>Priangan</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_priangan</icon>
+   <chatset>akbar</chatset>
+   <playerNames>
+      <nameID>09928<civ>Priangan</civ></nameID> 
+	</playerNames>
+</AI>

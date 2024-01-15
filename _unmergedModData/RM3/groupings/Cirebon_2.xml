@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>19</width>
+	<height>11</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="76" posx ="-6.8521" posz ="-7.1852" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="3.1356" posz ="-7.1979" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="229" posx ="-8.0814" posz ="-7.1739" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="6" posx ="7.1862" posz ="-7.1973" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="229" posx ="8.5656" posz ="-7.3228" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="-2.7775" posz ="-7.2047" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeWallCirebon</unit>
+		<unit variation ="177" posx ="-0.3873" posz ="-7.1476" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJavaGate1</unit>
+		<unit variation ="217" posx ="-12.4173" posz ="-4.4768" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SocketCirebon</unit>
+		<unit variation ="20" posx ="-2.9085" posz ="-5.1810" orientx ="0.9235" orienty ="0.0000" orientz ="0.3835">SNativeVillager</unit>
+		<unit variation ="180" posx ="2.8206" posz ="-5.5614" orientx ="0.6954" orienty ="0.0000" orientz ="0.7186">SNativeTree1</unit>
+		<unit variation ="240" posx ="2.1774" posz ="-4.7567" orientx ="-0.9766" orienty ="0.0000" orientz ="-0.2152">SNativeVillager</unit>
+		<unit variation ="0" posx ="0.2690" posz ="-4.9766" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock1</unit>
+		<unit variation ="76" posx ="-9.5904" posz ="-4.3673" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeWallCirebon</unit>
+		<unit variation ="76" posx ="10.0250" posz ="-4.4608" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">SNativeWallCirebon</unit>
+		<unit variation ="214" posx ="6.5220" posz ="-4.4876" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativePendapaCirebon</unit>
+		<unit variation ="170" posx ="-5.6728" posz ="-4.4857" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativePendapaCirebon</unit>
+		<unit variation ="95" posx ="2.9007" posz ="-2.3102" orientx ="-0.9547" orienty ="0.0000" orientz ="-0.2975">SNativeVillager</unit>
+		<unit variation ="56" posx ="0.1418" posz ="-2.8984" orientx ="-0.0669" orienty ="0.0000" orientz ="-0.9978">ypSMShaolinAccessory</unit>
+		<unit variation ="193" posx ="-2.5703" posz ="-0.2065" orientx ="-0.7012" orienty ="0.0000" orientz ="-0.7129">SNativeVillager</unit>
+		<unit variation ="250" posx ="-3.5545" posz ="-0.0765" orientx ="0.6784" orienty ="0.0000" orientz ="-0.7347">SNativeVillager</unit>
+		<unit variation ="170" posx ="-12.7345" posz ="0.6799" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativeJawa</unit>
+		<unit variation ="194" posx ="9.9730" posz ="-0.3186" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="-9.5666" posz ="-0.3399" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeWallCirebon</unit>
+		<unit variation ="166" posx ="0.1414" posz ="0.9405" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeKasepuhan</unit>
+		<unit variation ="208" posx ="2.9521" posz ="0.9654" orientx ="-0.3042" orienty ="0.0000" orientz ="-0.9526">SNativeVillager</unit>
+		<unit variation ="154" posx ="4.0828" posz ="0.1534" orientx ="-0.9981" orienty ="0.0000" orientz ="-0.0620">SNativeTree1</unit>
+		<unit variation ="60" posx ="-6.1004" posz ="2.2765" orientx ="-0.0000" orienty ="0.0000" orientz ="1.0000">SNativeKasepuhan</unit>
+		<unit variation ="252" posx ="6.1174" posz ="2.5945" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeKasepuhan</unit>
+		<unit variation ="193" posx ="0.1695" posz ="2.6502" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeKasepuhan</unit>
+		<unit variation ="157" posx ="-8.8951" posz ="2.9758" orientx ="0.9337" orienty ="0.0000" orientz ="0.3582">SNativeTree1</unit>
+		<unit variation ="76" posx ="-9.5854" posz ="3.7561" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeWallCirebon</unit>
+		<unit variation ="153" posx ="-12.7793" posz ="4.1259" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="76" posx ="10.0065" posz ="3.7573" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0001">SNativeWallCirebon</unit>
+		<unit variation ="250" posx ="-2.0915" posz ="5.6044" orientx ="-0.1683" orienty ="0.0000" orientz ="-0.9857">SNativeTree1</unit>
+		<unit variation ="76" posx ="-6.8084" posz ="6.4843" orientx ="0.0001" orienty ="0.0000" orientz ="1.0000">SNativeWallCirebon</unit>
+		<unit variation ="76" posx ="7.2312" posz ="6.5256" orientx ="0.0001" orienty ="0.0000" orientz ="1.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="2.9985" posz ="6.4666" orientx ="0.0001" orienty ="0.0000" orientz ="1.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="-2.7546" posz ="6.4242" orientx ="0.0001" orienty ="0.0000" orientz ="1.0000">SNativeWallCirebon</unit>
+		<unit variation ="243" posx ="0.1563" posz ="6.4367" orientx ="0.0001" orienty ="0.0000" orientz ="1.0000">SNativeWallCirebon</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\props\east_colony">
+			<block startx ="-5" startz ="-3" endx ="-5" endz ="1"></block>
+			<block startx ="-4" startz ="-3" endx ="-4" endz ="2"></block>
+			<block startx ="-3" startz ="-3" endx ="-3" endz ="2"></block>
+			<block startx ="-2" startz ="-3" endx ="-2" endz ="2"></block>
+			<block startx ="-1" startz ="-3" endx ="-1" endz ="2"></block>
+			<block startx ="0" startz ="-3" endx ="0" endz ="2"></block>
+			<block startx ="1" startz ="-3" endx ="1" endz ="2"></block>
+			<block startx ="2" startz ="-3" endx ="2" endz ="2"></block>
+			<block startx ="3" startz ="-3" endx ="3" endz ="1"></block>
+			<block startx ="4" startz ="-3" endx ="4" endz ="0"></block>
+		</tilegroup>
+	</tiles>
+</grouping>

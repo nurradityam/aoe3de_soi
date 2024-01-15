@@ -1,0 +1,19 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="68961">EconomicAuraKM</name>
+		<type>AutoRangedModify</type>
+		<maxrange>15</maxrange>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>2.0</modifymultiplier>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>EconomicAuraKM</action>
+	</tactic>
+</tactics>

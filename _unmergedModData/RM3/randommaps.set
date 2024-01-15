@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<randomMaps displayNameID="19836" imagepath="ui\random_map\all_maps" helpTextID="18609" cannotReplace="">
+  <!--Experiment: doubling the old entries so I can triple the new entries, thus giving the newer Y-pack maps a better chance to show up in the now very large mix when players get their cool new expansion. Ideally we'd delete the third entry of each triple for a future patch once the maps have had some circulation. -->
+  <map>Amazonia</map>
+  <map>Amazonia</map>
+  <map>Bayou</map>
+  <map>Bayou</map>
+  <map>Caribbean</map>
+  <map>Caribbean</map>
+  <map>Carolina</map>
+  <map>Carolina</map>
+  <map>Great Lakes</map>
+  <map>Great Lakes</map>
+  <map>Great Plains</map>
+  <map>Great Plains</map>
+  <map>New England</map>
+  <map>New England</map>
+  <map>Pampas</map>
+  <map>Pampas</map>
+  <map>Patagonia</map>
+  <map>Patagonia</map>
+  <map>Rockies</map>
+  <map>Rockies</map>
+  <map>Saguenay</map>
+  <map>Saguenay</map>
+  <map>Sonora</map>
+  <map>Sonora</map>
+  <map>Texas</map>
+  <map>Texas</map>
+  <map>Yucatan</map>
+  <map>Yucatan</map>
+  <map>Yukon</map>
+  <map>Yukon</map>
+  <map>Andes</map>
+  <map>Andes</map>
+  <map>California</map>
+  <map>California</map>
+  <map>Plymouth</map>
+  <map>Plymouth</map>
+  <map>Ozarks</map>
+  <map>Ozarks</map>
+  <map>Northwest Territory</map>
+  <map>Northwest Territory</map>
+  <map>Hispaniola</map>
+  <map>Hispaniola</map>
+  <map>Araucania</map>
+  <map>Araucania</map>
+  <map>Unknown</map>
+  <map>Unknown</map>
+  <map>Painted Desert</map>
+  <map>Painted Desert</map>
+  <map>Ceylon</map>
+  <map>Ceylon</map>
+  <map>Ceylon</map>
+  <map>Siberia</map>
+  <map>Siberia</map>
+  <map>Siberia</map>
+  <map>Mongolia</map>
+  <map>Mongolia</map>
+  <map>Mongolia</map>
+  <map>borneo</map>
+  <map>borneo</map>
+  <map>borneo</map>
+  <map>deccan</map>
+  <map>deccan</map>
+  <map>deccan</map>
+  <map>Honshu</map>
+  <map>Honshu</map>
+  <map>Honshu</map>
+  <map>Himalayas</map>
+  <map>Himalayas</map>
+  <map>Himalayas</map>
+  <map>silkRoad</map>
+  <map>silkRoad</map>
+  <map>silkRoad</map>
+  <map>yellow riverDry</map>
+  <map>yellow riverDry</map>
+  <map>yellow riverDry</map>
+  <map>indochina</map>
+  <map>indochina</map>
+  <map>indochina</map>
+  <map>Alas Purwa</map>
+  <map>Bengawan Solo</map>
+  <map>Great Post Road</map>
+  <map>Jayakarta</map>
+  <map>Kali Opak</map>
+  <map>Muria</map>
+  <map>Parahyangan</map>
+  <map>Pulau Seribu</map>
+  <map>Rainforest</map>
+  <map>Rawa Pening</map>
+  <map>Segara Kidul</map>
+  <map>Serang</map>
+  <map>Surabaya</map>
+  <map>Alas Purwa</map>
+  <map>Bengawan Solo</map>
+  <map>Great Post Road</map>
+  <map>Jayakarta</map>
+  <map>Kali Opak</map>
+  <map>Muria</map>
+  <map>Parahyangan</map>
+  <map>Pulau Seribu</map>
+  <map>Rainforest</map>
+  <map>Rawa Pening</map>
+  <map>Segara Kidul</map>
+  <map>Serang</map>
+  <map>Surabaya</map>
+  <map>Pasai</map>
+  <map>Pasai</map>
+</randomMaps>

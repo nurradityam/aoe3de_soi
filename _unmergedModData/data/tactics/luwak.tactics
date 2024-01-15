@@ -1,0 +1,46 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="69149">AutoGatherTrade</name>
+		<type>AutoGather</type>
+		<donotautogatherunlessgathering>1</donotautogatherunlessgathering>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="42178">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="Plantation">1.0</rate>
+		<rate type="Farm">1.0</rate>
+		<rate type="Mill">1.0</rate>
+		<rate type="BerryBush">1.0</rate>
+		<rate type="ypBerryBuilding">1.0</rate>
+		<rate type="ypGroveBuilding">1.0</rate>
+		<rate type="ypRicePaddy">1.0</rate>
+	</action>
+	<action>
+		<name stringid="38134">HandAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttack</anim>
+		<maxrange>0.75</maxrange>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<tactic>
+		Normal
+		<speedmodifier>1.0</speedmodifier>
+		<action>Gather</action>
+		<action>AutoGatherTrade</action>
+		<action priority="25">HandAttack</action>
+		<attacktype>LogicalTypeVillagersAttack</attacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+	</tactic>
+</tactics>

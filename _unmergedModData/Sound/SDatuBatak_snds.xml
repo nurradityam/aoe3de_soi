@@ -1,0 +1,28 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SDatuBatak">
+		<soundtype name="Select">
+			<soundset name="Toba_Datu_Select"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="KanyenkeGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="KanyenkeDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="SettlerBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="Toba_Datu_Acknowledge"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="Toba_Datu_Attack"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

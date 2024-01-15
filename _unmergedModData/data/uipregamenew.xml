@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+	<gadget name="MainMenu" type="gadget" size1024="0 0 1024 768" background="ui\soi\background" z="5">
+		<gadget name="MainMenuOptions" type="gadget" z="40">
+			<gadget name="AoCButton" type="stateButton" size1024="381 252 637 316" bevelbutton="" z="14" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255">
+				$$09939$$Age of Crusades
+				<command>gadgetReal("AoCSubMenu") gadgetUnReal("SinglePlayerSubMenu")  gadgetUnReal("MultiplayerSubMenu") gadgetUnReal("HelpAndToolsSubMenu") </command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="SinglePlayerButton" type="stateButton" size1024="381 304 637 368" bevelbutton="" z="13" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255">
+				$$19827$$Singleplayer
+				<command>gadgetReal("SinglePlayerSubMenu") gadgetUnReal("MultiplayerSubMenu") gadgetUnReal("AoCSubMenu") gadgetUnReal("HelpAndToolsSubMenu") </command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="MultiplayerButton" type="stateButton" size1024="381 352 637 416" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255">
+				$$19828$$Multiplayer
+				<command>gadgetReal("MultiplayerSubMenu")gadgetUnReal("SinglePlayerSubMenu") gadgetUnReal("AoCSubMenu") gadgetUnReal("HelpAndToolsSubMenu") </command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndToolsButton" type="stateButton" size1024="381 400 637 464" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255">
+				$$35538$$Help and Tools
+				<command>gadgetReal("HelpAndToolsSubMenu") gadgetUnReal("SinglePlayerSubMenu") gadgetUnReal("MultiplayerSubMenu") gadgetUnReal("AoCSubMenu") </command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="ExitButton" type="stateButton" size1024="448 448 576 512" bevelbutton="" z="16" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255">
+				$$19831$$Exit        
+				<command>exit(true)</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+		</gadget>
+		<gadget name="AoCSubMenu" type="dialog" windowzstyle="" size1024="0 0 1024 768" background="ui\soi\background_about" hidden="" dialogdefaultbuttonindex="0" dialogescapebuttonindex="0">
+			<gadget name="AboutBox-Close" type="stateButton" size1024="448 551 576 615" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="">
+				$$18457$$Close
+				<command>gadgetUnReal("AoCSubMenu")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="AoCText" type="gadget" size1024="233 240 793 545">
+				<gadget name="AoC-versiontext" type="formatText" textfont="AboutBoxVersion" textfontsize="18" textcolor="0 0 0" size1024="233 240 793 260" textwrapon="" formattextusedatareplace="">$$09936$$Struggle of Indonesia, version </gadget>
+				<gadget name="AoC-text" textwrapon="" type="formatText" textfont="AboutBoxVersion" textfontsize="18" textcolor="0 0 0" size1024="233 270 793 515">$$09937$$</gadget>
+				<gadget name="AoC-signature" type="formatText" textfont="AboutBoxVersion" textfontsize="18" textcolor="0 0 0" size1024="233 405 793 535" textwrapon="" formattextusedatareplace="">$$09938$$Mahidevran</gadget>
+			</gadget>
+		</gadget>
+		<gadget name="SinglePlayerSubMenu" type="gadget" size1024="277 465 502 652" hidden="" tileBackground="" texturecoords="0 0 .87890625 1" z="20">
+			<gadget name="SinglePlayerButton" type="stateButton" size1024="381 304 637 368" bevelbutton="" z="5" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35536$$Play a story-driven series of scenarios or play a random map game against computer opponents">
+				$$91034$$Singleplayer
+				<command>gadgetUnReal("SinglePlayerSubMenu")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="Practice-CustomButton" type="stateButton" size1024="616 303 872 367" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35547$$Play a random map game against computer opponents">
+				$$21088$$Skirmish
+				<command>doSPSetup()</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="CustomScenario-CustomButton" type="stateButton" size1024="616 352 872 416" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35549$$Load a Custom Scenario">
+				$$35548$$Custom Scenario
+				<command>gadgetUnReal("SinglePlayerSubMenu") uiOpenScenarioBrowser</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="LoadSaved-CustomButton" type="stateButton" size1024="616 400 872 464" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35550$$Load a Game that was Saved Previously">
+				$$19837$$Load Saved Game
+				<command>gadgetUnReal("SinglePlayerSubMenu") uiOpenSavedGameBrowser</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+		</gadget>
+		<gadget name="MultiplayerSubMenu" type="gadget" size1024="381 352 637 416" hidden="" tileBackground="" texturecoords="0 0 .87890625 1" z="20">
+			<gadget name="MultiplayerSubMenu-MultiplayerButton" type="stateButton" size1024="381 352 637 416" bevelbutton="" z="5" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35537$$Play a random map game with human players">
+				$$19828$$Multiplayer
+				<command>gadgetUnReal("MultiplayerSubMenu")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="Multiplayer-SinglePlayerButton" type="stateButton" size1024="616 352 872 416" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35551$$Play over the Internet using Ensemble Studios Online">
+				$$43301$$ES Online
+				<command>gadgetUnReal("MultiplayerSubMenu") doMPSetup(true)</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="Multiplayer-MultiPlayerButton" type="stateButton" size1024="616 400 872 464" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35552$$Play over a Local Area Network">
+				$$19024$$LAN
+				<command>gadgetUnReal("MultiplayerSubMenu") doMPSetup(false)</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+		</gadget>
+		<gadget name="HelpAndToolsSubMenu" type="gadget" size1024="779 368 1003 652" hidden="" tileBackground="" texturecoords="0 0 .87890625 1" z="20">
+			<gadget name="HelpAndToolsSubMenu-HelpAndToolsButton" type="stateButton" size1024="381 400 637 464" bevelbutton="" z="5" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35539$$Age III Tools">
+				$$35538$$Help and Tools
+				<command>gadgetUnReal("HelpAndToolsSubMenu")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-EditorButton" type="stateButton" size1024="616 400 872 464" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35556$$Design your own scenarios">
+				$$35555$$Scenario Editor
+				<command>startRandomGame(true)</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-ReplayButton" type="stateButton" size1024="616 448 872 512" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$41755$$Replay previously recorded games">
+				$$41754$$Recorded Games
+				<command>gadgetUnReal("HelpAndToolsSubMenu") uiOpenRecordGameBrowser</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-OptionsButton" type="stateButton" size1024="616 496 872 560" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35557$$Change your game options">
+				$$19829$$Options
+				<command>gadgetUnReal("HelpAndToolsSubMenu") modeEnter("Options")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-HistoryButton" type="stateButton" size1024="616 544 872 608" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35560$$View the History of the AOEIII time-period">
+				$$19789$$History
+				<command>modeEnter("History")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-CreditsButton" type="stateButton" size1024="616 592 872 656" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$35561$$View the Credits for AOEIII">
+				$$19841$$Credits
+				<command>gadgetUnReal("HelpAndToolsSubMenu") modeEnter("Credits")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+			<gadget name="HelpAndTools-AboutButton" type="stateButton" size1024="616 640 872 704" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$18447$$About AOEIII">
+				$$35562$$About
+				<command>gadgetUnReal("HelpAndToolsSubMenu") gadgetReal("AboutBox")</command>
+				<stateentry background="ui\soi\buttons\paper_button_normal"/>
+				<stateentry background="ui\soi\buttons\paper_button_click"/>
+				<stateentry background="ui\soi\buttons\paper_button_high"/>
+				<stateentry background=""/>
+			</gadget>
+		</gadget>
+	</gadget>
+	<gadget name="AboutBox" type="dialog" windowzstyle="" size1024="0 0 1024 768" backgroundcolor="0 0 0" backgroundalpha="0.5" hidden="" dialogdefaultbuttonindex="0" dialogescapebuttonindex="0">
+		<gadget name="AboutBox-Background" type="gadget" size1024="120 32 912 728" background="ui\ingame\ingame_ui_parch" tilebackground="" z="1">
+			<gadget tilebackgroundhoriz="" name="objectivesdialog-BordersTop" type="gadget" background="ui\ingame\ui_postgame_heavyborder_top" size1024="248 32 784 96"/>
+			<gadget tilebackgroundhoriz="" name="objectivesdialog-BordersBottom" type="gadget" background="ui\ingame\ui_postgame_heavyborder_bottom" size1024="248 664 784 728"/>
+			<gadget tilebackgroundvert="" name="objectivesdialog-BordersLeft" type="gadget" background="ui\ingame\ui_postgame_heavyborder_left" size1024="120 160 184 672"/>
+			<gadget tilebackgroundvert="" name="objectivesdialog-BordersRight" type="gadget" background="ui\ingame\ui_postgame_heavyborder_right" size1024="848 160 912 672"/>
+			<gadget name="objectivesdialog-BordersLeftTop" type="gadget" background="ui\ingame\ui_postgame_heavyborder_topleft" size1024="120 32 248 160" z="11"/>
+			<gadget name="objectivesdialog-BordersLeftBottom" type="gadget" background="ui\ingame\ui_postgame_heavyborder_bottomleft" size1024="120 600 248 728" z="12"/>
+			<gadget name="objectivesdialog-BordersRightBottom" type="gadget" background="ui\ingame\ui_postgame_heavyborder_bottomright" size1024="784 600 912 728" z="12"/>
+			<gadget name="objectivesdialog-BordersRightTop" type="gadget" background="ui\ingame\ui_postgame_heavyborder_topright" size1024="784 32 912 160" z="12"/>
+		</gadget>
+		<gadget name="AboutBox-Close" type="stateButton" size1024="396 646 524 710" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="">
+			$$18457$$Close
+			<command>gadgetUnReal("AboutBox")</command>
+			<stateentry background="ui\soi\buttons\paper_button_normal"/>
+			<stateentry background="ui\soi\buttons\paper_button_click"/>
+			<stateentry background="ui\soi\buttons\paper_button_high"/>
+			<stateentry background="ui\soi\buttons\paper_button_click"/>
+		</gadget>
+		<gadget name="AboutBox-versiontext" type="formatText" textfont="AboutBoxVersion" textfontsize="18" textcolor="0 0 0" size1024="183 86 836 114" textwrapon="" formattextusedatareplace="">$$18459$$Age of Mythology, version {gameVersion}</gadget>
+		<gadget name="AboutBox-copyrighttext" textwrapon="" type="formatText" textfont="AboutBoxCopyright" textfontsize="18" textcolor="0 0 0" size1024="183 120 836 147">$$18460$$</gadget>
+		<gadget name="AboutBox-warningtext" textwrapon="" type="formatText" textfont="AboutBoxWarning" textfontsize="16" textcolor="0 0 0" size1024="183 248 837 338">$$19290$$Warning:  This computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.</gadget>
+		<gadget name="AboutBox-longlegaltext" textwrapon="" type="formatText" textfont="AboutBoxWarning" textfontsize="16" textcolor="0 0 0" size1024="183 151 839 241">$$42279$$Microsoft, Age of Empires, DirectX, Ensemble Studios, the Microsoft Game Studios logo, and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</gadget>
+		<gadget name="AboutBox-Grannytext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="0 0 0" size1024="183 372 836 409">$$18463$$</gadget>
+		<gadget name="AboutBox-Divxtext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="0 0 0" size1024="183 410 836 447">$$18462$$Uses Bink Video. Copyright (C) 1997-2002 by RAD Game Tools, Inc.</gadget>
+		<gadget name="AboutBox-libjpegtext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="0 0 0" size1024="183 531 836 583">$$20113$$This software is based in part on the work of the Independent JPEG Group.</gadget>
+		<gadget name="AboutBox-Havok" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="0 0 0" size1024="183 448 836 530">$$37435$$Uses Havok</gadget>
+		<gadget name="AboutBox-PID" textwrapon="" type="formatText" textfont="AboutBoxPID" textfontsize="14" textcolor="0 0 0" size1024="183 589 836 641" formattextusedatareplace="">$$20116$$Product ID {ProductID}</gadget>
+	</gadget>
+	<gadget name="VersionString" type="gadget" size1024="45 743 230 767" textcolor="255 255 255" textfont="AboutBoxEntry" textfontsize="14" z="100"/>
+	<gadget name="RegisteredString" type="gadget" size1024="22 201 400 228" textcolor="255 255 255" textfont="AboutBoxEntry" textfontsize="14" z="100"/>
+</layout>

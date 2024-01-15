@@ -1,0 +1,23 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>fly_bone_01</definebone>
+	<definebone>fly_bone_02</definebone>
+	<definebone>fly_bone_03</definebone>
+	<definebone>fly_bone_04</definebone>
+	<definebone>fly_bone_05</definebone>
+	<definebone>fly_bone_06</definebone>
+	<component>
+		Saltpeter_accessories
+			<assetreference type="GrannyModel">
+				<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_flies</file>
+			</assetreference>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>buildings\asian_civs\spc\saltpeter_site\saltpeter_flies_anim</file>
+		</assetreference>
+		<component>Saltpeter_accessories</component>
+	</anim>
+</animfile>

@@ -1,0 +1,18 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SPedati">
+		<soundtype name="Select">
+			<soundset name="WBuffaloSelect"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="WBuffaloDeath"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<soundset name="WBuffaloMove"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="WBuffaloSelect"/>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

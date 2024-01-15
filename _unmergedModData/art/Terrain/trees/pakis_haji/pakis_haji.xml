@@ -1,0 +1,127 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>borneo_palm_01_death</definebone>
+	<definebone>borneo_palm_02_death</definebone>
+	<definebone>borneo_palm_03_death</definebone>
+	<definebone>borneo_palm_04_death</definebone>
+	<definebone>borneo_palm_lp_01_death</definebone>
+	<definebone>borneo_palm_lp_02_death</definebone>
+	<definebone>borneo_palm_lp_03_death</definebone>
+	<definebone>borneo_palm_lp_04_death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_01</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_02</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_03</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_01.dmg">
+							<file>Terrain\trees\tree_borneo_palm_01_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_02.dmg">
+							<file>Terrain\trees\tree_borneo_palm_02_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_03.dmg">
+							<file>Terrain\trees\tree_borneo_palm_03_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\pakis_haji\pakis_haji</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

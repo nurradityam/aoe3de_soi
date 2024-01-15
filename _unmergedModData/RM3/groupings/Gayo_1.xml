@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>14</width>
+	<height>14</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="25" posx ="3.9986" posz ="-8.8211" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SocketGayo</unit>
+		<unit variation ="13" posx ="-10.3574" posz ="-8.7475" orientx ="-0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="108" posx ="-4.3148" posz ="-9.4800" orientx ="0.9641" orienty ="0.0000" orientz ="0.2657">SNativeGayoFence</unit>
+		<unit variation ="14" posx ="-5.9961" posz ="-7.0745" orientx ="-0.7071" orienty ="0.0000" orientz ="-0.7071">PropsNative</unit>
+		<unit variation ="189" posx ="-9.0353" posz ="-9.1026" orientx ="-0.9976" orienty ="0.0000" orientz ="0.0685">TreeGreatPlainsGrassGreen</unit>
+		<unit variation ="0" posx ="-4.9855" posz ="-8.6151" orientx ="-0.0006" orienty ="0.0000" orientz ="-1.0000">SPCPathBlock3</unit>
+		<unit variation ="0" posx ="-11.9329" posz ="-4.1955" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0012">SPCPathBlock3</unit>
+		<unit variation ="7" posx ="-8.2713" posz ="-6.4061" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="5" posx ="-7.2202" posz ="-5.5651" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="6" posx ="0.8317" posz ="-5.4563" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="169" posx ="-8.7564" posz ="-6.2246" orientx ="-0.9850" orienty ="0.0000" orientz ="-0.1728">SNativeMalayGatherer</unit>
+		<unit variation ="76" posx ="-10.2531" posz ="-6.2746" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="66" posx ="-7.8048" posz ="-5.1249" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="1" posx ="1.1781" posz ="-4.8891" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="13" posx ="6.3516" posz ="-4.2673" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="13" posx ="-12.6153" posz ="-3.5865" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">PropsNative</unit>
+		<unit variation ="225" posx ="-0.3291" posz ="-4.1009" orientx ="-0.9776" orienty ="0.0000" orientz ="-0.2103">SNativeMalayVillager</unit>
+		<unit variation ="238" posx ="-2.2168" posz ="-4.8589" orientx ="0.7069" orienty ="0.0000" orientz ="0.7073">SNativeMalayVillager</unit>
+		<unit variation ="119" posx ="-11.6617" posz ="-3.5879" orientx ="0.9018" orienty ="0.0000" orientz ="-0.4321">SNativeMalayGatherer</unit>
+		<unit variation ="76" posx ="-10.6217" posz ="-3.9122" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="186" posx ="3.6959" posz ="-0.9088" orientx ="-0.9239" orienty ="0.0000" orientz ="-0.3827">SNativeGayo</unit>
+		<unit variation ="0" posx ="10.1511" posz ="-0.1314" orientx ="-0.9239" orienty ="0.0000" orientz ="0.3827">SPCPathBlock3</unit>
+		<unit variation ="13" posx ="10.7738" posz ="-0.9529" orientx ="0.9239" orienty ="0.0000" orientz ="-0.3827">PropsNative</unit>
+		<unit variation ="226" posx ="-1.3879" posz ="-2.7527" orientx ="-0.0458" orienty ="0.0000" orientz ="-0.9990">SNativeMalayVillager</unit>
+		<unit variation ="1" posx ="8.4775" posz ="-1.2792" orientx ="0.6672" orienty ="-0.0055" orientz ="0.7449">SNativeHorse</unit>
+		<unit variation ="43" posx ="-6.5004" posz ="0.9654" orientx ="0.7071" orienty ="0.0000" orientz ="-0.7071">SNativeGayo</unit>
+		<unit variation ="181" posx ="-12.4251" posz ="-0.3141" orientx ="-0.0236" orienty ="0.0000" orientz ="0.9997">TreeGreatPlainsGrassGreen</unit>
+		<unit variation ="7" posx ="0.6246" posz ="1.3143" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="78" posx ="8.8551" posz ="-0.5974" orientx ="-0.6713" orienty ="0.0000" orientz ="-0.7412">TreeGreatPlainsGrass</unit>
+		<unit variation ="5" posx ="0.7903" posz ="2.0873" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">PropsNative</unit>
+		<unit variation ="2" posx ="8.3540" posz ="2.9865" orientx ="-0.7071" orienty ="0.0000" orientz ="-0.7071">PropsNative</unit>
+		<unit variation ="13" posx ="-11.1233" posz ="1.9691" orientx ="-0.9239" orienty ="0.0000" orientz ="0.3827">PropsNative</unit>
+		<unit variation ="3" posx ="-2.5886" posz ="1.4866" orientx ="0.2622" orienty ="0.0000" orientz ="-0.9650">SNativeGayoStoryTelling</unit>
+		<unit variation ="146" posx ="9.5533" posz ="1.7881" orientx ="-0.8331" orienty ="0.0054" orientz ="-0.5530">SNativeHorse</unit>
+		<unit variation ="196" posx ="-9.6209" posz ="4.0938" orientx ="0.9988" orienty ="0.0000" orientz ="0.0495">TreeGreatPlainsGrassGreen</unit>
+		<unit variation ="13" posx ="10.7278" posz ="4.1151" orientx ="0.7071" orienty ="0.0000" orientz ="0.7071">PropsNative</unit>
+		<unit variation ="252" posx ="2.6021" posz ="4.4823" orientx ="-0.6706" orienty ="0.0000" orientz ="0.7418">SNativeMalayGatherer</unit>
+		<unit variation ="121" posx ="7.2737" posz ="4.0627" orientx ="0.6216" orienty ="0.0006" orientz ="-0.7833">SNativeHorse</unit>
+		<unit variation ="0" posx ="8.3254" posz ="6.1164" orientx ="-0.7071" orienty ="0.0000" orientz ="-0.7071">SPCPathBlock3</unit>
+		<unit variation ="19" posx ="6.8143" posz ="4.4788" orientx ="-0.2635" orienty ="0.0000" orientz ="0.9647">TreeGreatPlainsGrass</unit>
+		<unit variation ="89" posx ="-2.1779" posz ="5.4683" orientx ="0.9935" orienty ="0.0000" orientz ="0.1134">SNativeMalayGatherer</unit>
+		<unit variation ="199" posx ="-0.6999" posz ="5.0668" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="28" posx ="1.9892" posz ="5.3869" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeCoffee</unit>
+		<unit variation ="0" posx ="-4.7521" posz ="8.3946" orientx ="0.7067" orienty ="0.0000" orientz ="-0.7075">SPCPathBlock3</unit>
+		<unit variation ="122" posx ="3.9981" posz ="6.3520" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="13" posx ="6.5942" posz ="8.3005" orientx ="0.7071" orienty ="0.0000" orientz ="0.7071">PropsNative</unit>
+		<unit variation ="13" posx ="-3.9391" posz ="9.4206" orientx ="-0.7071" orienty ="0.0000" orientz ="0.7071">PropsNative</unit>
+		<unit variation ="121" posx ="-2.2089" posz ="8.0970" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="16" posx ="2.2273" posz ="8.4555" orientx ="0.3827" orienty ="0.0000" orientz ="-0.9239">SNativeCoffee</unit>
+		<unit variation ="13" posx ="1.5812" posz ="11.0032" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">PropsNative</unit>
+		<unit variation ="248" posx ="3.8463" posz ="8.9111" orientx ="-0.5014" orienty ="0.0000" orientz ="0.8652">TreeGreatPlainsGrassGreen</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\new_england\ground4_ne">
+			<block startx ="-4" startz ="-3" endx ="-4" endz ="0"></block>
+			<block startx ="-3" startz ="-4" endx ="-3" endz ="-2"></block>
+			<block startx ="-3" startz ="0" endx ="-3" endz ="1"></block>
+			<block startx ="-2" startz ="0" endx ="-2" endz ="1"></block>
+			<block startx ="-1" startz ="-3" endx ="-1" endz ="-3"></block>
+			<block startx ="-1" startz ="-1" endx ="-1" endz ="0"></block>
+			<block startx ="0" startz ="-4" endx ="0" endz ="-3"></block>
+			<block startx ="0" startz ="0" endx ="0" endz ="0"></block>
+			<block startx ="1" startz ="-3" endx ="1" endz ="0"></block>
+			<block startx ="2" startz ="-2" endx ="2" endz ="-1"></block>
+		</tilegroup>
+		<tilegroup type ="PassableLand" subtype ="terrain\props\east_colony">
+			<block startx ="-3" startz ="-1" endx ="-3" endz ="-1"></block>
+			<block startx ="-2" startz ="-4" endx ="-2" endz ="-1"></block>
+			<block startx ="-1" startz ="-4" endx ="-1" endz ="-4"></block>
+			<block startx ="-1" startz ="-2" endx ="-1" endz ="-2"></block>
+			<block startx ="0" startz ="-2" endx ="0" endz ="-1"></block>
+		</tilegroup>
+	</tiles>
+</grouping>

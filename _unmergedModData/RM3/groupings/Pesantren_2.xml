@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>15</width>
+	<height>16</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="93" posx ="-0.9356" posz ="-13.1825" orientx ="0.7926" orienty ="0.0000" orientz ="-0.6098">SNativeTree1</unit>
+		<unit variation ="120" posx ="-11.7833" posz ="-13.0663" orientx ="-0.0340" orienty ="0.0000" orientz ="0.9994">SNativeTree1</unit>
+		<unit variation ="184" posx ="-10.0996" posz ="-14.2809" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="-12.9182" posz ="-11.4581" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="184" posx ="0.5539" posz ="-14.2936" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="5.9241" posz ="-14.3025" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="-4.7492" posz ="-14.2548" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="242" posx ="12.3076" posz ="-13.5018" orientx ="-0.7071" orienty ="0.0000" orientz ="0.7071">SNativeJawa</unit>
+		<unit variation ="119" posx ="10.1932" posz ="-14.3590" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="211" posx ="-10.7049" posz ="-12.3510" orientx ="0.2114" orienty ="0.0000" orientz ="0.9774">SNativeTree1</unit>
+		<unit variation ="128" posx ="-9.9287" posz ="-12.4395" orientx ="-0.1959" orienty ="0.0000" orientz ="-0.9806">SNativeTree1</unit>
+		<unit variation ="131" posx ="-8.8830" posz ="-12.2673" orientx ="-0.0037" orienty ="0.0000" orientz ="-1.0000">SNativeTree1</unit>
+		<unit variation ="175" posx ="-8.1190" posz ="-12.8586" orientx ="0.9916" orienty ="0.0000" orientz ="-0.1296">SNativeTree1</unit>
+		<unit variation ="227" posx ="11.6139" posz ="-11.6340" orientx ="-0.9916" orienty ="0.0000" orientz ="-0.1295">SNativeVillager</unit>
+		<unit variation ="108" posx ="10.8752" posz ="-12.3285" orientx ="-0.8604" orienty ="0.0000" orientz ="0.5096">SNativeVillager</unit>
+		<unit variation ="207" posx ="-2.2393" posz ="-12.9567" orientx ="-0.9012" orienty ="0.0000" orientz ="-0.4334">SNativeTree1</unit>
+		<unit variation ="184" posx ="12.8740" posz ="-10.1623" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativePesantren</unit>
+		<unit variation ="223" posx ="11.8979" posz ="-10.3502" orientx ="-0.9929" orienty ="0.0000" orientz ="-0.1193">SNativeTree1</unit>
+		<unit variation ="21" posx ="10.3436" posz ="-10.3390" orientx ="0.5711" orienty ="0.0000" orientz ="0.8209">SNativeTree1</unit>
+		<unit variation ="197" posx ="11.0644" posz ="-7.6919" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="81" posx ="-2.5662" posz ="-5.5919" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="252" posx ="5.1956" posz ="-5.1488" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SocketPesantren</unit>
+		<unit variation ="140" posx ="-12.9640" posz ="-6.4279" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantrenGate</unit>
+		<unit variation ="134" posx ="10.6762" posz ="-3.4119" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="184" posx ="12.8895" posz ="-4.7214" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativePesantren</unit>
+		<unit variation ="177" posx ="-4.7631" posz ="-3.8747" orientx ="-0.9886" orienty ="0.0000" orientz ="0.1506">SNativeVillager</unit>
+		<unit variation ="92" posx ="-4.7401" posz ="-2.9533" orientx ="-0.6821" orienty ="0.0000" orientz ="-0.7312">SNativeVillager</unit>
+		<unit variation ="115" posx ="-6.3188" posz ="-2.6052" orientx ="-0.0504" orienty ="0.0000" orientz ="-0.9987">SNativeVillager</unit>
+		<unit variation ="179" posx ="-11.3419" posz ="-1.6476" orientx ="0.9067" orienty ="0.0000" orientz ="0.4218">SNativeTree1</unit>
+		<unit variation ="236" posx ="-7.3600" posz ="-0.0866" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="-12.9461" posz ="-0.9271" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="27" posx ="-0.8751" posz ="0.1647" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="120" posx ="10.0589" posz ="0.9983" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="12.8831" posz ="0.6769" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativePesantren</unit>
+		<unit variation ="72" posx ="-11.5287" posz ="-0.1883" orientx ="0.2258" orienty ="0.0000" orientz ="-0.9742">SNativeTree1</unit>
+		<unit variation ="223" posx ="-10.3398" posz ="-0.3592" orientx ="0.9981" orienty ="0.0000" orientz ="-0.0613">SNativeTree1</unit>
+		<unit variation ="0" posx ="-10.7718" posz ="2.6137" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativeJawa</unit>
+		<unit variation ="122" posx ="5.5333" posz ="1.1520" orientx ="-0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="113" posx ="1.8722" posz ="1.1743" orientx ="-0.2799" orienty ="0.0000" orientz ="0.9600">SNativeVillager</unit>
+		<unit variation ="19" posx ="1.7464" posz ="2.4500" orientx ="0.6078" orienty ="0.0000" orientz ="-0.7941">SNativeVillager</unit>
+		<unit variation ="184" posx ="-12.9167" posz ="4.5546" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="0" posx ="-1.2121" posz ="3.8364" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="206" posx ="-3.1212" posz ="4.8928" orientx ="-0.7978" orienty ="0.0000" orientz ="-0.6030">SNativeVillager</unit>
+		<unit variation ="122" posx ="-6.6182" posz ="5.0743" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="0" posx ="-10.7931" posz ="6.5327" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativeJawa</unit>
+		<unit variation ="122" posx ="5.5002" posz ="5.8299" orientx ="-0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="120" posx ="10.0265" posz ="6.2477" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="12.9110" posz ="6.1666" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativePesantren</unit>
+		<unit variation ="20" posx ="1.8413" posz ="6.1644" orientx ="-0.1542" orienty ="0.0000" orientz ="0.9880">SNativeVillager</unit>
+		<unit variation ="168" posx ="-5.3928" posz ="7.8544" orientx ="-0.9819" orienty ="0.0000" orientz ="-0.1896">SNativeVillager</unit>
+		<unit variation ="220" posx ="-6.8494" posz ="8.0775" orientx ="0.9998" orienty ="0.0000" orientz ="-0.0212">SNativeVillager</unit>
+		<unit variation ="32" posx ="1.8055" posz ="7.4400" orientx ="-0.0902" orienty ="0.0000" orientz ="-0.9959">SNativeVillager</unit>
+		<unit variation ="0" posx ="-7.0581" posz ="10.3724" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="15" posx ="-1.9161" posz ="9.0985" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="120" posx ="5.2926" posz ="9.5658" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="0" posx ="-10.7847" posz ="10.4353" orientx ="1.0000" orienty ="0.0000" orientz ="0.0001">SNativeJawa</unit>
+		<unit variation ="184" posx ="-12.8213" posz ="10.2020" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="184" posx ="10.8654" posz ="11.0484" orientx ="0.7070" orienty ="0.0000" orientz ="0.7072">SNativePesantren</unit>
+		<unit variation ="234" posx ="1.9391" posz ="9.2223" orientx ="0.3906" orienty ="0.0000" orientz ="-0.9206">SNativeTree1</unit>
+		<unit variation ="32" posx ="9.5100" posz ="10.0528" orientx ="-0.6991" orienty ="0.0000" orientz ="-0.7150">SNativeTree1</unit>
+		<unit variation ="19" posx ="8.7726" posz ="9.0598" orientx ="0.2279" orienty ="0.0000" orientz ="-0.9737">SNativeTree1</unit>
+		<unit variation ="191" posx ="10.5109" posz ="9.2287" orientx ="-0.9082" orienty ="0.0000" orientz ="-0.4186">SNativeTree1</unit>
+		<unit variation ="184" posx ="-4.5756" posz ="12.9995" orientx ="-0.0001" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="0.7502" posz ="13.0016" orientx ="-0.0001" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="184" posx ="-10.0206" posz ="13.0116" orientx ="-0.0002" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="154" posx ="1.5118" posz ="11.9631" orientx ="0.9769" orienty ="0.0000" orientz ="-0.2138">SNativeTree1</unit>
+		<unit variation ="187" posx ="9.0756" posz ="11.2881" orientx ="0.1440" orienty ="0.0000" orientz ="-0.9896">SNativeTree1</unit>
+		<unit variation ="184" posx ="6.1555" posz ="13.0500" orientx ="-0.0001" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\ground4_ama">
+			<block startx ="-7" startz ="-8" endx ="-7" endz ="-1"></block>
+			<block startx ="-6" startz ="-8" endx ="-6" endz ="-1"></block>
+			<block startx ="-5" startz ="-8" endx ="-5" endz ="-4"></block>
+			<block startx ="-5" startz ="-1" endx ="-5" endz ="-1"></block>
+			<block startx ="-4" startz ="-8" endx ="-4" endz ="-5"></block>
+			<block startx ="-3" startz ="-8" endx ="-3" endz ="-5"></block>
+			<block startx ="-2" startz ="-8" endx ="-2" endz ="-5"></block>
+			<block startx ="-1" startz ="-8" endx ="-1" endz ="-5"></block>
+			<block startx ="0" startz ="-8" endx ="0" endz ="-5"></block>
+			<block startx ="-7" startz ="0" endx ="-7" endz ="6"></block>
+			<block startx ="-6" startz ="0" endx ="-6" endz ="7"></block>
+			<block startx ="-5" startz ="0" endx ="-5" endz ="0"></block>
+			<block startx ="-5" startz ="3" endx ="-5" endz ="7"></block>
+			<block startx ="-4" startz ="4" endx ="-4" endz ="7"></block>
+			<block startx ="-3" startz ="4" endx ="-3" endz ="7"></block>
+			<block startx ="-2" startz ="5" endx ="-2" endz ="7"></block>
+			<block startx ="-1" startz ="5" endx ="-1" endz ="7"></block>
+			<block startx ="0" startz ="5" endx ="0" endz ="7"></block>
+			<block startx ="1" startz ="4" endx ="1" endz ="7"></block>
+			<block startx ="2" startz ="3" endx ="2" endz ="7"></block>
+			<block startx ="1" startz ="-8" endx ="1" endz ="-6"></block>
+			<block startx ="2" startz ="-8" endx ="2" endz ="-8"></block>
+			<block startx ="3" startz ="-8" endx ="3" endz ="-6"></block>
+		</tilegroup>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\ground5_ama">
+			<block startx ="-5" startz ="-3" endx ="-5" endz ="-2"></block>
+			<block startx ="-4" startz ="-4" endx ="-4" endz ="-1"></block>
+			<block startx ="-3" startz ="-4" endx ="-3" endz ="-1"></block>
+			<block startx ="-2" startz ="-4" endx ="-2" endz ="-1"></block>
+			<block startx ="-1" startz ="-4" endx ="-1" endz ="-1"></block>
+			<block startx ="0" startz ="-4" endx ="0" endz ="-1"></block>
+			<block startx ="-5" startz ="1" endx ="-5" endz ="2"></block>
+			<block startx ="-4" startz ="0" endx ="-4" endz ="3"></block>
+			<block startx ="-3" startz ="0" endx ="-3" endz ="3"></block>
+			<block startx ="-2" startz ="0" endx ="-2" endz ="4"></block>
+			<block startx ="-1" startz ="0" endx ="-1" endz ="4"></block>
+			<block startx ="0" startz ="0" endx ="0" endz ="4"></block>
+			<block startx ="1" startz ="0" endx ="1" endz ="3"></block>
+			<block startx ="2" startz ="0" endx ="2" endz ="2"></block>
+			<block startx ="3" startz ="2" endx ="3" endz ="6"></block>
+			<block startx ="4" startz ="0" endx ="4" endz ="7"></block>
+			<block startx ="5" startz ="0" endx ="5" endz ="7"></block>
+			<block startx ="6" startz ="0" endx ="6" endz ="7"></block>
+			<block startx ="7" startz ="0" endx ="7" endz ="6"></block>
+			<block startx ="1" startz ="-5" endx ="1" endz ="-1"></block>
+			<block startx ="2" startz ="-7" endx ="2" endz ="-1"></block>
+			<block startx ="3" startz ="-5" endx ="3" endz ="-1"></block>
+			<block startx ="4" startz ="-8" endx ="4" endz ="-1"></block>
+			<block startx ="5" startz ="-8" endx ="5" endz ="-1"></block>
+			<block startx ="6" startz ="-8" endx ="6" endz ="-1"></block>
+			<block startx ="7" startz ="-8" endx ="7" endz ="-1"></block>
+		</tilegroup>
+		<tilegroup type ="Shoreline" subtype ="terrain\Amazon\river2_am">
+			<block startx ="3" startz ="0" endx ="3" endz ="1"></block>
+		</tilegroup>
+		<heights>
+			<tiles x ="-7" z ="-8">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-7">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="-1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="0">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-7" z ="7">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+		</heights>
+	</tiles>
+</grouping>

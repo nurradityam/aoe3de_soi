@@ -1,0 +1,29 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bone01</definebone>
+		<attachment>
+			shield
+			<component>
+				shield
+				<assetreference type="GrannyModel">
+					<file>soi\3d_models\salawaku\salawaku_black</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>shield</component>
+			</anim>
+		</attachment>
+		<component>
+			male
+			<assetreference type="GrannyModel">
+				<file>units\moluku_infantry\gebe_auxiliary\60</file>
+			</assetreference>
+			<attach a="shield" frombone="attachment" tobone="Bone01" syncanims="1"/>
+		</component>
+		<anim>
+			Idle
+			<component>male</component>
+		</anim>
+</animfile>

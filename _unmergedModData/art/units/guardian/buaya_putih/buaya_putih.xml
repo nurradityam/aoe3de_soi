@@ -1,0 +1,84 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>head</definebone>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>units\guardian\buaya_putih\buaya_putih</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.0</width>
+			<height>2.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_bored</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_walk</file>
+			<tag type="FootstepLeft">0.68</tag>
+			<tag type="FootstepRight">0.18</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		HandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_handAttack</file>
+			<tag type="Attack">0.39</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_death</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Flail
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_flail</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Nugget_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_flail</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_handAttack</file>
+			<weight>20</weight>
+			<tag type="Attack">0.40</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_bored</file>
+			<weight>20</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\alligator_land_idle</file>
+			<weight>50</weight>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

@@ -1,0 +1,44 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="43019">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<scalebycontainedunits>1</scalebycontainedunits>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43019">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<scalebycontainedunits>1</scalebycontainedunits>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43019">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<scalebycontainedunits>1</scalebycontainedunits>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="48954">TradingPostHP</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>3000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>3.00</modifymultiplier>
+		<modifyprotoid>TradingPost</modifyprotoid>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGatherFood</action>
+		<action>AutoGatherWood</action>
+		<action>AutoGatherCoin</action>
+		<action>TradingPostHP</action>
+	</tactic>
+</tactics>

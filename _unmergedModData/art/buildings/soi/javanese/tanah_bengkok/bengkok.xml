@@ -1,0 +1,158 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<submodel>
+		sub_construction_stage_01
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>objects\spc\spc_flag\spc_flagpole_tall</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\asian_civs\shrine\shrine_ground</texture>
+				<selectedtexture>buildings\asian_civs\shrine\selection_square_64in128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>22.00</width>
+				<height>22.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	
+	
+	<submodel>
+	POST
+		<attachment>
+			aura
+			<component>
+				aura
+				<assetreference type="GrannyModel">
+					<file>effects\ypack_auras\aura_daimyo</file>
+									<replacetexture>
+										<from>effects\ypack_auras\aura_daimyo</from>
+										<to>effects\soi\tanah_bengkok</to>
+									</replacetexture>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>aura</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			tallflag
+			<include>buildings\soi\javanese\tanah_bengkok\post_flag.xml</include>
+		</attachment>
+
+	<component>
+		LIVE
+			<assetreference type="GrannyModel">
+				<file>objects\spc\spc_flag\spc_flagpole_tall</file>
+			</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>buildings\asian_civs\shrine\shrine_ground</texture>
+					<selectedtexture>buildings\asian_civs\shrine\selection_square_64in128</selectedtexture>
+					<noncinematictexture>effects\soi\tanah_bengkok</noncinematictexture>
+					<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+					<width>22.00</width>
+					<height>22.00</height>
+				</decal>
+				<attach a="tallflag" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="auras" frombone="bone_aura" tobone="bone_master" syncanims="0"/>
+	</component>
+	<component>
+		DEAD
+			<assetreference type="GrannyModel">
+				<file>objects\spc\spc_flag\spc_flagpole_tall</file>
+			</assetreference>
+				<decal>
+					<effecttype>bump</effecttype>
+					<texture>buildings\asian_civs\shrine\shrine_ground</texture>
+					<selectedtexture>buildings\asian_civs\shrine\selection_square_64in128</selectedtexture>
+					<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+					<width>22.00</width>
+					<height>22.00</height>
+				</decal>
+	</component>
+	<anim>
+		Idle
+			<component>LIVE</component>
+	</anim>
+		<anim>
+			Death
+			<component>DEAD</component>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<component>
+		arsenalmodel
+						<logic type="BuildingCompletion">
+							<p0>
+								<submodelref ref="sub_construction_stage_01"/>
+							</p0>
+							<p100>
+								<submodelref ref="POST"/>
+							</p100>
+						</logic>
+	</component>
+</animfile>

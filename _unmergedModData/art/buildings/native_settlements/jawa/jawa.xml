@@ -1,0 +1,262 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Jesuit Buildings
+		<logic type="Variation">
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_04</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_04</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa_2</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_2_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_05</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_01</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_02</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_03</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_03</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa_2</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_2_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_06</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\native_settlement\jesuit_house_07</file>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian</from>
+										<to>buildings\native_settlements\jawa\jawa</to>
+									</replacetexture>
+									<replacetexture>
+										<from>buildings\native_settlement\jesuit_asian_bump</from>
+										<to>buildings\native_settlements\jawa\jawa_b</to>
+									</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal/>
+					<lowpoly/>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>8.00</width>
+					<height>8.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Jesuit Buildings</component>
+	</anim>
+</animfile>

@@ -1,0 +1,125 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>tree kapok a death</definebone>
+	<definebone>tree kapok b death</definebone>
+	<definebone>tree kapok c death</definebone>
+	<definebone>lp kapok a death</definebone>
+	<definebone>lp kapok b death</definebone>
+	<definebone>lp kapok c death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_a</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_b</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_kapok_c</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_kapok_a.dmg">
+							<file>terrain\trees\tree_kapok_a_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_kapok_b.dmg">
+							<file>terrain\trees\tree_kapok_b_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_kapok_c.dmg">
+							<file>terrain\trees\tree_kapok_c_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_kapok</from>
+								<to>Terrain\trees\meranti\meranti</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

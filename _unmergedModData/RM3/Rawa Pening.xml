@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+imagepath = "ui\random_map\soi_maps"
+displayNameID = "130048"
+details = "130049"
+loadDetails = "130050"
+loadBackground="ui\random_map\soi\soi">
+
+   <loadss>ui\random_map\soi_maps\soi_maps_screeny_1</loadss>
+   <loadss>ui\random_map\soi_maps\soi_maps_screeny_2</loadss>
+   <loadss>ui\random_map\soi_maps\soi_maps_screeny_3</loadss>
+
+</mapinfo>

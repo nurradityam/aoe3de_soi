@@ -1,0 +1,47 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>units\animals\bango_tongtong\bango_tongtong</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_idleA</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_boredA</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_boredB</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_grazeA</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_walkA</file>
+			<tag type="FootstepLeft">0.30</tag>
+			<tag type="FootstepRight">0.80</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>units\animals\rhea\rhea_deathA</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.68</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

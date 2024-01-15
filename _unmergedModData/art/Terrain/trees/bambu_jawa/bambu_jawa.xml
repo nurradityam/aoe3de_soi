@@ -1,0 +1,189 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bamboo_Death01</definebone>
+	<definebone>Bamboo_Death02</definebone>
+	<definebone>Bamboo_Death03</definebone>
+	<definebone>Bamboo_Death04</definebone>
+	<definebone>Bamboo_lp_Death01</definebone>
+	<definebone>Bamboo_lp_Death02</definebone>
+	<definebone>Bamboo_lp_Death03</definebone>
+	<definebone>Bamboo_lp_Death04</definebone>
+	<attachment>
+		fog
+		<component>
+			swampfog
+			<assetreference type="ParticleSystem">
+				<file>effects\soi\jawa_fog.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>swampfog</component>
+		</anim>
+	</attachment>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_01</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v1>
+			<v2>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_02</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v2>
+			<v3>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_03</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v3>
+			<v4>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_04</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+				<attach a="fog" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</v4>
+			<v5>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_01</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v5>
+			<v6>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_04</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v6>
+			<v7>
+						<assetreference type="GrannyModel">
+							<file>terrain\trees\tree_bamboo_03</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v7>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.25</width>
+			<height>1.25</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_01.dmg">
+							<file>terrain\trees\tree_bamboo_01_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v1>
+			<v2>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_02.dmg">
+							<file>terrain\trees\tree_bamboo_02_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v2>
+			<v3>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_03.dmg">
+							<file>terrain\trees\tree_bamboo_03_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v3>
+			<v4>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_04.dmg">
+							<file>terrain\trees\tree_bamboo_04_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v4>
+			<v5>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_01.dmg">
+							<file>terrain\trees\tree_bamboo_01_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v5>
+			<v6>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_04.dmg">
+							<file>terrain\trees\tree_bamboo_04_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v6>
+			<v7>
+						<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_bamboo_03.dmg">
+							<file>terrain\trees\tree_bamboo_03_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_bamboo_lp</from>
+								<to>Terrain\trees\bambu_jawa\bambu_jawa</to>
+							</replacetexture>
+						</assetreference>
+			</v7>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

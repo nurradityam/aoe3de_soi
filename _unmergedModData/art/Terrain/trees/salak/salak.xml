@@ -1,0 +1,59 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>borneo_palm_01_death</definebone>
+	<definebone>borneo_palm_02_death</definebone>
+	<definebone>borneo_palm_03_death</definebone>
+	<definebone>borneo_palm_04_death</definebone>
+	<definebone>borneo_palm_lp_01_death</definebone>
+	<definebone>borneo_palm_lp_02_death</definebone>
+	<definebone>borneo_palm_lp_03_death</definebone>
+	<definebone>borneo_palm_lp_04_death</definebone>
+	<component>
+		tree
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_palm_04</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\salak\salak</to>
+							</replacetexture>
+						</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture>Terrain\trees\salak\salak_ground</texture>
+			<width>2.50</width>
+			<height>2.50</height>
+		</decal>
+	</component>
+	<component>
+		death
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_palm_04.dmg">
+							<file>Terrain\trees\tree_borneo_palm_04_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_palm</from>
+								<to>Terrain\trees\salak\salak</to>
+							</replacetexture>
+						</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture>Terrain\trees\salak\salak_ground</texture>
+			<width>2.50</width>
+			<height>2.50</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

@@ -1,0 +1,25 @@
+<!-- converted from XMB to XML -->
+
+<mix>
+	<icon>terrain\mix\jimmy</icon>
+	<paint mode="turbulence" freq="0.15" octaves="10" persistence="0.5">
+		<texture weight="1">jawa\ground_forest_jawa_1</texture>
+		<texture weight="1">jawa\ground_forest_jawa_2</texture>
+		<texture weight="1">jawa\ground_forest_jawa_3</texture>
+	</paint>
+	<objects mode="turbulence" freq="0.7" octaves="10" persistence="0.7" emptyweight="60" posoffset="0.5">
+		<model weight="3">terrain\underbrush\underbrush_forest_fern1</model>
+		<model weight="2">terrain\saguenay\fern01</model>
+		<model weight="3">terrain\saguenay\fern02</model>
+		<model weight="2">terrain\saguenay\fern03</model>
+		<model weight="3">terrain\saguenay\fern04</model>
+		<model weight="1">terrain\underbrush\underbrush_jungle_log3</model>
+		<model weight="1">terrain\underbrush\underbrush_jungle_log2</model>
+		<model weight="1">terrain\underbrush\underbrush_jungle_log1</model>
+		<model weight="3">terrain\underbrush\underbrush_yellow_riv_rocks_01</model>
+		<model weight="2">terrain\underbrush\underbrush_yellow_riv_rocks_03</model>
+		<model weight="2">terrain\underbrush\underbrush_yellow_riv_shrub_01</model>
+		<model weight="3">terrain\underbrush\underbrush_yellow_riv_bamboo_01</model>
+		<model weight="1">terrain\underbrush\underbrush_yellow_riv_shrub_02</model>
+	</objects>
+</mix>

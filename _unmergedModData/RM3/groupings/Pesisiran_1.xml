@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>11</width>
+	<height>13</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="249" posx ="5.8079" posz ="-8.3127" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="249" posx ="2.5283" posz ="-8.4480" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="105" posx ="0.1942" posz ="-8.4348" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="158" posx ="-3.7276" posz ="-5.8354" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SocketPesisiran</unit>
+		<unit variation ="60" posx ="4.5958" posz ="-5.0558" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="2" posx ="1.6933" posz ="-5.1797" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="14" posx ="7.3374" posz ="-5.3291" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">SNativePesantren</unit>
+		<unit variation ="90" posx ="-3.5752" posz ="-0.7183" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="58" posx ="-0.3951" posz ="-1.5035" orientx ="0.9779" orienty ="0.0000" orientz ="-0.2091">SNativeVillager</unit>
+		<unit variation ="206" posx ="6.2185" posz ="-1.1509" orientx ="-0.5396" orienty ="0.0000" orientz ="0.8419">SNativeTree1</unit>
+		<unit variation ="72" posx ="5.3576" posz ="-1.1974" orientx ="-0.2241" orienty ="0.0000" orientz ="-0.9746">SNativeTree1</unit>
+		<unit variation ="19" posx ="3.3217" posz ="-0.6173" orientx ="0.0370" orienty ="0.0000" orientz ="0.9993">SNativeVillager</unit>
+		<unit variation ="131" posx ="2.3074" posz ="-1.5438" orientx ="0.2964" orienty ="0.0000" orientz ="-0.9551">SNativeVillager</unit>
+		<unit variation ="111" posx ="-5.7894" posz ="-1.0681" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0094">SNativeTree1</unit>
+		<unit variation ="249" posx ="-5.3835" posz ="-0.3831" orientx ="0.0166" orienty ="0.0000" orientz ="-0.9999">SNativeTree1</unit>
+		<unit variation ="73" posx ="4.5469" posz ="1.1871" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="14" posx ="7.3749" posz ="0.3295" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="79" posx ="-0.0639" posz ="0.9240" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="14" posx ="-6.3689" posz ="0.1425" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="116" posx ="-0.7998" posz ="0.2392" orientx ="0.9841" orienty ="0.0000" orientz ="-0.1778">SNativeVillager</unit>
+		<unit variation ="157" posx ="-3.9058" posz ="3.0863" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="123" posx ="6.6420" posz ="3.4156" orientx ="0.6219" orienty ="0.0000" orientz ="-0.7831">SNativeTree1</unit>
+		<unit variation ="181" posx ="6.2205" posz ="3.0532" orientx ="0.9114" orienty ="0.0000" orientz ="-0.4115">SNativeTree1</unit>
+		<unit variation ="244" posx ="3.4636" posz ="3.9800" orientx ="-0.7074" orienty ="0.0000" orientz ="0.7068">SNativeTree1</unit>
+		<unit variation ="14" posx ="-6.3699" posz ="5.8979" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="30" posx ="0.9527" posz ="3.4267" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">Campfire</unit>
+		<unit variation ="77" posx ="1.7277" posz ="5.0511" orientx ="-0.3127" orienty ="0.0000" orientz ="-0.9499">SNativeVillager</unit>
+		<unit variation ="42" posx ="-0.5588" posz ="4.8666" orientx ="0.6726" orienty ="0.0000" orientz ="-0.7400">SNativeVillager</unit>
+		<unit variation ="225" posx ="4.4686" posz ="6.2361" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="230" posx ="-3.3783" posz ="7.2565" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="142" posx ="0.4890" posz ="7.3774" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="14" posx ="7.4212" posz ="6.0758" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">SNativePesantren</unit>
+		<unit variation ="88" posx ="6.1978" posz ="7.9556" orientx ="0.6414" orienty ="0.0000" orientz ="-0.7672">SNativeTree1</unit>
+		<unit variation ="249" posx ="5.8936" posz ="8.9099" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="14" posx ="-3.5699" posz ="8.9450" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="14" posx ="1.7722" posz ="8.9401" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="66" posx ="-5.7156" posz ="8.1084" orientx ="0.8601" orienty ="0.0000" orientz ="-0.5102">SNativeTree1</unit>
+	</units>
+	<tiles>
+		<heights>
+			<tiles x ="-5" z ="-6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="-5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="-4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="-3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="-2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="-1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="0">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-5" z ="6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+		</heights>
+	</tiles>
+</grouping>

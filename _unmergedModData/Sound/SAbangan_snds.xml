@@ -1,0 +1,65 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="SAbangan">
+		<soundtype name="Select">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="JavaVillagerM_Select"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Grunt">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleGrunt"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Death">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleDeath"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="SettlerBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<variationlogic>
+				<choice name="0">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="JavaVillagerM_Acknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="JavaVillagerM_Attack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="JavaVillagerM_Build"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="JavaVillagerM_GatherMeat"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="JavaVillagerM_GatherWood"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="JavaVillagerM_GatherCoin"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="JavaVillagerM_Farm"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="JavaVillagerM_Acknowledge"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="JavaVillagerM_GatherFruit"/>
+						</choice>
+					</targetlogic>
+				</choice>
+			</variationlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

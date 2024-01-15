@@ -1,0 +1,67 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Shaolin Temple
+		<logic type="Variation">
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\soi\gapura\gapura</file>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>10.00</width>
+					<height>6.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\soi\gapura\gapura_stone</file>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>10.00</width>
+					<height>6.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>buildings\soi\gapura\gapura_white</file>
+						</assetreference>
+					</normal>
+				</logic>
+				<decal>
+					<effecttype>default</effecttype>
+					<texture>buildings\native_settlement\japan_decal_01</texture>
+					<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+					<width>10.00</width>
+					<height>6.00</height>
+					<xoffset>0.00</xoffset>
+					<zoffset>0.00</zoffset>
+				</decal>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Shaolin Temple</component>
+	</anim>
+</animfile>

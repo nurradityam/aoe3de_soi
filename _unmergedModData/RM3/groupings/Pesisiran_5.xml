@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>12</width>
+	<height>11</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="61" posx ="-1.8552" posz ="-6.0333" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">WallWoodNative</unit>
+		<unit variation ="15" posx ="-1.3119" posz ="-6.3013" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">WallWoodNative</unit>
+		<unit variation ="107" posx ="-5.0174" posz ="-6.0145" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">WallWoodNative</unit>
+		<unit variation ="145" posx ="-6.9890" posz ="-6.0933" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">WallWoodNative</unit>
+		<unit variation ="118" posx ="2.2287" posz ="-3.5728" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SocketPesisiran</unit>
+		<unit variation ="94" posx ="-8.2658" posz ="-4.8472" orientx ="0.1713" orienty ="0.0000" orientz ="-0.9852">SNativeTree1</unit>
+		<unit variation ="100" posx ="-7.6817" posz ="-5.8482" orientx ="0.9584" orienty ="0.0000" orientz ="0.2855">SNativeTree1</unit>
+		<unit variation ="93" posx ="-1.8980" posz ="-5.1504" orientx ="0.9889" orienty ="0.0000" orientz ="0.1487">SNativeTree1</unit>
+		<unit variation ="107" posx ="-4.7594" posz ="-3.5003" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="23" posx ="-6.8154" posz ="-2.9727" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">WallWoodNative</unit>
+		<unit variation ="39" posx ="-4.5001" posz ="-0.6738" orientx ="0.9836" orienty ="0.0000" orientz ="0.1804">SNativeVillager</unit>
+		<unit variation ="50" posx ="-3.2967" posz ="-0.5554" orientx ="-0.8945" orienty ="0.0000" orientz ="-0.4470">SNativeVillager</unit>
+		<unit variation ="93" posx ="4.4655" posz ="1.1775" orientx ="0.5663" orienty ="0.0000" orientz ="-0.8242">SNativeVillager</unit>
+		<unit variation ="36" posx ="5.3638" posz ="1.5916" orientx ="0.3317" orienty ="0.0000" orientz ="-0.9434">SNativeVillager</unit>
+		<unit variation ="50" posx ="4.2814" posz ="3.4148" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="100" posx ="0.2624" posz ="3.3525" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="199" posx ="-3.2887" posz ="2.0941" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="186" posx ="-3.8783" posz ="2.7113" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">Campfire</unit>
+		<unit variation ="31" posx ="-3.8925" posz ="2.6024" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="230" posx ="7.1012" posz ="3.1862" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">WallWoodNative</unit>
+		<unit variation ="238" posx ="-6.8022" posz ="3.0653" orientx ="1.0000" orienty ="0.0000" orientz ="-0.0000">WallWoodNative</unit>
+		<unit variation ="116" posx ="-2.7024" posz ="2.0521" orientx ="-0.9392" orienty ="0.0000" orientz ="0.3435">SNativeVillager</unit>
+		<unit variation ="140" posx ="6.8945" posz ="2.2477" orientx ="-0.5819" orienty ="0.0000" orientz ="-0.8132">SNativeTree1</unit>
+		<unit variation ="54" posx ="8.5951" posz ="3.3695" orientx ="-0.4539" orienty ="0.0000" orientz ="-0.8911">SNativeTree1</unit>
+		<unit variation ="243" posx ="-5.4545" posz ="2.5096" orientx ="0.9759" orienty ="0.0000" orientz ="0.2180">SNativeVillager</unit>
+		<unit variation ="129" posx ="-2.7060" posz ="5.8701" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">WallWoodNative</unit>
+		<unit variation ="127" posx ="5.4413" posz ="5.7770" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">WallWoodNative</unit>
+		<unit variation ="120" posx ="7.4900" posz ="5.8622" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">WallWoodNative</unit>
+		<unit variation ="216" posx ="7.2728" posz ="4.5761" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">WallWoodNative</unit>
+		<unit variation ="216" posx ="2.3691" posz ="5.7150" orientx ="-0.0000" orienty ="0.0000" orientz ="-1.0000">WallWoodNative</unit>
+		<unit variation ="240" posx ="-6.9730" posz ="6.0200" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">WallWoodNative</unit>
+		<unit variation ="4" posx ="-1.9659" posz ="4.8385" orientx ="-0.9412" orienty ="0.0000" orientz ="-0.3378">SNativeTree1</unit>
+		<unit variation ="181" posx ="-3.9637" posz ="4.5121" orientx ="0.5105" orienty ="0.0000" orientz ="-0.8599">SNativeVillager</unit>
+	</units>
+	<tiles>
+		<heights>
+			<tiles x ="-6" z ="-5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="-1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="0">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-6" z ="5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+		</heights>
+	</tiles>
+</grouping>

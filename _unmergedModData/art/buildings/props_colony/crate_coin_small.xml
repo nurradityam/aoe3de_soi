@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<submodel>
+		european_crates
+		<component>
+			props_colony
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\gold_a_small_bucket</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\gold_b_small_bucket</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\gold_c_small_bucket</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>4.00</width>
+				<height>4.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>props_colony</component>
+		</anim>
+	</submodel>
+	<submodel>
+		native_crates
+		<component>
+			nat_props_colony
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_gold_crates_small_a</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_gold_crates_small_b</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\native_civs\props_colony\nat_gold_crates_small_c</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>3.00</width>
+				<height>3.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>nat_props_colony</component>
+		</anim>
+	</submodel>
+	<submodel>
+		asian_crates
+		<component>
+			asian_crates
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_a</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_b</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_c</file>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>3.00</width>
+				<height>3.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>asian_crates</component>
+		</anim>
+	</submodel>
+	<submodel>
+		javan_crates
+		<component>
+			asian_crates
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_a</file>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_c</from>
+								<to>buildings\props_colony\java\heirloom</to>
+							</replacetexture>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_b</from>
+								<to>buildings\props_colony\java\heirloom_b</to>
+							</replacetexture>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_b</file>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_c</from>
+								<to>buildings\props_colony\java\heirloom</to>
+							</replacetexture>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_b</from>
+								<to>buildings\props_colony\java\heirloom_b</to>
+							</replacetexture>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>buildings\props_colony\coin_crate_small_c</file>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_c</from>
+								<to>buildings\props_colony\java\heirloom</to>
+							</replacetexture>
+							<replacetexture>
+								<from>buildings\props_colony\coin_crates_b</from>
+								<to>buildings\props_colony\java\heirloom_b</to>
+							</replacetexture>
+					</assetreference>
+				</data>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+				<width>3.00</width>
+				<height>3.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>asian_crates</component>
+		</anim>
+	</submodel>
+	<component>
+		coin_shipment
+		<logic type="Culture">
+			<easterneurope>
+				<submodelref ref="javan_crates"/>
+			</easterneurope>
+			<mediterranean>
+				<submodelref ref="european_crates"/>
+			</mediterranean>
+			<westerneurope>
+				<submodelref ref="european_crates"/>
+			</westerneurope>
+			<iroquois>
+				<submodelref ref="native_crates"/>
+			</iroquois>
+			<aztec>
+				<submodelref ref="native_crates"/>
+			</aztec>
+			<sioux>
+				<submodelref ref="native_crates"/>
+			</sioux>
+			<japanese>
+				<submodelref ref="asian_crates"/>
+			</japanese>
+			<chinese>
+				<submodelref ref="asian_crates"/>
+			</chinese>
+			<indian>
+				<submodelref ref="asian_crates"/>
+			</indian>
+		</logic>
+	</component>
+</animfile>

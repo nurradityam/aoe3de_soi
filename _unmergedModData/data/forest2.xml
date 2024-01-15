@@ -1,0 +1,64 @@
+<!-- converted from XMB to XML -->
+
+<foresttypes>
+	<forest name="Borneo Forest" iconname="ui\editor\forestAmazonRain" floor="Borneo\ground_forest_borneo" density="0.26" clumpiness="0.6">
+		<protounit>ypTreeBorneo</protounit>
+		<underbrushobj prob="1.0">UnderbrushBorneo</underbrushobj>
+	</forest>
+	<forest name="Borneo Palm Forest" iconname="ui\editor\forestAmazonRain" floor="" density="0.26" clumpiness="0.6">
+		<protounit>ypTreeBorneoPalm</protounit>
+		<underbrushobj prob="1.0">UnderbrushBorneo</underbrushobj>
+	</forest>
+	<forest name="Borneo Canopy Forest" iconname="ui\editor\forestAmazonRain" floor="Borneo\ground_forest_borneo" density="0.26" clumpiness="0.6">
+		<protounit>ypTreeBorneoCanopy</protounit>
+		<underbrushobj prob="1.0">UnderbrushBorneo</underbrushobj>
+	</forest>
+	<forest name="Coastal Japan Forest" iconname="ui\editor\forestCarolinaMarsh" floormix="coastal_japan_forest" density="0.25" clumpiness="0.1">
+		<protounit>yptreecoastaljapan</protounit>
+		<underbrushobj prob="0.9">UnderbrushCoastalJapan</underbrushobj>
+	</forest>
+	<forest name="Deccan Forest" iconname="ui\editor\forestAshoka" floor="deccan\ground_forest_deccan" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeDeccan</protounit>
+		<underbrushobj prob="1.0">underbrushdeccan</underbrushobj>
+	</forest>
+	<forest name="Ashoka Forest" iconname="ui\editor\forestAshoka" floormix="deccan_grass_a" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeAshoka</protounit>
+		<underbrushobj prob="0.5">underbrush_deccan</underbrushobj>
+	</forest>
+	<forest name="Eucalyptus Forest" iconname="ui\editor\forestEucal" floormix="deccan_grass_a" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeEucalyptus</protounit>
+		<underbrushobj prob="0.5">underbrush_deccan</underbrushobj>
+	</forest>
+	<forest name="Bamboo Forest" iconname="ui\editor\forest_bamboo" floormix="yellow_river_forest" density="1.0" clumpiness="1.0">
+		<protounit>ypTreeBamboo</protounit>
+		<underbrushobj prob="1">UnderbrushYellowRiver</underbrushobj>
+	</forest>
+	<forest name="Ginkgo Forest" iconname="ui\editor\forest_Ginkgo" floormix="yellow_river_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeGinkgo</protounit>
+	</forest>
+	<forest name="Yellow River Forest" iconname="ui\editor\forest_bamboo" floormix="yellow_river_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeYellowRiver</protounit>
+	</forest>
+	<forest name="Mongolian Forest" iconname="ui\editor\forestAshoka" floormix="mongolia_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeMongolia</protounit>
+	</forest>
+	<forest name="Himalayas Forest" iconname="ui\editor\forestHemlock" floormix="himalayas_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeHimalayas</protounit>
+	</forest>
+	<forest name="Saxaul Forest" iconname="ui\editor\forestSaxaul" floormix="mongolia_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeSaxaul</protounit>
+	</forest>
+	<forest name="Mongolian Fir Forest" iconname="ui\editor\forestMongolianFir" floormix="mongolia_forest" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeMongolianFir</protounit>
+	</forest>
+	<forest name="Ceylon Forest" iconname="ui\editor\forestBorneoPalm" floormix="ceylon_grass_a" density="0.25" clumpiness="0.5">
+		<protounit>ypTreeCeylon</protounit>
+		<underbrushobj prob="1.0">UnderbrushBorneo</underbrushobj>
+	</forest>
+	<forest name="Jawa Bamboo Forest" iconname="ui\editor\forestBorneoPalm" floormix="floor_jawa" density="1.0" clumpiness="1.0">
+		<protounit>STreeBamboo</protounit>
+	</forest>
+	<forest name="Jawa Meranti Forest" iconname="ui\editor\forest_Ginkgo" floormix="floor_jawa" density="0.4" clumpiness="0.3">
+		<protounit>STreeMeranti</protounit>
+	</forest>
+</foresttypes>

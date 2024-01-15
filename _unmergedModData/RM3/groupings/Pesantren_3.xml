@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+
+<grouping>
+	<width>16</width>
+	<height>12</height>
+	<ignoreplacementrules>1</ignoreplacementrules>
+	<selectassingleunit>1</selectassingleunit>
+	<units>
+		<unit variation ="44" posx ="-1.2784" posz ="-9.1072" orientx ="-0.9776" orienty ="0.0000" orientz ="0.2107">SNativeVillager</unit>
+		<unit variation ="119" posx ="-0.4594" posz ="-8.2038" orientx ="-0.9238" orienty ="0.0000" orientz ="-0.3829">SNativePesantren</unit>
+		<unit variation ="114" posx ="14.2084" posz ="-6.9866" orientx ="1.0000" orienty ="0.0000" orientz ="0.0008">SNativePesantren</unit>
+		<unit variation ="119" posx ="9.8241" posz ="-9.6302" orientx ="0.0004" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="119" posx ="12.7409" posz ="-9.6843" orientx ="0.0004" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="119" posx ="7.0605" posz ="-9.5937" orientx ="0.0002" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="114" posx ="2.9972" posz ="-9.6390" orientx ="0.0002" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="14" posx ="-2.1701" posz ="-8.3174" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">PropsNative</unit>
+		<unit variation ="229" posx ="9.7346" posz ="-8.0724" orientx ="-0.9687" orienty ="0.0000" orientz ="-0.2483">SNativeTree1</unit>
+		<unit variation ="202" posx ="13.7381" posz ="-7.7566" orientx ="0.7145" orienty ="0.0000" orientz ="-0.6996">SNativeTree1</unit>
+		<unit variation ="93" posx ="3.6039" posz ="-8.3606" orientx ="-0.6967" orienty ="0.0000" orientz ="-0.7173">SNativeTree1</unit>
+		<unit variation ="208" posx ="4.5456" posz ="-8.2948" orientx ="0.7641" orienty ="0.0000" orientz ="0.6451">SNativeTree1</unit>
+		<unit variation ="200" posx ="11.1301" posz ="-5.9537" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativeJawa</unit>
+		<unit variation ="141" posx ="2.3943" posz ="-6.8306" orientx ="-0.0002" orienty ="0.0000" orientz ="1.0000">SNativeJawa</unit>
+		<unit variation ="200" posx ="6.2936" posz ="-6.9374" orientx ="-0.0002" orienty ="0.0000" orientz ="1.0000">SNativeJawa</unit>
+		<unit variation ="42" posx ="-2.3849" posz ="-6.9264" orientx ="-0.1332" orienty ="0.0000" orientz ="-0.9911">SNativeVillager</unit>
+		<unit variation ="175" posx ="13.2678" posz ="-5.5448" orientx ="0.8046" orienty ="0.0000" orientz ="-0.5938">SNativeTree1</unit>
+		<unit variation ="18" posx ="13.1791" posz ="-6.5101" orientx ="0.1883" orienty ="0.0000" orientz ="-0.9821">SNativeTree1</unit>
+		<unit variation ="213" posx ="-0.8457" posz ="-4.1871" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativePesantren</unit>
+		<unit variation ="11" posx ="-9.9312" posz ="-2.1487" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SocketPesantren</unit>
+		<unit variation ="80" posx ="-1.3894" posz ="-4.4625" orientx ="0.0907" orienty ="0.0000" orientz ="0.9959">SNativeVillager</unit>
+		<unit variation ="141" posx ="-1.0975" posz ="-3.5429" orientx ="-0.6770" orienty ="0.0000" orientz ="-0.7360">SNativeVillager</unit>
+		<unit variation ="114" posx ="14.1984" posz ="-2.1928" orientx ="1.0000" orienty ="0.0000" orientz ="0.0006">SNativePesantren</unit>
+		<unit variation ="76" posx ="11.4470" posz ="-1.0566" orientx ="0.0000" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="104" posx ="4.6820" posz ="-1.2858" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="246" posx ="-3.1455" posz ="-0.4098" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="3" posx ="8.1046" posz ="-0.1022" orientx ="0.5032" orienty ="0.0000" orientz ="0.8642">SNativeVillager</unit>
+		<unit variation ="31" posx ="8.9354" posz ="0.7589" orientx ="-0.9836" orienty ="0.0000" orientz ="-0.1805">SNativeVillager</unit>
+		<unit variation ="220" posx ="9.5667" posz ="4.2544" orientx ="0.7071" orienty ="0.0000" orientz ="-0.7071">SNativePesantren</unit>
+		<unit variation ="114" posx ="-0.7301" posz ="1.4120" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="67" posx ="-13.8368" posz ="2.1753" orientx ="0.9479" orienty ="0.0000" orientz ="-0.3186">SNativeTree1</unit>
+		<unit variation ="136" posx ="1.1145" posz ="1.3766" orientx ="0.4845" orienty ="0.0000" orientz ="-0.8748">SNativeVillager</unit>
+		<unit variation ="252" posx ="0.5972" posz ="2.9341" orientx ="0.9465" orienty ="0.0000" orientz ="-0.3227">SNativeTree1</unit>
+		<unit variation ="208" posx ="6.6821" posz ="2.6385" orientx ="-0.9463" orienty ="0.0000" orientz ="-0.3232">SNativeVillager</unit>
+		<unit variation ="12" posx ="-6.6561" posz ="3.4228" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="114" posx ="14.1480" posz ="3.2249" orientx ="1.0000" orienty ="0.0000" orientz ="0.0004">SNativePesantren</unit>
+		<unit variation ="141" posx ="-11.4267" posz ="3.2114" orientx ="1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="110" posx ="5.7613" posz ="3.0698" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">Campfire</unit>
+		<unit variation ="216" posx ="-13.7222" posz ="3.4989" orientx ="0.5809" orienty ="0.0000" orientz ="0.8140">SNativeTree1</unit>
+		<unit variation ="120" posx ="13.4502" posz ="4.8781" orientx ="-0.9706" orienty ="0.0000" orientz ="-0.2405">SNativeTree1</unit>
+		<unit variation ="155" posx ="-3.5239" posz ="5.9544" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="200" posx ="-8.0525" posz ="6.9452" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativeJawa</unit>
+		<unit variation ="114" posx ="12.3660" posz ="7.9134" orientx ="0.7068" orienty ="0.0000" orientz ="0.7074">SNativePesantren</unit>
+		<unit variation ="241" posx ="3.7707" posz ="5.0923" orientx ="0.0000" orienty ="0.0000" orientz ="-1.0000">SNativePesantren</unit>
+		<unit variation ="14" posx ="12.3751" posz ="6.9814" orientx ="-0.9936" orienty ="0.0000" orientz ="-0.1127">SNativeTree1</unit>
+		<unit variation ="46" posx ="12.9917" posz ="5.1028" orientx ="-0.1941" orienty ="0.0000" orientz ="0.9810">SNativeTree1</unit>
+		<unit variation ="114" posx ="-0.7142" posz ="7.0323" orientx ="-1.0000" orienty ="0.0000" orientz ="-0.0002">SNativePesantren</unit>
+		<unit variation ="213" posx ="-12.1620" posz ="8.0502" orientx ="-1.0000" orienty ="0.0000" orientz ="0.0000">SNativeJawa</unit>
+		<unit variation ="184" posx ="-8.8741" posz ="8.8322" orientx ="-0.3505" orienty ="0.0000" orientz ="0.9366">SNativeTree1</unit>
+		<unit variation ="210" posx ="1.9550" posz ="8.8779" orientx ="0.7867" orienty ="0.0000" orientz ="-0.6173">SNativeTree1</unit>
+		<unit variation ="124" posx ="0.8320" posz ="8.5678" orientx ="-0.9799" orienty ="0.0000" orientz ="0.1993">SNativeTree1</unit>
+		<unit variation ="198" posx ="8.7690" posz ="8.7849" orientx ="1.0000" orienty ="0.0000" orientz ="0.0050">SNativeTree1</unit>
+		<unit variation ="114" posx ="7.6237" posz ="9.9634" orientx ="-0.0004" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="114" posx ="2.2506" posz ="10.0027" orientx ="-0.0002" orienty ="0.0000" orientz ="1.0000">SNativePesantren</unit>
+		<unit variation ="163" posx ="-10.2066" posz ="10.7273" orientx ="-0.2257" orienty ="0.0000" orientz ="0.9742">SNativeTree1</unit>
+		<unit variation ="103" posx ="-7.1848" posz ="9.5933" orientx ="0.8174" orienty ="0.0000" orientz ="-0.5761">SNativeTree1</unit>
+		<unit variation ="115" posx ="3.8458" posz ="9.0304" orientx ="0.0339" orienty ="0.0000" orientz ="-0.9994">SNativeTree1</unit>
+	</units>
+	<tiles>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\ground4_ama">
+			<block startx ="-7" startz ="-4" endx ="-7" endz ="-4"></block>
+			<block startx ="-8" startz ="-6" endx ="-8" endz ="-5"></block>
+			<block startx ="-7" startz ="-6" endx ="-7" endz ="-5"></block>
+			<block startx ="-6" startz ="-6" endx ="-6" endz ="-6"></block>
+		</tilegroup>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\groundforest_ama">
+			<block startx ="-6" startz ="-4" endx ="-6" endz ="-3"></block>
+			<block startx ="-5" startz ="-4" endx ="-5" endz ="-2"></block>
+			<block startx ="-4" startz ="-4" endx ="-4" endz ="-2"></block>
+			<block startx ="-3" startz ="-4" endx ="-3" endz ="-3"></block>
+			<block startx ="-2" startz ="-4" endx ="-2" endz ="-3"></block>
+			<block startx ="-1" startz ="-4" endx ="-1" endz ="-3"></block>
+			<block startx ="-6" startz ="-5" endx ="-6" endz ="-5"></block>
+			<block startx ="-5" startz ="-6" endx ="-5" endz ="-5"></block>
+			<block startx ="-4" startz ="-6" endx ="-4" endz ="-5"></block>
+			<block startx ="-3" startz ="-6" endx ="-3" endz ="-5"></block>
+			<block startx ="-2" startz ="-6" endx ="-2" endz ="-5"></block>
+			<block startx ="-1" startz ="-6" endx ="-1" endz ="-5"></block>
+			<block startx ="0" startz ="-6" endx ="0" endz ="-5"></block>
+			<block startx ="1" startz ="-6" endx ="1" endz ="-5"></block>
+			<block startx ="0" startz ="-4" endx ="0" endz ="-3"></block>
+			<block startx ="1" startz ="-4" endx ="1" endz ="-4"></block>
+		</tilegroup>
+		<tilegroup type ="Shoreline" subtype ="terrain\Amazon\river2_am">
+			<block startx ="-8" startz ="-3" endx ="-8" endz ="0"></block>
+			<block startx ="-7" startz ="-3" endx ="-7" endz ="0"></block>
+			<block startx ="-6" startz ="-2" endx ="-6" endz ="0"></block>
+			<block startx ="-5" startz ="-1" endx ="-5" endz ="0"></block>
+			<block startx ="-4" startz ="-1" endx ="-4" endz ="0"></block>
+			<block startx ="-3" startz ="-2" endx ="-3" endz ="0"></block>
+			<block startx ="-2" startz ="0" endx ="-2" endz ="1"></block>
+			<block startx ="-1" startz ="3" endx ="-1" endz ="3"></block>
+			<block startx ="-1" startz ="4" endx ="-1" endz ="4"></block>
+			<block startx ="0" startz ="4" endx ="0" endz ="5"></block>
+			<block startx ="1" startz ="4" endx ="1" endz ="5"></block>
+			<block startx ="2" startz ="4" endx ="2" endz ="5"></block>
+			<block startx ="3" startz ="4" endx ="3" endz ="4"></block>
+			<block startx ="4" startz ="4" endx ="4" endz ="5"></block>
+			<block startx ="5" startz ="4" endx ="5" endz ="5"></block>
+			<block startx ="6" startz ="4" endx ="6" endz ="5"></block>
+			<block startx ="7" startz ="4" endx ="7" endz ="5"></block>
+			<block startx ="2" startz ="-6" endx ="2" endz ="-5"></block>
+			<block startx ="3" startz ="-6" endx ="3" endz ="-5"></block>
+			<block startx ="4" startz ="-6" endx ="4" endz ="-5"></block>
+			<block startx ="5" startz ="-6" endx ="5" endz ="-5"></block>
+			<block startx ="6" startz ="-6" endx ="6" endz ="-5"></block>
+			<block startx ="7" startz ="-6" endx ="7" endz ="-5"></block>
+			<block startx ="0" startz ="2" endx ="0" endz ="3"></block>
+			<block startx ="1" startz ="2" endx ="1" endz ="3"></block>
+			<block startx ="2" startz ="-4" endx ="2" endz ="-3"></block>
+			<block startx ="2" startz ="2" endx ="2" endz ="3"></block>
+			<block startx ="3" startz ="-4" endx ="3" endz ="0"></block>
+			<block startx ="3" startz ="3" endx ="3" endz ="3"></block>
+			<block startx ="4" startz ="-4" endx ="4" endz ="-1"></block>
+			<block startx ="5" startz ="-4" endx ="5" endz ="-1"></block>
+			<block startx ="5" startz ="3" endx ="5" endz ="3"></block>
+			<block startx ="6" startz ="-4" endx ="6" endz ="0"></block>
+			<block startx ="6" startz ="3" endx ="6" endz ="3"></block>
+			<block startx ="7" startz ="-4" endx ="7" endz ="3"></block>
+		</tilegroup>
+		<tilegroup type ="Shoreline" subtype ="terrain\Amazon\river1_am">
+			<block startx ="-2" startz ="-2" endx ="-2" endz ="-1"></block>
+			<block startx ="-2" startz ="2" endx ="-2" endz ="3"></block>
+			<block startx ="-1" startz ="-2" endx ="-1" endz ="2"></block>
+			<block startx ="-2" startz ="4" endx ="-2" endz ="4"></block>
+			<block startx ="-1" startz ="5" endx ="-1" endz ="5"></block>
+			<block startx ="0" startz ="-2" endx ="0" endz ="1"></block>
+			<block startx ="1" startz ="-3" endx ="1" endz ="1"></block>
+			<block startx ="2" startz ="-2" endx ="2" endz ="1"></block>
+			<block startx ="3" startz ="1" endx ="3" endz ="2"></block>
+			<block startx ="4" startz ="0" endx ="4" endz ="3"></block>
+			<block startx ="5" startz ="0" endx ="5" endz ="2"></block>
+			<block startx ="6" startz ="1" endx ="6" endz ="2"></block>
+		</tilegroup>
+		<tilegroup type ="PassableLand" subtype ="terrain\Amazon\ground5_ama">
+			<block startx ="-8" startz ="1" endx ="-8" endz ="3"></block>
+			<block startx ="-7" startz ="1" endx ="-7" endz ="3"></block>
+			<block startx ="-6" startz ="1" endx ="-6" endz ="3"></block>
+			<block startx ="-5" startz ="2" endx ="-5" endz ="3"></block>
+			<block startx ="-4" startz ="1" endx ="-4" endz ="3"></block>
+			<block startx ="-3" startz ="1" endx ="-3" endz ="3"></block>
+			<block startx ="-8" startz ="4" endx ="-8" endz ="4"></block>
+			<block startx ="-7" startz ="4" endx ="-7" endz ="5"></block>
+			<block startx ="-6" startz ="4" endx ="-6" endz ="5"></block>
+			<block startx ="-5" startz ="4" endx ="-5" endz ="5"></block>
+			<block startx ="-4" startz ="4" endx ="-4" endz ="5"></block>
+			<block startx ="-3" startz ="4" endx ="-3" endz ="5"></block>
+		</tilegroup>
+		<heights>
+			<tiles x ="-8" z ="-6">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="-5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="-4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="-3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="-2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="-1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="0">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="1">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="2">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="3">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="4">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+			<tiles x ="-8" z ="5">0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 </tiles>
+		</heights>
+	</tiles>
+</grouping>

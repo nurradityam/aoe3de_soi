@@ -1,0 +1,226 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>bone_fuse</definebone>
+	<definebone>bone_cart</definebone>
+	<definebone>bone_wheelcannonR</definebone>
+	<definebone>bone_wheelcannonL</definebone>
+	<definebone>Bip01 Head</definebone>
+	<definebone>bone_hat</definebone>
+	<attachment>
+		attachment_battlefield_smoke
+		<component>
+			battlefield_smoke
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\battlefield_smoke.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>battlefield_smoke</component>
+		</anim>
+	</attachment>
+	<attachment>
+		hats
+		<component>
+			hat
+			<assetreference type="GrannyModel">
+				<file>soi\3d_models\ikatKepala\ikatKepala0</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>hat</component>
+		</anim>
+	</attachment>
+	<attachment>
+		friend
+		<include>units\ethnic_artillery\rostaha\rostaha_friend.xml</include>
+	</attachment>
+	<component>
+		rostaha
+		<linksection>
+			<linkoffset>-0.8</linkoffset>
+			<linkcomponent>gunner</linkcomponent>
+			<linkcomponent>gunner_hats</linkcomponent>
+			<linkcomponent>screw_pole</linkcomponent>
+			<linkcomponent>cannon</linkcomponent>
+			<linkconstraint>1</linkconstraint>
+		</linksection>
+		<linksection>
+			<linkoffset>.1</linkoffset>
+			<linkcomponent>horse</linkcomponent>
+			<linkconstraint>0</linkconstraint>
+		</linksection>
+		<assetreference type="GrannyModel">
+			<file>units\ethnic_artillery\rostaha\rostaha</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>2.00</width>
+			<height>4.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+		<attach a="hats" frombone="bone_hat" tobone="Bip01 Head" syncanims="0"/>
+		<attach a="friend" frombone="hotspot" tobone="bone_master" syncanims="1"/>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		idle
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatidle</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		bored
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_bored</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatdeath</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.63</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.46</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.60</tag>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatdeath</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.63</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.46</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.60</tag>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_cheer</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_ranged_idle
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatidle</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\horse_artillery\bombard_attack</file>
+			<tag type="Attack">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="FalconetShoot">0.08</tag>
+			<tag type="Particles" particlename="smallcannonmuzzle">0.08</tag>
+		</assetreference>
+		<component>rostaha</component>
+		<attach a="attachment_battlefield_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_aim
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatidle</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_reload
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\horse_artillery\bombard_reload</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_bored
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_bored</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_walk
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_jog
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_run
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_bombard_walk</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_cheer
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_cheer</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_Recoil
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_recoil1</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_recoil2</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_recoil3</file>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+	<anim>
+		Bombard_death
+		<assetreference type="GrannyAnim">
+			<file>units\artillery\falconet\falconet_combatdeath</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.63</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.46</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.60</tag>
+		</assetreference>
+		<component>rostaha</component>
+	</anim>
+</animfile>

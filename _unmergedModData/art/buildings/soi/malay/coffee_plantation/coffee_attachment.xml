@@ -1,0 +1,207 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_corn01</definebone>
+	<definebone>bone_corn02</definebone>
+	<definebone>bone_corn03</definebone>
+	<definebone>bone_corn04</definebone>
+	<definebone>bone_corn05</definebone>
+	<definebone>bone_corn06</definebone>
+	<definebone>bone_corn07</definebone>
+	<definebone>bone_corn08</definebone>
+	<definebone>bone_corn09</definebone>
+	<definebone>bone_corn10</definebone>
+
+		<attachment>
+			coffee_1
+			<component>
+				coffee_1
+					<logic type="Variation">
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_01</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_02</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_03</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+					</logic>
+			</component>
+			<anim>
+				Idle
+				<component>coffee_1</component>
+			</anim>
+		</attachment>
+		<attachment>
+			coffee_2
+			<component>
+				coffee_1
+					<logic type="Variation">
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_02</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_03</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_04</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+					</logic>
+			</component>
+			<anim>
+				Idle
+				<component>coffee_1</component>
+			</anim>
+		</attachment>
+		<attachment>
+			coffee_3
+			<component>
+				coffee_1
+					<logic type="Variation">
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_03</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_04</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_01</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+					</logic>
+			</component>
+			<anim>
+				Idle
+				<component>coffee_1</component>
+			</anim>
+		</attachment>
+		<attachment>
+			coffee_4
+			<component>
+				coffee_1
+					<logic type="Variation">
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_04</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_01</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+						<data>
+							<assetreference type="GrannyModel">
+								<file>Terrain\trees\tree_saxaul_02</file>
+									<replacetexture>
+										<from>Terrain\trees\tree_saxaul</from>
+										<to>buildings\soi\malay\coffee_plantation\coffee</to>
+									</replacetexture>
+							</assetreference>
+						</data>
+					</logic>
+			</component>
+			<anim>
+				Idle
+				<component>coffee_1</component>
+			</anim>
+		</attachment>
+		<component>
+			generic_mill
+				<assetreference type="GrannyModel" shape="chinese_ricepaddy_age2">
+					<file>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1</file>
+									<replacetexture>
+										<from>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1</from>
+										<to>effects\invisible</to>
+									</replacetexture>
+				</assetreference>
+			<attach a="coffee_1" frombone="ATTACHPOINT" tobone="bone_corn01" syncanims="0"/>
+			<attach a="coffee_2" frombone="ATTACHPOINT" tobone="bone_corn02" syncanims="0"/>
+			<attach a="coffee_3" frombone="ATTACHPOINT" tobone="bone_corn03" syncanims="0"/>
+			<attach a="coffee_4" frombone="ATTACHPOINT" tobone="bone_corn04" syncanims="0"/>
+			<attach a="coffee_1" frombone="ATTACHPOINT" tobone="bone_corn05" syncanims="0"/>
+			<attach a="coffee_2" frombone="ATTACHPOINT" tobone="bone_corn06" syncanims="0"/>
+			<attach a="coffee_3" frombone="ATTACHPOINT" tobone="bone_corn07" syncanims="0"/>
+			<attach a="coffee_4" frombone="ATTACHPOINT" tobone="bone_corn08" syncanims="0"/>
+			<attach a="coffee_2" frombone="ATTACHPOINT" tobone="bone_corn09" syncanims="0"/>
+			<attach a="coffee_3" frombone="ATTACHPOINT" tobone="bone_corn10" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>generic_mill</component>
+			<simskeleton>
+				<model>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1_damaged</model>
+				<damagetemplate>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<component>generic_mill</component>
+			<simskeleton>
+				<model>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1_damaged</model>
+				<damagetemplate>buildings\asian_civs\rice_paddy\japan\age_1\japan_ricepaddy_age1.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+</animfile>

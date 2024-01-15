@@ -1,0 +1,49 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Shaolin Temple
+		<logic type="Variation">
+			<data>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_saxaul_04</file>
+								<replacetexture>
+									<from>Terrain\trees\tree_saxaul</from>
+									<to>buildings\soi\malay\coffee_plantation\coffee</to>
+								</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_saxaul_03</file>
+								<replacetexture>
+									<from>Terrain\trees\tree_saxaul</from>
+									<to>buildings\soi\malay\coffee_plantation\coffee</to>
+								</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_saxaul_02</file>
+								<replacetexture>
+									<from>Terrain\trees\tree_saxaul</from>
+									<to>buildings\soi\malay\coffee_plantation\coffee</to>
+								</replacetexture>
+						</assetreference>
+			</data>
+			<data>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_saxaul_01</file>
+								<replacetexture>
+									<from>Terrain\trees\tree_saxaul</from>
+									<to>buildings\soi\malay\coffee_plantation\coffee</to>
+								</replacetexture>
+						</assetreference>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Shaolin Temple</component>
+	</anim>
+</animfile>

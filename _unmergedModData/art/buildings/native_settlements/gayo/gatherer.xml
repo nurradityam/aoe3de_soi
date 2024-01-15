@@ -1,0 +1,47 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<attachment>
+		bowl
+			<component>
+				bowl
+				<assetreference type="GrannyModel">
+					<file>units\attachments\bowl_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>bowl</component>
+			</anim>
+	</attachment>
+	<component>
+		man
+		<assetreference type="GrannyModel">
+			<file>units\asians\shared\villager\jpn_villager_female</file>
+				<replacetexture>
+					<from>units\asians\shared\villager\jpn_villager_female_color</from>
+					<to>units\malay_others\orang_kampung\johor\orang_kampung_female_2</to>
+				</replacetexture>
+				<replacetexture>
+					<from>units\asians\shared\villager\jpn_villager_female_normal</from>
+					<to>units\malay_others\orang_kampung\johor\orang_kampung_female_2_b</to>
+				</replacetexture>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+			<width>5.00</width>
+			<height>5.00</height>
+		</decal>
+		<attach a="bowl" frombone="MASTER" tobone="MASTER" syncanims="0"/>
+	</component>
+	<anim>
+		Mode1_Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\villager\villager_gathefruit</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFruit">0.33</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="GatherFruit">0.57</tag>
+			</assetreference>
+		<component>man</component>
+	</anim>
+</animfile>

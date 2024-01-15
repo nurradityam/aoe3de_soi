@@ -1,0 +1,12 @@
+<!-- converted from XMB to XML -->
+
+<unittransforms>
+	<transform>
+		<from>WallStraight5</from>
+		<to>CWallGate</to>
+	</transform>
+	<upgradejager>
+		<from>SEstri</from>
+		<to>SJager</to>
+	</upgradejager>
+</unittransforms>

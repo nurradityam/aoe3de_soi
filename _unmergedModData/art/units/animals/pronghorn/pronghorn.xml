@@ -1,0 +1,252 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<submodel>
+	Male
+	<component>
+		Male
+		<assetreference type="GrannyModel">
+			<file>units\animals\pronghorn\pronghorn</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.00</width>
+			<height>1.75</height>
+			<zoffset>-0.20</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_idleA</file>
+			<weight>60</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_boreda</file>
+			<weight>15</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_boredb</file>
+			<weight>15</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_walka</file>
+			<tag type="FootstepLeft">0.30</tag>
+			<tag type="FootstepRight">0.80</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_deathA</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.70</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_deathB</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.30</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDown
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_in_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_in_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownIdle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_A</file>
+			<weight>5</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_B</file>
+			<weight>30</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_C</file>
+			<weight>30</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_D</file>
+			<weight>30</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		GetUp
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_out_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_out_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownBored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_runa</file>
+			<weight>70</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_jumpa</file>
+			<weight>30</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	</submodel>
+	
+	<submodel>
+	Female
+	<component>
+		Male
+		<assetreference type="GrannyModel">
+			<file>units\animals\pronghorn\pronghorn</file>
+							<replacetexture>
+								<from>units\animals\pronghorn\pronghorn</from>
+								<to>units\animals\pronghorn\pronghorn_female</to>
+							</replacetexture>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.00</width>
+			<height>1.75</height>
+			<zoffset>-0.20</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_idleA</file>
+			<weight>60</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_boreda</file>
+			<weight>15</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_boredb</file>
+			<weight>15</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_walka</file>
+			<tag type="FootstepLeft">0.30</tag>
+			<tag type="FootstepRight">0.80</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_deathA</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.70</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_deathB</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.30</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDown
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_in_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_in_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownIdle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_A</file>
+			<weight>5</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_B</file>
+			<weight>30</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_C</file>
+			<weight>30</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_D</file>
+			<weight>30</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		GetUp
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_out_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_out_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownBored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_feed_idle_B</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_runa</file>
+			<weight>70</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\deer_jumpa</file>
+			<weight>30</weight>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	</submodel>
+	
+	<component>
+		<logic type="Variation">
+			<data>
+				<submodelref ref="male"/>
+			</data>
+			<data>
+				<submodelref ref="female"/>
+			</data>
+		</logic>
+	</component>
+</animfile>

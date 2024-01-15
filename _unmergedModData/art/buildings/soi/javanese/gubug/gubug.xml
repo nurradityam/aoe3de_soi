@@ -1,0 +1,294 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_flag_civ</definebone>
+	<definebone>bone_deb-A00</definebone>
+	<definebone>bone_deb-A01</definebone>
+	<definebone>bone_deb-A02</definebone>
+	<definebone>bone_deb-A03</definebone>
+	<definebone>bone_deb-A04</definebone>
+	<definebone>bone_deb-A05</definebone>
+	<definebone>bone_deb-A06</definebone>
+	<definebone>bone_deb-A07</definebone>
+	<definebone>bone_deb-A08</definebone>
+	<definebone>bone_deb-B00</definebone>
+	<definebone>bone_deb-B01</definebone>
+	<definebone>bone_deb-B02</definebone>
+	<definebone>bone_deb-B03</definebone>
+	<definebone>bone_deb-B04</definebone>
+	<definebone>bone_deb-B05</definebone>
+	<definebone>bone_deb-B06</definebone>
+	<definebone>bone_deb-B07</definebone>
+	<definebone>bone_deb-B08</definebone>
+	<definebone>bone_deb-B09</definebone>
+	<definebone>bone_deb-B10</definebone>
+	<definebone>bone_deb-C00</definebone>
+	<definebone>bone_deb-C01</definebone>
+	<definebone>bone_deb-C02</definebone>
+	<definebone>bone_deb-C03</definebone>
+	<definebone>bone_deb-C04</definebone>
+	<definebone>bone_deb-D00</definebone>
+	<definebone>bone_deb-D01</definebone>
+	<definebone>bone_deb-D02</definebone>
+	<definebone>bone_deb-D03</definebone>
+	<definebone>bone_deb-D04</definebone>
+	<definebone>bone_deb-D05</definebone>
+	<definebone>bone_deb-D06</definebone>
+	<definebone>bone_deb-D07</definebone>
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<definebone>bone_debris_3c</definebone>
+	<definebone>bone_debris_4a</definebone>
+	<definebone>bone_debris_4b</definebone>
+	<definebone>bone_debris_4c</definebone>
+	<definebone>bone_debris_4d</definebone>
+	<definebone>bone_deb-A09</definebone>
+	<definebone>bone_debris_5a</definebone>
+	<definebone>bone_debris_5b</definebone>
+	<definebone>bone_debris_5c</definebone>
+	<definebone>bone_debris_5d</definebone>
+	<submodel>
+		east_age3
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<component>
+			cabin
+			<logic type="Destruction">
+						<p66>
+							<assetreference type="GrannyModel">
+								<file>nuggets\abandoned_cabin\abandoned_cabin</file>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin</from>
+										<to>buildings\soi\javanese\gubug\gubug_damaged</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin_normal</from>
+										<to>buildings\soi\javanese\gubug\gubug_b</to>
+									</replacetexture>
+							</assetreference>
+						</p66>
+						<p99>
+							<assetreference type="GrannyModel">
+								<file>nuggets\abandoned_cabin\abandoned_cabin</file>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin</from>
+										<to>buildings\soi\javanese\gubug\gubug</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin_normal</from>
+										<to>buildings\soi\javanese\gubug\gubug_b</to>
+									</replacetexture>
+							</assetreference>
+						</p99>
+			</logic>
+			<decal>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<effecttype>bump</effecttype>
+				<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+				<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+				<width>9.00</width>
+				<height>9.00</height>
+			</decal>
+		</component>
+		<component>
+			cabinDeath
+			<assetreference type="GrannyModel">
+								<file>nuggets\abandoned_cabin\abandoned_cabin_dead</file>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin</from>
+										<to>buildings\soi\javanese\gubug\gubug_damaged</to>
+									</replacetexture>
+									<replacetexture>
+										<from>nuggets\abandoned_cabin\abandoned_cabin_normal</from>
+										<to>buildings\soi\javanese\gubug\gubug_b</to>
+									</replacetexture>
+			</assetreference>
+			<decal>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<effecttype>bump</effecttype>
+				<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+				<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+				<width>9.00</width>
+				<height>9.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>cabin</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>nuggets\abandoned_cabin\abandoned_cabin_deathAnim</file>
+			</assetreference>
+			<component>cabinDeath</component>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_01
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\nat_2x2_stage1</file>
+			</assetreference>
+			<decal>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<effecttype>bump</effecttype>
+				<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+				<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+				<width>9.00</width>
+				<height>9.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_02
+		<attachment>
+			frame
+			<component>
+				aztec_frame
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\2x2_aztec_frame</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>aztec_frame</component>
+			</anim>
+		</attachment>
+		<component>
+			construction_stage_02
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\nat_2x2_stage2</file>
+			</assetreference>
+			<decal>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<effecttype>bump</effecttype>
+				<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+				<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+				<width>9.00</width>
+				<height>9.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_02</component>
+		</anim>
+	</submodel>
+	<submodel>
+		east_age3_con2
+		<attachment>
+			frame
+			<component>
+				aztec_frame
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\2x2_aztec_frame</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>aztec_frame</component>
+			</anim>
+		</attachment>
+		<component>
+			construction_stage_02
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\nat_2x2_stage2</file>
+			</assetreference>
+			<decal>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<effecttype>bump</effecttype>
+				<texture>nuggets\dropped_resource\dropped_resource_decalA</texture>
+				<bumptexture>nuggets\dropped_resource\dropped_resource_decalA_bump</bumptexture>
+				<width>9.00</width>
+				<height>9.00</height>
+			</decal>
+			<attach a="frame" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_02</component>
+		</anim>
+	</submodel>
+	<component>
+		yppotala
+		<logic type="BuildingCompletion">
+			<p0>
+				<submodelref ref="sub_construction_stage_01"/>
+			</p0>
+			<p33>
+				<submodelref ref="sub_construction_stage_02"/>
+			</p33>
+			<p66>
+				<submodelref ref="east_age3_con2"/>
+			</p66>
+			<p100>
+				<submodelref ref="east_age3"/>
+			</p100>
+		</logic>
+	</component>
+</animfile>

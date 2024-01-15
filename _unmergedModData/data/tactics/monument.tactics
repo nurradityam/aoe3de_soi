@@ -1,0 +1,37 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="43019">AutoGather</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="48954">RangedHP</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>1000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+	</action>
+	<action>
+		<name stringid="48954">RangedDamage</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>1000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyabstracttype>Military</modifyabstracttype>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGather</action>
+		<action>RangedHP</action>
+		<action>RangedDamage</action>
+	</tactic>
+</tactics>

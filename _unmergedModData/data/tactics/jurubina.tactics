@@ -1,0 +1,18 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="24102">Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<maxrange>3000.0</maxrange>
+		<rate type="AbstractWonder">1.0</rate>
+		<rate type="Building">1.0</rate>
+		<typedmaxrange type="YPDockAsian">3000.0</typedmaxrange>
+		<typedmaxrange type="Dock">3000.0</typedmaxrange>
+	</action>
+	<tactic>
+		Normal
+		<action>Build</action>
+	</tactic>
+</tactics>

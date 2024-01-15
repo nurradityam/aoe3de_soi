@@ -1,0 +1,149 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>borneo_canopy_01_death</definebone>
+	<definebone>borneo_canopy_02_death</definebone>
+	<definebone>borneo_canopy_03_death</definebone>
+	<definebone>borneo_canopy_04_death</definebone>
+	<component>
+		tree
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_01</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_02</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_03</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+			<v4>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>Terrain\trees\tree_borneo_canopy_04</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+		<logic type="Variation">
+			<v1>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_canopy_01.dmg">
+							<file>Terrain\trees\tree_borneo_canopy_01_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_canopy_02.dmg">
+							<file>Terrain\trees\tree_borneo_canopy_02_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_canopy_03.dmg">
+							<file>Terrain\trees\tree_borneo_canopy_03_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v3>
+			<v4>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" damagetemplate="Terrain\trees\damage\tree_borneo_canopy_04.dmg">
+							<file>Terrain\trees\tree_borneo_canopy_04_death</file>
+							<replacetexture>
+								<from>Terrain\trees\tree_borneo_canopy</from>
+								<to>Terrain\trees\mahoni\mahoni</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</v4>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

@@ -1,0 +1,57 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>japanese_maple01</definebone>
+	<definebone>japanese_maple02</definebone>
+	<definebone>japanese_maple03</definebone>
+	<definebone>japanese_maple01_death</definebone>
+	<definebone>japanese_maple02_death</definebone>
+	<definebone>japanese_maple03_death</definebone>
+	<component>
+		tree
+			<assetreference type="GrannyModel">
+				<file>terrain\trees\tree_japanese_maple02</file>
+					<replacetexture>
+						<from>terrain\trees\tree_japanese_maple</from>
+						<to>Terrain\trees\kepel\kepel</to>
+					</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<component>
+		death
+			<assetreference type="GrannyModel" damagetemplate="terrain\trees\damage\tree_japanese_maple_02.dmg">
+				<file>terrain\trees\tree_japanese_maple_death02</file>
+					<replacetexture>
+						<from>terrain\trees\tree_japanese_maple</from>
+						<to>Terrain\trees\kepel\kepel</to>
+					</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+</animfile>

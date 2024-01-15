@@ -1,0 +1,99 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_wheel03</definebone>
+	<definebone>bone_wheel04</definebone>
+	<attachment>
+		yoke
+		<include>units\trade\kereta_yoke.xml</include>
+	</attachment>
+	<component>
+		wagon
+		<linksection>
+			<linkoffset>0</linkoffset>
+			<linkcomponent>axel</linkcomponent>
+			<linkconstraint>0</linkconstraint>
+		</linksection>
+		<linksection>
+			<linkoffset>-2.6</linkoffset>
+			<linkcomponent>covered_wagon</linkcomponent>
+			<linkcomponent>driver</linkcomponent>
+			<linkcomponent>wood_c</linkcomponent>
+			<linkconstraint>1</linkconstraint>
+		</linksection>
+		<assetreference type="GrannyModel">
+			<file>units\trade\sugar_cane_wagon\sugar_cane_wagon</file>
+		</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+				<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+				<width>3.00</width>
+				<height>6.00</height>
+			</decal>
+			<watersplash>
+				<texture>units\artillery\cannon\wheel_B</texture>
+				<width>1.75</width>
+				<height>2.00</height>
+			</watersplash>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>units\trade\supply_cart\supply_cart_idle</file>
+		</assetreference>
+		<component>wagon</component>
+		<attach a="yoke" frombone="MASTER" tobone="MASTER" syncanims="1"/>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\trade\supply_cart\supply_cart_walk</file>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.00</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.10</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.20</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.30</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.40</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.50</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.60</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.70</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.80</tag>
+			<tag type="FootstepLeft" footprinttype="Wheel" footprintbone="bone_wheel_04">0.90</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.00</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.10</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.20</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.30</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.40</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.50</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.60</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.70</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.80</tag>
+			<tag type="FootstepRight" footprinttype="Wheel" footprintbone="bone_wheel_03">0.90</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.14</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.26</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.38</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.51</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.64</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.77</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.90</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.03</tag>
+		</assetreference>
+		<component>wagon</component>
+		<attach a="yoke" frombone="MASTER" tobone="MASTER" syncanims="1"/>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>units\trade\supply_cart\supply_cart_idle</file>
+		</assetreference>
+		<component>wagon</component>
+		<attach a="yoke" frombone="MASTER" tobone="MASTER" syncanims="1"/>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>units\trade\supply_cart\supply_cart_idle</file>
+		</assetreference>
+		<component>wagon</component>
+	</anim>
+</animfile>

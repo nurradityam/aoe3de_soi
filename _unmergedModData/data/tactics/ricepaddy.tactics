@@ -1,0 +1,44 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="43294">ModifyGatherCoin</name>
+		<type>ModifyGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43295">ModifyGatherFood</name>
+		<type>ModifyGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnInvisiblePriangan</name>
+		<type>Spawn</type>
+		<rate type="SSyahbandarInvisibleUnit">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		PaddyFood
+		<action>ModifyGatherFood</action>
+		<action>SpawnInvisiblePriangan</action>
+		<transition>
+			<tactic>PaddyCoin</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		PaddyCoin
+		<action>ModifyGatherCoin</action>
+		<action>SpawnInvisiblePriangan</action>
+		<transition>
+			<tactic>PaddyFood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+</tactics>

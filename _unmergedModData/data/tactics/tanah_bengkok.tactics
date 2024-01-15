@@ -1,0 +1,25 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="43019">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43019">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43019">AutoGatherGold</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGatherFood</action>
+		<action>AutoGatherWood</action>
+		<action>AutoGatherGold</action>
+	</tactic>
+</tactics>

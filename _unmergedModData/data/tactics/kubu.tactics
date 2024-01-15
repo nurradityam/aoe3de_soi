@@ -1,0 +1,87 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="38133">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>0.3</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>10</maxspread>
+		<spreadfactor>2.0</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Arrow</projectile>
+		<minrange>0</minrange>
+		<rate type="Unit">1.0 </rate>
+		<numberprojectiles>12</numberprojectiles>
+	</action>
+	<action>
+		<name stringid="38119">CannonAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ShortRangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<rate type="Unit">1.0 </rate>
+		<active>0</active>
+		<throw>1</throw>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<areasortmode>Directional</areasortmode>
+		<perfectaccuracy>1</perfectaccuracy>
+		<targetground>1</targetground>
+		<numberbounces>1</numberbounces>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="38121">AntiShipAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttackShip</anim>
+		<maxheight>0</maxheight>
+		<accuracy>0.7</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>1.0</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>ArrowFlaming</projectile>
+		<rate type="AbstractWarship">1.0 </rate>
+		<basedamagecap>1</basedamagecap>
+		<numberprojectiles>6</numberprojectiles>
+	</action>
+	<action>
+		<name stringid="69158">SpawnTimbalanSetia</name>
+		<type>Spawn</type>
+		<rate type="STimbalanSetia">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<action priority="100">AntiShipAttack</action>
+		<action priority="75">CannonAttack</action>
+		<action priority="75">RangedAttack</action>
+		<action>SpawnTimbalanSetia</action>
+	</tactic>
+</tactics>
