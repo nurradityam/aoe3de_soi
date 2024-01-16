@@ -68,15 +68,16 @@ COMMENT TAG DEFINITION:
 		<wood>0</wood> 
 		
 		<!-- free explorer/hero unit when started game -->
-		<startingunit>Explorer</startingunit> 
+		<startingunit>SUlama</startingunit> <!-- TODO: create proto unit -->
+		<startingunit>SUlama2</startingunit> <!-- TODO: create proto unit -->
 		
 		<!-- free unit/item spawned near town hall when started game like settler -->
-		<townstartingunit>Settler</townstartingunit>
-		<townstartingunit>Settler</townstartingunit>
-		<townstartingunit>Settler</townstartingunit>
-		<townstartingunit>Settler</townstartingunit>
-		<townstartingunit>Settler</townstartingunit>
-		<townstartingunit>Settler</townstartingunit>
+		<townstartingunit>SOrangKampung</townstartingunit> <!-- TODO: create proto unit -->
+		<townstartingunit>SOrangKampung</townstartingunit>
+		<townstartingunit>SOrangKampung</townstartingunit>
+		<townstartingunit>SOrangKampung</townstartingunit>
+		<townstartingunit>SOrangKampung</townstartingunit>
+		<townstartingunit>SSaudagar</townstartingunit> <!-- TODO: create proto unit -->
 		<townstartingunit>CrateofFood</townstartingunit>
 		<townstartingunit>CrateofFood</townstartingunit>
 		<townstartingunit>CrateofWood</townstartingunit>
@@ -125,13 +126,13 @@ COMMENT TAG DEFINITION:
 		<homecityfilename>homecityaceh.xml</homecityfilename> <!-- refer to data/homecityxxxx.xml -->
 		
 		<homecityflagtexture>objects\flags\aceh</homecityflagtexture> <!-- DUNNO, this is for which UI flag? -->
-		<homecityflagiconwpf>resources/images/icons/flags/Flag_British.png</homecityflagiconwpf> <!-- DUNNO, NEW, maybe for wpf/xaml ui defintion -->
+		<homecityflagiconwpf>resources/images/icons/flags/Flag_British.png</homecityflagiconwpf> <!-- DUNNO, NEW, maybe for wpf/xaml ui defintion, folder refer to data/wpfg/resources/ -->
 		<homecitypreviewwpf>resources/images/icons/history/histories/h_pc_british.png</homecitypreviewwpf> <!-- DUNNO, NEW, maybe for wpf/xaml ui defintion -->
 		<homecityflagbuttonwpf>resources\images\icons\flags\flag_hc_british.png</homecityflagbuttonwpf> <!-- DUNNO, NEW, maybe for wpf/xaml ui defintion -->
 		<homecityflagbuttonset>britishFlagBtn</homecityflagbuttonset> <!-- texture for ingame homecity button, refer to buttonsets.xml -->
 		<homecityflagbuttonsetlarge>britishFlagBtnLarge</homecityflagbuttonsetlarge> <!--MAYBE, texture for ingame homecity button, refer to buttonsets.xml, dont know the difference    -->
 		<postgameflagtexture>ui\ingame\ingame_ui_postgame_flag_aceh</postgameflagtexture> <!-- MAYBE, texture for postgame score flag -->
-    <postgameflagiconwpf>resources/images/icons/flags/postgame_flag_british.png</postgameflagiconwpf> <!-- DUNNO, NEW, this is for which UI flag? -->
+		<postgameflagiconwpf>resources/images/icons/flags/postgame_flag_british.png</postgameflagiconwpf> <!-- DUNNO, NEW, this is for which UI flag? folder refer to data/wpfg/resources/ -->
 		
 		<!-- MAYBE, texture asset for online lobby -->
 		<matchmakingtextures>
@@ -157,5 +158,4 @@ COMMENT TAG DEFINITION:
 		<visible>1</visible> <!-- DUNNO, NEW -->
 		<visibleineditor>1</visibleineditor> <!-- DUNNO, NEW -->
 	</civ>
-	
 </civsmods>

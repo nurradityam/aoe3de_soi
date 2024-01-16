@@ -1,0 +1,14 @@
+<AI>
+   <!-- aceh using british as reference-->
+   <version>2</version> <!-- dunno, maybe DE use ver 2, legacy ver 1-->
+   <script>aiLoaderStandard</script> <!-- refer to .xs ai file-->
+   <nameID>599934</nameID>
+   <tooltipID>41717</tooltipID>
+   <forcedciv>Aceh</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>resources/images/icons/singleplayer/cpai_avatar_aceh.png</icon> <!-- refer to data/wpfg/resources/images/-->
+   <chatset>Elizabeth</chatset> <!-- refer to game/ai/chatsets.xml, temporary use existing elizabeth set -->
+   <playerNames> 
+      <nameID>599934<civ>Aceh</civ></nameID>
+	</playerNames>
+</AI>
