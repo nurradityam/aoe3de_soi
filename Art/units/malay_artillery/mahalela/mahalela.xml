@@ -1,0 +1,468 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>bone_fuse</definebone>
+	<definebone>bone_cart</definebone>
+	<definebone>bone_wheel</definebone>
+	<definebone>bone_wheel01</definebone>
+	<definebone>bone_hat</definebone>
+	<attachment>
+		attachment_cannon_small_smoke_puff_ring
+		<component>
+			cannon_small_smoke_puff_ring
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_smoke_puff_ring.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_smoke_puff_ring</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_barrel_explosion
+		<component>
+			cannon_small_barrel_explosion
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_barrel_explosion.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_barrel_explosion</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_fuse_fire
+		<component>
+			cannon_small_fuse_fire
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_fuse_fire.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_fuse_fire</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_smoking_barrel
+		<component>
+			cannon_small_smoking_barrel
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_smoking_barrel.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_smoking_barrel</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_blast
+		<component>
+			cannon_small_blast
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_blast.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_blast</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_battlefield_smoke
+		<component>
+			battlefield_smoke
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\battlefield_smoke.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>battlefield_smoke</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_flash
+		<component>
+			cannon_small_flash
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_flash.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_flash</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_sparks
+		<component>
+			cannon_small_sparks
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_smallglow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_sparks</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_smoke_puff_a
+		<component>
+			cannon_small_smoke_puff_a
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_smoke_puff_a.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_smoke_puff_a</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_coneblast
+		<component>
+			cannon_coneblast
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_coneblast.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_coneblast</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_small_smoke_puff_b
+		<component>
+			cannon_small_smoke_puff_b
+			<assetreference type="ParticleSystem">
+				<file>units\artillery\cannon\cannon_small_smoke_puff_b.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_small_smoke_puff_b</component>
+		</anim>
+	</attachment>
+	<attachment>
+		russian_cannon_horses
+		<include>units\malay_artillery\mahalela\horse.xml</include>
+	</attachment>
+
+	<attachment>
+		hats
+		<component>
+			hat
+			<logic type="Tech">
+				<none>
+					<assetreference type="GrannyModel">
+						<file>soi\3d_models\ikatKepala\ikatKepala2</file>
+					</assetreference>
+				</none>
+				<helmetbronze>
+					<assetreference type="GrannyModel">
+						<file>soi\3d_models\ikatKepala\ikatKepala0</file>
+					</assetreference>
+				</helmetbronze>
+				<helmetdamask>
+					<assetreference type="GrannyModel">
+						<file>soi\3d_models\ikatKepala\ikatKepala1</file>
+					</assetreference>
+				</helmetdamask>
+			</logic>
+		</component>
+		<anim>
+			Idle
+			<component>hat</component>
+		</anim>
+	</attachment>
+	<component>
+		great_bombard
+		<linksection>
+			<linkoffset>.1</linkoffset>
+			<linkcomponent>horse</linkcomponent>
+			<linkcomponent>horse01</linkcomponent>
+			<linkcomponent>gunner_b</linkcomponent>
+			<linkcomponent>plunger</linkcomponent>
+			<linkcomponent>reins</linkcomponent>
+			<linkconstraint>0</linkconstraint>
+		</linksection>
+		<linksection>
+			<linkoffset>-1.6</linkoffset>
+			<linkcomponent>cannon</linkcomponent>
+			<linkcomponent>gunner_a</linkcomponent>
+			<linkcomponent>screw_pole</linkcomponent>
+			<linkconstraint>1</linkconstraint>
+		</linksection>
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\spc\russian_cannon\russian_cannon</file>
+							<replacetexture>
+								<from>units\spc\russian_cannon\russian_cannon</from>
+								<to>units\malay_artillery\mahalela\mahalela</to>
+							</replacetexture>
+							<replacetexture>
+								<from>units\spc\russian_cannon\russian_cannon_normal</from>
+								<to>units\malay_artillery\mahalela\mahalela_b</to>
+							</replacetexture>
+				</assetreference>
+			</normal>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture>shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>4.00</width>
+			<height>6.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+		<attach a="hats" frombone="bone_hat" tobone="Bip01 HEAD" syncanims="0"/>
+		<attach a="hats" frombone="bone_hat" tobone="Bip02 HEAD" syncanims="0"/>
+		<attach a="russian_cannon_horses" frombone="MASTER" tobone="MASTER" syncanims="1"/>
+	</component>
+	<component>
+		cannon_Stripped
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\spc\russian_cannon\russian_cannon_stripped</file>
+							<replacetexture>
+								<from>units\spc\russian_cannon\russian_cannon</from>
+								<to>units\malay_artillery\mahalela\mahalela</to>
+							</replacetexture>
+							<replacetexture>
+								<from>units\spc\russian_cannon\russian_cannon_normal</from>
+								<to>units\malay_artillery\mahalela\mahalela_b</to>
+							</replacetexture>
+				</assetreference>
+			</normal>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture>shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>4.00</width>
+			<height>6.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+		<attach a="hats" frombone="bone_hat" tobone="Bip01 HEAD" syncanims="0"/>
+		<attach a="hats" frombone="bone_hat" tobone="Bip02 HEAD" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_idle</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_idle</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_walk</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_walk</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_walk</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		RangedAttack
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_attack</file>
+			<tag type="Attack">0.06</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CannonShoot">0.06</tag>
+		</assetreference>
+		<component>cannon_Stripped</component>
+		<attach a="attachment_cannon_small_barrel_explosion" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_small_blast" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_small_sparks" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_ring" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_battlefield_smoke" frombone="bone_cart" tobone="bone_cart" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_a" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_coneblast" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoking_barrel" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_b" frombone="ATTACHPOINT" tobone="LAUNCHPOINT" syncanims="0"/>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.15</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.30</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.80</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.57</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.22</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AmbienceHorse">0.05</tag>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Reload
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_reload</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		CombatIdle
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_combatidle</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Limber
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_limber</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Unlimber
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_unlimber</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Bombard_ranged_idle
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_combatidle</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_bored
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_combatidle</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_attack</file>
+			<tag type="Attack">0.06</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CannonShoot">0.06</tag>
+		</assetreference>
+		<component>cannon_Stripped</component>
+		<attach a="attachment_cannon_small_barrel_explosion" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_cannon_small_sparks" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_ring" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_battlefield_smoke" frombone="ATTACHPOINT" tobone="bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_a" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoking_barrel" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+		<attach a="attachment_cannon_small_smoke_puff_b" frombone="ATTACHPOINT" tobone="Bone_launchpoint" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_aim
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_combatidle</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_reload
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_reload</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_melee_idle
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_combatidle</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_melee_attack
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_attack</file>
+			<tag type="Attack">0.06</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CannonShoot">0.06</tag>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_walk
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_stripped_walk</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_jog
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_stripped_walk</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_run
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_stripped_walk</file>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+	<anim>
+		Bombard_limber
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_limber</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Bombard_unlimber
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_unlimber</file>
+		</assetreference>
+		<component>great_bombard</component>
+	</anim>
+	<anim>
+		Bombard_death
+		<assetreference type="GrannyAnim">
+			<file>units\spc\russian_cannon\russian_cannon_death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.22</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.30</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.80</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.58</tag>
+		</assetreference>
+		<component>cannon_Stripped</component>
+	</anim>
+</animfile>

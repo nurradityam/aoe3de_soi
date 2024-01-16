@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_attach_horse_a</definebone>
+	<definebone>bone_attach_horse_b</definebone>
+	<definebone>HS Bone Master</definebone>
+	<component>
+		platform
+		<assetreference type="GrannyModel">
+			<file>units\javanese_others\karaban_sape\karaban_platform</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>platform</component>
+	</anim>
+	<anim>
+		Walk
+		<component>platform</component>
+	</anim>
+	<anim>
+		Death
+		<component>platform</component>
+	</anim>
+</animfile>

@@ -33,23 +33,23 @@ COMMENT TAG DEFINITION:
 		<!-- age upgrade tech, refer to techtreey.xml-->
 		<agetech>
 			<age>Age0</age>
-			<tech>Age0British</tech>
+			<tech>Age0Aceh</tech>
 		</agetech>
 		<agetech>
 			<age>Age1</age>
-			<tech>ColonializeBritish</tech>
+			<tech>ColonializeAceh</tech>
 		</agetech>
 		<agetech>
 			<age>Age2</age>
-			<tech>FortressizeBritish</tech>
+			<tech>FortressizeAceh</tech>
 		</agetech>
 		<agetech>
 			<age>Age3</age>
-			<tech>IndustrializeBritish</tech>
+			<tech>IndustrializeAceh</tech>
 		</agetech>
 		<agetech>
 			<age>Age4</age>
-			<tech>ImperializeBritish</tech>
+			<tech>ImperializeAceh</tech>
 		</agetech>
 		
 		<postindustrialtech>PostIndustrialBritish</postindustrialtech> <!-- DUNNO -->

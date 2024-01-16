@@ -1,0 +1,44 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\javanese_others\domba_garut\domba_garut_1</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\javanese_others\domba_garut\domba_garut_2</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\javanese_others\domba_garut\domba_garut_3</file>
+				</assetreference>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		HandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_idle_F</file>
+			<tag type="Attack">0.67</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_idle_H</file>
+			<tag type="Attack">0.67</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_bored_A</file>
+			<tag type="Attack">0.67</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\horse_idle_E</file>
+			<tag type="Attack">0.67</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

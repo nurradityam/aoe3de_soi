@@ -1,0 +1,174 @@
+<techtreemods>
+	<Tech name ='Age0Aceh' type ='Normal'>
+		<DBID>232</DBID>
+		<Status>UNOBTAINABLE</Status>
+		<Flag>Shadow</Flag>
+		<Effects>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SUlama</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SUlama2</Target></Effect>
+			<Effect type ='Data' action ='SpawnUlama' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SMadrasah</Target></Effect>
+			<Effect type ='Data' action ='SpawnUlama2' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SMadrasah</Target></Effect>
+			<Effect type ='Data' action ='RangedAttack' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SMadrasah</Target></Effect>
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SSaudagar</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SOrangKampung</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>TownCenter</Target></Effect>
+			<Effect type ='TechStatus' status ='active'>AcehMahligai</Effect>
+			<Effect type ='TechStatus' status ='active'>MalayCoffeeSet</Effect>
+			<Effect type ='TechStatus' status ='active'>AcehMarketSet</Effect>
+			<Effect type ='TechStatus' status ='active'>MalayMarketTrade</Effect>
+			<Effect type ='TechStatus' status ='active'>MalayPerpustakaanSet</Effect>
+			<Effect type ='TechStatus' status ='active'>AcehUpgradeSet</Effect>
+			<!--<Effect type ='TechStatus' status ='obtainable'>MalayInvisibleSyahbandar</Effect>-->
+			<Effect type ='TechStatus' status ='active'>AcehArtilleryConstruction</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>SelectiveBreeding</Effect>
+			
+			<Effect type ='Data' amount ='0.00' subtype ='EnableTradeRouteLOS' relativity ='Absolute'>
+				<Target type ='Player'></Target></Effect>
+			
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Unit</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.100000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>Unit</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.400000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>SSaudagar</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.200000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>SUlama</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.200000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>SUlama2</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.000000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>Mercenary</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.000000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>AbstractNativeWarrior</Target></Effect>
+			<Effect type ='Data' action ='AutoGatherCoin' amount ='0.050000' subtype ='WorkRate' unittype ='Gold' relativity ='Assign'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			
+			<Effect type ='SetName' proto ='SOrangKampung' culture ='none' newName ='90118'></Effect>
+			
+			<Effect type ='Data' amount ='0.80' subtype ='BuildPoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>TradingPost</Target></Effect>			
+			<Effect type ='Data' amount ='0.80' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>TradingPost</Target></Effect>
+				
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofXP</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofFood</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofWood</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofCoin</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofFoodLarge</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofWoodLarge</Target></Effect>
+			<Effect type ='Data' amount ='50.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>CrateofCoinLarge</Target></Effect>
+			<Effect type ='Data' amount ='180.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>SSyahbandarInvisibleUnit</Target></Effect>
+				
+				
+			<Effect type ='Data' amount ='80.00' subtype ='TrainPoints' relativity ='Assign'>
+				<Target type ='ProtoUnit'>ypGoatFat</Target></Effect>
+				
+				
+				
+			<Effect type ='Data' amount ='0.70' subtype ='BuildPoints' relativity ='Percent'>
+				<Target type ='ProtoUnit'>SPenggawaConstruct</Target></Effect>
+			<Effect type ='Data' amount ='0.70' subtype ='BuildPoints' relativity ='Percent'>
+				<Target type ='ProtoUnit'>SRentakaConstruct</Target></Effect>
+			<Effect type ='Data' amount ='0.70' subtype ='BuildPoints' relativity ='Percent'>
+				<Target type ='ProtoUnit'>SLelaConstruct</Target></Effect>
+			<Effect type ='Data' amount ='0.70' subtype ='BuildPoints' relativity ='Percent'>
+				<Target type ='ProtoUnit'>SAgungConstruct</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SAgungConstruct</Target></Effect>
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>ypRicePaddy</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SPedati</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>ypGoat</Target></Effect>
+			<!--<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>ypWaterBuffalo</Target></Effect>-->
+				
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SHouseMalay</Target></Effect>
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SPerpustakaan</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SMahligai</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SIstal</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>STangsi</Target></Effect>
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>TradingPost</Target></Effect>
+			<!--<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SKamarDagang</Target></Effect>-->
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SKubu</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Dock</Target></Effect>
+			<Effect type ='TechStatus' status ='active'>XPTrickle</Effect>
+			
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>CWallGate</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>WallStraight5</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>WallConnector</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>WallStraight2</Target></Effect>
+				
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SInongBalee</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SPemuras</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SIstinggar</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SSipai</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SKudaTizi</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SHulubalang</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SKudaBelazuardi</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SGajahKenaikan</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SRentaka</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SPenggawa</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SAgung</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SPinas</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SBedar</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SGaliung</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>FishingBoat</Target></Effect>
+				
+			<!--<Effect type ='Data' amount ='0.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SLasykarRumi</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>SDeMarsose</Target></Effect>-->
+				
+		</Effects>
+	</Tech>
+</techtreemods>
