@@ -80,12 +80,7 @@
 		<command>uiTransformSelectedUnit("CWallGate")</command>
 		<rollovertextid>24785</rollovertextid>
 	</protounitcommand>
-	<protounitcommand>
-		<name>UpgradeJager</name>
-		<icon>art\buildings\wall\gate_icon_64x64</icon>
-		<command>uiTransformSelectedUnit("SJager")</command>
-		<rollovertextid>80008</rollovertextid>
-	</protounitcommand>
+	
 	<protounitcommand>
 		<name>TownBell</name>
 		<icon>art\ui\command\town_bell</icon>
@@ -330,6 +325,15 @@
 		<activerollovertextid>45905</activerollovertextid>
 		<command>unitSetTactic("FertilityDance")</command>
 	</protounitcommand>
+	<!-- <protounitcommand> -->
+		<!-- <name>FertilityDance</name> -->
+		<!-- <icon>art\ui\fire_pit\Gifts</icon> -->
+		<!-- <activeicon>art\ui\fire_pit\Gifts_on</activeicon> -->
+		<!-- <disabledicon>art\ui\fire_pit\Gifts</disabledicon> -->
+		<!-- <rollovertextid>60001</rollovertextid> -->
+		<!-- <activerollovertextid>60002</activerollovertextid> -->
+		<!-- <command>unitSetTactic("FertilityDance2")</command> -->
+	<!-- </protounitcommand> -->
 	<protounitcommand>
 		<name>Tactic15</name>
 		<icon>art\ui\fire_pit\Gifts</icon>
@@ -483,6 +487,387 @@
 		<activerollovertextid>46087</activerollovertextid>
 		<command>unitSetTactic("HolyDanceAztec")</command>
 	</protounitcommand>
+<!-- //Deli -->
+	<protounitcommand>
+		<name>EstateFood</name>
+		<icon>art\ui\command\tactic_rice_paddy_food_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_food_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_food_off</disabledicon>
+		<rollovertextid>66055</rollovertextid>
+		<activerollovertextid>66056</activerollovertextid>
+		<command>unitSetTactic("PaddyFood")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>EstateWood</name>
+		<icon>art\ui\command\tactic_rice_paddy_wood_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_wood_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_wood_off</disabledicon>
+		<rollovertextid>66055</rollovertextid>
+		<activerollovertextid>66056</activerollovertextid>
+		<command>unitSetTactic("PaddyWood")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>EstateCoin</name>
+		<icon>art\ui\command\tactic_rice_paddy_coin_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_coin_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_coin_off</disabledicon>
+		<rollovertextid>66053</rollovertextid>
+		<activerollovertextid>66054</activerollovertextid>
+		<command>unitSetTactic("PaddyCoin")</command>
+	</protounitcommand>
+	<!-- batak rework -->
+	<protounitcommand>
+		<name>DatuDance</name>
+		<icon>art\ui\fire_pit\Holy_Aztec</icon>
+		<activeicon>art\ui\fire_pit\Holy_Aztec_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Holy_Aztec</disabledicon>
+		<rollovertextid>46086</rollovertextid>
+		<activerollovertextid>46087</activerollovertextid>
+		<command>unitSetTactic("DatuDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>AlarmDanceBatak</name>
+		<icon>art\ui\fire_pit\Alarm</icon>
+		<activeicon>art\ui\fire_pit\Alarm_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Alarm</disabledicon>
+		<rollovertextid>46047</rollovertextid>
+		<activerollovertextid>46048</activerollovertextid>
+		<command>unitSetTactic("AlarmDance")</command>
+	</protounitcommand>
+	
+	<protounitcommand>
+		<name>PalmMillFood</name>
+		<icon>art\ui\command\tactic_rice_paddy_food_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_food_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_food_off</disabledicon>
+		<rollovertextid>110902</rollovertextid>
+		<activerollovertextid>66056</activerollovertextid>
+		<command>unitSetTactic("PalmMillFood")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>PalmMillWood</name>
+		<icon>art\ui\command\tactic_rice_paddy_wood_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_wood_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_wood_off</disabledicon>
+		<rollovertextid>110903</rollovertextid>
+		<activerollovertextid>66056</activerollovertextid>
+		<command>unitSetTactic("PalmMillWood")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>PalmMillCoin</name>
+		<icon>art\ui\command\tactic_rice_paddy_coin_off</icon>
+		<activeicon>art\ui\command\tactic_rice_paddy_coin_on</activeicon>
+		<disabledicon>art\ui\command\tactic_rice_paddy_coin_off</disabledicon>
+		<rollovertextid>110904</rollovertextid>
+		<activerollovertextid>66054</activerollovertextid>
+		<command>unitSetTactic(PalmMillCoin)</command>
+	</protounitcommand>
+	
+
+<!-- toba -->
+	<protounitcommand>
+		<name>TortorSipituDance</name>
+		<icon>art\ui\fire_pit\heal</icon>
+		<activeicon>art\ui\fire_pit\heal_on</activeicon>
+		<disabledicon>art\ui\fire_pit\heal</disabledicon>
+		<rollovertextid>110083</rollovertextid>
+		<activerollovertextid>110084</activerollovertextid>
+		<command>unitSetTactic("HealingDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>ParlotingDance</name>
+		<icon>art\ui\fire_Pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>110081</rollovertextid>
+		<activerollovertextid>110082</activerollovertextid>
+		<command>unitSetTactic("ParlotingDance")</command>
+	</protounitcommand>	
+<!-- karo -->
+	<protounitcommand>
+		<name>GundalaGundalaDance</name>
+		<icon>art\ui\fire_pit\heal</icon>
+		<activeicon>art\ui\fire_pit\heal_on</activeicon>
+		<disabledicon>art\ui\fire_pit\heal</disabledicon>
+		<rollovertextid>113081</rollovertextid>
+		<activerollovertextid>113082</activerollovertextid>
+		<command>unitSetTactic("GundalaGundalaDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>SimbisaDance</name>
+		<icon>art\ui\fire_Pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>113083</rollovertextid>
+		<activerollovertextid>113084</activerollovertextid>
+		<command>unitSetTactic("SimbisaDance")</command>
+	</protounitcommand>	
+	<!-- mandailing -->
+	<protounitcommand>
+		<name>NamoraDance</name>
+		<icon>art\ui\fire_pit\Founder</icon>
+		<activeicon>art\ui\fire_pit\Founder_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Founder</disabledicon>
+		<rollovertextid>112006</rollovertextid>
+		<activerollovertextid>112007</activerollovertextid>
+		<command>unitSetTactic("NamoraDance")</command>
+	</protounitcommand>
+	<!-- nias -->
+	<protounitcommand>
+		<name>FataeleDance</name>
+		<icon>art\ui\fire_pit\morning_wars</icon>
+		<activeicon>art\ui\fire_pit\morning_Wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\morning_wars</disabledicon>
+		<rollovertextid>114081</rollovertextid>
+		<activerollovertextid>114082</activerollovertextid>
+		<command>unitSetTactic("FataeleDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>SiuluDance</name>
+		<icon>art\ui\fire_pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>114083</rollovertextid>
+		<activerollovertextid>114084</activerollovertextid>
+		<command>unitSetTactic("SiuluDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformSamuiMaturing</name>
+		<icon>art\ui\units\ethnic_infantry\parmossak\parmossak</icon>
+		<command>uiTransformSelectedUnit("SSamuiMATURING")</command>
+		<associatedtech>ColonializeNias</associatedtech>
+		<rollovertextid>114113</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformBohalimaMaturing</name>
+		<icon>units\natives\holcan_spearman_portrait</icon>
+		<command>uiTransformSelectedUnit("SBohalimaMATURING")</command>
+		<associatedtech>FortressizeNias</associatedtech>
+		<rollovertextid>114105</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformIramatuaMaturing</name>
+		<icon>art\ui\units\ethnic_infantry\hujur\hujur</icon>
+		<command>uiTransformSelectedUnit("SIramatuaMATURING")</command>
+		<associatedtech>ColonializeNias</associatedtech>
+		<rollovertextid>114109</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformEmaliMaturing</name>
+		<icon>art\units\asians\japanese\samurai\samurai_icon_portrait</icon>
+		<command>uiTransformSelectedUnit("SEmaliMATURING")</command>
+		<associatedtech>ColonializeNias</associatedtech>
+		<rollovertextid>114117</rollovertextid>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>TransformFamuraMaturing</name>
+		<icon>art\ui\units\ethnic_infantry\pamurhas\pamurhas_icon_medium</icon>
+		<command>uiTransformSelectedUnit("SFamuraMATURING")</command>
+		<associatedtech>FortressizeNias</associatedtech>
+		<rollovertextid>114121</rollovertextid>
+	</protounitcommand>	
+	<!-- gayo -->
+	<protounitcommand>
+		<name>SamanDance</name>
+		<icon>art\ui\fire_pit\Alarm</icon>
+		<activeicon>art\ui\fire_pit\Alarm_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Alarm</disabledicon>
+		<rollovertextid>115080</rollovertextid>
+		<activerollovertextid>115081</activerollovertextid>
+		<command>unitSetTactic("SamanDance")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>GuelDance</name>
+		<icon>art\ui\fire_pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>115082</rollovertextid>
+		<activerollovertextid>115083</activerollovertextid>
+		<command>unitSetTactic("GuelDance")</command>
+	</protounitcommand>
+	<!-- balinese -->
+	<protounitcommand>
+		<name>TransformLembuBlack</name>
+		<icon>art\</icon>
+		<command>uiTransformSelectedUnit("SLembuBlack")</command>
+		<associatedtech>Colonialize</associatedtech>
+		<rollovertextid>114220</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformLembuWhite</name>
+		<icon>art\</icon>
+		<command>uiTransformSelectedUnit("SLembuWhite")</command>
+		<associatedtech>Colonialize</associatedtech>
+		<rollovertextid>114220</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>RejangDance</name>
+		<icon>art\ui\fire_Pit\Fertility</icon>
+		<activeicon>art\ui\fire_pit\Fertility_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Fertility</disabledicon>
+		<rollovertextid>160081</rollovertextid>
+		<activerollovertextid>160082</activerollovertextid>
+		<command>unitSetTactic("FertilityDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>PendetDance</name>
+		<icon>art\ui\fire_Pit\Founder</icon>
+		<activeicon>art\ui\fire_pit\Founder_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Founder</disabledicon>
+		<rollovertextid>160083</rollovertextid>
+		<activerollovertextid>160084</activerollovertextid>
+		<command>unitSetTactic("FounderDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>BarisDance</name>
+		<icon>art\ui\fire_Pit\Alarm</icon>
+		<activeicon>art\ui\fire_pit\Alarm_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Alarm</disabledicon>
+		<rollovertextid>160085</rollovertextid>
+		<activerollovertextid>160086</activerollovertextid>
+		<command>unitSetTactic("AlarmDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>LegongDance</name>
+		<icon>art\ui\fire_Pit\war_dance</icon>
+		<activeicon>art\ui\fire_pit\war_dance_on</activeicon>
+		<disabledicon>art\ui\fire_pit\war_dance</disabledicon>
+		<rollovertextid>160087</rollovertextid>
+		<activerollovertextid>160088</activerollovertextid>
+		<command>unitSetTactic("WarDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>CalonarangDance</name>
+		<icon>art\ui\fire_Pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>160089</rollovertextid>
+		<activerollovertextid>160090</activerollovertextid>
+		<command>unitSetTactic("GarlandWarDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>KecakDance</name>
+		<icon>art\ui\fire_Pit\Gifts</icon>
+		<activeicon>art\ui\fire_pit\Gifts_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Gifts</disabledicon>
+		<rollovertextid>160091</rollovertextid>
+		<activerollovertextid>160092</activerollovertextid>
+		<command>unitSetTactic("GiftDance")</command>
+	</protounitcommand>	
+	<!-- klungkung -->
+	<protounitcommand>
+		<name>BarisGedeDance</name>
+		<icon>art\ui\fire_Pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>161081</rollovertextid>
+		<activerollovertextid>161082</activerollovertextid>
+		<command>unitSetTactic("BarisGedeDance")</command>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>BarisBedilDance</name>
+		<icon>art\ui\fire_Pit\garland_wars</icon>
+		<activeicon>art\ui\fire_pit\garland_wars_on</activeicon>
+		<disabledicon>art\ui\fire_pit\garland_wars</disabledicon>
+		<rollovertextid>161083</rollovertextid>
+		<activerollovertextid>161084</activerollovertextid>
+		<command>unitSetTactic("BarisBedilDance")</command>
+	</protounitcommand>	
+	<!-- dayak -->
+	<protounitcommand>
+		<name>Kayau</name>
+		<icon>art\ui\fire_pit\Alarm</icon>
+		<activeicon>art\ui\fire_pit\Alarm_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Founder</disabledicon>
+		<rollovertextid>116081</rollovertextid>
+		<activerollovertextid>116082</activerollovertextid>
+		<command>unitSetTactic("Kayau")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>Pangkalima</name>
+		<icon>art\ui\fire_pit\WarChief_Aztec</icon>
+		<activeicon>art\ui\fire_pit\WarChief_Aztec_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Holy_Aztec</disabledicon>
+		<rollovertextid>116083</rollovertextid>
+		<activerollovertextid>116084</activerollovertextid>
+		<command>unitSetTactic("Pangkalima")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>Temuai</name>
+		<icon>art\ui\fire_pit\Earth_Mother</icon>
+		<activeicon>art\ui\fire_pit\Earth_Mother_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Earth_Mother</disabledicon>
+		<rollovertextid>116085</rollovertextid>
+		<activerollovertextid>116086</activerollovertextid>
+		<command>unitSetTactic("Temuai")</command>
+	</protounitcommand>
+	<protounitcommand>
+		<name>Lesung</name>
+		<icon>art\ui\fire_pit\war_dance</icon>
+		<activeicon>art\ui\fire_pit\war_dance_on</activeicon>
+		<disabledicon>art\ui\fire_pit\Founder</disabledicon>
+		<rollovertextid>116087</rollovertextid>
+		<activerollovertextid>116088</activerollovertextid>
+		<command>unitSetTactic("Lesung")</command>
+	</protounitcommand>
+
+	<!--eksperimen Makassar-->
+	<protounitcommand>
+		<name>TransformLumbung</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SLumbung2")</command>
+		<rollovertextid>24785</rollovertextid>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>TransformLumbung2</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SLumbung3")</command>
+		<rollovertextid>24785</rollovertextid>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>TransformToWarani</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SToWaraniP")</command>
+		<rollovertextid>172805</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformToMaradeka</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SToMaradekaP")</command>
+		<rollovertextid>172804</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformPalapaBarambang</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SPalapaBarambangP")</command>
+		<rollovertextid>172205</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformTuBontoala</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("STuBontoalaP")</command>
+		<rollovertextid>172209</rollovertextid>
+	</protounitcommand>
+	<protounitcommand>
+		<name>TransformPappinawang</name>
+		<icon>ui\Buildings\farm_icon</icon>
+		<command>uiTransformSelectedUnit("SPappinawangP")</command>
+		<rollovertextid>172213</rollovertextid>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>TransformPakkinyarang</name>
+		<icon>ui\units\malay_cavalry\hulubalang\hulubalang</icon>
+		<command>uiTransformSelectedUnit("SPakkanyarangP")</command>
+		<rollovertextid>172806</rollovertextid>
+	</protounitcommand>	
+	<protounitcommand>
+		<name>TransformEncik</name>
+		<icon>units\cavalry\spahi\spahi_icon</icon>
+		<command>uiTransformSelectedUnit("SEncikMaturing")</command>
+		<rollovertextid>24785</rollovertextid>
+		<associatedtech>IndustrializeLingga</associatedtech>
+	</protounitcommand>		
+	
 	<protounitcommand>
 		<name>TacticSamurai</name>
 		<icon>art\ui\command\tactic_samurai_off</icon>
@@ -690,15 +1075,15 @@
 		<activerollovertextid>65165</activerollovertextid>
 		<command>unitSetTactic("WonderWood")</command>
 	</protounitcommand>
-	<protounitcommand>
-		<name>WonderStandardArmy</name>
-		<icon>art\ui\command\tactic_wonder_standard_army_off</icon>
-		<activeicon>art\ui\command\tactic_wonder_standard_army_on</activeicon>
-		<disabledicon>art\ui\command\tactic_wonder_standard_army_off</disabledicon>
-		<rollovertextid>68428</rollovertextid>
-		<activerollovertextid>68429</activerollovertextid>
-		<command>unitSetTactic("StandardArmy")</command>
-	</protounitcommand>
+	<!-- <protounitcommand> -->
+		<!-- <name>WonderStandardArmy</name> -->
+		<!-- <icon>art\ui\command\tactic_wonder_standard_army_off</icon> -->
+		<!-- <activeicon>art\ui\command\tactic_wonder_standard_army_on</activeicon> -->
+		<!-- <disabledicon>art\ui\command\tactic_wonder_standard_army_off</disabledicon> -->
+		<!-- <rollovertextid>68428</rollovertextid> -->
+		<!-- <activerollovertextid>68429</activerollovertextid> -->
+		<!-- <command>unitSetTactic("StandardArmy")</command> -->
+	<!-- </protounitcommand> -->
 	<protounitcommand>
 		<name>WonderTerritorialArmy</name>
 		<icon>art\ui\command\tactic_wonder_territorial_army_off</icon>
@@ -1070,4 +1455,5 @@
 		<associatedtech>skamantren</associatedtech>
 		<rollovertextid>89008</rollovertextid>
 	</protounitcommand>
+	
 </protounitcommands>

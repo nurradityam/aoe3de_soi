@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--RizkyR: eksperimen Palembang
+taken from WOL Sarna.tactics-->
+<tactics>
+	<action>
+		<name stringid="38127">VolleyRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38127">LineRangedAttackKneel</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_kneel_attack</anim>
+		<reloadanim>Volley_kneel_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38127">LineRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38130">VolleyHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>charge_attack</anim>
+		<idleanim>charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38136">DefendRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38137">DefendHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>charge_attack</anim>
+		<idleanim>charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.5</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38129">StaggerRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="38132">StaggerHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>charge_attack</anim>
+		<idleanim>charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.5</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38135">MeleeHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>charge_attack</anim>
+		<idleanim>charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38118">BuildingAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_mele_attack</anim>
+		<idleanim>Charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<spreadfactor>0.25</spreadfactor>
+		<damage>6.5</damage>
+		<rof>1.5</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38131">CoverHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Charge_mele_attack</anim>
+		<spreadfactor>0.25</spreadfactor>
+		<damage>6.5</damage>
+		<rof>1.5</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38118">CoverBuildingAttack</name>
+		<type>Attack</type>
+		<maxrange>1</maxrange>
+		<rate type="Building">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Charge_attack</anim>
+		<spreadfactor>0.25</spreadfactor>
+		<damage>6.5</damage>
+		<rof>1.5</rof>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="69147">Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<active>0</active>
+		<maxrange>0.2</maxrange>
+		<rate type="Building">1.0</rate>
+	</action>
+	<action>
+		<name stringid="700306">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Food'>0.250001</Rate>
+	</action>
+	<action>
+		<name stringid="42178">Gather</name>
+		<anim>GatherMine</anim>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="AbstractMine">1.0</rate>
+	</action>
+	<action>
+		<name stringid="69150">CrateGather</name>
+		<anim>GatherCrate</anim>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="AbstractResourceCrate">1.0</rate>
+	</action>
+	<action>
+		<name stringid="69155">Heal</name>
+		<type>Heal</type>
+		<active>0</active>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">2.0 </rate>
+		<anim>Heal</anim>
+	</action>
+    <action>
+        <name stringid="80494">WaterAttack</name>
+        <active>0</active>
+        <type>Attack</type>
+        <attackaction>1</attackaction>
+        <handlogic>1</handlogic>
+        <anim>Extinguish_Fire</anim>
+        <maxrange>2</maxrange>
+        <rate type="POWERIncendio">1.0</rate>
+        <impacteffect>War of the Triple Alliance\Units\coronel\water</impacteffect>
+    </action>
+	<tactic>
+		Volley
+		<action>AutoGatherFood</action>
+		<action priority="100">WaterAttack</action>
+        <action priority="99">VolleyRangedAttack</action>
+		<action priority="75">CoverBuildingAttack</action>
+        <action priority="55">Heal</action>
+		<action priority="25">VolleyHandAttack</action>
+        <action>Build</action>
+		<action>CrateGather</action>
+		<action>Gather</action>
+        <action>BulgarianHPAura</action>
+		<action>BulgarianDmgAura</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Volley_standing_idle</idleanim>
+		<boredanim>Volley_standing_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Volley_walk</walkanim>
+		<joganim>Volley_jog</joganim>
+		<runanim>Volley_run</runanim>
+	</tactic>
+	<tactic>
+		Line
+		<action>AutoGatherFood</action>
+        <action priority="100">WaterAttack</action>
+		<action priority="99">LineRangedAttack</action>
+        <action priority="75">LineRangedAttackKneel</action>
+		<action priority="65">CoverBuildingAttack</action>
+        <action priority="55">Heal</action>
+		<action priority="25">VolleyHandAttack</action>
+		<action>Build</action>
+		<action>CrateGather</action>
+		<action>Gather</action>
+        <action>BulgarianHPAura</action>
+        <action>BulgarianDmgAura</action>
+		<action>Extradamage</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Volley_standing_idle</idleanim>
+		<boredanim>Volley_standing_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Volley_walk</walkanim>
+		<joganim>Volley_jog</joganim>
+		<runanim>Volley_run</runanim>
+		<active>0</active>
+	</tactic>
+	<tactic>
+		Defend
+		<action>AutoGatherFood</action>
+        <action priority="100">WaterAttack</action>
+		<action priority="99">DefendRangedAttack</action>
+		<action priority="75">CoverBuildingAttack</action>
+        <action priority="55">Heal</action>
+		<action priority="74">DefendHandAttack</action>
+		<action>Build</action>
+		<action>CrateGather</action>
+		<action>Gather</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Defend_idle</idleanim>
+		<boredanim>Defend_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+	</tactic>
+	<tactic>
+		Stagger
+		<action>AutoGatherFood</action>
+        <action priority="100">WaterAttack</action>
+		<action priority="99">StaggerRangedAttack</action>
+		<action priority="75">BuildingAttack</action>
+        <action priority="55">Heal</action>
+		<action priority="74">StaggerHandAttack</action>
+		<action>Build</action>
+		<action>CrateGather</action>
+		<action>Gather</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Cover_ranged_idle</idleanim>
+		<boredanim>Cover_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+	</tactic>
+	<tactic>
+		Melee
+		<action>AutoGatherFood</action>
+        <action priority="100">WaterAttack</action>
+		<action priority="99">BuildingAttack</action>
+		<action priority="74">MeleeHandAttack</action>
+        <action priority="55">Heal</action>
+		<action>Build</action>
+		<action>CrateGather</action>
+		<action>Gather</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+</tactics>

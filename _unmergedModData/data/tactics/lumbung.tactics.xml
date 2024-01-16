@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="43019">AutoGather</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name>SpawnFood</name>
+		<type>Spawn</type>
+		<rate type="CrateofFood">5.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGather</action>
+		<action>Spawn</action>
+		<action>SpawnFood</action>
+	</tactic>
+</tactics>

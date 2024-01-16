@@ -1,0 +1,14 @@
+<AI>
+<!--//Johor -->
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>09909</nameID>
+   <tooltipID>09910</tooltipID>
+   <forcedciv>Johor</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_johor</icon>
+   <chatset>gall</chatset>
+   <playerNames>
+      <nameID>09909<civ>Johor</civ></nameID> 
+	</playerNames>
+</AI>

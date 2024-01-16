@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //nias & //makassar -->
+<tactics>
+	<action>
+		<name stringid="43019">AutoGatherXP</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="72527">MatureBohalima</name>
+		<type>Maintain</type>
+		<rate type="SBohalima">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="72531">MatureIramatua</name>
+		<type>Maintain</type>
+		<rate type="SIramatua">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="72539">MatureSamui</name>
+		<type>Maintain</type>
+		<rate type="SSamui">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="72535">MatureEmali</name>
+		<type>Maintain</type>
+		<rate type="SEmali2">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="72543">MatureFamura</name>
+		<type>Maintain</type>
+		<rate type="SFamura2">1.0 </rate>
+		<singleuse>1</singleuse>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name>SBohalima</name>
+		<type>Spawn</type>
+		<rate type="SBohalima">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SIramatua</name>
+		<type>Spawn</type>
+		<rate type="SIramatua">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SSamui</name>
+		<type>Spawn</type>
+		<rate type="SSamui">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SEmali</name>
+		<type>Spawn</type>
+		<rate type="SEmali">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SFamura</name>
+		<type>Spawn</type>
+		<rate type="SFamura">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>MatureBohalima</action>
+		<action>MatureIramatua</action>
+		<action>MatureSamui</action>
+		<action>MatureEmali</action>
+		<action>MatureFamura</action>
+		<action>SBohalima</action>
+		<action>SIramatua</action>
+		<action>SSamui</action>
+		<action>SEmali</action>
+		<action>SFamura</action>
+		<action>AutoGatherXP</action>
+	</tactic>
+</tactics>

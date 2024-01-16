@@ -1,0 +1,14 @@
+<AI>
+<!--//Sambas -->
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>151003</nameID>
+   <tooltipID>151004</tooltipID>
+   <forcedciv>Sambas</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_sambas</icon>
+   <chatset>napoleon</chatset>
+   <playerNames>
+      <nameID>151003<civ>Sambas</civ></nameID> 
+	</playerNames>
+</AI>

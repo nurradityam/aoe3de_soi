@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="68771">TradeAura1</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.35</modifymultiplier>
+	</action>
+	<action>
+		<name stringid="68772">TradeAura2</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.6</modifymultiplier>
+	</action>
+	<action>
+		<name stringid="68778">EconomicAura1</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>0.95</modifymultiplier>
+	</action>
+	<action>
+		<name stringid="68779">EconomicAura2</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>0.9</modifymultiplier>
+	</action>
+	<!--//Straits Settlements building spawn treasures-->
+	<action>
+		<name>Spawntreasure</name>
+		<type>Spawn</type>
+		<rate type="YPNuggetEuropeanWreck">3.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name>MaintainChinese1</name>
+		<type>Maintain</type>
+		<rate type="ypArquebusier">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MaintainChinese2</name>
+		<type>Maintain</type>
+		<rate type="ypIronFlail">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MaintainIndia1</name>
+		<type>Maintain</type>
+		<rate type="ypArquebusier">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MaintainIndia2</name>
+		<type>Maintain</type>
+		<rate type="ypNatMercGurkha">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MaintainMalay1</name>
+		<type>Maintain</type>
+		<rate type="SAskarBugis">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>MaintainMalay2</name>
+		<type>Maintain</type>
+		<rate type="SLela">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Tax0
+		<active>0</active>
+		<action>Spawntreasure</action>
+		<action>GatheringAura</action>
+		<action>MaintainChinese1</action>
+		<action>MaintainChinese2</action>
+		<action>MaintainIndia1</action>
+		<action>MaintainIndia2</action>
+		<action>MaintainMalay1</action>
+		<action>MaintainMalay2</action>
+		<protounitcommand>TacticTax0</protounitcommand>
+		<transition>
+			<tactic>Tax5</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Tax10</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		Tax5
+		<active>0</active>
+		<action>EconomicAura1</action>
+		<action>TradeAura1</action>
+		<action>Spawntreasure</action>
+		<action>GatheringAura</action>
+		<action>MaintainChinese1</action>
+		<action>MaintainChinese2</action>
+		<action>MaintainIndia1</action>
+		<action>MaintainIndia2</action>
+		<action>MaintainMalay1</action>
+		<action>MaintainMalay2</action>
+		<protounitcommand>TacticTax5</protounitcommand>
+		<transition>
+			<tactic>Tax0</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Tax10</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		Tax10
+		<active>0</active>
+		<action>EconomicAura2</action>
+		<action>TradeAura2</action>
+		<action>Spawntreasure</action>
+		<action>GatheringAura</action>
+		<action>AutoGatherCoinSelangor</action>
+		<action>ExtraDamagePersekutuan</action>
+		<action>MaintainChinese1</action>
+		<action>MaintainChinese2</action>
+		<action>MaintainIndia1</action>
+		<action>MaintainIndia2</action>
+		<action>MaintainMalay1</action>
+		<action>MaintainMalay2</action>
+		<protounitcommand>TacticTax10</protounitcommand>
+		<transition>
+			<tactic>Tax5</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Tax0</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+</tactics>

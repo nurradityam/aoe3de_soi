@@ -1,0 +1,158 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="43294">ModifyGatherCoin</name>
+		<type>ModifyGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43295">ModifyGatherFood</name>
+		<type>ModifyGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43295">ModifyGatherWood</name>
+		<type>ModifyGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnInvisiblePriangan</name>
+		<type>Spawn</type>
+		<rate type="SSyahbandarInvisibleUnit">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	
+	<!--//Siak-->
+
+	<action>
+		<name stringid="68972">Siak21Spawn</name>
+		<type>Spawn</type>
+		<rate type="SCikPuan">2</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="68972">Siak22Spawn</name>
+		<type>Spawn</type>
+		<rate type="SHulubalang">1</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="68972">Siak31Spawn</name>
+		<type>Spawn</type>
+		<rate type="ypGoatFat">1</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="68972">Siak33Spawn</name>
+		<type>Spawn</type>
+		<rate type="SUstadz">1</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="51054">Siak41Spawn</name>
+		<type>Spawn</type>
+		<rate type="SEconomicWagon">1.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="51062">Siak51Spawn</name>
+		<type>Spawn</type>
+		<rate type="SRubberTree">1.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	
+	<!--//Deli-->
+	<action>
+		<name stringid="68971">MaintainSettlers</name>
+		<type>Maintain</type>
+		<!-- <rate type="SBuruhKontrak">1.0</rate> -->
+		<rate type="SCoolie">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>	
+	<tactic>
+		PaddyFood
+		<action>ModifyGatherFood</action>
+		<action>SpawnInvisiblePriangan</action>
+		<action>Siak21Spawn</action>
+		<action>Siak22Spawn</action>
+		<action>Siak31Spawn</action>
+		<action>Siak33Spawn</action>
+		<action>Siak41Spawn</action>
+		<action>Siak51Spawn</action>
+		<action>MaintainSettlers</action>
+		<transition>
+			<tactic>PaddyCoin</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>PaddyWood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		PaddyCoin
+		<action>ModifyGatherCoin</action>
+		<action>SpawnInvisiblePriangan</action>
+		<action>Siak21Spawn</action>
+		<action>Siak22Spawn</action>
+		<action>Siak31Spawn</action>
+		<action>Siak33Spawn</action>
+		<action>Siak41Spawn</action>
+		<action>Siak51Spawn</action>
+		<action>MaintainSettlers</action>
+		<transition>
+			<tactic>PaddyFood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>PaddyWood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		PaddyWood
+		<active>0</active>
+		<action>ModifyGatherWood</action>
+		<action>SpawnInvisiblePriangan</action>
+		<action>Siak21Spawn</action>
+		<action>Siak22Spawn</action>
+		<action>Siak31Spawn</action>
+		<action>Siak33Spawn</action>
+		<action>Siak41Spawn</action>
+		<action>Siak51Spawn</action>
+		<action>MaintainSettlers</action>
+		<transition>
+			<tactic>PaddyFood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>PaddyCoin</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+</tactics>

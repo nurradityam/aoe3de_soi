@@ -19,10 +19,10 @@ COMMENT TAG DEFINITION:
 		<name>Aceh</name> <!-- DUNNO, ingame name as string? -->
 		<main>1</main> <!-- DUNNO -->
 		<statsid>AC</statsid> <!-- DUNNO -->
-    <civtype>1</civtype>
+    	<civtype>1</civtype>
 		<portrait>objects\flags\aceh</portrait> <!-- DUNNO -->
 		<culture>Malay</culture> <!-- DUNNO, what is this actually doing? just refer to culture.xml name and then refer to stringtabley.xml -->
-    <settlerprotoname>Settler</settlerprotoname> <!-- DUNNO, NEW -->
+    	<settlerprotoname>Settler</settlerprotoname> <!-- DUNNO, NEW -->
 		<displaynameid>599931</displaynameid> <!-- DUNNO, refer to stringtabley.xml  -->
 		<rollovernameid>599932</rollovernameid> <!-- DUNNO, refer to stringtabley.xml  -->
 		<alliedid>26446</alliedid> <!-- DUNNO, refer to stringtabley.xml -->

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- eksperimen peranakan -->
+<tactics>
+	<action>
+		<name stringid="43019">AutoGather</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="61766">AutoGatherXP</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43294">AutoGatherGold</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43295">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43296">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="68961">NegativeAura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<modifyabstracttype>AbstractRefinery</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>0.9</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamage</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<!-- <modifyprotoid>SKuli</modifyprotoid> -->
+		<modifyprotoid>SSingkek</modifyprotoid>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">GreatHeart2</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyprotoid>SSingkek</modifyprotoid>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamageKuli</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyprotoid>SKuli</modifyprotoid>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48954">GreatHeartKuli</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyprotoid>SKuli</modifyprotoid>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGather</action>
+		<action>AutoGatherFood</action>
+		<action>AutoGatherWood</action>
+		<action>AutoGatherGold</action>
+		<action>NegativeAura</action>
+		<action>ExtraDamage</action>
+		<action>GreatHeart2</action>
+		<action>ExtraDamageKuli</action>
+		<action>GreatHeartKuli</action>
+	</tactic>
+</tactics>

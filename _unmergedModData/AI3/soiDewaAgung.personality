@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>161003</nameID>
+   <tooltipID>161004</tooltipID>
+   <forcedciv>Klungkung</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_klungkung</icon>
+   <chatset>amina</chatset>
+   <playerNames> 
+      <nameID>161003<civ>Klungkung</civ></nameID>
+	</playerNames>
+</AI>

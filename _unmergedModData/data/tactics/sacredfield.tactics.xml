@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="69155">Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<active>0</active>
+		<anim>Heal</anim>
+	</action>
+	<action>
+		<name stringid="160971">SpawnSudra</name>
+		<type>Maintain</type>
+		<rate type="SSudra">1.0 </rate>
+		<active>0</active>
+		<persistent>0</persistent>
+	</action>
+	<action>
+		<name stringid="160971">SpawnSudraKlungkung</name>
+		<type>Maintain</type>
+		<rate type="SSudraKlungkung">1.0 </rate>
+		<active>0</active>
+		<persistent>0</persistent>
+	</action>
+	<action>
+		<name stringid="68972">SpawnCoin</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">2.0 </rate>
+		<active>0</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="69158">SpawnKambojaKlungkung</name>
+		<type>Spawn</type>
+		<rate type="STreeKamboja">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>Heal</action>
+		<action>SpawnSudra</action>
+		<action>SpawnSudraKlungkung</action>
+		<action>SpawnCoin</action>
+		<action>SpawnKambojaKlungkung</action>
+	</tactic>
+</tactics>

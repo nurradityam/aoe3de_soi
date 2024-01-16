@@ -4,7 +4,7 @@
 	<power name="ypPowerShrineAura" type="UnitAction">
 		<displaynameid>70309</displaynameid>
 		<rolloverid>70310</rolloverid>
-		<icon>art\ui\techs\asians\tech_toshogu_passive_ability</icon>
+		<icon>art\ui\techs\asians\tech_toshohagu_passive_ability</icon>
 		<allowduringnorush>1</allowduringnorush>
 	</power>
 	<power name="ypUnitElephantSpeed" type="UnitAction">
@@ -225,9 +225,9 @@
 		<rolloverid>65738</rolloverid>
 		<icon>art\ui\abilities\ability_way_of_the_warrior</icon>
 		<minimapeventtime sendalertto="none">1</minimapeventtime>
-		<activetime>10</activetime>
+		<activetime>15</activetime>
 		<effect type="CanTargetButTakesNoDamage">
-			<target type="ProtoUnit">ypSPCTokugawa</target>
+			<target type="ProtoUnit">unit</target>
 		</effect>
 		<messagealertplayerrelation>none</messagealertplayerrelation>
 		<placement forceonmap="1" ally="">full</placement>
@@ -432,7 +432,7 @@
 		<activetime>5</activetime>
 		<radius>10.0</radius>
 		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
-		<abstractattacktargettype>LogicalTypeRangedUnitsAttack</abstractattacktargettype>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
 		<unitaction>BroadsideAttack</unitaction>
 	</power>
 	<power name="PowerLongRange" type="UnitAction">
@@ -540,4 +540,206 @@
 		<allowduringnorush>1</allowduringnorush>
 		<startsoundset>PowerStomp</startsoundset>
 	</power>
+	<!-- //Toba -->
+	
+	<!-- <power name="SPowerTobaParalysis0" type="TempUnit"> -->
+		<!-- <displaynameid>111667</displaynameid> -->
+		<!-- <rolloverid>111668</rolloverid> -->
+		<!-- <icon>ui\techs\european\skill\cultuurstelsel</icon> -->
+		<!-- <minimapeventtime sendalertto="ally">1</minimapeventtime> -->
+		<!-- <activetime>15.0</activetime> -->
+		<!-- <createunit quantity="1" radius="0" delay="0.0">SPohung</createunit> -->
+		<!-- <rangeindicatorprotoid radius="6.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerStomp</startsoundset> -->
+	<!-- </power> -->
+	<!-- <power name="SPowerTobaParalysis1" type="TempUnit"> -->
+		<!-- <displaynameid>111669</displaynameid> -->
+		<!-- <rolloverid>111668</rolloverid> -->
+		<!-- <icon>ui\techs\european\skill\cultuurstelsel</icon> -->
+		<!-- <minimapeventtime sendalertto="ally">1</minimapeventtime> -->
+		<!-- <activetime>15.0</activetime> -->
+		<!-- <createunit quantity="1" radius="0" delay="0.0">SPohung</createunit> -->
+		<!-- <rangeindicatorprotoid radius="6.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerStomp</startsoundset> -->
+	<!-- </power> -->
+	<!-- <power name="SPowerTobaParalysis2" type="TempUnit"> -->
+		<!-- <displaynameid>111671</displaynameid> -->
+		<!-- <rolloverid>111668</rolloverid> -->
+		<!-- <icon>ui\techs\european\skill\cultuurstelsel</icon> -->
+		<!-- <minimapeventtime sendalertto="ally">1</minimapeventtime> -->
+		<!-- <activetime>15.0</activetime> -->
+		<!-- <createunit quantity="1" radius="0" delay="0.0">SPohung</createunit> -->
+		<!-- <rangeindicatorprotoid radius="6.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerStomp</startsoundset> -->
+	<!-- </power> -->
+	<!-- <power name="SPowerTobaParalysis3" type="TempUnit"> -->
+		<!-- <displaynameid>111673</displaynameid> -->
+		<!-- <rolloverid>111668</rolloverid> -->
+		<!-- <icon>ui\techs\european\skill\cultuurstelsel</icon> -->
+		<!-- <minimapeventtime sendalertto="ally">1</minimapeventtime> -->
+		<!-- <activetime>15.0</activetime> -->
+		<!-- <createunit quantity="1" radius="0" delay="0.0">SPohung</createunit> -->
+		<!-- <rangeindicatorprotoid radius="6.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerStomp</startsoundset> -->
+	<!-- </power> -->
+	<!-- <power name="SPowerTobaParalysisUltimate" type="TempUnit"> -->
+		<!-- <displaynameid>111691</displaynameid> -->
+		<!-- <rolloverid>111668</rolloverid> -->
+		<!-- <icon>ui\techs\european\skill\cultuurstelsel</icon> -->
+		<!-- <minimapeventtime sendalertto="ally">1</minimapeventtime> -->
+		<!-- <activetime>15.0</activetime> -->
+		<!-- <createunit quantity="2" radius="0" delay="0.0">SPohung</createunit> -->
+		<!-- <rangeindicatorprotoid radius="6.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerStomp</startsoundset> -->
+	<!-- </power> -->
+	
+	<!-- <power name="ypPowerCriticalAttack" type="UnitAction"> -->
+		<!-- <displaynameid>64597</displaynameid> -->
+		<!-- <rolloverid>64598</rolloverid> -->
+		<!-- <icon>art\ui\techs\asians\tech_passive_critical_attack_icon_64</icon> -->
+		<!-- <allowduringnorush>1</allowduringnorush> -->
+		<!-- <startsoundset>PowerCriticalStrike</startsoundset> -->
+	<!-- </power> -->
+	<!-- //Karo -->
+	<power name="SPowerKaroChloromancy0" type="TempUnit">
+		<displaynameid>113085</displaynameid>
+		<rolloverid>113086</rolloverid>
+		<Icon>terrain\trees\tree_icon_64</Icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>-1</activetime>
+		<createunit quantity="2" radius="12" delay="0.0">ypTreeBorneoCanopy</createunit>
+		<placement forceonmap="1"></placement>
+		<rangeindicatorprotoid radius="12.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="SPowerKaroChloromancy1" type="TempUnit">
+		<displaynameid>113085</displaynameid>
+		<rolloverid>113086</rolloverid>
+		<Icon>terrain\trees\tree_icon_64</Icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>-1</activetime>
+		<createunit quantity="2" radius="12" delay="0.0">ypTreeBorneoCanopy</createunit>
+		<placement forceonmap="1"></placement>
+		<rangeindicatorprotoid radius="12.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="SPowerKaroChloromancy2" type="TempUnit">
+		<displaynameid>113085</displaynameid>
+		<rolloverid>113086</rolloverid>
+		<Icon>terrain\trees\tree_icon_64</Icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>-1</activetime>
+		<createunit quantity="2" radius="15" delay="0.0">ypTreeBorneoCanopy</createunit>
+		<placement forceonmap="1"></placement>
+		<rangeindicatorprotoid radius="15.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<!-- <alwaysaddtoplayer>1</alwaysaddtoplayer> -->
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="SPowerKaroChloromancy3" type="TempUnit">
+		<displaynameid>113085</displaynameid>
+		<rolloverid>113086</rolloverid>
+		<Icon>terrain\trees\tree_icon_64</Icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>-1</activetime>
+		<createunit quantity="2" radius="15" delay="0.0">ypTreeBorneoCanopy</createunit>
+		<placement forceonmap="1"></placement>
+		<rangeindicatorprotoid radius="15.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<!-- //Mandailing -->
+	<power name="SPowerMandailingAlchemist" type="swapunit">
+		<displaynameid>112008</displaynameid>
+		<rolloverid>112009</rolloverid>
+		<icon>ui\techs\hc_lumber_market\hc_lumber_market</icon>
+		<activetime>5.0</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1">full</placement>
+		<powerplayerrelation>enemy</powerplayerrelation>
+		<abstracttype swapto="MineGold">Tree</abstracttype>
+		<rangeindicatorprotoid radius="2.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<convertusingminmax minswapamount="1" maxswapamount="1"></convertusingminmax>
+		<swapdelay>0.0</swapdelay>
+		<swapenemyonly></swapenemyonly>
+		<startsoundset>PowerStun</startsoundset>
+	</power>	
+	<!-- Gayo -->
+	<power name="SPowerGayoExorcism" type="UnitAction">
+		<displaynameid>44595</displaynameid>
+		<rolloverid>44596</rolloverid>
+		<icon>art\ui\abilities\animal_friendship</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="" gaiaonly="">unit</placement>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>ConvertGuardian</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+
+	<power name="abilityHP" type="UnitModify">
+		<displaynameid>444234</displaynameid>
+		<rolloverid>444235</rolloverid>
+		<icon>art\War of the Triple Alliance\Icons\fieldpromotion</icon>
+		<activetime>30</activetime>
+		<unitmodify amount="1.1" apply="multiply">MaxHP</unitmodify>
+		<powerplayerrelation>own</powerplayerrelation>
+		<radius>24.0</radius>
+		<abstractattacktargettype>LogicalTypeLandMilitary</abstractattacktargettype>
+		<placement forceonmap="1">full</placement>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+	</power>	
+	<power name="UnitRegen" type="UnitAction">
+		<displaynameid>6000319</displaynameid>
+		<rolloverid>6000320</rolloverid>
+		<icon>art\WoL\ui\ingame\pasiveicons\tech_passive_regenerate_health</icon>
+		<unitaction>NoWork</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	
+	<power name="PowerCrackshot2" type="UnitAction">
+		<displaynameid>113087</displaynameid>
+		<rolloverid>113088</rolloverid>
+		<icon>art\ui\command\tactics_bombard_avl</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Military</abstractattacktargettype>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<unitaction>KaroConjurer</unitaction>
+	</power>
+	<!-- //Balinese -->
+	
+	
+	<!-- <power name="PowerUnderworldPassage" type="teleport" techname="Underworld Passage"> -->
+		<!-- <activetime>-1</activetime> -->
+		<!-- <minimapeventtime>10.0</minimapeventtime> -->
+		<!-- <soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset> -->
+		<!-- <soundset type="StartSound" listenertype="IfOnScreenAll">UnderworldPassageStart</soundset> -->
+		<!-- <soundset type="StartSound" listenertype="IfOnScreenAll" usesecondlocation="1">UnderworldPassageStart</soundset> -->
+		<!-- <soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="">UnderworldPassageExist</soundset> -->
+		<!-- <soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="" usesecondlocation="1">UnderworldPassageExist</soundset> -->
+		<!-- <placement forceonmap="1">full</placement> -->
+		<!-- <dualpowermindistance>30.0</dualpowermindistance> -->
+		<!-- <placementprotounitid>SKubu</placementprotounitid> -->
+		<!-- <inportal>SKubu</inportal> -->
+		<!-- <outportal>SKubu</outportal> -->
+		<!-- <icon>god power underworld passage icon</icon> -->
+		<!-- <usedicon>god power underworld passage icon done</usedicon> -->
+	<!-- </power> -->
 </powers>

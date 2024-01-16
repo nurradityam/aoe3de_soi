@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- eksperimen peranakan -->
+<tactics>
+	<action>
+		<name stringid="68961">Refinery2Aura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<active>0</active>
+		<modifyprotoid>SIndustryRefinery2</modifyprotoid>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68961">Refinery3Aura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<active>0</active>
+		<modifyprotoid>SIndustryRefinery3</modifyprotoid>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68961">Refinery4Aura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<active>0</active>
+		<modifyprotoid>SIndustryRefinery4</modifyprotoid>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68961">Refinery5Aura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<active>0</active>
+		<modifyprotoid>SIndustryRefinery5</modifyprotoid>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>Refinery2Aura</action>
+		<action>Refinery3Aura</action>
+		<action>Refinery4Aura</action>
+		<action>Refinery5Aura</action>
+	</tactic>
+</tactics>

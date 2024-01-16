@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="80740">SpawnResource2</name>
+		<type>Spawn</type>
+		<rate type="Deer">2.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80740">SpawnResource3</name>
+		<type>Spawn</type>
+		<rate type="ypWildElephant">1.0</rate>
+		<rate type="ypTreeBorneo">3.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80740">SpawnResource4</name>
+		<type>Spawn</type>
+		<rate type="ypWildElephant">2.0</rate>
+		<rate type="ypTreeBorneo">4.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="80740">SpawnResource5</name>
+		<type>Spawn</type>
+		<rate type="Mine">1.0</rate>
+		<rate type="ypTreeBorneo">2.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<!-- //Gayo -->
+	<action>
+		<name stringid="80740">SpawnDamageAura</name>
+		<type>Spawn</type>
+		<rate type="SDamageAuraGayo">1.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<!-- //balinese -->
+	<action>
+		<name stringid="80740">SpawnCeluluk</name>
+		<type>Spawn</type>
+		<rate type="SCeluluk">1.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>ExtraDamagePenetah</action>
+		<action>SpawnResource2</action>
+		<action>SpawnResource3</action>
+		<action>SpawnResource4</action>
+		<action>SpawnResource5</action>
+		<action>SpawnDamageAura</action>
+		<action>SpawnCeluluk</action>
+	</tactic>
+</tactics>

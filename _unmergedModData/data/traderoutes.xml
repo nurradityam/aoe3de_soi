@@ -177,6 +177,18 @@
 			<disabledicon>art\ui\command\generate_fame_off</disabledicon>
 		</unit>
 		<unit>
+			<name>SInvisibleTradeMulti</name>
+			<count>1</count>
+			<mincount>1</mincount>
+			<maxcount>1</maxcount>
+			<countincrement>0</countincrement>
+			<activetooltipid>113952</activetooltipid>
+			<disabledtooltipid>113952</disabledtooltipid>
+			<techprereq>Age0Makassar</techprereq>
+			<activeicon>art\ui\command\generate_fame_on</activeicon>
+			<disabledicon>art\ui\command\generate_fame_off</disabledicon>
+		</unit>
+		<unit>
 			<name>ypNatGurkha</name>
 			<count>1</count>
 			<mincount>1</mincount>

@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>114003</nameID>
+   <tooltipID>114004</tooltipID>
+   <forcedciv>Nias</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_nias</icon>
+   <chatset>Huayna</chatset>
+   <playerNames>
+      <nameID>114003<civ>Nias</civ></nameID> 
+	</playerNames>
+</AI>

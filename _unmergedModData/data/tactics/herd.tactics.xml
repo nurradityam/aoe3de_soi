@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="42178">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="LivestockPen">1.0</rate>
+		<rate type="Farm">1.0</rate>
+		<rate type="ypVillage">1.0</rate>
+		<addresourcestoinventory>1</addresourcestoinventory>
+	</action>
+	<action>
+		<name stringid="43295">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<addresourcestoinventory>1</addresourcestoinventory>
+	</action>
+	<action>
+		<name stringid="63007">GatherXP</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="ypSacredField">0.5</rate>
+		<rate type="SPura">0.5</rate>
+	</action>
+	<action>
+		<name stringid="63007">ShrineGather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="AbstractShrine">0.9</rate>
+	</action>
+	<action>
+		<name stringid="61766">AutoGatherXP</name>
+		<type>AutoGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69161">AutoConvert</name>
+		<type>AutoConvert</type>
+		<maxrange>12.0</maxrange>
+		<persistent>1</persistent>
+	</action>
+	<!--RizkyR: cheat Buffalo trickle food-->
+	<action>
+		<name stringid="43295">AutoGatherFoodBatak</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<!-- balinese -->
+	<action>
+		<name stringid="160972">BuildingAuraKumara</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>8</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>Gather</action>
+		<action>GatherXP</action>
+		<action>AutoGatherFood</action>
+		<action>AutoGatherXP</action>
+		<action>AutoConvert</action>
+		<action>ShrineGather</action>
+		
+		<action>BuildingAuraKumara</action>
+		<action>AutoGatherFoodBatak</action>
+	</tactic>
+</tactics>

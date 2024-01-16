@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//Nias-->
+<tactics>
+	<action>
+		<name stringid="43294">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="43295">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	<action>
+		<name stringid="43296">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>1</active>
+	</action>
+	
+
+	<action>
+		<name stringid="48958">NiasCoronation1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.10</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>34</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>44</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>54</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.25</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name>NiasHealing</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim>
+	</action>
+	<action>
+		<name stringid="43294">NiasSacrificial</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.25</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.30</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<tactic>
+		Normal
+		<action>AutoGatherFood</action>
+		<action>AutoGatherWood</action>
+		<action>AutoGatherCoin</action>
+		<action>NiasCoronation1</action>
+		<action>NiasCoronation2</action>
+		<action>NiasCoronation3</action>
+		<action>NiasCoronation4</action>
+		<action>NiasHealing</action>
+		<action>NiasSacrificial</action>
+		<action>NiasApotropaic1</action>
+		<action>NiasApotropaic2</action>
+		<action>NiasApotropaic3</action>
+		<action>NiasApotropaic4</action>
+	</tactic>
+</tactics>

@@ -1,0 +1,584 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="46491">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>20.0</maxrange>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38134">HandAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim>
+	</action>
+	<action>
+		<name stringid="42178">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="SHatoban">1.0</rate>
+		<rate type="SMarketHall">1.0</rate>
+	</action>
+	<action>
+		<name stringid="42136">ChopAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>GatherChop</anim>
+		<maxrange>1</maxrange>
+		<rate type="SHatoban">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="69151">Hunting</name>
+		<type>Hunting</type>
+		<maxrange>0</maxrange>
+		<rate type="SHatoban">1.0</rate>
+	</action>
+	<action>
+		<name stringid="69183">NoWork</name>
+		<type>NoWork</type>
+		<maxrange>10</maxrange>
+		<rate type="SHatoban">1.0</rate>
+		<typedmaxrange type="SHatoban">0</typedmaxrange>
+	</action>
+	<!-- toba -->
+	<action>
+		<name stringid="444186">TobaWitchcraft</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>CondemnHeretic</anim>
+		<reloadanim>CondemnHeretic</reloadanim>
+		<idleanim>Idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>1</aimbonus>
+		<trackrating>12</trackrating>
+		<impacteffect>War of the Triple Alliance\Units\Priest\holyblow</impacteffect>
+		<minrange>5</minrange>
+		<rate type="Unit">1.0 </rate>
+		<damage>1.000000</damage>
+		<maxrange>10.000000</maxrange>
+		<rof>1.000000</rof>
+		<projectile>InvisibleProjectilenoTracer</projectile>
+		<perfectaccuracy>1</perfectaccuracy>
+		<active>0</active>
+		<chargeaction>1</chargeaction>
+	</action>
+	<action>
+		<name stringid="38127">TobaPoisonArts</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<projectile>SPoisonArtsProjectile</projectile>
+		<impacteffect>effects\impacts\grenade</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<impactforcemin>450.0</impactforcemin>
+		<impactforcemax>600.0</impactforcemax>
+		<impactlaunchangle>50.0</impactlaunchangle>
+		<areasortmode>Radial</areasortmode>
+		<targetground>1</targetground>
+		<basedamagecap>1</basedamagecap>
+		<active>0</active>
+		<!-- <chargeaction>1</chargeaction> -->
+	</action>	
+	<action>
+		<name stringid="68994">TobaNecromancy1</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>20</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.9</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaNecromancy2</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.85</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaNecromancy3</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.8</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaNecromancy4</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.75</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaEnchantment1</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>20</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.9</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaEnchantment2</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.85</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaEnchantment3</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.8</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">TobaEnchantment4</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>0</active>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifymultiplier>0.75</modifymultiplier>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="69147">Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<active>1</active>
+		<maxrange>0.2</maxrange>
+		<rate type="Building">1.0</rate>
+	</action>
+	<action>
+		<name stringid="48958">RangedDamageAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Ranged</modifyabstracttype>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ArtilleryDamageAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Ranged</modifyabstracttype>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+<!-- //Karo -->
+	<action>
+		<name stringid="68994">KaroPhysiotherapy1</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>0</targetenemy>
+		<active>0</active>
+		<maxrange>20</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>1.08</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">KaroPhysiotherapy2</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>0</targetenemy>
+		<active>0</active>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>1.08</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">KaroPhysiotherapy3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>1.08</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">KaroPhysiotherapy4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>1.08</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\frightpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68961">KaroWeatherManipulation1</name>
+		<type>AutoRangedModify</type>
+		<maxrange>20</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="68961">KaroWeatherManipulation2</name>
+		<type>AutoRangedModify</type>
+		<maxrange>22</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>0</active>
+	</action>	
+	<action>
+		<name stringid="68961">KaroWeatherManipulation3</name>
+		<type>AutoRangedModify</type>
+		<maxrange>24</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>0</active>
+	</action>	
+	<action>
+		<name stringid="68961">KaroWeatherManipulation4</name>
+		<type>AutoRangedModify</type>
+		<maxrange>26</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modifyexclusive>0</modifyexclusive>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<active>0</active>
+	</action>	
+<!--//mandailing-->
+	<action>
+		<name stringid="43294">MandailingCharmer</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43294">MandailingBard</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43294">Dance</name>
+		<type>Gather</type>
+		<active>0</active>
+		<maxrange>0.5</maxrange>
+		<rate type="FirePit">1.0</rate>
+	</action>
+<!--//Nias-->	
+	<action>
+		<name stringid="42178">GatherNiasSacrificial</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="SMegalith">1.0</rate>
+	</action>
+
+	<action>
+		<name stringid="48958">NiasCoronation1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.10</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>34</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>44</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.10</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">NiasCoronation4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>54</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>0</modifyexclusive>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name>NiasHealing</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">NiasApotropaic4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>0</modifyexclusive>
+		<maxrange>30</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	
+	<tactic>
+		Melee
+		<action>Heal</action>
+		<action>Gather</action>
+		<action>Hunting</action>
+		<action>NoWork</action>
+		<action>Build</action>
+		
+		<action>Dance</action>
+		<action>TobaNecromancy1</action>
+		<action>TobaNecromancy2</action>
+		<action>TobaNecromancy3</action>
+		<action>TobaNecromancy4</action>
+		<action>TobaEnchantment1</action>
+		<action>TobaEnchantment2</action>
+		<action>TobaEnchantment3</action>
+		<action>TobaEnchantment4</action>
+		<action>KaroPhysiotherapy1</action>
+		<action>KaroPhysiotherapy2</action>
+		<action>KaroPhysiotherapy3</action>
+		<action>KaroPhysiotherapy4</action>
+		<action>KaroWeatherManipulation1</action>
+		<action>KaroWeatherManipulation2</action>
+		<action>KaroWeatherManipulation3</action>
+		<action>KaroWeatherManipulation4</action>
+		<action>MandailingCharmer</action>
+		<action>MandailingBard</action>
+		<action>RangedDamageAura</action>
+		<action>ArtilleryDamageAura</action>
+		
+		<action>NiasCoronation1</action>
+		<action>NiasCoronation2</action>
+		<action>NiasCoronation3</action>
+		<action>NiasCoronation4</action>
+		<action>GatherNiasSacrificial</action>
+		<action>NiasApotropaic1</action>
+		<action>NiasApotropaic2</action>
+		<action>NiasApotropaic3</action>
+		<action>NiasApotropaic4</action>
+	
+		<action priority="95">TobaWitchcraft</action>
+		<action priority="90">TobaPoisonArts</action>
+		<action priority="80">ChopAttack</action>
+		
+		<action priority="25">HandAttack</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<!-- <transition> -->
+			<!-- <tactic>Stealth</tactic> -->
+			<!-- <length>2</length> -->
+			<!-- <anim>Cover_In</anim> -->
+			<!-- <exit>1</exit> -->
+		<!-- </transition> -->
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<!-- <tactic> -->
+		<!-- Stealth -->
+		<!-- <action>Stealth</action> -->
+		<!-- <checkifcanstealth range="20.0">1</checkifcanstealth> -->
+		<!-- <speedmodifier>0.5</speedmodifier> -->
+		<!-- <active>0</active> -->
+		<!-- <attacktype>LogicalTypeHandUnitsAttack</attacktype> -->
+		<!-- <transition> -->
+			<!-- <tactic>Melee</tactic> -->
+			<!-- <length>0.8</length> -->
+			<!-- <anim>Cover_Out</anim> -->
+			<!-- <exit>1</exit> -->
+			<!-- <automatic>1</automatic> -->
+			<!-- <commandautomatic>1</commandautomatic> -->
+		<!-- </transition> -->
+		<!-- <autoretarget>0</autoretarget> -->
+		<!-- <idleanim>Charge_idle</idleanim> -->
+		<!-- <boredanim>Charge_bored</boredanim> -->
+		<!-- <deathanim>Death_by_melee</deathanim> -->
+		<!-- <walkanim>Charge_walk</walkanim> -->
+		<!-- <joganim>Charge_jog</joganim> -->
+		<!-- <runanim>Charge_run</runanim> -->
+	<!-- </tactic> -->
+</tactics>

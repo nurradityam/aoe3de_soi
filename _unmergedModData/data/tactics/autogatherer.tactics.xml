@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="43019">AutoGather</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name>Spawntreasure</name>
+		<type>Spawn</type>
+		<rate type="YPNuggetEuropeanWreck">3.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnRedshirt</name>
+		<type>Spawn</type>
+		<rate type="IMRedshirt">3.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69182">SpawnCanadianTrees</name>
+		<type>Maintain</type>
+		<rate type="TreeCanadian">3.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="43294">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43294">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="43294">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="700306">AutoGatherItalianBonus</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Gold'>0.250001</Rate>
+	</action>
+	<action>
+		<name stringid="48954">IncaStrengh</name>
+		<type>AutoRangedModify</type>
+		<modifyprotoid>Unit</modifyprotoid>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.02</modifymultiplier>
+	</action>
+	<action>
+		<name stringid="48954">IncaHP</name>
+		<type>AutoRangedModify</type>
+		<modifyprotoid>Unit</modifyprotoid>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.02</modifymultiplier>
+	</action>
+	<action>
+		<name stringid="480312">SpawnCoinCratesAmericanParty</name>
+		<type>Maintain</type>
+		<rate type="CrateofCoin">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="24102">BuildAnnex</name>
+		<type>Build</type>
+		<maxrange>6</maxrange>
+		<rate type="Building">1.0</rate>
+	</action>
+	<action>
+		<name stringid="68961">ChileBonus</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGather</action>
+		<action>AutoGatherFood</action>
+		<action>AutoGatherWood</action>
+		<action>AutoGatherCoin</action>
+		<action>AutoGatherItalianBonus</action>
+		<action>IncaHP</action>
+		<action>Spawntreasure</action>
+		<action>IncaStrenght</action>
+		<action>SpawnCanadianTrees</action>
+		<action>SpawnCoinCratesAmericanParty</action>
+		<action>SpawnRedshirt</action>
+		<action>BuildAnnex</action>
+		<action>ChileBonus</action>
+	</tactic>
+</tactics>

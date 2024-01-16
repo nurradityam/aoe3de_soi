@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //Mandailing -->
+<tactics>
+	<action>
+		<name stringid="46491">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>20.0</maxrange>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38135">MeleeHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="38131">CoverHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Charge_attack</anim>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<basedamagecap>1</basedamagecap>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38137">DefendHandAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<basedamagecap>1</basedamagecap>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid="38118">BuildingAttack</name>
+		<type>Attack</type>
+		<rangedlogic>1</rangedlogic>
+		<maxrange>6</maxrange>
+		<rate type="LogicalTypeShipsAndBuildings">1.0 </rate>
+		<attackaction>1</attackaction>
+		<speedboost>1</speedboost>
+		<anim>Raze_attack</anim>
+		<idleanim>Raze_idle</idleanim>
+		<impacteffect>effects\impacts\torch</impacteffect>
+		<projectile>TorchProjectile</projectile>
+	</action>
+	<action>
+		<name stringid="38118">CoverBuildingAttack</name>
+		<type>Attack</type>
+		<rangedlogic>1</rangedlogic>
+		<maxrange>6</maxrange>
+		<rate type="LogicalTypeShipsAndBuildings">1.0 </rate>
+		<attackaction>1</attackaction>
+		<speedboost>1</speedboost>
+		<anim>Raze_attack</anim>
+		<idleanim>Raze_idle</idleanim>
+		<impacteffect>effects\impacts\torch</impacteffect>
+		<projectile>TorchProjectile</projectile>
+	</action>
+	<action>
+		<name stringid="700306">AutoGatherXP</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='XP'>0.800000</Rate>
+	</action>
+	<action>
+		<name stringid="444171">Sabotage</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Sabotage</anim>
+		<active>1</active>
+		<idleanim>SharpshootIdle</idleanim>
+		<boredanim>SharpshootIdle</boredanim>
+		<reloadanim>ReloadSharpshoot</reloadanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.001</accuracyreductionfactor>
+		<aimbonus>5</aimbonus>
+		<trackrating>12</trackrating>
+		<rate type="Building">1.0 </rate>
+		<impacteffect>War of the Triple Alliance\Units\coronel\explosion</impacteffect>
+		<projectile>Poison</projectile>
+		<rof>1.000000</rof>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid="444173">Counterintelligence</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Counterintelligence</anim>
+		<reloadanim>Reload</reloadanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Knife</projectile>
+		<minrange>6</minrange>
+		<maxheight>0</maxheight>
+		<rate type="MercType2">1.0 </rate>
+		<rate type="Coronel">1.0</rate>
+	</action>
+	<action>
+		<name stringid="444175">MartialArts</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<active>0</active>
+		<anim>MartialArts</anim>
+		<idleanim>CombatIdle</idleanim>
+		<maxrange>1.75</maxrange>
+		<impacteffect>effects\impacts\melee_no_weapon</impacteffect>
+		<rate type="Unit">1.0 </rate>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name>Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<maxrange>0.2</maxrange>
+		<rate type="Building">1.0</rate>
+	</action>
+	<action>
+		<name stringid="80496">Gunshot</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack_silenced</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<active>0</active>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type="Unit">1.0 </rate>
+		<instantballistics>1</instantballistics>
+	</action>
+	<tactic>
+		Melee
+		<action>Stealth</action>
+		<action>AutoGatherXP</action>
+		<action priority="100">BuildingAttack</action>
+		<action priority="25">MeleeHandAttack</action>
+		<action priority="1">Sabotage</action>
+		<action priority="1">counterintelligence</action>
+		<action priority="1">build</action>
+		<action priority="50">martialarts</action>
+		<action priority="75">gunshot</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<transition>
+			<tactic>Defend</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Stealth</tactic>
+			<length>2</length>
+			<anim>Cover_In</anim>
+			<exit>1</exit>
+		</transition>
+		<autoretarget>1</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+	<tactic>
+		Defend
+		<action>Stealth</action>
+		<action priority="100">BuildingAttack</action>
+		<action priority="25">DefendHandAttack</action>
+		<action priority="1">Sabotage</action>
+		<action priority="1">counterintelligence</action>
+		<action priority="1">build</action>
+		<action priority="50">martialarts</action>
+		<action priority="75">gunshot</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Stealth</tactic>
+			<length>2</length>
+			<anim>Cover_In</anim>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+	<tactic>
+		Cover
+		<action>AutoGatherXP</action>
+		<action>Stealth</action>
+		<speedmodifier>0.5</speedmodifier>
+		<action priority="100">CoverBuildingAttack</action>
+		<action priority="25">CoverHandAttack</action>
+		<action priority="1">Sabotage</action>
+		<action priority="1">counterintelligence</action>
+		<action priority="1">build</action>
+		<action priority="50">martialarts</action>
+		<action priority="75">gunshot</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Stealth</tactic>
+			<length>2</length>
+			<anim>Cover_In</anim>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+	<tactic>
+		Stealth
+		<action>AutoGatherXP</action>
+		<action>Stealth</action>
+		<checkifcanstealth range="20.0">1</checkifcanstealth>
+		<speedmodifier>0.7</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<transition>
+			<tactic>Melee</tactic>
+			<length>0.8</length>
+			<anim>Cover_Out</anim>
+			<exit>1</exit>
+			<automatic>1</automatic>
+			<commandautomatic>1</commandautomatic>
+		</transition>
+		<transition>
+			<tactic>Defend</tactic>
+			<length>0.8</length>
+			<anim>Cover_Out</anim>
+			<exit>1</exit>
+			<automatic>1</automatic>
+			<commandautomatic>1</commandautomatic>
+		</transition>
+		<transition>
+			<tactic>Cover</tactic>
+			<length>0.8</length>
+			<anim>Cover_Out</anim>
+			<exit>1</exit>
+			<automatic>1</automatic>
+			<commandautomatic>1</commandautomatic>
+		</transition>
+		<action priority="100">CoverBuildingAttack</action>
+		<action priority="25">CoverHandAttack</action>
+		<action priority="1">build</action>
+		<action priority="50">martialarts</action>
+		<action priority="75">gunshot</action>
+		<action priority="1">Sabotage</action>
+		<action priority="1">counterintelligence</action>
+		<autoretarget>1</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+</tactics>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name>SiakAuraSelf</name>
+		<type>AutoRangedModify</type>
+		<!-- <modifyabstracttype>Military</modifyabstracttype> -->
+		<active>1</active>
+		<maxrange>15000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modelattachment>units\attachments\stun_stars.xml</modelattachment>
+		<modifymultiplier>0.0001</modifymultiplier>
+	</action>
+	<action>
+		<name>SiakAura</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<!-- <modifyabstracttype>Military</modifyabstracttype> -->
+		<targetenemy>1</targetenemy>
+		<active>1</active>
+		<maxrange>10</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modelattachment>units\attachments\stun_stars.xml</modelattachment>
+		<modifymultiplier>0.0001</modifymultiplier>
+	</action>
+	<tactic>
+		Normal
+		<action>SiakAuraSelf</action>
+		<action>SiakAura</action>
+	</tactic>
+</tactics>

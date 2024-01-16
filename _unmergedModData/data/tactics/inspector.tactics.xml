@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //eksperimen peranakan -->
+<tactics>
+	<action>
+		<name stringid="68961">EconomicAuraKM</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68961">EconomicAuraKM2</name>
+		<type>AutoRangedModify</type>
+		<maxrange>36</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+   <action>
+      <dbaction>Move</dbaction>
+      <name stringid="69156">Move</name>
+      <type>Move</type>
+      <persistent>1</persistent>
+   </action>
+	<tactic>
+		Normal
+		<action>EconomicAuraKM</action>
+		<action>EconomicAuraKM2</action>
+		<action>Move</action>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<walkanim>Walk</walkanim>
+	</tactic>
+</tactics>

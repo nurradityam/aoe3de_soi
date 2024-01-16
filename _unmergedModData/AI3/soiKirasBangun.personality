@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>113003</nameID>
+   <tooltipID>113004</tooltipID>
+   <forcedciv>karo</forcedciv>
+   <rushboom>0</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_karo</icon>
+   <chatset>gall</chatset>
+   <playerNames>
+      <nameID>113003<civ>karo</civ></nameID> 
+	</playerNames>
+</AI>

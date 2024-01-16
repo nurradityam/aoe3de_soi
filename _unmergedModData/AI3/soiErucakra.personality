@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>77003</nameID>
+   <tooltipID>77004</tooltipID>
+   <forcedciv>Erucakran</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_spanish</icon>
+   <chatset>napoleon</chatset>
+   <playerNames>
+      <nameID>77003<civ>Erucakran</civ></nameID> 
+	</playerNames>
+</AI>

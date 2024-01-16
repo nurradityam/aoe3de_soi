@@ -1,0 +1,14 @@
+<AI>
+<!--//Malaya -->
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>54003</nameID>
+   <tooltipID>54004</tooltipID>
+   <forcedciv>Malaya</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_malaya</icon>
+   <chatset>frederick</chatset>
+   <playerNames>
+      <nameID>54003<civ>Malaya</civ></nameID> 
+	</playerNames>
+</AI>

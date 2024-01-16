@@ -1,0 +1,48 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="38136">SpawnFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="38136">SpawnWood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="38136">SpawnGold</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	//dayak iban
+	//make all other actions to active=0
+	<action>
+		<name stringid="38136">AutoGatherCoinIban</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	
+	<action>
+		<name>SpawnNgaduObject</name>
+		<type>Spawn</type>
+		<rate type="SNgaduSpawner">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>SpawnFood</action>
+		<action>SpawnWood</action>
+		<action>SpawnGold</action>
+		<action>AutoGatherCoinIban</action>
+		<action>SpawnNgaduObject</action>
+	</tactic>
+</tactics>

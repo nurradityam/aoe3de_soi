@@ -1,0 +1,146 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="68973">MaintainOrangKampung</name>
+		<type>Maintain</type>
+		<rate type="ypWaterBuffalo">1.0</rate>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="48954">RumaAuraToba</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.03</modifymultiplier>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+	</action>	
+	<!--//Karo-->
+	<action>
+		<name stringid="113953">MaintainTree</name>
+		<type>Maintain</type>
+		<rate type="ypTreeBorneo">2.0</rate>
+		<active>0</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="68973">MaintainPendikar</name>
+		<type>Maintain</type>
+		<rate type="SBatakWarrior">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="115958">SpawnHerbBushKaro</name>
+		<type>Spawn</type>
+		<rate type="SHerbBush">1.0</rate>
+		<active>0</active>
+		<singleuse>1</singleuse>
+		<persistent>1</persistent>
+	</action>
+	
+	<!--//Mandailing-->
+	<action>
+		<name stringid="112952">MaintainGold</name>
+		<type>Maintain</type>
+		<rate type="ypCrateofCoin">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43295">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Food'>0.250001</Rate>
+	</action>	
+	<action>
+		<name stringid="112953">MaintainCoffeeMandailing</name>
+		<type>Maintain</type>
+		<rate type="SCoffeeBush">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<!-- //nias -->
+	<action>
+		<name stringid="48954">ExtraHitpointsNias</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.10</modifymultiplier>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48954">ExtraHitpointsNias2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<!-- Gayo -->
+	<action>
+		<name stringid="68973">MaintainKudePacu</name>
+		<type>Maintain</type>
+		<rate type="SKudePacuAutoSpawn">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="64361">SpawnBerryBush</name>
+		<type>Spawn</type>
+		<rate type="SBerryBush">1.0</rate>
+		<active>0</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="115958">SpawnHerbBush</name>
+		<type>Maintain</type>
+		<rate type="SHerbBush">1.0</rate>
+		<active>0</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="115957">SpawnCoffeeBush</name>
+		<type>Spawn</type>
+		<rate type="SCoffeeBush">1.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		Normal
+		<action>MaintainOrangKampung</action>
+		<action>RumaAuraToba</action>
+		<action>MaintainGold</action>
+		<action>MaintainTree</action>
+		<action>MaintainPendikar</action>
+		<action>AutoGatherFood</action>
+		<action>MaintainCoffeeMandailing</action>
+		<action>ExtraHitpointsNias</action>
+		<action>ExtraHitpointsNias2</action>
+		<action>MaintainKudePacu</action>
+		<action>SpawnCrateofFood</action>
+		<action>SpawnCrateofWood</action>
+		<action>SpawnCrateofCoin</action>
+		
+		<action>SpawnBerryBush</action>
+		<action>SpawnCoffeeBush</action>
+		<action>SpawnHerbBush</action>
+		<action>SpawnHerbBushKaro</action>
+	</tactic>
+</tactics>

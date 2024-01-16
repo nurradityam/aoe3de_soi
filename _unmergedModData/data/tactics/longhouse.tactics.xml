@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="38133">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.01</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<active>0</active>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<rate type="Unit">1.0 </rate>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name>Townaura</name>
+		<type>LikeBonus</type>
+		<active>1</active>
+		<maxrange>10</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>0.10</modifymultiplier>
+		<modifyexponent>1.0</modifyexponent>
+		<modifybase>1.0</modifybase>
+	</action>
+		<action>
+		<name stringid="69157">SpawnBush</name>
+		<type>Maintain</type>
+		<rate type="BerryBush">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		Normal
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<action priority="100">RangedAttack</action>
+		<action>Townaura</action>
+		<action>SpawnBush</action>
+	</tactic>
+</tactics>

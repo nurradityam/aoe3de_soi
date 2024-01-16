@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<homecity>
+	<civ>Makassar</civ>
+	<name>$$172005$$</name>
+	<heroname>$$43031$$</heroname>
+	<gatherpointunit>HomeCityGatherFlag</gatherpointunit>
+	<visual>french\french_homecity.xml</visual>
+	<watervisual>french\french_homecity_water.xml</watervisual>
+	<backgroundvisual>french\french_background.xml</backgroundvisual>
+	<pathdata>french\pathable_area_object.gr2</pathdata>
+	<camera>french\french_homecity_camera.cam</camera>
+	<widescreencamera>french\french_homecity_widescreencamera.cam</widescreencamera>
+	<transportroundtriptime>1</transportroundtriptime>
+	<transportactivationtime>0</transportactivationtime>
+	<level>10</level>
+	<skillpoints>9</skillpoints>
+	<lightset>Paris</lightset>
+	<watertype>Paris</watertype>
+	<numpropunlocksearned>0</numpropunlocksearned>
+	<ambientsounds>homecity\FrenchAmbientSounds.xml</ambientsounds>
+	<xsai>generic_city</xsai>
+	<coffers>
+		<current>
+			<food>0</food>
+			<wood>0</wood>
+			<gold>0</gold>
+			<fame>0</fame>
+			<ships>0</ships>
+			<skillpoints>0</skillpoints>
+			<xp>0</xp>
+		</current>
+		<maximum>
+			<food>0</food>
+			<wood>0</wood>
+			<gold>0</gold>
+			<fame>0</fame>
+			<ships>0</ships>
+			<skillpoints>-1</skillpoints>
+			<xp>-1</xp>
+		</maximum>
+	</coffers>
+	<cards>
+		<card>
+			<name>SHCShipWarga1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipWarga3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipWarga1</prereqtech>
+			<age>1</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipWarga2</name>
+			<maxcount>1</maxcount>
+			<level>15</level>
+			<prereqtech>SHCShipWarga3</prereqtech>
+			<age>0</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipWarga4</name>
+			<maxcount>1</maxcount>
+			<level>15</level>
+			<prereqtech>SHCShipWarga2</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipGerma1</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShipWarga3</prereqtech>
+			<age>0</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipGermaInfinite</name>
+			<maxcount>-1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipGerma1</prereqtech>
+			<age>0</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipRice1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>200</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipRice2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipRice1</prereqtech>
+			<age>1</age>
+			<displayunitcount>400</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipRice3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipRice2</prereqtech>
+			<age>1</age>
+			<displayunitcount>800</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipRice4</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipRice3</prereqtech>
+			<age>2</age>
+			<displayunitcount>1000</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipBamboo1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>200</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipBamboo2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipBamboo1</prereqtech>
+			<age>1</age>
+			<displayunitcount>400</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipBamboo3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipBamboo2</prereqtech>
+			<age>1</age>
+			<displayunitcount>800</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipBamboo4</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipBamboo3</prereqtech>
+			<age>2</age>
+			<displayunitcount>1000</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipHeirloom1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>200</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipHeirloom2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipHeirloom1</prereqtech>
+			<age>1</age>
+			<displayunitcount>400</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipHeirloom3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipHeirloom2</prereqtech>
+			<age>1</age>
+			<displayunitcount>700</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipHeirloom4</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipHeirloom3</prereqtech>
+			<age>2</age>
+			<displayunitcount>1000</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipGoat1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>7</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipGoat2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipGoat1</prereqtech>
+			<age>2</age>
+			<displayunitcount>10</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipBuffalo1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipGoat1</prereqtech>
+			<age>1</age>
+			<displayunitcount>5</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipCoveredWagons</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>1</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCShipRhino1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>2</displayunitcount>
+		</card>
+		<card>
+			<name>SHCShipRhino2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipRhino1</prereqtech>
+			<age>2</age>
+			<displayunitcount>3</displayunitcount>
+		</card>
+		<card>
+			<name>SHCShipRhino3</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipRhino2</prereqtech>
+			<age>3</age>
+			<displayunitcount>6</displayunitcount>
+		</card>
+		
+		<card>
+			<name>SHCShipImam1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>2</displayunitcount>
+		</card>
+		<card>
+			<name>SHCShipImam2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipImam1</prereqtech>
+			<age>1</age>
+			<displayunitcount>3</displayunitcount>
+		</card>
+		
+		<card>
+			<name>SHCSlametan</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCCadasPangeran</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCSlametan</prereqtech>
+			<age>2</age>
+		</card>
+		
+		<card>
+			<name>SHCShipMacan</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		
+		<card>
+			<name>SHCShipkemit1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipkemit2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipkemit1</prereqtech>
+			<age>2</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipkemit3</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShipkemit2</prereqtech>
+			<age>3</age>
+			<displayunitcount>14</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCShippunggawa1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShippunggawa2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShippunggawa1</prereqtech>
+			<age>3</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		
+		<card>
+			<name>SHCHandInfantryHitpoints</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShippamarang1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCHandInfantryDamage</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCHandInfantryHitpoints</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCHandInfantryCombat</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCHandInfantryDamage</prereqtech>
+			<age>2</age>
+		</card>
+		
+		<card>
+			<name>SHCShippamarang1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShippamarang2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShippamarang1</prereqtech>
+			<age>2</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShippamarang3</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShippamarang2</prereqtech>
+			<age>3</age>
+			<displayunitcount>14</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCShipgada1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipgada2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipgada1</prereqtech>
+			<age>2</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipgada3</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShipgada2</prereqtech>
+			<age>3</age>
+			<displayunitcount>14</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+
+		<card>
+			<name>SHCShipJayengsekar1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipJayengsekar2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipJayengsekar1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+				<card>
+					<name>SHCShipJayengsekar3</name>
+					<maxcount>1</maxcount>
+					<level>20</level>
+					<prereqtech>SHCShipJayengsekar2</prereqtech>
+					<age>3</age>
+					<displayunitcount>7</displayunitcount>
+					<infiniteinlastage>1</infiniteinlastage>
+				</card>
+				<card>
+					<name>SHCShipJayengsekar4</name>
+					<maxcount>1</maxcount>
+					<level>40</level>
+					<prereqtech>SHCShipJayengsekar3</prereqtech>
+					<age>2</age>
+					<displayunitcount>5</displayunitcount>
+					<infiniteinlastage>1</infiniteinlastage>
+				</card>
+				
+		<card>
+			<name>SHCCavalryHitpoints</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShipJayengsekar1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCCavalryDamage</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCCavalryHitpoints</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCCavalryCombat</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCCavalryDamage</prereqtech>
+			<age>3</age>
+		</card>
+		
+		<card>
+			<name>SHCBinokasihCrown</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCNagapaksiCarriage</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCBinokasihCrown</prereqtech>
+			<age>2</age>
+		</card>
+		
+		<card>
+			<name>SHCShipwadwa1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipwadwa2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipwadwa1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipwadwa3</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCShipwadwa2</prereqtech>
+			<age>3</age>
+			<displayunitcount>7</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCShipMeriamPring1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>1</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipNyaiKuningan1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipMeriamPring1</prereqtech>
+			<age>2</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>	
+		<card>
+			<name>SHCShipMeriamPring2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipNyaiKuningan1</prereqtech>
+			<age>2</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCShipTweeponder1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipVeldstuk2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipTweeponder1</prereqtech>
+			<age>3</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>	
+		<card>
+			<name>SHCShipTweeponder2</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>SHCShipVeldstuk2</prereqtech>
+			<age>3</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		
+		<card>
+			<name>YPHCNativeLearning</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>YPHCNativeHitpoints</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>YPHCNativeDamage</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>YPHCNativeDamage</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>YPHCNativeLearning</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>HCAdvancedTradingPost</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>YPHCNativeLearning</prereqtech>
+			<age>0</age>
+		</card>
+		
+		<card>
+			<name>HCCheapStablesTeam</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCRidingSchool</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCCheapStablesTeam</prereqtech>
+			<age>1</age>
+		</card>
+		
+		<card>
+			<name>SHCKarinding</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCImprovedPanggungKrapyak</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCKarinding</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCJavaWarIrregular</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>SHCImprovedPanggungKrapyak</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>HCPioneers</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCKarinding</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCUnlockFort</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>1</displayunitcount>
+		</card>
+		
+		<card>
+			<name>SHCRonggeng</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCGunungGede</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		
+		<card>
+			<name>SHCMarketDays</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCJavaneseSociety</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCMarketDays</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCShipKompeni1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipKompeni2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipKompeni1</prereqtech>
+			<age>3</age>
+			<displayunitcount>5</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipKompeni3</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipKompeni2</prereqtech>
+			<age>2</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		
+		<card>
+			<name>SHCShipTelikSandi1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCAdvancedMosque</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCAdvancedCoffeePlantation</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCAdvancedMarket</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCAdvancedDock</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		
+		<card>
+			<name>SHCJumenengan</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCKirab</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCJumenengan</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCBedaya</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCKirab</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCPatriarchy</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>SHCBedaya</prereqtech>
+			<age>1</age>
+		</card>
+	</cards>
+	<decks>
+		<deck>
+			<name>$$41681$$</name>
+			<cards>
+				<card>SHCShipWarga1</card>
+				<card>SHCShipGoat1</card>
+				<card>SHCShipBamboo1</card>
+				<card>SHCShipGada1</card>
+				<card>SHCShipKemit1</card>
+				<card>SHCShipPamarang1</card>
+				<card>SHCShipJayengsekar1</card>
+				<card>YPHCNativeLearning</card>
+				<card>SHCKarinding</card>
+				<card>HCAdvancedMarket</card>
+				<card>SHCMarketDays</card>
+			</cards>
+		</deck>
+		<deck>
+			<name>$$41682$$</name>
+			<default/>
+			<cards>
+				<card>SHCShipWarga1</card>
+				<card>SHCShipGoat1</card>
+				<card>SHCShipBamboo1</card>
+				<card>SHCShipGada1</card>
+				<card>SHCShipKemit1</card>
+				<card>SHCShipPamarang1</card>
+				<card>SHCShipJayengsekar1</card>
+				<card>YPHCNativeLearning</card>
+				<card>SHCKarinding</card>
+				<card>HCAdvancedMarket</card>
+				<card>SHCMarketDays</card>
+			</cards>
+		</deck>
+		<revoltdeck>
+			<name>$$45518$$</name>
+			<cards>
+			</cards>
+		</revoltdeck>
+	</decks>
+	<building>
+		<name>Estate</name>
+		<visual>
+			<file>french\french estate.xml</file>
+			<bone>bone_estate</bone>
+		</visual>
+		<uix>150</uix>
+		<uiy>200</uiy>
+		<camera>french\french_homecity_estate_camera.cam</camera>
+		<widescreencamera>french\french_homecity_estate_camera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\tower_of_london_icon</portrait>
+		<displaynamestringid>24968</displaynamestringid>
+		<rolloverstringid>25537</rolloverstringid>
+		<obtainabletechs/>
+		<activetechs/>
+		<validunits/>
+		<units/>
+		<mercbuilding>1</mercbuilding>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Market</name>
+		<visual>
+			<file>buildings_west\french_market.xml</file>
+			<bone>bone_market</bone>
+		</visual>
+		<uix>250</uix>
+		<uiy>375</uiy>
+		<camera>french\french_homecity_market_camera.cam</camera>
+		<widescreencamera>french\french_homecity_market_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\nw_trading_company_icon</portrait>
+		<displaynamestringid>24970</displaynamestringid>
+		<rolloverstringid>25536</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.7" y="1.0">SHCShipWarga1</tech>
+			<tech x="0.7" y="2.0">SHCShipWarga3</tech>
+			<tech x="0.3" y="3.0">SHCShipWarga2</tech>
+			<tech x="1.0" y="3.0">SHCShipGerma1</tech>
+			<tech x="1.0" y="4.0">SHCShipGermaInfinite</tech>
+			<tech x="0.3" y="4.0">SHCShipWarga4</tech>
+			
+			<tech x="2.0" y="1.0">SHCShipRice1</tech>
+			<tech x="2.0" y="2.0">SHCShipRice2</tech>
+			<tech x="2.0" y="3.0">SHCShipRice3</tech>
+			<tech x="2.0" y="4.0">SHCShipRice4</tech>
+			<tech x="2.7" y="1.0">SHCShipBamboo1</tech>
+			<tech x="2.7" y="2.0">SHCShipBamboo2</tech>
+			<tech x="2.7" y="3.0">SHCShipBamboo3</tech>
+			<tech x="2.7" y="4.0">SHCShipBamboo4</tech>
+			<tech x="3.4" y="1.0">SHCShipHeirloom1</tech>
+			<tech x="3.4" y="2.0">SHCShipHeirloom2</tech>
+			<tech x="3.4" y="3.0">SHCShipHeirloom3</tech>
+			<tech x="3.4" y="4.0">SHCShipHeirloom4</tech>
+			
+			<tech x="4.7" y="1.0">SHCShipGoat1</tech>
+			<tech x="4.4" y="2.0">SHCShipGoat2</tech>
+			<tech x="5.1" y="2.0">SHCShipBuffalo1</tech>
+			
+			<tech x="4.7" y="3.0">SHCShipRhino1</tech>
+			<tech x="4.7" y="4.0">SHCShipRhino2</tech>
+			<tech x="4.7" y="5.0">SHCShipRhino3</tech>
+						
+			<tech x="5.8" y="1.0">HCShipCoveredWagons</tech>
+			<tech x="5.8" y="3.0">SHCShipImam1</tech>
+			<tech x="5.8" y="5.0">SHCShipImam2</tech>
+			
+			<tech x="7.0" y="1.0">SHCSlametan</tech>
+			<tech x="7.0" y="3.0">SHCCadasPangeran</tech>
+			<tech x="7.0" y="5.0">SHCShipMacan</tech>
+			<tech x="7.0" y="7.0">SHCMacanSiliwangi</tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech>SHCShipWarga1</tech>
+			<tech>SHCShipGoat1</tech>
+			<tech>SHCShipBamboo1</tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Academy</name>
+		<visual>
+			<file>buildings_west\french_academy.xml</file>
+			<bone>bone_academy</bone>
+		</visual>
+		<uix>460</uix>
+		<uiy>125</uiy>
+		<camera>french\french_homecity_academy_camera.cam</camera>
+		<widescreencamera>french\french_homecity_academy_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\military_academy_icon</portrait>
+		<displaynamestringid>24965</displaynamestringid>
+		<rolloverstringid>25533</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.0" y="1.0">SHCShipKemit1</tech>
+			<tech x="0.0" y="2.0">SHCShipKemit2</tech>
+			<tech x="0.0" y="3.0">SHCShipKemit3</tech>
+			
+			<tech x="0.0" y="5.0">SHCShipPunggawa1</tech>
+			<tech x="0.0" y="6.0">SHCShipPunggawa2</tech>
+			
+			<tech x="1.5" y="1.0">SHCShipPamarang1</tech>
+			<tech x="1.5" y="2.0">SHCShipPamarang2</tech>
+			<tech x="1.5" y="3.0">SHCShipPamarang3</tech>
+			<tech x="1.5" y="5.0">SHCShipGada1</tech>
+			<tech x="1.5" y="6.0">SHCShipGada2</tech>
+			<tech x="1.5" y="7.0">SHCShipGada3</tech>
+			<tech x="2.2" y="2.0">SHCHandInfantryHitpoints</tech>
+			<tech x="2.2" y="3.0">SHCHandInfantryDamage</tech>
+			<tech x="2.2" y="5.0">SHCHandInfantryCombat</tech>
+			
+			<tech x="3.9" y="1.0">SHCShipJayengsekar1</tech>
+			<tech x="3.5" y="3.0">SHCShipJayengsekar2</tech>
+			<tech x="3.5" y="4.0">SHCShipJayengsekar3</tech>
+			<tech x="3.5" y="5.0">SHCShipJayengsekar4</tech>
+			<tech x="4.2" y="3.0">SHCCavalryHitpoints</tech>
+			<tech x="4.2" y="4.0">SHCCavalryDamage</tech>
+			<tech x="4.2" y="5.0">SHCCavalryCombat</tech>
+			
+			<tech x="5.2" y="1.0">SHCBinokasihCrown</tech>
+			<tech x="5.2" y="3.0">SHCNagapaksiCarriage</tech>
+			
+			<tech x="5.2" y="4.0">SHCShipwadwa1</tech>
+			<tech x="5.2" y="5.0">SHCShipwadwa2</tech>
+			<tech x="5.2" y="6.0">SHCShipwadwa3</tech>
+			
+			<tech x="6.2" y="2.0">SHCShipMeriamPring1</tech>
+			<tech x="6.2" y="4.0">SHCShipNyaiKuningan1</tech>
+			<tech x="6.2" y="5.0">SHCShipMeriamPring2</tech>
+			<tech x="7.2" y="3.0">SHCShipTweeponder1</tech>
+			<tech x="7.2" y="5.0">SHCShipVeldstuk2</tech>
+			<tech x="7.2" y="7.0">SHCShipTweeponder2</tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech>SHCShipKemit1</tech>
+			<tech>SHCShipPamarang1</tech>
+			<tech>SHCShipJayengsekar1</tech>
+			<tech>SHCShipGada1</tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Cathedral</name>
+		<visual>
+			<file>buildings_west\french_notredame.xml</file>
+			<bone>bone_cathedral</bone>
+		</visual>
+		<uix>80</uix>
+		<uiy>475</uiy>
+		<camera>french\french_homecity_cathedral_camera.cam</camera>
+		<widescreencamera>french\french_homecity_cathedral_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\cathedral_icon</portrait>
+		<displaynamestringid>28987</displaynamestringid>
+		<rolloverstringid>25538</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.0" y="1">YPHCNativeLearning</tech>
+			<tech x="0.0" y="4">YPHCNativeHitpoints</tech>
+			<tech x="0.0" y="3">YPHCNativeDamage</tech>
+			<tech x="0.7" y="4.0">HCAdvancedTradingPost</tech>
+			
+			<tech x="1.5" y="1.0">HCCheapStablesTeam</tech>
+			<tech x="1.5" y="3.0">HCRidingSchool</tech>
+			
+			<tech x="2.5" y="1.0">SHCKarinding</tech>
+			<tech x="2.5" y="3.0">SHCImprovedPanggungKrapyak</tech>
+			<tech x="2.5" y="4.0">SHCJavaWarIrregular</tech>
+			<tech x="3.3" y="2.0">HCPioneers</tech>
+			
+			<tech x="3.3" y="4.0">SHCGunungGede</tech>
+			
+			<tech x="2.5" y="5.0">SHCShipKompeni1</tech>
+			<tech x="2.5" y="6.0">SHCShipKompeni2</tech>
+			<tech x="2.5" y="7.0">SHCShipKompeni3</tech>
+			
+			<tech x="4.3" y="1.0">SHCRonggeng</tech>
+			
+			<tech x="4.3" y="3.0">SHCShipTelikSandi1</tech>
+			
+			<tech x="4.3" y="5.0">HCUnlockFort</tech>
+			
+			<tech x="5.3" y="3.0">SHCMarketDays</tech>
+			<tech x="5.3" y="5.0">SHCJavaneseSociety</tech>
+			
+			<tech x="5.3" y="1.0">SHCAdvancedCoffeePlantation</tech>
+			<tech x="6.3" y="1.0">HCAdvancedMarket</tech>
+			<tech x="6.3" y="3.0">HCAdvancedDock</tech>
+			<tech x="7.3" y="1.0">SHCAdvancedMosque</tech>
+			
+			<tech x="7.3" y="3.0">SHCJumenengan</tech>
+			<tech x="7.3" y="4.0">SHCKirab</tech>
+			<tech x="7.3" y="5.0">SHCBedaya</tech>
+			<tech x="7.3" y="6.0">SHCPatriarchy</tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech>YPHCNativeLearning</tech>
+			<tech>SHCKarinding</tech>
+			<tech>HCAdvancedMarket</tech>
+			<tech>SHCMarketDays</tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>ManufacturingPlant</name>
+		<visual>
+			<file>buildings_west\french_manufacturing_plant.xml</file>
+			<bone>bone_plant</bone>
+		</visual>
+		<uix>450</uix>
+		<uiy>275</uiy>
+		<camera>french\french_homecity_manufacturing_plant_camera.cam</camera>
+		<widescreencamera>french\french_homecity_plant_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\manufacturing_plant_icon</portrait>
+		<displaynamestringid>24972</displaynamestringid>
+		<rolloverstringid>25535</rolloverstringid>
+		<obtainabletechs>
+		</obtainabletechs>
+		<activetechs>
+		</activetechs>
+		<validunits/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Dock</name>
+		<visual>
+			<file>buildings_west\french_dock.xml</file>
+			<bone>bone_dock</bone>
+		</visual>
+		<uix>200</uix>
+		<uiy>250</uiy>
+		<camera>french\french_homecity_dock_camera.cam</camera>
+		<widescreencamera>french\french_homecity_dock_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>ui\home_city\harbor_icon</portrait>
+		<displaynamestringid>35745</displaynamestringid>
+		<rolloverstringid>35746</rolloverstringid>
+		<obtainabletechs>
+		</obtainabletechs>
+		<activetechs/>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Customization</name>
+		<camera>french\french_homecity_camera.cam</camera>
+		<widescreencamera>french\french_homecity_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\dock_icon</portrait>
+		<displaynamestringid>24966</displaynamestringid>
+		<rolloverstringid>25540</rolloverstringid>
+		<customizationbuilding>1</customizationbuilding>
+	</building>
+	<waypoints>
+		<waypoint>
+			<bone>bone_vendor01</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor02</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor03</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor04</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor05</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor06</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor07</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_vendor08</bone>
+			<vendorarea>1</vendorarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode00</bone>
+			<exit>1</exit>
+			<vendorentry>1</vendorentry>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode01</bone>
+			<exit>1</exit>
+			<vendorentry>1</vendorentry>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode02</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode03</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode04</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode05</bone>
+			<exit>1</exit>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode06</bone>
+			<exit>1</exit>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode07</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode08</bone>
+			<exit>1</exit>
+			<vendorentry>1</vendorentry>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode09</bone>
+			<exit>1</exit>
+			<vendorentry>1</vendorentry>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode10</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode11</bone>
+			<exit>1</exit>
+			<vendorentry>1</vendorentry>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode12</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode13</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode14</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode15</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode16</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode17</bone>
+			<performancearea>1</performancearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode18</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode19</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode20</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode21</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode22</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode23</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode24</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode25</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode26</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode27</bone>
+			<illreputearea>1</illreputearea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework01</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework02</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework03</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework04</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework05</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_firework06</bone>
+			<fireworks>1</fireworks>
+		</waypoint>
+		<waypoint>
+			<bone>bone_fishing</bone>
+			<fishingarea>1</fishingarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_fishing01</bone>
+			<fishingarea>1</fishingarea>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_end</bone>
+			<shipmentend>1</shipmentend>
+		</waypoint>
+	</waypoints>
+	<obtainableprops>
+		<prop>NobleClassFrenchMale</prop>
+		<prop>NobleClassFrenchFemale</prop>
+		<prop>StagecoachRoyal</prop>
+		<prop>PeasantMime</prop>
+		<prop>Hunchback</prop>
+		<prop>Torchy</prop>
+		<prop>Juggler</prop>
+		<prop>PeasantVendor</prop>
+		<prop>MiddleClassMusician</prop>
+		<prop>MiddleClassPreacher</prop>
+		<prop>PeasantPainter</prop>
+		<prop>Drunk</prop>
+		<prop>NiceLady</prop>
+		<prop>PeasantFisherman</prop>
+		<prop>Thug</prop>
+		<prop>UnitChats</prop>
+		<prop active="1">French_LightSet1</prop>
+		<prop>French_LightSet2</prop>
+		<prop>French_AcadProp01</prop>
+		<prop>Acad_fountain00</prop>
+		<prop>French_KingStatueProp</prop>
+		<prop>French_MarketProp01</prop>
+		<prop>French_MarketProp02</prop>
+		<prop>French_PlantProp01</prop>
+		<prop>French_PlantProp03</prop>
+		<prop>French_PlantProp04</prop>
+		<prop>French_PlantProp05</prop>
+		<prop>French_PlantProp06</prop>
+		<prop>French_CathProp01</prop>
+		<prop>French_RiderStatue</prop>
+		<prop>Cath_fountain01</prop>
+		<prop>French_DockProp01</prop>
+		<prop>French_DockProp02</prop>
+		<prop active="1">French_AcademyTexture0</prop>
+		<prop>French_AcademyTexture1</prop>
+		<prop>French_AcademyTexture2</prop>
+		<prop>French_AcademyTexture3</prop>
+		<prop>French_AcademyTexture4</prop>
+		<prop>French_AcademyTexture5</prop>
+		<prop>French_AcademyTexture6</prop>
+		<prop>French_AcademyTexture7</prop>
+		<prop active="1">French_CathedralTexture0</prop>
+		<prop>French_CathedralTexture1</prop>
+		<prop>French_CathedralTexture2</prop>
+		<prop>French_CathedralTexture3</prop>
+		<prop active="1">French_DockTexture0</prop>
+		<prop>French_DockTexture1</prop>
+		<prop>French_DockTexture2</prop>
+		<prop>French_DockTexture3</prop>
+		<prop>French_DockTexture4</prop>
+		<prop>French_DockTexture5</prop>
+		<prop>French_DockTexture6</prop>
+		<prop>French_DockTexture7</prop>
+		<prop active="1">French_MarketTexture0</prop>
+		<prop>French_MarketTexture1</prop>
+		<prop>French_MarketTexture2</prop>
+		<prop>French_MarketTexture3</prop>
+		<prop>French_MarketTexture4</prop>
+		<prop>French_MarketTexture5</prop>
+		<prop>French_MarketTexture6</prop>
+		<prop>French_MarketTexture7</prop>
+		<prop active="1">French_ManuPlantTexture0</prop>
+		<prop>French_ManuPlantTexture1</prop>
+		<prop>French_ManuPlantTexture2</prop>
+		<prop>French_ManuPlantTexture3</prop>
+		<prop>French_ManuPlantTexture4</prop>
+		<prop>French_ManuPlantTexture5</prop>
+		<prop>French_ManuPlantTexture6</prop>
+		<prop>French_ManuPlantTexture7</prop>
+	</obtainableprops>
+</homecity>

@@ -1300,6 +1300,10 @@ extern int  gCoveredWagonUnit = cUnitTypeCoveredWagon;    // Allow for a differe
 extern int  gMarketUnit = cUnitTypeMarket;    // The Asians have a different type.
 extern int  gDockUnit = cUnitTypeDock;    // The Asians have a different type.
 extern int  gFortressUnit = cUnitTypeFortFrontier;    // The Javanese have a different type.
+//RizkyR: add Barracks and Stable
+extern int  gBarracksUnit = cUnitTypeBarracks;
+extern int  gStableUnit = cUnitTypeStable;
+extern int  gFortWagonUnit = cUnitTypeFortWagon;
 
 extern bool gFlagChosen = false;  // need to make sure they only build one
 
@@ -2013,6 +2017,46 @@ bool civIsAsian(void)
    return(false);
 }
 
+//RizkyR: civIsJavanese
+bool civIsJavanese(void)
+{
+    // SOI NEW CIV
+   // if ((cMyCiv == cCivBanten) || (cMyCiv == cCivErucakran) || (cMyCiv == cCivMangkunegaran) || (cMyCiv == cCivPriangan) || (cMyCiv == cCivSurakarta) || (cMyCiv == cCivYogyakarta) || (cMyCiv == cCivMadurese))
+      // return(true);
+
+   if ((cMyCiv == cCivFrench) || (cMyCiv == cCivSpanish) || (cMyCiv == cCivGermans) || (cMyCiv == cCivPriangan) || (cMyCiv == cCivOttomans) || (cMyCiv == cCivRussians) || (cMyCiv == cCivPirate))
+      return(true);
+   
+   return(false);
+}
+
+//RizkyR: civIsMalay
+bool civIsMalay(void)
+{
+    // SOI NEW CIV
+   if (
+   // (cMyCiv == cCivAceh) || 
+   (cMyCiv == cCivBritish) 
+       // || (cMyCiv == cCivLingga)|| (cMyCiv == cCivPalembang)|| (cMyCiv == cCivSiak)|| (cMyCiv == cCivJambi)
+       // || (cMyCiv == cCivJohor)|| (cMyCiv == cCivMalaya)|| (cMyCiv == cCivKedah)
+   )
+      return(true);
+   
+   return(false);
+}
+
+bool civIsBatak(void)
+{
+   if (
+   //SOI NEW CIVS
+   // (cMyCiv == cCivToba) || (cMyCiv == cCivMandailing) || (cMyCiv == cCivKaro) || (cMyCiv == cCivGayoMain) 
+   // || 
+   (cMyCiv == cCivXPIroquois))
+      return(true);
+   
+   return(false);
+}
+
 
 int getSettlerShortfall()
 {  // How many more Settlers do we currently want?
@@ -2398,7 +2442,9 @@ int createSimpleAttackGoal(string name="BUG", int attackPlayerID=-1,
 	//Retreat.
 	aiPlanSetVariableBool(goalID, cGoalPlanAllowRetreat, 0, allowRetreat);
 	//Handle maps where the enemy player is usually on a diff island.
-	if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") )
+	if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") 
+        ||//RizkyR add SoI water map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Pulau Seribu"))
 	{
 		aiPlanSetVariableBool(goalID, cGoalPlanSetAreaGroups, 0, true);
 		aiPlanSetVariableInt(goalID, cGoalPlanAttackRoutePatternType, 0, cAttackPlanAttackRoutePatternRandom);
@@ -2943,6 +2989,7 @@ void chooseConsulateFlag()
 
    if (kbTechGetStatus(flag_button_id) == cTechStatusObtainable)
    {
+       echoMessage(kbGetTechName(flag_button_id)+" obtainable.");
       consulatePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, flag_button_id);
       if (consulatePlanID < 0) 
       {
@@ -2950,6 +2997,8 @@ void chooseConsulateFlag()
          aiEcho("Our Consulate flag is: "+kbGetTechName(flag_button_id));
          aiEcho("Randomizer value: "+randomizer);
          createSimpleResearchPlan(flag_button_id, getUnit(cUnitTypeypConsulate),cEconomyEscrowID, 40);
+
+         echoMessage("Our Consulate flag is: "+kbGetTechName(flag_button_id));
          gFlagChosen = true;
       }
    }
@@ -3144,7 +3193,10 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
              if (kbUnitCount(cMyID, cUnitTypeYPMonasteryWagon, cUnitStateAlive) > 0)
                 builderType = cUnitTypeYPMonasteryWagon;
         }
-        if (puid  == cUnitTypeypBerryBuilding) {
+        //SOI NEW CIV pepper palm groove
+        if ((puid  == cUnitTypeypBerryBuilding)
+            // ||(puid  == cUnitTypeSPepperGroove)||(puid  == cUnitTypeSPalmGroove)
+        ) {
           builderType = cUnitTypeYPBerryWagon1;
         }
         if (puid  == cUnitTypeTradingPost) {
@@ -3172,6 +3224,13 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
                 builderType = cUnitTypeYPSacredFieldWagon;
         }
       }
+
+      // SOI NEW CIVS
+      if ((puid  == cUnitTypeypBerryBuilding)
+          // ||(puid  == cUnitTypeSPepperGroove)||(puid  == cUnitTypeSPalmGroove)
+      ) {
+          builderType = cUnitTypeYPBerryWagon1;
+      }
       if (puid  == gDockUnit) {
         if (kbUnitCount(cMyID, cUnitTypeYPDockWagon, cUnitStateAlive) > 0)
           builderType = cUnitTypeYPDockWagon;
@@ -3192,21 +3251,21 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
                aiPlanAddUnitType(planID, cUnitTypexpAztecWarchief, 1, 1, 1);
                break;
             }
-            case cCivXPIroquois:
-            {
-               aiPlanAddUnitType(planID, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-               break;
-            }
+            // case cCivXPIroquois:
+            // {
+               // aiPlanAddUnitType(planID, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+               // break;
+            // }
             case cCivXPSioux:
             {
                aiPlanAddUnitType(planID, cUnitTypexpLakotaWarchief, 1, 1, 1);
                break;
             }
-            case cCivChinese:
-            {
-               aiPlanAddUnitType(planID, cUnitTypeypMonkChinese, 1, 1, 1);
-               break;
-            }
+            // case cCivChinese:
+            // {
+               // aiPlanAddUnitType(planID, cUnitTypeypMonkChinese, 1, 1, 1);
+               // break;
+            // }
             case cCivIndians:
             {
                aiPlanAddUnitType(planID, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -3219,6 +3278,18 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
                aiPlanAddUnitType(planID, cUnitTypeypMonkJapanese2, 1, 1, 1);
                break;
             }
+            //RizkyR to do add Aceh & Toba explorer to build TC
+            case cCivBritish:
+            {
+               aiPlanAddUnitType(planID, cUnitTypeSUlama, 1, 1, 1);
+               aiPlanAddUnitType(planID, cUnitTypeSUlama2, 1, 1, 1);
+               break;
+            }
+            case cCivXPIroquois:
+            {
+               aiPlanAddUnitType(planID, cUnitTypeSPanglimaToba, 1, 1, 1);
+               break;
+            }
             default:
             {
                aiPlanAddUnitType(planID, cUnitTypeExplorer, 1, 1, 1);
@@ -3229,7 +3300,7 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
       else
       {
          // Germans use settler wagons if there are no settlers or builder wagons available
-         if ((kbGetCiv() == cCivGermans) && (kbUnitCount(cMyID, gEconUnit, cUnitStateAlive) < 1) && (builderType == gEconUnit))
+         if ((kbGetCiv() == cCivGermans) && (kbUnitCount(cMyID, gEconUnit, cUnitStateAlive) < 1) && (builderType == gEconUnit) && (puid != cUnitTypeSoldatSekul))
          {
             aiPlanAddUnitType(planID, cUnitTypeSettlerWagon, numberBuilders, numberBuilders, numberBuilders);
          }
@@ -3257,7 +3328,8 @@ int createSimpleBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=t
 //==============================================================================
 //createLocationBuildPlan
 //==============================================================================
-int createLocationBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=true, int escrowID=-1, vector position=cInvalidVector, int numberBuilders=1)
+// RizkyR: add parameter base=-1
+int createLocationBuildPlan(int puid=-1, int number=1, int pri=100, bool economy=true, int escrowID=-1, vector position=cInvalidVector, int numberBuilders=1, int base=-1)
 {
    if (cvOkToBuild == false)
       return(-1);
@@ -3295,6 +3367,8 @@ int createLocationBuildPlan(int puid=-1, int number=1, int pri=100, bool economy
       aiPlanSetVariableFloat(planID, cBuildPlanInfluencePositionDistance, 0, 100.0);     // 100m range.
       aiPlanSetVariableFloat(planID, cBuildPlanInfluencePositionValue, 0, 200.0);        // 200 points max
       aiPlanSetVariableInt(planID, cBuildPlanInfluencePositionFalloff, 0, cBPIFalloffLinear);  // Linear slope falloff
+	  if (base >= 0)
+		  aiPlanSetBaseID(planID, base);
 
       //Go.
       aiPlanSetActive(planID);
@@ -4970,12 +5044,14 @@ minInterval 5
       aiPlanSetVariableInt(cratePlanID, cGatherPlanResourceType, 0, cAllResources);
 		//aiPlanSetVariableInt(cratePlanID, cGatherPlanFindNewResourceTimeOut, 0, 20000);
       aiPlanAddUnitType(cratePlanID, gEconUnit, gatherersWanted, gatherersWanted, gatherersWanted);
+      aiPlanAddUnitType(cratePlanID, cUnitTypeSSaudagar, gatherersWanted, gatherersWanted, gatherersWanted);
       aiPlanSetDesiredPriority(cratePlanID, 85);
       aiPlanSetActive(cratePlanID);
       aiEcho("Activated crate gather plan "+cratePlanID);
    }
    
    aiPlanAddUnitType(cratePlanID, gEconUnit, gatherersWanted, gatherersWanted, gatherersWanted);
+   aiPlanAddUnitType(cratePlanID, cUnitTypeSSaudagar, gatherersWanted, gatherersWanted, gatherersWanted);
 
 }
 
@@ -5045,7 +5121,11 @@ void updateSettlerCounts(void)
          break;
       }
    }
-   if (kbGetCiv() != cCivOttomans)
+   //RizkyR: Johor autospawn settler 
+   //SOI NEW CIVS
+   if ((kbGetCiv() != cCivOttomans)
+       // || (kbGetCiv() != cCivJohor)
+   )
       aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanNumberToMaintain, 0, modifiedTarget);
    else
       aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanNumberToMaintain, 0, 0);
@@ -5312,6 +5392,26 @@ void updateGatherers(void)
 		aiSetResourceGathererPercentage(i, xsArrayGetFloat(gathererPercentages, i), false, cRGPScript);
 	
    aiNormalizeResourceGathererPercentages(cRGPScript);   // Set them to 1.0 total, just in case these don't add up.
+
+   //RizkyR: Nederlands train Coolies
+	if ((kbTechGetStatus(cTechConsulateJava) == cTechStatusActive) || (kbTechGetStatus(cTechConsulateMadura) == cTechStatusActive) || (kbTechGetStatus(cTechConsulateBali) == cTechStatusActive) || (kbTechGetStatus(cTechConsulateCelebes) == cTechStatusActive))
+	{
+        aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSCoolie);
+	}
+    
+    // SOI NEW CIVS
+   // if(kbGetCiv() == cCivLingga){
+     // aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSLinggaOrangKampungBlock);
+     // if (kbUnitCount(cMyID, cUnitTypeSLinggaOrangKampungBlock, cUnitStateAlive) < kbGetBuildLimit(cMyID, cUnitTypeSOrangKampung))
+         // aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSLinggaOrangKampungBlock);
+   // }
+   // if(kbGetCiv() == cCivSiak){
+     // aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSSiakOrangKampungBlock);
+     // if (kbUnitCount(cMyID, cUnitTypeSSiakOrangKampungBlock, cUnitStateAlive) < kbGetBuildLimit(cMyID, cUnitTypeSOrangKampung))
+         // aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSSiakOrangKampungBlock);
+   // }
+
+
 }
 
 
@@ -5461,7 +5561,9 @@ group startup
 
 void findEnemyBase(void)
 {
-   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") )   
+   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") 
+       ||//RizkyR add SoI water map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Pulau Seribu"))   
       return();   // No sense trying that on these standard maps
    
    if (cvOkToExplore == false)
@@ -5601,6 +5703,18 @@ minInterval 10
       towerUpgrade1 = cTechypFrontierCastle;
       towerUpgrade2 = cTechypFortifiedCastle;
    }
+   // RizkyR add malay kubu upgrade
+   if (gTowerUnit == cUnitTypeSKubu)
+   {
+      towerUpgrade1 = cTechKubuDataran;
+      towerUpgrade2 = cTechKubuBukit;
+   }
+   //SOI NEW CIVS batak sopo
+   // if (gTowerUnit == cUnitTypeSSopo)
+   // {
+      // towerUpgrade1 = cTechStrongWarHut;
+      // towerUpgrade2 = cTechMightyWarHut;
+   // }
   
    if (towerUpgradePlan >= 0)
    {
@@ -5644,7 +5758,9 @@ minInterval 10
    // Need more, not currently building any.  Need to select a builder type (settler or outpostWagon) and a location.
    int builderType = -1;
    
-   if ( (civIsAsian() == false) && (kbUnitCount(cMyID, cUnitTypeOutpostWagon, cUnitStateAlive) > 0) )
+   //RizkyR malay build kubu
+   if ( ((civIsAsian() == false) || (gTowerUnit == cUnitTypeSKubu) || (kbGetCiv() == cCivChinese))
+       && (kbUnitCount(cMyID, cUnitTypeOutpostWagon, cUnitStateAlive) > 0) )
       builderType = cUnitTypeOutpostWagon;
    else if ( (civIsAsian() == true) && (kbUnitCount(cMyID, cUnitTypeYPCastleWagon, cUnitStateAlive) > 0) )
       builderType = cUnitTypeYPCastleWagon;
@@ -5750,7 +5866,8 @@ minInterval 10
    
    int buildPlan=aiPlanCreate("Tower build plan ", cPlanBuild);
    // What to build
-   if ( (builderType == cUnitTypeOutpostWagon) && (civIsAsian() == false) )
+//RizkyR Malay build Kubu with wagon
+   if ( (builderType == cUnitTypeOutpostWagon) && (civIsAsian() == false) && (gTowerUnit != cUnitTypeSKubu) )
       aiPlanSetVariableInt(buildPlan, cBuildPlanBuildingTypeID, 0, cUnitTypeOutpost);
    else
       aiPlanSetVariableInt(buildPlan, cBuildPlanBuildingTypeID, 0, gTowerUnit);
@@ -5881,7 +5998,7 @@ minInterval 30
       case cForwardBaseStateNone:
       {
          // Check if we should go to state Building
-         if (kbUnitCount(cMyID, cUnitTypeFortWagon, cUnitStateAlive) > 0)
+         if (kbUnitCount(cMyID, gFortWagonUnit, cUnitStateAlive) > 0)
          {  // Yes.
             // get the fort wagon, start a build plan, keep it defended
             gForwardBaseLocation = selectForwardBaseLocation();
@@ -5892,7 +6009,10 @@ minInterval 30
             aiPlanSetMilitary(gForwardBaseBuildPlan, true);
             aiPlanSetEconomy(gForwardBaseBuildPlan, false);
             aiPlanSetEscrowID(gForwardBaseBuildPlan, cMilitaryEscrowID);
-            aiPlanAddUnitType(gForwardBaseBuildPlan, cUnitTypeFortWagon, 1, 1, 1);
+            aiPlanAddUnitType(gForwardBaseBuildPlan, gFortWagonUnit, 1, 1, 1);
+            //SOI NEW CIVS
+            // if(kbGetCiv()==cCivJohor)
+               // aiPlanAddUnitType(gForwardBaseBuildPlan, gEconUnit, 1, 1, 1);
          
             // Instead of base ID or areas, use a center position
             aiPlanSetVariableVector(gForwardBaseBuildPlan, cBuildPlanCenterPosition, 0, gForwardBaseLocation);
@@ -6755,6 +6875,8 @@ minInterval 5
 
       xsEnableRule("stageCoachMonitor");
       xsEnableRule("healerMonitor");
+//RizkyR force market techs
+      xsEnableRule("marketMonitor");
 
       // Enable settler hitpoint and attack upgrades (research to be started about 3 minutes later)
       xsEnableRule("settlerUpgradeMonitor");
@@ -6794,11 +6916,123 @@ minInterval 5
       gLastClaimMissionTime = xsGetTime() - 180000;
 
 	  
-		 if (kbGetCiv() == cCivBritish)
-			 {
-				 createSimpleResearchPlan(cTechAceh32, -1, cEconomyEscrowID, 100);
-			 }
-	  
+      if ((kbGetCiv() == cCivBritish) 
+          // || (kbGetCiv() == cCivAceh) 
+      //SOI NEW CIV
+      )
+          {
+           int choice= aiRandInt(3);
+           //RizkyR random Mahligai choice. Does this affected by the forecast?
+           if(choice <1){
+            createSimpleResearchPlan(cTechAceh31, -1, cEconomyEscrowID, 100);
+           echoMessage("aceh31 spawn pemuras");}
+           else if(choice <2){
+            createSimpleResearchPlan(cTechAceh32, -1, cEconomyEscrowID, 100);
+           echoMessage("aceh32 spawn orangkampung");}
+           else{
+            createSimpleResearchPlan(cTechAceh33, -1, cEconomyEscrowID, 100);
+           echoMessage("aceh33 spawn food");}
+          }
+          
+          // if (kbGetCiv() == cCivPalembang)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechPalembang31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechPalembang32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang32");}
+              // else{
+               // createSimpleResearchPlan(cTechPalembang33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang33");}
+          // }
+          // if (kbGetCiv() == cCivSiak)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechSiak31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechSiak32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak32");}
+              // else{
+               // createSimpleResearchPlan(cTechSiak33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak33");}
+          // }
+          // if (kbGetCiv() == cCivLingga)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechLingga31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechLingga32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga32");}
+              // else{
+               // createSimpleResearchPlan(cTechLingga33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga33");}
+          // }
+          // if (kbGetCiv() == cCivKedah)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechKedah31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechKedah32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah32");}
+              // else{
+               // createSimpleResearchPlan(cTechKedah33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah33");}
+          // }
+
+          // if (kbGetCiv() == cCivJambi)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechJambi31AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechJambi32AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi32");}
+              // else{
+               // createSimpleResearchPlan(cTechJambi33AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi33");}
+          // }
+          // if (kbGetCiv() == cCivMalaya)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechMalaya31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechMalaya32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya32");}
+              // else{
+               // createSimpleResearchPlan(cTechMalaya33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya33");}
+          // }
+          // if (kbGetCiv() == cCivJohor)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechJohor31, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor31");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechJohor32, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor32");}
+              // else{
+               // createSimpleResearchPlan(cTechJohor33, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor33");}
+          // }
+
+      //RizkyR: force Nederlands to build Monument 31
+       if (kbGetCiv() == cCivChinese)
+       {
+           int monumentPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMonumentNed31);
+           if (monumentPlanID < 0)  
+               createSimpleBuildPlan(cUnitTypeSMonumentNed31, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 8);
+               echoMessage("build Monument31");            
+       }
+       
+       if(kbGetCiv() == cCivPriangan){
+         createSimpleMaintainPlan(cUnitTypeSKumetir, kbGetBuildLimit(cMyID, cUnitTypeSKumetir), true, kbBaseGetMainID(cMyID), 1);
+       }
+    
       aiEcho("*** We're in age 2.");
    }
 }
@@ -6851,7 +7085,8 @@ minInterval 10
 	  
 	  
       // Malay research perpustakaan
-      if (kbGetCiv() == cCivBritish)
+      //RizkyR: add civIsMalay
+      if ((kbGetCiv() == cCivBritish) || (civIsMalay() == true))
 		xsEnableRule("MalayPerpustakaanTechs");
 
       // Enable basic church upgrades
@@ -6862,7 +7097,6 @@ minInterval 10
       xsEnableRule("royalDecreeMonitor");
 
       // Enable consulate and monastery
-      xsEnableRule("consulateMonitor");
       xsEnableRule("monasteryMonitor");
 
       // Enable arsenal upgrades
@@ -6895,14 +7129,115 @@ minInterval 10
       if (cMyCiv == cCivJapanese)
          xsEnableRule("dojoTacticMonitor");
 
-		 
+      // Javan research royal edicts
+      if(civIsJavanese() == true)
+         xsEnableRule("royalEdictMonitor");
+      
       updateEscrows();
 
-		 if (kbGetCiv() == cCivBritish)
+		 if ((kbGetCiv() == cCivBritish)
+             // || (kbGetCiv() == cCivAceh)
+         // SOI NEW CIV
+         )
 			 {
 				 createSimpleResearchPlan(cTechAceh41, -1, cEconomyEscrowID, 100);
 			 }
-			 
+int choice = aiRandInt(3);
+          // if (kbGetCiv() == cCivPalembang)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechPalembang41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechPalembang42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang42");}
+              // else{
+               // createSimpleResearchPlan(cTechPalembang43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Palembang43");}
+          // }
+          // if (kbGetCiv() == cCivSiak)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechSiak41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechSiak42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak42");}
+              // else{
+               // createSimpleResearchPlan(cTechSiak43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Siak43");}
+          // }
+          // if (kbGetCiv() == cCivLingga)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechLingga41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechLingga42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga42");}
+              // else{
+               // createSimpleResearchPlan(cTechLingga43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Lingga43");}
+          // }
+             
+          // if (kbGetCiv() == cCivJambi)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechJambi41AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechJambi42AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi42");}
+              // else{
+               // createSimpleResearchPlan(cTechJambi43AI, -1, cEconomyEscrowID, 100);
+             // echoMessage("Jambi43");}
+          // }
+          // if (kbGetCiv() == cCivKedah)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechKedah41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechKedah42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah42");}
+              // else{
+               // createSimpleResearchPlan(cTechKedah43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Kedah43");}
+          // }
+          // if (kbGetCiv() == cCivMalaya)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechMalaya41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechMalaya42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya42");}
+              // else{
+               // createSimpleResearchPlan(cTechMalaya43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Malaya43");}
+          // }
+          // if (kbGetCiv() == cCivJohor)
+          // {
+              // if(choice <1){
+               // createSimpleResearchPlan(cTechJohor41, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor41");}
+              // else if(choice <2){
+               // createSimpleResearchPlan(cTechJohor42, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor42");}
+              // else{
+               // createSimpleResearchPlan(cTechJohor43, -1, cEconomyEscrowID, 100);
+             // echoMessage("Johor43");}
+          // }
+             
+       //RizkyR: force Nederlands to build Monument 21
+       if (kbGetCiv() == cCivChinese)
+       {
+           int monumentPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMonumentNed41);
+           if (monumentPlanID < 0)  
+               createSimpleBuildPlan(cUnitTypeSMonumentNed41, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 8);
+               echoMessage("build Monument41");            
+       }
+       
 	}
 }
 
@@ -7016,10 +7351,49 @@ minInterval 10
 
       updateEscrows();
 
-		 if (kbGetCiv() == cCivBritish)
+		 if ((kbGetCiv() == cCivBritish) 
+             // || (kbGetCiv() == cCivAceh)
+		 // SOI NEW CIV
+         )
 			 {
 				 createSimpleResearchPlan(cTechAceh54, -1, cEconomyEscrowID, 100);
 			 }
+		 // if (kbGetCiv() == cCivPalembang)
+			 // {
+				 // createSimpleResearchPlan(cTechPalembang54, -1, cEconomyEscrowID, 100);
+			 // }
+		 // if (kbGetCiv() == cCivSiak)
+			 // {
+				 // createSimpleResearchPlan(cTechSiak54, -1, cEconomyEscrowID, 100);
+			 // }
+		 // if (kbGetCiv() == cCivLingga)
+			 // {
+				 // createSimpleResearchPlan(cTechLingga54, -1, cEconomyEscrowID, 100);
+			 // }
+		 // if (kbGetCiv() == cCivJohor)
+			 // {
+				 // createSimpleResearchPlan(cTechJohor54, -1, cEconomyEscrowID, 100);
+			 // }
+		 // if (kbGetCiv() == cCivMalaya)
+			 // {
+				 // createSimpleResearchPlan(cTechMalaya54, -1, cEconomyEscrowID, 100);
+			 // }
+		 // if (kbGetCiv() == cCivKedah)
+			 // {
+				 // createSimpleResearchPlan(cTechKedah54, -1, cEconomyEscrowID, 100);
+			 // }
+             
+
+    //RizkyR: force Nederlands to build Monument 51
+	if (kbGetCiv() == cCivChinese)
+	{
+		int monumentPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMonumentNed51);
+		if (monumentPlanID < 0)  
+            createSimpleBuildPlan(cUnitTypeSMonumentNed51, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 8);
+            echoMessage("build Monument51");            
+	}
+ 
+ 
   }
 }
 
@@ -7078,7 +7452,11 @@ mininterval 15
    {
       gNumFishBoats = 0;   // Rushers generally shouldn't fish.
    }
-   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") || (cRandomMapName == "Borneo") || (cRandomMapName == "Honshu") )
+   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") || (cRandomMapName == "Borneo") || (cRandomMapName == "Honshu") 
+       ||//RizkyR add SoI water map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Muria") || (cRandomMapName == "Pasai")
+      || (cRandomMapName == "Pulau Seribu") || (cRandomMapName == "Segara Kidul")
+      || (cRandomMapName == "Rawa Pening") || (cRandomMapName == "Surabaya"))
    {
       if (gNumFishBoats < 3)
          gNumFishBoats = 3;   // Always fish on those maps.
@@ -7336,16 +7714,31 @@ minInterval 31
 
    if ( (numGoldGatherers == 0) || (cvOkToGatherGold == false) )
       numberGoldPlans = 0;    // Checked here to avoid div 0 above.
-   
-   if ( (kbGetAge()>=cAge3) && (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gPlantationUnit) < 0) )
-   {  // It's third age, and we're not building a plantation...see if we need one.
-      if ( (numGoldGatherers > (kbUnitCount(cMyID, gPlantationUnit, cUnitStateAlive) * cMaxSettlersPerPlantation)) && (cvOkToBuild == true) && (gTimeForPlantations == true))
-      {  // Yep, we need one
-         createSimpleBuildPlan(gPlantationUnit, 1, 60, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
-         aiEcho("Starting a new plantation build plan.");
+
+   //RizkyR: Nederlands build plantation age1
+   //SOI NEW CIVS
+   if((kbGetCiv() == cCivChinese)
+       // || (kbGetCiv() == cCivNetherlandsIndie)
+   || (kbGetCiv() == cCivPriangan)){
+      if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gPlantationUnit) < 0)
+      {  
+         if ( (numGoldGatherers > (kbUnitCount(cMyID, gPlantationUnit, cUnitStateAlive) * cMaxSettlersPerPlantation)) && (cvOkToBuild == true) && (gTimeForPlantations == true))
+         {  // Yep, we need one
+            createSimpleBuildPlan(gPlantationUnit, 1, 60, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
+            aiEcho("Starting a new plantation build plan.");
+         }
       }
    }
-         
+   else{
+      if ( (kbGetAge()>=cAge3) && (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gPlantationUnit) < 0) )
+      {  // It's third age, and we're not building a plantation...see if we need one.
+         if ( (numGoldGatherers > (kbUnitCount(cMyID, gPlantationUnit, cUnitStateAlive) * cMaxSettlersPerPlantation)) && (cvOkToBuild == true) && (gTimeForPlantations == true))
+         {  // Yep, we need one
+            createSimpleBuildPlan(gPlantationUnit, 1, 60, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
+            aiEcho("Starting a new plantation build plan.");
+         }
+      }
+   }   
    
    aiSetResourceBreakdown(cResourceGold, cAIResourceSubTypeEasy, numberGoldPlans, 78, 1.0, kbBaseGetMainID(cMyID));
 }
@@ -7417,7 +7810,9 @@ int initGatherGoal()
          aiSetResourceGathererPercentage(cResourceWood, 0.5, false, cRGPScript);    
          aiSetResourceGathererPercentage(cResourceFood, 0.3, false, cRGPScript);
       }
-      if ( (kbGetCiv() == cCivBritish) || (kbGetCiv() == cCivPirate) || (kbGetCiv() == cCivTheCircle)  || (kbGetCiv() == cCivSPCAct3))
+      //RizkyR: add Priangan. need wood
+      if ( (kbGetCiv() == cCivBritish) || (kbGetCiv() == cCivPirate) || (kbGetCiv() == cCivTheCircle)  || (kbGetCiv() == cCivSPCAct3)
+          || (kbGetCiv() == cCivPriangan))
       {  // Need extra wood
          aiSetResourceGathererPercentage(cResourceWood, 0.4, false, cRGPScript);    
          aiSetResourceGathererPercentage(cResourceFood, 0.6, false, cRGPScript);
@@ -7543,7 +7938,10 @@ void initEcon(void)
       gGalleonUnit = cUnitTypexpWarCanoe;
       
    //BHG...
-   if ( (kbGetCiv() == cCivChinese) || (kbGetCiv() == cCivSPCChinese) )
+   //SOI NEW CIVS
+   if ( (kbGetCiv() == cCivChinese) || (kbGetCiv() == cCivSPCChinese)
+       // || (kbGetCiv() == cCivNetherlandsIndie) || (kbGetCiv() == cCivStraits) 
+   )
    {
       gHouseUnit = cUnitTypeHouse;
       
@@ -7566,6 +7964,11 @@ void initEcon(void)
       
       gFishingUnit = cUnitTypeFishingBoat;
    }
+   //SOI NEW CIVS
+   // if ((kbGetCiv() == cCivStraits) )
+   // {
+      // gHouseUnit = cUnitTypeSBungalow;
+   // }
    
    if ( (kbGetCiv() == cCivJapanese) || (kbGetCiv() == cCivSPCJapanese) || (kbGetCiv() == cCivSPCJapaneseEnemy) )
    {
@@ -7609,8 +8012,9 @@ void initEcon(void)
    
    if ( kbGetCiv() == cCivXPAztec )
       gHouseUnit = cUnitTypeHouseAztec;
-	  
-   if ( (kbGetCiv() == cCivGermans) || (kbGetCiv() == cCivOttomans) || (kbGetCiv() == cCivRussians) || (kbGetCiv() == cCivFrench) || (kbGetCiv() == cCivSpanish) || (kbGetCiv() == cCivPirate) )
+
+//RizkyR: to do: delete, will be replaced by civIsJavanese	  
+   if ( (kbGetCiv() == cCivGermans) || (kbGetCiv() == cCivOttomans) || (kbGetCiv() == cCivRussians) || (kbGetCiv() == cCivFrench) || (kbGetCiv() == cCivSpanish) || (kbGetCiv() == cCivPirate) || (kbGetCiv() == cCivPriangan))
    {
       gEconUnit = cUnitTypeWarga;
    
@@ -7626,11 +8030,32 @@ void initEcon(void)
       
       gTimeToFarm = true;
    }
+
+//RizkyR: civIsJavanese  
+//add gBarracksUnit declaration , still unused
+   if (civIsJavanese() == true)
+   {
+      gEconUnit = cUnitTypeWarga;
+   
+      gHouseUnit = cUnitTypeHouseAztec;
+      
+      gTowerUnit = cUnitTypeSPost;
+      gBarracksUnit = cUnitTypeSBarracks;
+      
+      gCaravelUnit = cUnitTypeSLancara;
+      gGalleonUnit = cUnitTypeSTongkang;
+      
+      gLivestockPenUnit = cUnitTypePanggungKrapyak;
+      gFortressUnit = cUnitTypeBenteng;
+      
+      gTimeToFarm = true;
+   }
    
     if ( kbGetCiv() == cCivRussians )
       {
 	  gHouseUnit = cUnitTypeSJoglo;
 	  gFarmUnit = cUnitTypeSJoglo;
+	  gBarracksUnit = cUnitTypeSBarracksJogja;
 	  }
 	  
     if ( kbGetCiv() == cCivBritish )
@@ -7656,18 +8081,166 @@ void initEcon(void)
       
       gFishingUnit = cUnitTypeFishingBoat;
 	  }
-	  
+
+   //RizkyR: toba
+   if ( kbGetCiv() == cCivXPIroquois ) //Toba
+   {
+       gEconUnit = cUnitTypeSParhobas;
+       gHouseUnit = cUnitTypeSHouseToba;
+   }
+   
    if ( kbGetCiv() == cCivSpanish )
       {
       gEconUnit = cUnitTypePemberontak;
 	  gHouseUnit = cUnitTypeSTent;
       }
-	  
    if ( kbGetCiv() == cCivOttomans )
       {
       gTowerUnit = cUnitTypeSPanggung;
+      gBarracksUnit = cUnitTypeSPendapaPrawiran;
       }
+      
+   // RizkyR: Madura
+   if ( kbGetCiv() == cCivPirate )
+   {
+      gPlantationUnit = cUnitTypeSSawah;
+   }
+      
+
+   if(civIsMalay() == true){
+      gHouseUnit = cUnitTypeSHouseMalay;
+      
+      gCaravelUnit = cUnitTypeSBedar;
+      gGalleonUnit = cUnitTypeSPinas;
+	  
+      gEconUnit = cUnitTypeSOrangKampung;
+      
+      gTowerUnit = cUnitTypeSKubu;
+      gFarmUnit = cUnitTypeypRicePaddy;
+      gPlantationUnit = cUnitTypeypRicePaddy;
+      // RizkyR add gbarracksunit and gstablesunit
+      gBarracksUnit = cUnitTypeSTangsi;
+      gStableUnit = cUnitTypeSIstal;
+      gFortressUnit = cUnitTypeSKubu;
+      gFortWagonUnit = cUnitTypeOutpostWagon;
+      
+      gLivestockPenUnit = cUnitTypeSPedati;
+      
+      gMarketUnit = cUnitTypeSSaudagar;
+      gDockUnit = cUnitTypeDock;
+      
+      cvOkToBuildForts = true;
+      
+      gFishingUnit = cUnitTypeFishingBoat;
+   }
    
+   //RizkyR: Erucakra and others
+   // SOI NEW CIV
+   // if ( kbGetCiv() == cCivErucakran )
+   // {
+      // gEconUnit = cUnitTypePemberontak;
+	  // gHouseUnit = cUnitTypeSTent;
+   // }
+   // if ( kbGetCiv() == cCivSurakarta )
+   // {
+      // gTowerUnit = cUnitTypeSPanggung;
+   // }
+   // if ( kbGetCiv() == cCivPriangan )
+   // {
+      // gFarmUnit = cUnitTypeypRicePaddy;
+      // gPlantationUnit = cUnitTypeypRicePaddy;
+   // }
+   // if ( kbGetCiv() == cCivMadurese )
+   // {
+      // gPlantationUnit = cUnitTypeSSawah;
+   // }
+
+   // if ( kbGetCiv() == cCivSpanish ){
+      // gEconUnit = cUnitTypeSettler;
+	  // gHouseUnit = cUnitTypeHouseMed;
+      // gTowerUnit = cUnitTypeOutpost;
+      // gBarracksUnit = cUnitTypeBarracks;
+      
+      // gCaravelUnit = cUnitTypeCaravel;
+      // gGalleonUnit = cUnitTypeGalleon;
+      
+      // gLivestockPenUnit = cUnitTypeLivestockPen;
+      // gFortressUnit = cUnitTypeFortFrontier;
+   // }
+      
+   // if(kbGetCiv() == cCivJambi){
+       // gStableUnit = cUnitTypeSKandang;
+   // }
+   // if(kbGetCiv() == cCivJohor){
+       // gEconUnit = cUnitTypeSOrangKampungJohor;
+   // }
+
+   // if(kbGetCiv() == cCivSambas){
+       // gEconUnit = cUnitTypeSHamba;
+       // gHouseUnit = cUnitTypeSStiltHouse;
+       // gBarracksUnit = cUnitTypeSDayakQuarter;
+       // gStableUnit = cUnitTypeSBorneanQuarter;
+       // gTowerUnit = cUnitTypeSKutta;
+   // }
+   // if(kbGetCiv() == cCivLanfang){
+       // gEconUnit = cUnitTypeSKuli;
+       // gHouseUnit = cUnitTypeSShopHouse;
+       // gBarracksUnit = cUnitTypeSTjoengthang;
+       // gStableUnit = cUnitTypeSIndustryRefinery2;
+       // gTowerUnit = cUnitTypeSPhaothay;
+   // }
+   // if(kbGetCiv() == cCivIban){
+       // gEconUnit = cUnitTypeSIndu;
+       // gHouseUnit = cUnitTypeSBetang;
+       // gBarracksUnit = cUnitTypeSBetang;
+       // gTowerUnit = cUnitTypeSKutta;
+   // }
+   // if ( kbGetCiv() == cCivToba )
+   // {
+       // gEconUnit = cUnitTypeSParhobas;
+       // gHouseUnit = cUnitTypeSHouseToba;
+       // gMarketUnit = cUnitTypeSMarketHall;
+       // gTowerUnit = cUnitTypeSSopo;
+       // gBarracksUnit = cUnitTypeWarHut;
+       // gStableUnit = cUnitTypeCorral;
+   // }
+   // if ( kbGetCiv() == cCivMandailing )
+   // {
+       // gEconUnit = cUnitTypeSParhobasMandailing;
+       // gHouseUnit = cUnitTypeSHouseToba;
+       // gMarketUnit = cUnitTypeSMarketHall;
+       // gTowerUnit = cUnitTypeSSopo;
+       // gBarracksUnit = cUnitTypeWarHut;
+       // gStableUnit = cUnitTypeCorral;
+   // }
+   // if ( kbGetCiv() == cCivKaro )
+   // {
+       // gEconUnit = cUnitTypeSSerayan;
+       // gHouseUnit = cUnitTypeSMbelangAyo;
+       // gMarketUnit = cUnitTypeSMarketHall;
+       // gTowerUnit = cUnitTypeSSopo;
+       // gBarracksUnit = cUnitTypeWarHut;
+       // gStableUnit = cUnitTypeCorral;
+   // }
+   // if ( kbGetCiv() == cCivGayoMain )
+   // {
+       // gEconUnit = cUnitTypeSPenetah;
+       // gHouseUnit = cUnitTypeSHouseToba;
+       // gMarketUnit = cUnitTypeSMarketHall;
+       // gTowerUnit = cUnitTypeSKubuGayo;
+       // gBarracksUnit = cUnitTypeWarHut;
+       // gStableUnit = cUnitTypeSUer;
+   // }
+   // if ( kbGetCiv() == cCivKlungkung )
+   // {
+       // gEconUnit = cUnitTypeSSudraKlungkung;
+       // gHouseUnit = cUnitTypeSPuraKlungkung;
+       // gFarmUnit = cUnitTypeSCarikBaliKlungkung;
+       // gMarketUnit = cUnitTypeSPekenKlungkung;
+       // gTowerUnit = cUnitTypeSBaleKulkulKlungkung;
+       // gBarracksUnit = cUnitTypeSBarracksKlungkung;
+       // gStableUnit = cUnitTypeSStableKlungkung;
+   // }
    
    // Escrow initialization is now delayed until the TC is built, as
    // any escrow allocation prevents the AI from affording a TC.
@@ -7882,7 +8455,8 @@ void updateForecasts()
    int plantsNeeded = 1 + ((kbUnitCount(cMyID, gEconUnit, cUnitStateAlive)*0.4) / cMaxSettlersPerPlantation); // Enough for 40% of population, rough value for forecast
    int paddiesNeeded = 1 + ((kbUnitCount(cMyID, gEconUnit, cUnitStateAlive)*0.9) / cMaxSettlersPerMill);      // Enough for 90% of population for both food and coin, rough value for forecast
 
-   if (civIsAsian() == false)
+//RizkyR: add Priangan, priangan use ricepaddy
+   if ((civIsAsian() == false) && (kbGetCiv() != cCivPriangan))
    {
       millsNeeded = millsNeeded - kbUnitCount(cMyID, gFarmUnit, cUnitStateABQ);
       if ( (gTimeToFarm == true) && (millsNeeded > 0) )
@@ -7936,7 +8510,10 @@ void updateForecasts()
       case cAge1:
       {
          // Settlers
-         if (cMyCiv != cCivOttomans)   // Ottomans get them free
+//SOI NEW CIV johor         
+         if ((cMyCiv != cCivOttomans) 
+     // && (cMyCiv != cCivJohor)
+         )   // Ottomans get them free
          {
             numUnits = xsArrayGetInt(gTargetSettlerCounts, effectiveAge) - kbUnitCount(cMyID, gEconUnit, cUnitStateAlive);
             if (numUnits < 5) 
@@ -7997,6 +8574,12 @@ void updateForecasts()
          {
             if (kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ) < 1)
                addItemToForecasts(cUnitTypeBank, 1 - kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ));
+         }
+         // RizkyR: Priangan - add Plantation again
+         if (cMyCiv == cCivPriangan)
+         {
+            if (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ) < 1)
+               addItemToForecasts(cUnitTypeypRicePaddy, 1 - kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ));
          }
          
          if (gBuildWalls == true)   // Add 500 wood if we're making walls
@@ -8096,6 +8679,18 @@ void updateForecasts()
             if (kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ) < 2)
                addItemToForecasts(cUnitTypeBank, 2 - kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ));
          }
+         // RizkyR: Mangkunegara build sugar factory
+         if (cMyCiv == cCivGermans)
+         {
+            if (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ) < 1)
+               addItemToForecasts(cUnitTypeSugarFactory, 1 - kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ));
+         }
+         // RizkyR: Priangan add 2 Plantation
+         if (cMyCiv == cCivPriangan)
+         {
+            if (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ) < 2)
+               addItemToForecasts(cUnitTypeypRicePaddy, 2 - kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ));
+         }
          
          // Natives - one fire pit
          if (civIsNative() == true)
@@ -8105,7 +8700,7 @@ void updateForecasts()
          }
 
          // 1 barracks, blockhouse or war hut
-         if ( (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateABQ) + 
+         if ( (kbUnitCount(cMyID, gBarracksUnit, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeWarHut, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeBlockhouse, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeypBarracksJapanese, cUnitStateABQ) + 
@@ -8114,16 +8709,16 @@ void updateForecasts()
                kbUnitCount(cMyID, cUnitTypeSBarracks, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeSBarracksJogja, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeYPBarracksIndian, cUnitStateABQ) ) < 1)
-            addItemToForecasts(cUnitTypeBarracks, 1);
+            addItemToForecasts(gBarracksUnit, 1);
          
          // One stable or corral (not for Chinese)
          if ((cMyCiv != cCivChinese) && (cMyCiv != cCivSPCChinese))
          {
-            if ( (kbUnitCount(cMyID, cUnitTypeStable, cUnitStateABQ) + 
+            if ( (kbUnitCount(cMyID, gStableUnit, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeCorral, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeypStableJapanese, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeypCaravanserai, cUnitStateABQ) ) < 1)
-               addItemToForecasts(cUnitTypeStable, 1);
+               addItemToForecasts(gStableUnit, 1);
          }
 
          // One market
@@ -8432,6 +9027,18 @@ void updateForecasts()
             if (kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ) < 3)
                addItemToForecasts(cUnitTypeBank, 3 - kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ));
          }
+         // RizkyR: Mangkunegara build sugar factory
+         if (cMyCiv == cCivGermans)
+         {
+            if (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ) < 2)
+               addItemToForecasts(cUnitTypeSugarFactory, 2 - kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ));
+         }
+         // RizkyR: Priangan - 3 plantations
+         if (cMyCiv == cCivPriangan)
+         {
+            if (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ) < 3)
+               addItemToForecasts(cUnitTypeypRicePaddy, 3 - kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ));
+         }
          
          // Natives - one fire pit
          if (civIsNative() == true)
@@ -8448,7 +9055,7 @@ void updateForecasts()
          }
 
          // 1 barracks, blockhouse or war hut
-         if ( (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateABQ) + 
+         if ( (kbUnitCount(cMyID, gBarracksUnit, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeWarHut, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeBlockhouse, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeypBarracksJapanese, cUnitStateABQ) + 
@@ -8457,16 +9064,16 @@ void updateForecasts()
                kbUnitCount(cMyID, cUnitTypeSBarracks, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeSBarracksJogja, cUnitStateABQ) + 
                kbUnitCount(cMyID, cUnitTypeYPBarracksIndian, cUnitStateABQ) ) < 1)
-            addItemToForecasts(cUnitTypeBarracks, 1);
+            addItemToForecasts(gBarracksUnit, 1);
          
          // One stable, corral or caravanserai (not for Chinese)
          if ((cMyCiv != cCivChinese) && (cMyCiv != cCivSPCChinese))
          {
-            if ( (kbUnitCount(cMyID, cUnitTypeStable, cUnitStateABQ) + 
+            if ( (kbUnitCount(cMyID, gStableUnit, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeCorral, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeypStableJapanese, cUnitStateABQ) + 
                   kbUnitCount(cMyID, cUnitTypeypCaravanserai, cUnitStateABQ) ) < 1)
-               addItemToForecasts(cUnitTypeStable, 1);
+               addItemToForecasts(gStableUnit, 1);
          }
 
          // 1 artillery depot (not for Aztecs, Sioux or Asians)
@@ -9522,7 +10129,7 @@ void setUnitPickerPreference(int upID = -1)
       
       kbUnitPickResetAll(gLandUnitPicker);
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractInfantry, 0.2);   // Range 0.0 to 1.0
-      kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.2 );
+      kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.05 );
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractCavalry, 0.2);
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractNativeWarrior, 0.2);
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeCoureur, 0.0);    // Avoid coureurs, they mess up econ/mil calcs.
@@ -9563,7 +10170,7 @@ void setUnitPickerPreference(int upID = -1)
       if (cvSecondaryArmyUnit < 0)  // Only one line selected
       {
          kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractInfantry, 0.2);   // Range 0.0 to 1.0
-         kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.2 );
+         kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.05 );
          kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractCavalry, 0.2);
          kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractNativeWarrior, 0.2);
          if (cMyCiv == cCivXPAztec)
@@ -9672,6 +10279,8 @@ void setUnitPickerPreference(int upID = -1)
    float heavyInfantryCount = kbUnitCount(enemyToCounter, cUnitTypeAbstractHeavyInfantry, cUnitStateAlive);
    float lightInfantryCount = kbUnitCount(enemyToCounter, cUnitTypeAbstractInfantry, cUnitStateAlive) - heavyInfantryCount;
    float lightCavalryCount = kbUnitCount(enemyToCounter, cUnitTypeAbstractLightCavalry, cUnitStateAlive) +
+                            // RizkyR: SOI NEW CIV abstracteagleman
+                             // kbUnitCount(enemyToCounter, cUnitTypeAbstractEagleMan, cUnitStateAlive); // Aztec eagle knights count as light cavalry
                              kbUnitCount(enemyToCounter, cUnitTypexpEagleKnight, cUnitStateAlive); // Aztec eagle knights count as light cavalry
    float heavyCavalryCount = kbUnitCount(enemyToCounter, cUnitTypeAbstractHeavyCavalry, cUnitStateAlive)+
                              kbUnitCount(enemyToCounter, cUnitTypexpCoyoteMan, cUnitStateAlive); // Aztec coyote runners count as heavy cavalry
@@ -9701,7 +10310,7 @@ void setUnitPickerPreference(int upID = -1)
    if (counterUnitMode == false)
    {
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractInfantry, 0.5 + (btBiasInf / 2.0));   // Range 0.0 to 1.0
-      kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.5 + (btBiasArt / 2.0));
+      kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractArtillery, 0.2 + (btBiasArt / 2.0));
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractCavalry, 0.5 + (btBiasCav / 2.0));
       if (cMyCiv == cCivXPAztec)
          kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeAbstractLightInfantry, 0.5 + (btBiasCav / 2.0));
@@ -9721,6 +10330,7 @@ void setUnitPickerPreference(int upID = -1)
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypexpRam, 0.0);   // Avoid units the AI cannot handle properly
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypexpPetard, 0.0);
       kbUnitPickSetPreferenceFactor(gLandUnitPicker, cUnitTypeMortar, 0.0);
+
 
       if ( (kbGetCiv() == cCivChinese) || (kbGetCiv() == cCivSPCChinese) ) 
       {
@@ -10567,10 +11177,19 @@ minInterval 2
    if (kbGetCiv() == cCivOttomans)
       xsEnableRule("ottomanMonitor");
 
+// SOI NEW CIV
+   // if (kbGetCiv() == cCivJohor)
+      // xsEnableRule("johorMonitor");
+
    
    gSettlerMaintainPlan = createSimpleMaintainPlan(gEconUnit, xsArrayGetInt(gTargetSettlerCounts, kbGetAge()), true, kbBaseGetMainID(cMyID), 1);   
    if (kbGetCiv() == cCivOttomans)
       aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanNumberToMaintain, 0, 0); // To not throw off resource planning
+//toba train parhobas+buffalo block 
+// SOI NEW CIVS
+   // if (kbGetCiv() == cCivToba)
+      // aiPlanSetVariableInt(gSettlerMaintainPlan, cTrainPlanUnitType, 0, cUnitTypeSParhobasBlock);
+
 
    if (kbUnitCount(cMyID, cUnitTypeHomeCityWaterSpawnFlag) > 0)
       gWaterTransportUnitMaintainPlan = createSimpleMaintainPlan(gCaravelUnit, 1, true, kbBaseGetMainID(cMyID), 1);
@@ -10589,12 +11208,137 @@ minInterval 2
    if (cRandomMapName=="Ceylon")
       xsEnableRule("navyManager");
 
-	  
+
 	if (kbGetCiv() == cCivBritish)
 	{
-		createSimpleResearchPlan(cTechAceh21, -1, cEconomyEscrowID, 100);
+        int choice= aiRandInt(3);//RizkyR random Mahligai choice. Does this affected by the forecast?
+        if(choice <1)
+         createSimpleResearchPlan(cTechAceh21, -1, cEconomyEscrowID, 100);
+        else if(choice <2)
+         createSimpleResearchPlan(cTechAceh22, -1, cEconomyEscrowID, 100);
+        else
+         createSimpleResearchPlan(cTechAceh23, -1, cEconomyEscrowID, 100);
 	}
-	  
+    
+    
+   //RizkyR British to Aceh
+	//SOI NEW CIV
+	// if (kbGetCiv() == cCivAceh)
+	// {
+        // if(choice <1)
+         // createSimpleResearchPlan(cTechAceh21, -1, cEconomyEscrowID, 100);
+        // else if(choice <2)
+         // createSimpleResearchPlan(cTechAceh22, -1, cEconomyEscrowID, 100);
+        // else
+         // createSimpleResearchPlan(cTechAceh23, -1, cEconomyEscrowID, 100);
+	// }
+    // if (kbGetCiv() == cCivPalembang)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechPalembang21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Palembang21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechPalembang22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Palembang22");}
+        // else{
+         // createSimpleResearchPlan(cTechPalembang23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Palembang23");}
+	// }
+    // if (kbGetCiv() == cCivSiak)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechSiak21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Siak21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechSiak22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Siak22");}
+        // else{
+         // createSimpleResearchPlan(cTechSiak23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Siak23");}
+	// }
+	
+    // if (kbGetCiv() == cCivJambi)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechJambi21AI, -1, cEconomyEscrowID, 100);
+       // echoMessage("Jambi21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechJambi22AI, -1, cEconomyEscrowID, 100);
+       // echoMessage("Jambi22");}
+        // else{
+         // createSimpleResearchPlan(cTechJambi23AI, -1, cEconomyEscrowID, 100);
+       // echoMessage("Jambi23");}
+	// }
+    // if (kbGetCiv() == cCivKedah)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechKedah21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Kedah21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechKedah22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Kedah22");}
+        // else{
+         // createSimpleResearchPlan(cTechKedah23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Kedah23");}
+	// }
+    // if (kbGetCiv() == cCivMalaya)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechMalaya21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Malaya21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechMalaya22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Malaya22");}
+        // else{
+         // createSimpleResearchPlan(cTechMalaya23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Malaya23");}
+	// }
+    // if (kbGetCiv() == cCivJohor)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechJohor21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Johor21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechJohor22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Johor22");}
+        // else{
+         // createSimpleResearchPlan(cTechJohor23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Johor23");}
+	// }
+    // if (kbGetCiv() == cCivLingga)
+	// {
+        // if(choice <1){
+         // createSimpleResearchPlan(cTechLingga21, -1, cEconomyEscrowID, 100);
+       // echoMessage("Lingga21");}
+        // else if(choice <2){
+         // createSimpleResearchPlan(cTechLingga22, -1, cEconomyEscrowID, 100);
+       // echoMessage("Lingga22");}
+        // else{
+         // createSimpleResearchPlan(cTechLingga23, -1, cEconomyEscrowID, 100);
+       // echoMessage("Lingga23");}
+	// }
+	
+    //RizkyR: force Nederlands to build Monument 21
+    //SOI NEW CIVS
+	if ((kbGetCiv() == cCivChinese)
+        // || (kbGetCiv() == cCivNetherlandsIndie)
+    )
+	{
+      //move consulateMonitor to Age1
+      xsEnableRule("consulateMonitor");
+      int monumentPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMonumentNed21);
+      if (monumentPlanID < 0)  
+         createSimpleBuildPlan(cUnitTypeSMonumentNed21, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 8);
+         echoMessage("build Monument21.");            
+	}
+    //SOI NEW CIVS
+	// if (kbGetCiv() == cCivStraits)
+	// {
+      // xsEnableRule("consulateMonitor");
+      // int monumentPlanIDStraits = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMonumentStraits21);
+      // if (monumentPlanIDStraits < 0)  
+         // createSimpleBuildPlan(cUnitTypeSMonumentStraits21, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 8);
+	// }
 }
 
 rule useFactoryWagons
@@ -10701,6 +11445,11 @@ minInterval 3
    if ( (kbGetCiv() == cCivDutch) && (kbUnitCount(cMyID, cUnitTypeBank, cUnitStateABQ) < 1) && (kbUnitCount(cMyID, gHouseUnit, cUnitStateABQ) >= 1))
       return;  // Dutch need bank before getting extra houses
 
+   if ( (kbGetCiv() == cCivPriangan) && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateABQ) < 1) && (kbUnitCount(cMyID, gHouseUnit, cUnitStateABQ) >= 1))
+      return;  // RizkyR: Priangan need plantation before getting extra houses
+   if ( (kbGetCiv() == cCivGermans) && (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ) < 1) && (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateABQ) >= 6))
+      return;  
+  
    if (kbGetBuildLimit(cMyID, gHouseUnit) <= kbUnitCount(cMyID, gHouseUnit, cUnitStateAlive))
       return;     // Don't build if we're at limit.
    
@@ -10776,7 +11525,10 @@ inactive
 minInterval 45
 {
    // Disable rule for non-Asian civilizations
-   if (civIsAsian() == false) 
+   // SOI NEW CIVS
+   if ((civIsAsian() == false)
+       // && (kbGetCiv() != cCivNetherlandsIndie)
+   ) 
    {
       xsDisableSelf();
       return;
@@ -11037,9 +11789,28 @@ rule orchardMonitor
 inactive
 group tcComplete
 minInterval 5
-{ 
+{   
+   int planID = -1;
   if (kbUnitCount(cMyID, cUnitTypeYPBerryWagon1, cUnitStateAlive) > 0) {
-    createSimpleBuildPlan(cUnitTypeypBerryBuilding, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
+      //RizkyR malay use berry wagon for pepper
+      //SOI NEW CIVS
+      // if(kbGetCiv() == cCivSiak){
+         // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSPalmGroove); 
+         // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSPalmGroove, cUnitStateAlive) < 1) )
+         // {
+            // createSimpleBuildPlan(cUnitTypeSPalmGroove, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);          
+         // }      
+      // }
+      // else if(civIsMalay() == true){
+         // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSPepperGroove); 
+         // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSPepperGroove, cUnitStateAlive) < 1) )
+         // {
+            // createSimpleBuildPlan(cUnitTypeSPepperGroove, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);          
+         // }      
+      // }
+      // else{
+         // createSimpleBuildPlan(cUnitTypeypBerryBuilding, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
+      // }
   }
 }
 
@@ -11084,6 +11855,38 @@ minInterval 3
    // Mosque construction for Ottomans is handled in ottomanMonitor rule, do not build mosques here
    // Construction of monastery and consulate for Asians is handled in monasteryMonitor and consulateMonitor rules
 
+//RizkyR: Priangan build 1 Plantation
+   if (kbGetCiv() == cCivPriangan)
+   {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeypRicePaddy);
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateAlive) < 1 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeypRicePaddy, 1, 95, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new coffee plan tation.");
+      }
+   }
+//RizkyR: Nederlands build 1 Consulate
+//SOI NEW CIVS
+   if ((kbGetCiv() == cCivChinese)
+       // || (kbGetCiv() == cCivNetherlandsIndie)
+   )
+   {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeypConsulate);
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeypConsulate, cUnitStateAlive) < 1 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeypConsulate, 1, 95, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+      }
+   }
+  
+// RizkyR: Jambi build 1 Balaisari  
+// SOI NEW CIVS
+   // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSBalaiSari);
+    // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSBalaiSari, cUnitStateAlive) < 3 ) )
+   // {     
+      // createSimpleBuildPlan(cUnitTypeSBalaiSari, 1, 95, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1); 
+      // aiEcho("Starting a new balaisari plan.");
+   // }
+  
    // That's it for age 1
    if (kbGetAge() < cAge2) 
       return;
@@ -11122,24 +11925,46 @@ minInterval 3
       }   
    }
    
-   
-	// if Germans/Mangkunegaran, add soldat sekul to the build limit.
+//RizkyR: Mangkunegaran build 1 Sugar Factory
    if (kbGetCiv() == cCivGermans)
    {
-      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSoldatSekul);
-      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSoldatSekul, cUnitStateAlive) < 1) )  // If I'm not building one and I could be, do it.
-      {     // Start a new one
-         //if ( kbUnitCount(cMyID, cUnitTypeSoldatSekul, cUnitStateAlive) < ((kbGetAge()*2) + 1) )
-         //{  // Less than 1 bank in age 1 (0*2+1), less than 3 in age 2, etc.
-            createSimpleBuildPlan(cUnitTypeSoldatSekul, 1, 93, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1); // Very high pri, just below houses
-            aiEcho("Starting a new soldat sekul build plan.");
-         //}
-      }     
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSugarFactory);
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateAlive) < 1 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeSugarFactory, 1, 80, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new sugar factory.");
+         echoMessage("building sugar factory "+ planID);
+      }
+   }
+ 
+//RizkyR: soldat sekul only available age 4, no need to check now 
+   // if ( (kbGetCiv() == cCivGermans) && (kbUnitCount(cMyID, cUnitTypeSoldatSekul, cUnitStateABQ) < 1) ){
+      // echoMessage("no soldat sekul");
+      // return;}
+
+
+//RizkyR: Priangan build 2 Plantation
+   planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeypRicePaddy);
+   if (kbGetCiv() == cCivPriangan)
+   {
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateAlive) < 2 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeypRicePaddy, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new coffee plan tation.");
+      }
    }
    
-   if ( (kbGetCiv() == cCivGermans) && (kbUnitCount(cMyID, cUnitTypeSoldatSekul, cUnitStateABQ) < 1) )
-      return;
-
+//RizkyR: Chinese but NederlandsIndie build 1 Bank
+   if (kbGetCiv() == cCivChinese)
+   {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeBank);
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeBank, cUnitStateAlive) < 1 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeBank, 1, 80, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new lodge.");
+         echoMessage("building lodge "+ planID);
+      }
+   }
    
    // If Russian, at least 1 block house // changed into SBarracksJogja
 	if (kbGetCiv() == cCivRussians)
@@ -11150,8 +11975,8 @@ minInterval 3
 			createSimpleBuildPlan(cUnitTypeSBarracksJogja, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
 			aiEcho("Starting a new blockhouse build plan.");
 		}   
-	}
-   else if ( (cMyCiv == cCivGermans) || (cMyCiv == cCivSpanish) || (cMyCiv == cCivPirate) )
+	}//RizkyR: add priangan
+   else if ( (cMyCiv == cCivGermans) || (cMyCiv == cCivSpanish) || (cMyCiv == cCivPirate) || (cMyCiv == cCivPriangan))
    {  // Javanese at least 1 SBarracks
 		planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSBarracks);
 		if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSBarracks, cUnitStateAlive) < 1) )
@@ -11179,10 +12004,10 @@ minInterval 3
         }
       }
       else if ( (cMyCiv == cCivChinese) || (cMyCiv == cCivSPCChinese) ) {
-        planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeBarracks);
-        if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateAlive) < 1) )
+        planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+        if ( (planID < 0) && (kbUnitCount(cMyID, gBarracksUnit, cUnitStateAlive) < 1) )
         {     // Start a new one
-          createSimpleBuildPlan(cUnitTypeBarracks, 1, 98, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+          createSimpleBuildPlan(gBarracksUnit, 1, 98, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
           aiEcho("Starting a new war academy build plan.");
         }
       }
@@ -11198,10 +12023,11 @@ minInterval 3
 	else // every other civ gets a barracks.
 	{
 		// At least 1 barracks
-		planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeBarracks);
-		if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateAlive) < 1) )
+        //RizkyR: change barracks to gBarracksUnit
+		planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+		if ( (planID < 0) && (kbUnitCount(cMyID, gBarracksUnit, cUnitStateAlive) < 1) )
 		{     // Start a new one
-			createSimpleBuildPlan(cUnitTypeBarracks, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+			createSimpleBuildPlan(gBarracksUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
 			aiEcho("Starting a new barracks build plan.");
 		}
 	}
@@ -11239,10 +12065,11 @@ minInterval 3
    }
    else 
    {      
-      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeStable);
-      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeStable, cUnitStateAlive) < 1) && (civIsNative() == false) )
+// RizkyR change into gStableUnit
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gStableUnit);
+      if ( (planID < 0) && (kbUnitCount(cMyID, gStableUnit, cUnitStateAlive) < 1) && (civIsNative() == false) )
       {     // Start a new one
-         createSimpleBuildPlan(cUnitTypeStable, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         createSimpleBuildPlan(gStableUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a new stable build plan.");
       }
    }
@@ -11262,6 +12089,17 @@ minInterval 3
          aiEcho("Starting a new livestock pen build plan.");
       }
    }
+
+//RizkyR: lanfang build refinery
+   // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSIndustryRefinery2);
+   // if (kbGetCiv() == cCivLanfang)
+   // {
+	   // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSIndustryRefinery2, cUnitStateAlive) < 2 ) )
+      // {     
+         // createSimpleBuildPlan(cUnitTypeSIndustryRefinery2, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+      // }
+   // }
+
    
    // That's it for age 2
    if (kbGetAge() < cAge3)
@@ -11272,6 +12110,17 @@ minInterval 3
    
    // Plantation construction is handled in updateGoldBreakdown, do not build plantations here
 
+
+    //RizkyR: Priangan build 3 Plantation
+   planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeypRicePaddy);
+   if (kbGetCiv() == cCivPriangan)
+   {
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateAlive) < 3 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeypRicePaddy, 1, 95, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new coffee plan tation.");
+      }
+   }
    
    // At least one arsenal (not for natives or Asians)
    if ((civIsNative() == false) && (civIsAsian() == false))
@@ -11327,6 +12176,89 @@ minInterval 3
       }
     }
 
+   //RizkyR: Madurese build Salt Field in age 3
+   if (
+   //SOI NEW CIVS
+   // (kbGetCiv() == cCivMadurese) || 
+   (kbGetCiv() == cCivPirate)) {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSSaltMill);
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSSaltMill, cUnitStateAlive) < 1) )
+      {     // Start a new one
+        createSimpleBuildPlan(cUnitTypeSSaltMill, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+        aiEcho("Starting a new salt mill build plan.");
+      }
+    }
+
+//RizkyR: Mangkunegaran build 2 Sugar Factory
+   planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSugarFactory);
+   if (kbGetCiv() == cCivGermans)
+   {
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSugarFactory, cUnitStateAlive) < 2 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeSugarFactory, 1, 80, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new sugar factory.");
+      }
+   }
+
+//RizkyR: forward base
+	if (gForwardBaseID >= 0)
+	{		
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+      if ( (planID < 0) && (kbBaseGetNumberUnits(cMyID, gForwardBaseID, cPlayerRelationSelf, gBarracksUnit) < 1))
+      {
+          createLocationBuildPlan(gBarracksUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetLocation(cMyID, gForwardBaseID), 1, gForwardBaseID);
+          aiEcho("Starting a new barracks build plan.");
+      }
+      
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gStableUnit);
+      if ( (planID < 0) && (kbBaseGetNumberUnits(cMyID, gForwardBaseID, cPlayerRelationSelf, gStableUnit) < 1) )
+      {
+          createLocationBuildPlan(gStableUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetLocation(cMyID, gForwardBaseID), 1, gForwardBaseID);
+          aiEcho("Starting a new stable build plan.");
+      }
+  
+	}
+
+   // RizkyR: Surakarta build pendapa with Carik
+   if((kbGetCiv() == cCivOttomans)
+      // || (kbGetCiv() == cCivSurakarta)
+      ){
+       if (kbUnitCount(cMyID, cUnitTypeSPendapaPanyutran, cUnitStateAlive) < 2)
+       {
+           if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSPendapaPanyutran) < 0)
+           {
+               planID = createSimpleBuildPlan(cUnitTypeSPendapaPanyutran, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+               aiPlanAddUnitType(planID, cUnitTypeSCarik, 1, 1, 1);
+           }
+       }
+       if (kbUnitCount(cMyID, cUnitTypeSPendapaDarapaten, cUnitStateAlive) < 2)
+       {
+           if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSPendapaDarapaten) < 0)
+           {
+               planID = createSimpleBuildPlan(cUnitTypeSPendapaDarapaten, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+               aiPlanAddUnitType(planID, cUnitTypeSCarik, 1, 1, 1);
+           }
+       }
+       if (kbUnitCount(cMyID, cUnitTypeSPendapaKanoman, cUnitStateAlive) < 2)
+       {
+           if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSPendapaKanoman) < 0)
+           {
+               planID = createSimpleBuildPlan(cUnitTypeSPendapaKanoman, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+               aiPlanAddUnitType(planID, cUnitTypeSCarik, 1, 1, 1);
+           }
+       }
+   }    
+//RizkyR: lanfang build refinery
+   // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSIndustryRefinery3);
+   // if (kbGetCiv() == cCivLanfang)
+   // {
+	   // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSIndustryRefinery3, cUnitStateAlive) < 2 ) )
+      // {     
+         // createSimpleBuildPlan(cUnitTypeSIndustryRefinery3, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+      // }
+   // }
+      
+    
    // That's it for age 3
    if (kbGetAge() < cAge4)
       return;
@@ -11343,8 +12275,8 @@ minInterval 3
 			createSimpleBuildPlan(cUnitTypeSBarracksJogja, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
 			aiEcho("Starting a new blockhouse build plan.");
 		}   
-	}
-   else if ( (cMyCiv == cCivGermans) || (cMyCiv == cCivSpanish) || (cMyCiv == cCivPirate) )
+	}//RizkyR: add Priangan
+   else if ( (cMyCiv == cCivGermans) || (cMyCiv == cCivSpanish) || (cMyCiv == cCivPirate) || (cMyCiv == cCivPriangan) )
    {  // Javanese at least 1 SBarracks
 		planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSBarracks);
 		if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSBarracks, cUnitStateAlive) < 2) )
@@ -11372,10 +12304,10 @@ minInterval 3
         }
       }
       else if ( (cMyCiv == cCivChinese) || (cMyCiv == cCivSPCChinese) ) {
-        planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeBarracks);
-        if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateAlive) < 2) )
+        planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+        if ( (planID < 0) && (kbUnitCount(cMyID, gBarracksUnit, cUnitStateAlive) < 2) )
         {     // Start a new one
-          createSimpleBuildPlan(cUnitTypeBarracks, 1, 98, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+          createSimpleBuildPlan(gBarracksUnit, 1, 98, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
           aiEcho("Starting a new war academy build plan.");
         }
       }
@@ -11390,10 +12322,10 @@ minInterval 3
    }
    else // Every other civ, at least 2 barracks.
    {
-      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeBarracks);
-      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeBarracks, cUnitStateAlive) < 2) )
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+      if ( (planID < 0) && (kbUnitCount(cMyID, gBarracksUnit, cUnitStateAlive) < 2) )
       {
-         createSimpleBuildPlan(cUnitTypeBarracks, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         createSimpleBuildPlan(gBarracksUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a new barracks build plan.");
       }
    }
@@ -11431,10 +12363,10 @@ minInterval 3
    }
    else 
    {      
-      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeStable);
-      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeStable, cUnitStateAlive) < 2) )
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gStableUnit);
+      if ( (planID < 0) && (kbUnitCount(cMyID, gStableUnit, cUnitStateAlive) < 2) )
       {
-         createSimpleBuildPlan(cUnitTypeStable, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         createSimpleBuildPlan(gStableUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a new stable build plan.");
       }
    }
@@ -11449,6 +12381,63 @@ minInterval 3
          aiEcho("Starting a new war hut build plan.");
       }   
    }
+
+//RizkyR: Priangan build 4 Plantation
+   planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeypRicePaddy);
+   if (kbGetCiv() == cCivPriangan)
+   {
+	   if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateAlive) < 4 ) )
+      {     
+         createSimpleBuildPlan(cUnitTypeypRicePaddy, 1, 95, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+         aiEcho("Starting a new coffee plan tation.");
+      }
+   }
+
+   // if Germans/Mangkunegaran, add soldat sekul to the build limit.
+//RizkyR: move this from Age 2
+   if (kbGetCiv() == cCivGermans)
+   {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSoldatSekul);
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSoldatSekul, cUnitStateAlive) < 1) )  // If I'm not building one and I could be, do it.
+      {     // Start a new one
+         createSimpleBuildPlan(cUnitTypeSoldatSekul, 1, 93, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1); // Very high pri, just below houses
+         aiEcho("Starting a new soldat sekul build plan.");
+      }     
+   }
+   
+	if (gForwardBaseID >= 0)
+	{		
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit);
+      if ( (planID < 0) && (kbBaseGetNumberUnits(cMyID, gForwardBaseID, cPlayerRelationSelf, gBarracksUnit) < 2))
+      {
+          createLocationBuildPlan(gBarracksUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetLocation(cMyID, gForwardBaseID), 1, gForwardBaseID);
+          aiEcho("Starting a new barracks build plan.");
+      }
+
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gTowerUnit);
+      if ( (planID < 0) && (kbBaseGetNumberUnits(cMyID, gForwardBaseID, cPlayerRelationSelf, gTowerUnit) < 1))
+      {
+          createLocationBuildPlan(gTowerUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetLocation(cMyID, gForwardBaseID), 1, gForwardBaseID);
+          aiEcho("Starting a new tower build plan.");
+      }
+
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gStableUnit);
+      if ( (planID < 0) && (kbBaseGetNumberUnits(cMyID, gForwardBaseID, cPlayerRelationSelf, gStableUnit) < 2) )
+      {
+          createLocationBuildPlan(gStableUnit, 1, 70, false, cMilitaryEscrowID, kbBaseGetLocation(cMyID, gForwardBaseID), 1, gForwardBaseID);
+          aiEcho("Starting a new stable build plan.");
+      }  
+	}
+   
+//RizkyR: lanfang build refinery
+   // planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSIndustryRefinery4);
+   // if (kbGetCiv() == cCivLanfang)
+   // {
+	   // if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeSIndustryRefinery4, cUnitStateAlive) < 2 ) )
+      // {     
+         // createSimpleBuildPlan(cUnitTypeSIndustryRefinery4, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1); 
+      // }
+   // }
 
    // That's it for age 4
    if (kbGetAge() < cAge5)
@@ -11772,7 +12761,7 @@ inactive
 group tcComplete
 minInterval 60
 {
-   if (civIsAsian() == false)
+   if ((civIsAsian() == false) && (civIsMalay() == false) && (kbGetCiv() != cCivPriangan))
    {
       xsDisableSelf();
       return;
@@ -11903,6 +12892,139 @@ minInterval 20
 }
 
 
+//RizkyR: Toba upgrade army each 60 second
+rule batakUpgradeMonitor
+inactive
+group tcComplete
+minInterval 60
+{	
+	if (civIsBatak() != true)
+	{
+		xsDisableSelf();
+		return;
+	}
+	if (kbGetAge() < cAge3)
+	{
+		return;
+	}
+   //SParmossak SHujur
+   int baseInfantryCount    = kbUnitCount(cMyID, cUnitTypeSParmossak, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSHujur, cUnitStateAlive);
+   int siseanInfantryCount  = kbUnitCount(cMyID, cUnitTypeSSiseanParmossak, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSSiseanHujur, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSSiseanParangan, cUnitStateAlive);
+   int maloInfantryCount    = kbUnitCount(cMyID, cUnitTypeSMaloParmossak, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSMaloHujur, cUnitStateAlive)
+   +kbUnitCount(cMyID, cUnitTypeSMaloParangan, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSMaloPamurhas, cUnitStateAlive);
+   int baseCavalryCount     = kbUnitCount(cMyID, cUnitTypeSUlubalang, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSHupas, cUnitStateAlive);
+   int siseanCavalryCount   = kbUnitCount(cMyID, cUnitTypeSSiseanUlubalang, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSSiseanHupas, cUnitStateAlive);
+   int maloCavalryCount     = kbUnitCount(cMyID, cUnitTypeSMaloUlubalang, cUnitStateAlive)+kbUnitCount(cMyID, cUnitTypeSMaloHupas, cUnitStateAlive);
+
+   int baseArtilleryCount   = kbUnitCount(cMyID, cUnitTypeSAmbalang, cUnitStateAlive);
+   int siseanArtilleryCount = kbUnitCount(cMyID, cUnitTypeSSiseanAmbalang, cUnitStateAlive) + kbUnitCount(cMyID, cUnitTypeSBambooRam, cUnitStateAlive);
+   int maloArtilleryCount   = kbUnitCount(cMyID, cUnitTypeSMaloAmbalang, cUnitStateAlive) + kbUnitCount(cMyID, cUnitTypeSMaloBambooRam, cUnitStateAlive) + kbUnitCount(cMyID, cUnitTypeSRostaha, cUnitStateAlive);
+   
+   
+   if(baseInfantryCount >= 8){
+     int siseanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSiseanInfantry);
+     if ( (kbTechGetStatus(cTechSiseanInfantry) == cTechStatusObtainable) 
+         && (siseanPlanID < 0))
+      {
+       echoMessage("Sisean Infantry Obtainable, I have "+baseInfantryCount+" base infantries.");
+       echoMessage(aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSiseanInfantry)+" type and variable.");
+      createSimpleResearchPlan(cTechSiseanInfantry, getUnit(cUnitTypeWarHut), cMilitaryEscrowID, 100);
+       echoMessage("Sedang research "
+       +aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSiseanInfantry)+" type and variable. Upgrade: " +kbGetTechName(cTechSiseanInfantry));
+     }
+   }
+   else{
+       echoMessage(baseInfantryCount+" base infantries. Too few.");
+   }
+
+   if(baseCavalryCount >= 5){   
+      echoMessage("Sisean Cavalry Obtainable, I have "+baseCavalryCount+" base cavalries.");
+     createSimpleResearchPlan(cTechSiseanCavalry, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(baseCavalryCount+" base cavalries. Too few.");
+   }
+   
+   if(baseArtilleryCount >= 5){   
+      echoMessage("Sisean Artillery Obtainable, I have "+baseArtilleryCount+" base artilleries.");
+     createSimpleResearchPlan(cTechSiseanArtillery, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(baseArtilleryCount+" base artilleries. Too few.");
+   }
+   
+   echoMessage("SiseanInfantry currently :"+aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSiseanInfantry)+" type and variable.");
+
+   if(kbGetAge() < cAge4)
+       return;
+
+   if(siseanInfantryCount >= 8){
+     int maloPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechMaloInfantry);
+     if ( (kbTechGetStatus(cTechMaloInfantry) == cTechStatusObtainable) 
+         && (maloPlanID < 0))
+      {
+       echoMessage("Malo Infantry Obtainable, I have "+siseanInfantryCount+" Sisean infantries.");
+       echoMessage(aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechMaloInfantry)+" type and variable.");
+      createSimpleResearchPlan(cTechMaloInfantry, getUnit(cUnitTypeWarHut), cMilitaryEscrowID, 100);
+       echoMessage("Sedang research "
+       +aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechMaloInfantry)+" type and variable. Upgrade: " +kbGetTechName(cTechSiseanInfantry));
+     }
+   }
+   else{
+       echoMessage(siseanInfantryCount+" Sisean infantries. Too few.");
+   }
+
+   if(siseanCavalryCount >= 5){   
+      echoMessage("Malo Cavalry Obtainable, I have "+siseanCavalryCount+" Sisean cavalries.");
+     createSimpleResearchPlan(cTechMaloCavalry, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(siseanCavalryCount+" Sisean cavalries. Too few.");
+   }
+
+   if(siseanArtilleryCount >= 5){   
+      echoMessage("Malo Artillery Obtainable, I have "+siseanArtilleryCount+" Sisean artilleries.");
+     createSimpleResearchPlan(cTechMaloArtillery, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(siseanArtilleryCount+" Sisean artilleries. Too few.");
+   }
+
+   if(kbGetAge() < cAge5)
+       return;
+
+   if(maloInfantryCount >= 8){
+     int rajaPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechRajaInfantry);
+     if ( (kbTechGetStatus(cTechRajaInfantry) == cTechStatusObtainable) 
+         && (maloPlanID < 0))
+      {
+       echoMessage("Malo Infantry Obtainable, I have "+maloInfantryCount+" Sisean infantries.");
+      createSimpleResearchPlan(cTechRajaInfantry, getUnit(cUnitTypeWarHut), cMilitaryEscrowID, 100);
+       echoMessage("Sedang research "
+       +aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechRajaInfantry)+" type and variable. Upgrade: " +kbGetTechName(cTechSiseanInfantry));
+     }
+   }
+   else{
+       echoMessage(maloInfantryCount+" Malo infantries. Too few.");
+   }
+
+   if(maloCavalryCount >= 5){   
+      echoMessage("Malo Cavalry Obtainable, I have "+maloCavalryCount+" Sisean cavalries.");
+     createSimpleResearchPlan(cTechRajaCavalry, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(maloCavalryCount+" Malo cavalries. Too few.");
+   }
+
+   if(maloArtilleryCount >= 5){   
+      echoMessage("Raja Artillery Obtainable, I have "+maloArtilleryCount+" Raja artilleries.");
+     createSimpleResearchPlan(cTechRajaArtillery, -1, cMilitaryEscrowID, 100);
+   }
+   else{
+       echoMessage(maloArtilleryCount+" Malo artilleries. Too few.");
+   }
+   
+}
 //==============================================================================
 /* rule defenseReflex
 
@@ -13167,7 +14289,11 @@ void SPCInit(void)
       }
    }
 
-   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") || (cRandomMapName == "Borneo") || (cRandomMapName == "Honshu") )
+   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") || (cRandomMapName == "Borneo") || (cRandomMapName == "Honshu") 
+      ||//RizkyR add SoI water map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Muria") || (cRandomMapName == "Pasai") 
+      || (cRandomMapName == "Rawa Pening") || (cRandomMapName == "Pulau Seribu") 
+      || (cRandomMapName == "Segara Kidul") || (cRandomMapName == "Surabaya"))
    {
       aiSetWaterMap(true);
       gWaterMap = true;
@@ -13230,7 +14356,12 @@ minInterval 1
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCXPNewWaysSioux") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCXPAdvancedBalloon") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipGroveWagonIndians2") ||
-                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipShogunate"))
+                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipShogunate")
+                
+                 ||
+                 //RizkyR: perhaps, AI need to unlock certain vital cards here before they can pick it to the deck.
+                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCKavaleri-Artilleri") ||
+                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCIndigoFactory")  )
                     xsArraySetInt(gCardPriorities, i, 10);  // "Best" cards, pri 10
 
             // List of "best" cards also includes 'Agrarianism' for Indians
@@ -13279,7 +14410,12 @@ minInterval 1
             string tempString = "";
             int unit = aiHCCardsGetCardUnitType(i);
             int tech = aiHCCardsGetCardTechID(i);
-            if ( (unit == cUnitTypeSettler) || (unit == cUnitTypeCoureur) || (unit == cUnitTypeSettlerWagon) || (unit == cUnitTypeSettlerNative) || (unit == cUnitTypeypSettlerAsian) || (unit == cUnitTypeypSettlerJapanese) )
+            if ( (unit == cUnitTypeSettler) || (unit == cUnitTypeCoureur) || (unit == cUnitTypeSettlerWagon) || (unit == cUnitTypeSettlerNative) || (unit == cUnitTypeypSettlerAsian) || (unit == cUnitTypeypSettlerJapanese) 
+                /*RizkyR: kartu baru settler*/ ||
+            (unit == cUnitTypeWarga) || (unit == cUnitTypePemberontak)
+            || (unit == cUnitTypeSOrangKampung)
+            || (unit == cUnitTypeSParhobas)
+            || (unit == cUnitTypeSCoolie) || (unit == gEconUnit))
                xsArraySetInt(gCardPriorities, i, 9);  // Settler card, pri 9
             if ( (xsArrayGetInt(gCardPriorities, i) == 0) && (aiHCCardsGetCardCount(i) > 2) )
                xsArraySetInt(gCardPriorities, i, 8);  // Infinite cards, pri 8
@@ -13313,11 +14449,15 @@ minInterval 1
             {  // Demote cows, sheep and surgeons to 0, non-mil units to 4, ships to 0 on land maps.
                if ((kbProtoUnitIsType(cMyID, unit, cUnitTypeLogicalTypeLandMilitary) == false) || (aiHCCardsGetCardUnitCount(i) < 3))
                   xsArraySetInt(gCardPriorities, i, 4);  // Non-military unit (including explorer dogs and uhlan pairs)
-               if ((kbProtoUnitIsType(cMyID, unit, cUnitTypeHerdable) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeMissionary) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeSurgeon) == true))
+               if ((kbProtoUnitIsType(cMyID, unit, cUnitTypeHerdable) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeMissionary) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeSurgeon) == true)
+               //edit new Healer unit
+                || (kbProtoUnitIsType(cMyID, unit, cUnitTypeImam) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeSPedati) == true)
+                  )
                   xsArraySetInt(gCardPriorities, i, 0);  // Herdables, missionaries or surgeons.              
                if ( (gNavyMap == false) && ( (kbProtoUnitIsType(cMyID, unit, cUnitTypeAbstractWarShip) == true) || (kbProtoUnitIsType(cMyID, unit, cUnitTypeAbstractFishingBoat) == true) ) )
                   xsArraySetInt(gCardPriorities, i, 0);  // Navy units on land?  Not good.              
             }
+            
 
             // Set priority to 0 for cards to be avoided if possible
             if ((kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCFrontierDefenses2") ||
@@ -13378,7 +14518,21 @@ minInterval 1
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipRicePaddyWagon2") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipRicePaddyWagon3") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipMorutaru1") ||
-                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipMorutaru2"))
+                (kbGetTechName(aiHCCardsGetCardTechID(i)) == "YPHCShipMorutaru2")
+                 //RizkyR: kartu haram
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipWarga1")
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipOrangKampungAceh1")
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipOrangKampung1")
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipParhobas1")
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipPenetah1")
+                || (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipRice1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipBamboo1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "SHCShipHeirloom1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCShipFoodCrates1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCShipWoodCrates1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCShipCoinCrates1")
+				|| (kbGetTechName(aiHCCardsGetCardTechID(i)) == "HCXPShipMixedCrates1")
+                )
                     xsArraySetInt(gCardPriorities, i, 0);  // Cards to be avoided, pri 0
 
             // Set priority to 0 for castle wagon cards to be specifically avoided for Japanese,
@@ -13625,7 +14779,17 @@ minInterval 1
                 (kbGetTechName(aiHCCardsGetCardTechID(card)) == "HCXPNewWaysSioux") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(card)) == "YPHCShipGroveWagonIndians2") ||
                 (kbGetTechName(aiHCCardsGetCardTechID(card)) == "YPHCShipShogunate") ||
-                ((kbGetCiv() == cCivIndians) && (kbGetTechName(aiHCCardsGetCardTechID(card)) == "YPHCAgrarianism") ))
+                ((kbGetCiv() == cCivIndians) && (kbGetTechName(aiHCCardsGetCardTechID(card)) == "YPHCAgrarianism") )
+                  || //RizkyR: Kartu Wajib
+                ((kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCAdvancedCoffeePlantation") && (kbGetCiv() == cCivPriangan)) ||
+                (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCKavaleri-Artilleri") ||
+                (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCIndigoFactory")  ||
+                (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCGuriguri") ||
+                (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCPisoGajaDompak") ||
+                (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCGorgaBoraspati")
+				
+				|| (kbGetTechName(aiHCCardsGetCardTechID(card)) == "SHCNaturalBarrier")
+               )
             {
                aiHCDeckAddCardToDeck(gDefaultDeck, card);
                cardsRemaining = cardsRemaining - 1;
@@ -13636,7 +14800,8 @@ minInterval 1
 
 
          // Next, 3 econ-biased age 1 cards.
-         toPick = 3;
+//RizkyR change 3 to 2 cards
+         toPick = 2;
          for (i=0; < toPick) 
          {  // 3 age 1 cards
             int bestCard = -1;
@@ -13666,7 +14831,9 @@ minInterval 1
          
 
          // Next, econ-biased age 2 cards. 2 for rusher, 3 for others.
-         toPick = 3;
+ 
+//RizkyR change 3 to 4 cards
+        toPick = 4;
          if (btRushBoom > 0)
             toPick = 2;
          for (i=0; < toPick) 
@@ -14221,7 +15388,12 @@ void init(void)
         (cRandomMapName=="Borneo") ||
         (cRandomMapName=="Honshu") ||
         (cRandomMapName=="HonshuRegicide") ||
-        (cRandomMapName=="Yellow riverWet") )
+        (cRandomMapName=="Yellow riverWet") 
+      ||//RizkyR add SoI navy map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Muria") || (cRandomMapName == "Pasai") 
+      || (cRandomMapName == "Pulau Seribu") || (cRandomMapName == "Rawa Pening")
+      || (cRandomMapName == "Segara Kidul") || (cRandomMapName == "Surabaya")
+      )
 	{
       gGoodFishingMap = true;    
 	}
@@ -14237,7 +15409,11 @@ void init(void)
          gGoodFishingMap = false;
    }
    
-   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") )
+   if ( (cRandomMapName == "amazonia") || (cRandomMapName == "caribbean") || (cRandomMapName == "Ceylon") 
+       ||//RizkyR add SoI navy map
+      (cRandomMapName == "Bengawan Solo") || (cRandomMapName == "Muria") || (cRandomMapName == "Pasai") 
+      || (cRandomMapName == "Pulau Seribu") || (cRandomMapName == "Rawa Pening")
+      || (cRandomMapName == "Segara Kidul") || (cRandomMapName == "Surabaya"))
       gNavyMap = true;
    if (gSPC == false)
    {
@@ -14712,6 +15888,66 @@ minInterval 30
   }  
 }
 
+//SOI NEW CIVS JOHOR
+/*rule johorMonitor
+inactive
+minInterval 30
+{  
+   int speedPlanID = -1;   // Plan for improving vill training speed.
+   int capPlanID = -1;     // Plan for raising settler pop limit.
+   int SJurubinaPlanID = -1;
+
+   // Disable rule once all techs have been researched
+   if ((kbTechGetStatus(cTechJohorPopulation1) == cTechStatusActive) &&
+       (kbTechGetStatus(cTechJohorPopulation2) == cTechStatusActive) &&
+       (kbTechGetStatus(cTechJohorPopulation3) == cTechStatusActive) &&
+       (kbTechGetStatus(cTechJohorPopulation4) == cTechStatusActive))
+   {
+      xsDisableSelf();
+   }
+   
+   // If no mosque and no build plan, build one, exit.
+   if (kbUnitCount(cMyID, cUnitTypeSJurubina, cUnitStateAlive) < 1)
+   {  // No mosque, check for build plan, add one if needed
+      SJurubinaPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSJurubina);  
+      if (SJurubinaPlanID < 0)
+      {
+         aiEcho(" ");
+         aiEcho("Creating SJurubina build plan");
+         aiEcho(" ");
+         createSimpleBuildPlan(cUnitTypeSJurubina, 1, 93, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
+      }
+      return;
+   }
+  
+   if (kbTechGetStatus(cTechJohorPopulation1) == cTechStatusObtainable)
+   {
+      speedPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechJohorPopulation1);
+      if (speedPlanID < 0)
+         createSimpleResearchPlan(cTechJohorPopulation1, getUnit(cUnitTypeTownCenter),cEconomyEscrowID, 91);
+   }
+
+   if (kbTechGetStatus(cTechJohorPopulation2) == cTechStatusObtainable)
+   {
+      speedPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechJohorPopulation2);
+      if (speedPlanID < 0)
+         createSimpleResearchPlan(cTechJohorPopulation2, getUnit(cUnitTypeTownCenter),cEconomyEscrowID, 91);
+   }     
+   
+   if (kbTechGetStatus(cTechJohorPopulation3) == cTechStatusObtainable)
+   {
+      speedPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechJohorPopulation3);
+      if (speedPlanID < 0)
+         createSimpleResearchPlan(cTechJohorPopulation3, getUnit(cUnitTypeTownCenter),cEconomyEscrowID, 91);
+  }
+   
+   if ((kbTechGetStatus(cTechJohorPopulation4) == cTechStatusObtainable) && (kbUnitCount(cMyID, gEconUnit, cUnitStateAlive) >= 18))
+   {
+      capPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechJohorPopulation4);
+      if (capPlanID < 0)
+         createSimpleResearchPlan(cTechJohorPopulation4, getUnit(cUnitTypeTownCenter),cEconomyEscrowID, 91);
+   } 
+}*/
 
 //==============================================================================
 // tcBuildPlanDelay
@@ -14973,7 +16209,13 @@ minInterval 10
       xsDisableSelf();
       return;
    }
-   
+//RizkyR: tes priangan
+/*   if((kbGetCiv() == cCivPriangan) 
+       && (kbUnitCount(cMyID, cUnitTypeypRicePaddy, cUnitStateAlive) < kbGetAge()+1)
+   ){
+     return;    
+   }
+  */ 
    if ( kbGetAge() >= cvMaxAge )
       return;  // Don't disable, this var could change later...
     
@@ -15021,6 +16263,8 @@ minInterval 10
             {  // Tech is valid, and we're not yet researching it...
                gAgeUpResearchPlan = createSimpleResearchPlan(specialAgeTech, -1, cEmergencyEscrowID, 99);
                aiEcho("Creating plan #"+gAgeUpResearchPlan+" to get age upgrade with tech "+kbGetTechName(specialAgeTech));
+//tes
+               // echoMessage("Creating plan #"+gAgeUpResearchPlan+" to get age upgrade with tech "+kbGetTechName(specialAgeTech) + " on "+ xsGetTime());
                return;
             }
          }
@@ -15040,6 +16284,8 @@ minInterval 10
                {
                   gAgeUpResearchPlan = createSimpleResearchPlan(specialAgeTech, -1, cEmergencyEscrowID, 99);                
                   aiEcho("Creating plan #"+gAgeUpResearchPlan+" to get age upgrade with tech "+kbGetTechName(specialAgeTech));
+//tes      
+      echoMessage("Creating plan #"+gAgeUpResearchPlan+" to get age upgrade with tech "+kbGetTechName(specialAgeTech) + " on "+ xsGetTime()+".");
                   return;
                }
             }
@@ -15574,6 +16820,19 @@ void shipGrantedHandler(int parm=-1) // Event handler
                }
             }
 
+			//RizkyR: Handle 'Kavaleri-Artilleri' for Mangkunegara
+            if (kbGetTechName(aiHCDeckGetCardTechID(gDefaultDeck, i)) == "SHCKavaleri-Artilleri") 
+            {
+               if ((homeBaseUnderAttack == true)  || (kbGetAge() < cAge4) || (kbGetCiv() != cCivGermans) )
+               {
+                  totalValue = 1.0;
+               }
+               else
+               {
+                  totalValue = 10000.0;
+               }
+            }
+            
             if ( (totalValue < 1.0) && (age >= cAge1) )
             {  // Set a min value based on age
                switch(age)
@@ -15886,7 +17145,8 @@ group tcComplete
 inactive
 minInterval 120
 {
-   if (civIsNative() == false)
+    //RizkyR add batak
+   if ((civIsNative() == false) && (civIsBatak() == false))
    {
       xsDisableSelf();
       return;
@@ -15912,13 +17172,25 @@ minInterval 120
    }
    else if (cMyCiv == cCivXPIroquois)
    {
-      createSimpleResearchPlan(cTechBigFarmStrawberry, -1, cEconomyEscrowID, 80);
-      createSimpleResearchPlan(cTechBigPlantationMapleFestival, -1, cEconomyEscrowID, 80);
-      createSimpleResearchPlan(cTechBigLonghouseWoodlandDwellers, -1, cEconomyEscrowID, 80);
-      createSimpleResearchPlan(cTechBigWarHutLacrosse, -1, cMilitaryEscrowID, 80);
-      createSimpleResearchPlan(cTechBigSiegeshopSiegeDrill, -1, cMilitaryEscrowID, 80);
-      createSimpleResearchPlan(cTechBigCorralHorseSecrets, -1, cMilitaryEscrowID, 80);
-      createSimpleResearchPlan(cTechBigDockRawhideCovers, -1, cMilitaryEscrowID, 80);
+      // RizkyR: replace with Toba big techs 
+      // createSimpleResearchPlan(cTechBigFarmStrawberry, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigPlantationMapleFestival, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigLonghouseWoodlandDwellers, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigWarHutLacrosse, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigSiegeshopSiegeDrill, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigCorralHorseSecrets, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigDockRawhideCovers, -1, cMilitaryEscrowID, 80);
+
+      createSimpleResearchPlan(cTechBigManortor, -1, cEconomyEscrowID, 80);
+      createSimpleResearchPlan(cTechBigTunggalPanaluan1, -1, cEconomyEscrowID, 80);
+      createSimpleResearchPlan(cTechBigTunggalPanaluan2, -1, cEconomyEscrowID, 80);
+      createSimpleResearchPlan(cTechBigTunggalPanaluan3, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigParhalaan, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigSigaleGale, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigParholian, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigBodilBesar, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigNagaMorsarang, -1, cMilitaryEscrowID, 80);
+      createSimpleResearchPlan(cTechBigHudaBatak, -1, cMilitaryEscrowID, 80);
    }
    else if (cMyCiv == cCivXPSioux)
    {
@@ -15928,7 +17200,21 @@ minInterval 120
       createSimpleResearchPlan(cTechBigFarmHorsemanship, -1, cMilitaryEscrowID, 80);
       createSimpleResearchPlan(cTechBigDockFlamingArrows, -1, cMilitaryEscrowID, 80);
    }
-   
+   //RizkyR Toba Big Button
+   // SOI NEW CIVS
+   // else if (cMyCiv == cCivToba)
+   // {
+      // createSimpleResearchPlan(cTechBigManortor, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigTunggalPanaluan1, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigTunggalPanaluan2, -1, cEconomyEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigTunggalPanaluan3, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigParhalaan, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigSigaleGale, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigParholian, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigBodilBesar, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigNagaMorsarang, -1, cMilitaryEscrowID, 80);
+      // createSimpleResearchPlan(cTechBigHudaBatak, -1, cMilitaryEscrowID, 80);
+   // }   
    xsDisableSelf();
 }
 
@@ -17303,21 +18589,21 @@ minInterval 10
                         aiPlanAddUnitType(gLandExplorePlan, cUnitTypexpAztecWarchief, 1, 1, 1);
                         break;
                      }
-                     case cCivXPIroquois:
-                     {
-                        aiPlanAddUnitType(gLandExplorePlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-                        break;
-                     }
+                     // case cCivXPIroquois:
+                     // {
+                        // aiPlanAddUnitType(gLandExplorePlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+                        // break;
+                     // }
                      case cCivXPSioux:
                      {
                         aiPlanAddUnitType(gLandExplorePlan, cUnitTypexpLakotaWarchief, 1, 1, 1);
                         break;
                      }
-                     case cCivChinese:
-                     {
-                        aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkChinese, 1, 1, 1);
-                        break;
-                     }
+                     // case cCivChinese:
+                     // {
+                        // aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkChinese, 1, 1, 1);
+                        // break;
+                     // }
                      case cCivIndians:
                      {
                         aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -17361,6 +18647,17 @@ minInterval 10
                         aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSUlama2, 1, 1, 1);
                         break;
                      }
+                     //RizkyR: add priangan explorer
+                     case cCivPriangan:
+                     {
+                        aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSBupatiPriangan, 1, 1, 1);
+                        break;
+                     }
+                     case cCivXPIroquois:
+                     {
+                        aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSPanglimaToba, 1, 1, 1);
+                        break;
+                     }
                      default:
                      {
                         aiPlanAddUnitType(gLandExplorePlan, cUnitTypeExplorer, 1, 1, 1);
@@ -17390,6 +18687,10 @@ minInterval 10
                   aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkIndian2, 0, 0, 0);
                   aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkJapanese, 0, 0, 0);
                   aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkJapanese2, 0, 0, 0);
+                  // RizkyR add aceh & toba
+                  aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSUlama, 0, 0, 0);
+                  aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSUlama2, 0, 0, 0);
+                  aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSPanglimaToba, 0, 0, 0);
                   aiPlanSetVariableBool(gLandExplorePlan, cExplorePlanOkToGatherNuggets, 0, false);
                   exploreMode = cExploreModeStaff;
                   nextStaffTime = xsGetTime() + 120000;     // Two minutes from now, let it get another soldier if it loses this one.
@@ -17403,21 +18704,21 @@ minInterval 10
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpAztecWarchief, 1, 1, 1);
                            break;
                         }
-                        case cCivXPIroquois:
-                        {
-                           aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-                           break;
-                        }
+                        // case cCivXPIroquois:
+                        // {
+                           // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+                           // break;
+                        // }
                         case cCivXPSioux:
                         {
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpLakotaWarchief, 1, 1, 1);
                            break;
                         }
-                        case cCivChinese:
-                        {
-                           aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
-                           break;
-                        }
+                        // case cCivChinese:
+                        // {
+                           // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
+                           // break;
+                        // }
                         case cCivIndians:
                         {
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -17453,6 +18754,23 @@ minInterval 10
 						 case cCivSpanish:
 						 {
 							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPriyayi, 1, 1, 1);
+							break;
+						 }
+                         //RIzkyR: add Priangan & Toba & aceh
+						 case cCivPriangan:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSBupatiPriangan, 1, 1, 1);
+							break;
+						 }
+						 case cCivBritish:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama, 1, 1, 1);
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama2, 1, 1, 1);
+							break;
+						 }
+						 case cCivXPIroquois:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPanglimaToba, 1, 1, 1);
 							break;
 						 }
                         default:
@@ -17504,21 +18822,21 @@ minInterval 10
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpAztecWarchief, 1, 1, 1);
                            break;
                         }
-                        case cCivXPIroquois:
-                        {
-                           aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-                           break;
-                        }
+                        // case cCivXPIroquois:
+                        // {
+                           // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+                           // break;
+                        // }
                         case cCivXPSioux:
                         {
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpLakotaWarchief, 1, 1, 1);
                            break;
                         }
-                        case cCivChinese:
-                        {
-                           aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
-                           break;
-                        }
+                        // case cCivChinese:
+                        // {
+                           // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
+                           // break;
+                        // }
                         case cCivIndians:
                         {
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -17556,6 +18874,29 @@ minInterval 10
 							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPriyayi, 1, 1, 1);
 							break;
 						 }
+                         //RizkyR: add Priangan & Toba explorer
+						 case cCivPriangan:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSBupatiPriangan, 1, 1, 1);
+							break;
+						 }
+						 case cCivXPIroquois:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPanglimaToba, 1, 1, 1);
+							break;
+						 }
+						 case cCivBritish:
+						 {
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama, 1, 1, 1);
+							aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama2, 1, 1, 1);
+							break;
+						 }
+                         // SOI NEW CIVS
+						 // case cCivToba:
+						 // {
+							// aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPanglimaToba, 1, 1, 1);
+							// break;
+						 // }
                         default:
                         {
                            aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeExplorer, 1, 1, 1);
@@ -17606,6 +18947,10 @@ minInterval 10
                aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkIndian2, 0, 0, 0);
                aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkJapanese, 0, 0, 0);
                aiPlanAddUnitType(gLandExplorePlan, cUnitTypeypMonkJapanese2, 0, 0, 0);
+               // RizkyR add aceh and toba
+               aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSUlama, 0, 0, 0);
+               aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSUlama2, 0, 0, 0);
+               aiPlanAddUnitType(gLandExplorePlan, cUnitTypeSPanglimaToba, 0, 0, 0);
                if (cMyCiv == cCivDutch) // Dutch will only use envoys (mainly handled in envoyMonitor rule)
                {
                   aiPlanAddUnitType(gLandExplorePlan, cUnitTypeEnvoy, 1, 1, 1);
@@ -20782,21 +22127,21 @@ minInterval 30
                aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpAztecWarchief, 1, 1, 1);
                break;
             }
-            case cCivXPIroquois:
-            {
-               aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-               break;
-            }
+            // case cCivXPIroquois:
+            // {
+               // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+               // break;
+            // }
             case cCivXPSioux:
             {
                aiPlanAddUnitType(gExplorerControlPlan, cUnitTypexpLakotaWarchief, 1, 1, 1);
                break;
             }
-            case cCivChinese:
-            {
-               aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
-               break;
-            }
+            // case cCivChinese:
+            // {
+               // aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkChinese, 1, 1, 1);
+               // break;
+            // }
             case cCivIndians:
             {
                aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -20807,6 +22152,18 @@ minInterval 30
             {
                aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkJapanese, 1, 1, 1);
                aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeypMonkJapanese2, 1, 1, 1);
+               break;
+            }
+            //RizkyR add aceh, toba explorer
+            case cCivBritish:
+            {
+               aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama, 1, 1, 1);
+               aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSUlama2, 1, 1, 1);
+               break;
+            }
+            case cCivXPIroquois:
+            {
+               aiPlanAddUnitType(gExplorerControlPlan, cUnitTypeSPanglimaToba, 1, 1, 1);
                break;
             }
             default:
@@ -20825,6 +22182,8 @@ minInterval 30
          aiPlanSetVariableInt(gExplorerControlPlan, cDefendPlanAttackTypeID, 0, cUnitTypeUnit); // Only units
          aiPlanSetDesiredPriority(gExplorerControlPlan, 90);    // Quite high, don't suck him into routine attack plans, etc.
          aiPlanSetActive(gExplorerControlPlan);      
+         
+         echoMessage("rule Local Nugget Gathering");
       }
       return;
    }
@@ -20833,11 +22192,14 @@ minInterval 30
    // or if the last plan was created less than 3 minutes ago
    int localNuggetCount = getUnitCountByLocation(cUnitTypeAbstractNugget, cPlayerRelationAny, cUnitStateABQ, homeBaseVec, 75.0);
 
-   if ((localNuggetCount == 0) || 
+   if (((localNuggetCount == 0) || 
        (cvOkToGatherNuggets == false) || 
        (aiGetFallenExplorerID() >= 0) ||
        (xsGetTime() - localNuggetPlanStartTime < 180000))
+       )
    {
+       int selisih=xsGetTime() - localNuggetPlanStartTime;
+       // echoMessage("localnuggetcount="+ localNuggetCount+", or "+selisih+" < 180000. Or explorer dead.");
       return;
    }
    else   
@@ -20861,21 +22223,21 @@ minInterval 30
             aiPlanAddUnitType(localNuggetPlan, cUnitTypexpAztecWarchief, 1, 1, 1);
             break;
          }
-         case cCivXPIroquois:
-         {
-            aiPlanAddUnitType(localNuggetPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
-            break;
-         }
+         // case cCivXPIroquois:
+         // {
+            // aiPlanAddUnitType(localNuggetPlan, cUnitTypexpIroquoisWarChief, 1, 1, 1);
+            // break;
+         // }
          case cCivXPSioux:
          {
             aiPlanAddUnitType(localNuggetPlan, cUnitTypexpLakotaWarchief, 1, 1, 1);
             break;
          }
-         case cCivChinese:
-         {
-            aiPlanAddUnitType(localNuggetPlan, cUnitTypeypMonkChinese, 1, 1, 1);
-            break;
-         }
+         // case cCivChinese:
+         // {
+            // aiPlanAddUnitType(localNuggetPlan, cUnitTypeypMonkChinese, 1, 1, 1);
+            // break;
+         // }
          case cCivIndians:
          {
             aiPlanAddUnitType(localNuggetPlan, cUnitTypeypMonkIndian, 1, 1, 1);
@@ -20886,6 +22248,18 @@ minInterval 30
          {
             aiPlanAddUnitType(localNuggetPlan, cUnitTypeypMonkJapanese, 1, 1, 1);
             aiPlanAddUnitType(localNuggetPlan, cUnitTypeypMonkJapanese2, 1, 1, 1);
+            break;
+         }//RizkyR add Aceh, and Toba explorer
+         case cCivBritish:
+         {
+            aiPlanAddUnitType(localNuggetPlan, cUnitTypeSUlama, 1, 1, 1);
+            aiPlanAddUnitType(localNuggetPlan, cUnitTypeSUlama2, 1, 1, 1);
+            break;
+         }
+        
+         case cCivXPIroquois:
+         {
+            aiPlanAddUnitType(localNuggetPlan, cUnitTypeSPanglimaToba, 1, 1, 1);
             break;
          }
          default:
@@ -20899,7 +22273,9 @@ minInterval 30
       aiPlanSetBaseID(localNuggetPlan, kbBaseGetMainID(cMyID));
       aiPlanSetVariableBool(localNuggetPlan, cExplorePlanDoLoops, 0, false);
       aiPlanSetActive(localNuggetPlan);
-
+      
+      // echoMessage("set active localNuggetPlan "+localNuggetPlan+". "+cExplorePlanOkToGatherNuggets);
+      
       // Set start time
       localNuggetPlanStartTime = xsGetTime();
    }
@@ -21638,73 +23014,480 @@ minInterval 90
    }
 }
 
-
-rule settlerUpgradeMonitor
+//RizkyR use market techs
+rule marketMonitor
 inactive
-minInterval 180 // research to be started 3 minutes into Age 2
+minInterval 30
+{
+   int marketUpgradePlan = -1;
+
+   if(kbGetCiv() == cCivPriangan){
+       xsDisableSelf();
+       return;
+   }
+   if (kbUnitCount(cMyID, gMarketUnit, cUnitStateAlive) < 1)
+   {
+      return; 
+   }
+   
+   int foodtech1 = cTechAcehFood1;
+   int foodtech2 = cTechAcehFood2;
+   int foodtech3 = cTechAcehFood3;
+   int woodtech1 = cTechAcehWood1;
+   int woodtech2 = cTechAcehWood2;
+   int woodtech3 = cTechAcehWood3;
+   int goldtech1 = cTechAcehGold1;
+   int goldtech2 = cTechAcehGold2;
+   int goldtech3 = cTechAcehGold3;
+
+   if(civIsJavanese() == true)
+   {
+      foodtech1 = cTechsaniani;
+      foodtech2 = cTechsarit;
+      foodtech3 = cTechspacul;
+      woodtech1 = cTechskuputarung;
+      woodtech2 = cTechsmeja;
+      woodtech3 = cTechsalmari;
+      goldtech1 = cTechsakik;
+      goldtech2 = cTechsbacan;
+      goldtech3 = cTechsintan;       
+   }
+
+   // Disable rule once both upgrades are available
+   if ((kbTechGetStatus(foodtech3) == cTechStatusActive) &&
+       (kbTechGetStatus(goldtech3) == cTechStatusActive) &&
+       (kbTechGetStatus(woodtech3) == cTechStatusActive))
+   {
+       echoMessage("Market done");
+      xsDisableSelf();
+      return;
+   }
+   
+// Research both upgrades as they become available, but only if there are enough war huts around
+   if (kbTechGetStatus(foodtech1) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, foodtech1);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(foodtech1, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(foodtech1));
+      return;
+   }
+   if (kbTechGetStatus(foodtech2) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, foodtech2);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(foodtech2, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(foodtech2));
+      return;
+   }
+   if (kbTechGetStatus(foodtech3) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, foodtech3);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(foodtech3, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(foodtech3));
+      return;
+   }
+   
+   if (kbTechGetStatus(woodtech1) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, woodtech1);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(woodtech1, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(woodtech1));
+      return;
+   }
+   if (kbTechGetStatus(woodtech2) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, woodtech2);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(woodtech2, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(woodtech2));
+      return;
+   }
+   if (kbTechGetStatus(woodtech3) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, woodtech3);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(woodtech3, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(woodtech3));
+      return;
+   }
+
+   if (kbTechGetStatus(goldtech1) == cTechStatusObtainable)
+   {
+      echoMessage(kbGetTechName(goldtech1)+" obtainable");
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, goldtech1);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(goldtech1, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(goldtech1));
+      return;
+   }
+   if (kbTechGetStatus(goldtech2) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, goldtech2);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(goldtech2, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(goldtech2));
+      return;
+   }
+   if (kbTechGetStatus(goldtech3) == cTechStatusObtainable)
+   {
+      marketUpgradePlan = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, goldtech3);
+      if (marketUpgradePlan >= 0)
+         aiPlanDestroy(marketUpgradePlan);
+      createSimpleResearchPlan(goldtech3, -1, cEconomyEscrowID, 50);
+      echoMessage("researching "+kbGetTechName(goldtech3));
+      return;
+   }
+
+}
+//RizkyR: Javan research Royal Edicts
+rule royalEdictMonitor
+inactive
+minInterval 240 
 {
    int upgradePlanID = -1;
 
    // Disable rule once the upgrades are available
-   if (civIsNative() == true)
+   if (civIsJavanese() != true)
    {
-      if (kbTechGetStatus(cTechSpiritMedicine) == cTechStatusActive)
-      {
-         xsDisableSelf();
-         return;
-      }
-   }
-   else if (civIsAsian() == true)
-   {
-      if (kbTechGetStatus(cTechypMarketSpiritMedicine) == cTechStatusActive)
-      {
-         xsDisableSelf();
-         return;
-      }
+      xsDisableSelf();
+      return;
    }
    else
    {
-      if ((kbTechGetStatus(cTechGreatCoat) == cTechStatusActive) &&
-          (kbTechGetStatus(cTechBlunderbuss) == cTechStatusActive))
+       echoMessage("i'm javan");
+      if (  ((
+      //SOI NEW CIV
+            // (kbGetCiv() == cCivYogyakarta) || 
+            (kbGetCiv() == cCivRussians)) &&
+             ((kbTechGetStatus(cTechsrekeputren)    == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrepepatihdalem) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrepakualaman)   == cTechStatusActive)))
+            ||
+            ((
+            // (kbGetCiv() == cCivMadurese) || 
+            (kbGetCiv() == cCivPirate)) &&
+             ((kbTechGetStatus(cTechsrecakraningrat) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrepakunataningrat) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrepamekasan) == cTechStatusActive)))
+            ||        
+            ((
+            // (kbGetCiv() == cCivMangkunegaran) || 
+            (kbGetCiv() == cCivGermans)) &&
+             ((kbTechGetStatus(cTechsrechallengeoflegitimacy) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsresugarenterprise) == cTechStatusActive)))
+            ||            
+            ((
+            // (kbGetCiv() == cCivSurakarta) || 
+            (kbGetCiv() == cCivOttomans)) &&
+             ((kbTechGetStatus(cTechsrebaroqueart) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsretraditionalculture) == cTechStatusActive)))
+            ||        
+            ((
+            // (kbGetCiv() == cCivErucakran) || 
+            (kbGetCiv() == cCivSpanish)) &&
+             ((kbTechGetStatus(cTechsrerebellionallies) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsregunpowdermills) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrenomadcapital) == cTechStatusActive)))
+            ||        
+            ((
+            //(kbGetCiv() == cCivBanten) || 
+            (kbGetCiv() == cCivFrench)) &&
+             ((kbTechGetStatus(cTechsrepajajaranlegacy) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsrevassalofcirebon) == cTechStatusActive)) &&
+             ((kbTechGetStatus(cTechsredalungbojong) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsresharifaregency) == cTechStatusActive)) &&
+             ((kbTechGetStatus(cTechsreradininten) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsredissolutionofbanten) == cTechStatusActive))
+            )
+            ||        
+            ((kbGetCiv() == cCivPriangan) &&
+             ((kbTechGetStatus(cTechsrepajajaranlegacypriangan) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsresurakartanterritory) == cTechStatusActive)) &&
+             ((kbTechGetStatus(cTechsrebandung) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsregarut) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsretasikmalaya) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsresumedang) == cTechStatusActive))
+            )/*
+            ||        
+            ((kbGetCiv() == cCivPalembang) &&
+             ((kbTechGetStatus(cTechsreSrivijayaHeritage) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsreTulangBawang) == cTechStatusActive) ||
+             (kbTechGetStatus(cTechsreAfdelingPalembang) == cTechStatusActive))
+            )*/                
+          )
       {
+          echoMessage("royal edict done");
          xsDisableSelf();
          return;
       }
    }
-
+   
+   if(kbGetAge() < cAge3){
+       return;
+   }
+   
+   int royalEdictChoice = aiRandInt(5);   
+   int royalEdictSecondChoice = aiRandInt(2);
    // Get upgrades one at a time
-   if (kbTechGetStatus(cTechSpiritMedicine) == cTechStatusObtainable)
+   if(
+   //SOI NEW CIVS
+   // (kbGetCiv() == cCivYogyakarta) || (kbGetCiv() == cCivErucakran) || (kbGetCiv() == cCivMadurese)
+       // ||
+      (kbGetCiv() == cCivRussians) || (kbGetCiv() == cCivSpanish) || (kbGetCiv() == cCivPirate))
    {
-      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSpiritMedicine);
-      if (upgradePlanID >= 0)
-         aiPlanDestroy(upgradePlanID);
-      createSimpleResearchPlan(cTechSpiritMedicine, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
-      return;
+      if(royalEdictChoice < 2){
+         if (kbTechGetStatus(cTechsrekeputren) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrekeputren);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrekeputren, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching keputren");
+            return;
+         }
+         if (kbTechGetStatus(cTechsrecakraningrat) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrecakraningrat);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrecakraningrat, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Cakraningkrat");
+            return;
+         }         
+         if (kbTechGetStatus(cTechsrerebellionallies) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrerebellionallies);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrerebellionallies, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Rebellion Allies");
+            return;
+         }         
+      }
+      else if(royalEdictChoice < 4){
+         if (kbTechGetStatus(cTechsrepepatihdalem) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepepatihdalem);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepepatihdalem, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pepatih Dalem");
+            return;
+         }
+         if (kbTechGetStatus(cTechsrepakunataningrat) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepakunataningrat);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepakunataningrat, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pakunataningrat");
+            return;
+         }         
+         if (kbTechGetStatus(cTechsregunpowdermills) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsregunpowdermills);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsregunpowdermills, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Gunpowder Mill");
+            return;
+         }         
+      }
+      else{
+         if (kbTechGetStatus(cTechsrepakualaman) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepakualaman);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepakualaman, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pakualaman");
+            return;
+         }
+         if (kbTechGetStatus(cTechsrepamekasan) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepamekasan);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepamekasan, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pamekasan");
+            return;
+         }
+         if (kbTechGetStatus(cTechsrenomadcapital) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrenomadcapital);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrenomadcapital, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Nomad Capital");
+            return;
+         }         
+      }
    }
-   if (kbTechGetStatus(cTechypMarketSpiritMedicine) == cTechStatusObtainable)
-   {
-      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechypMarketSpiritMedicine);
-      if (upgradePlanID >= 0)
-         aiPlanDestroy(upgradePlanID);
-      createSimpleResearchPlan(cTechypMarketSpiritMedicine, getUnit(cUnitTypeypTradeMarketAsian), cEconomyEscrowID, 50);
-      return;
-   }
-   if (kbTechGetStatus(cTechGreatCoat) == cTechStatusObtainable)
-   {
-      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechGreatCoat);
-      if (upgradePlanID >= 0)
-         aiPlanDestroy(upgradePlanID);
-      createSimpleResearchPlan(cTechGreatCoat, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
-      return;
-   }
-   if (kbTechGetStatus(cTechBlunderbuss) == cTechStatusObtainable)
-   {
-      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechBlunderbuss);
-      if (upgradePlanID >= 0)
-         aiPlanDestroy(upgradePlanID);
-      createSimpleResearchPlan(cTechBlunderbuss, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
-      return;
-   }
+   else
+   {   
+      royalEdictChoice = aiRandInt(2); 
+      if(royalEdictChoice < 1){
+         if (kbTechGetStatus(cTechsrechallengeoflegitimacy) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrechallengeoflegitimacy);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrechallengeoflegitimacy, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Challenge of Legitimacy");
+            return;
+         }
+         if (kbTechGetStatus(cTechsrebaroqueart) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrebaroqueart);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrebaroqueart, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Baroque Art");
+            return;
+         }         
+
+         if (kbTechGetStatus(cTechsrepajajaranlegacy) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepajajaranlegacy);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepajajaranlegacy, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pajajaran Legacy");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsredalungbojong) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsredalungbojong);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsredalungbojong, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Dalung Bojong");
+            return;
+         }         
+         if (kbTechGetStatus(cTechsreradininten) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsreradininten);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsreradininten, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 3 Radin Inten");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsrepajajaranlegacypriangan) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrepajajaranlegacypriangan);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrepajajaranlegacypriangan, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Pajajaran Legacy.");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsrebandung) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrebandung);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrebandung, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Bandung");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsretasikmalaya) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsretasikmalaya);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsretasikmalaya, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Tasik.");
+            return;
+         }        
+      }
+      else{
+         if (kbTechGetStatus(cTechsresugarenterprise) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsresugarenterprise);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsresugarenterprise, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Sugar Enterprise");
+            return;
+         }
+         if (kbTechGetStatus(cTechsretraditionalculture) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsretraditionalculture);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsretraditionalculture);
+            echoMessage("Researching Traditional Culture");
+            return;
+         }         
+
+         if (kbTechGetStatus(cTechsrevassalofcirebon) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsrevassalofcirebon);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsrevassalofcirebon, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Vassal of Cirebon");
+            return;
+         }
+         if (kbTechGetStatus(cTechsresharifaregency) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsresharifaregency);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsresharifaregency, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Sharifa Regency");
+            return;
+         }
+         if (kbTechGetStatus(cTechsredissolutionofbanten) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsredissolutionofbanten);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsredissolutionofbanten, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 3 Dissolution of Banten");
+            return;
+         }
+         if (kbTechGetStatus(cTechsresurakartanterritory) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsresurakartanterritory);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsresurakartanterritory, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Surakartan Territory.");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsregarut) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsregarut);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsregarut, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Garut");
+            return;
+         }        
+         if (kbTechGetStatus(cTechsresumedang) == cTechStatusObtainable)
+         {
+            upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsresumedang);
+            if (upgradePlanID >= 0)
+               aiPlanDestroy(upgradePlanID);
+            createSimpleResearchPlan(cTechsresumedang, getUnit(cUnitTypeTownCenter), cEconomyEscrowID, 50);
+            echoMessage("Researching Tier 2 Sumedang.");
+            return;
+         }   
+      }
+   }   
 }
 
 
@@ -24183,7 +25966,6 @@ minInterval 90
    }
 }
 
-
 rule shrineUpgradeMonitor
 inactive
 minInterval 90
@@ -24505,6 +26287,60 @@ minInterval 30
       planID = createSimpleBuildPlan(cUnitTypeNoblesHut, 1, 75, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
       aiPlanAddUnitType(planID, cUnitTypeNoblesHutTravois, 1, 1, 1);
    }
+   //RizkyR: plantation & military wagon
+	if (kbUnitCount(cMyID, cUnitTypePlantationWagon, cUnitStateAlive) > 0)
+	{
+		if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypePlantation) < 0)
+		{
+			planID = createSimpleBuildPlan(cUnitTypePlantation, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 0);
+			aiPlanAddUnitType(planID, cUnitTypePlantationWagon, 1, 1, 1);
+            echoMessage("I shall build plantation with this wagon");
+		}
+	}
+   
+	if (kbUnitCount(cMyID, cUnitTypeBarrackWagon, cUnitStateAlive) > 0)
+	{
+		if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gBarracksUnit) < 0)
+		{
+			planID = createSimpleBuildPlan(gBarracksUnit, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+			aiPlanAddUnitType(planID, cUnitTypeBarrackWagon, 1, 1, 1);
+            echoMessage("I shall build barracks with this wagon");
+		}
+		if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, gStableUnit) < 0)
+		{
+			planID = createSimpleBuildPlan(gStableUnit, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+			aiPlanAddUnitType(planID, cUnitTypeBarrackWagon, 1, 1, 1);
+            echoMessage("I shall build stable with this wagon");
+		}
+		if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeArtilleryDepot) < 0)
+		{
+			planID = createSimpleBuildPlan(cUnitTypeArtilleryDepot, 1, 100, true, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 0);
+			aiPlanAddUnitType(planID, cUnitTypeBarrackWagon, 1, 1, 1);
+            echoMessage("I shall build depot with this wagon");
+		}
+	}
+    
+//RizkyR Mangkunegara build Indigo Factory
+	if (kbUnitCount(cMyID, cUnitTypeIndigoFactoryWagon, cUnitStateAlive) > 0)
+	{
+		if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeIndigoFactory) < 0)
+		{
+			planID = createSimpleBuildPlan(cUnitTypeIndigoFactory, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 0);
+			aiPlanAddUnitType(planID, cUnitTypeIndigoFactoryWagon, 1, 1, 1);
+            echoMessage("I shall build indigo factory with this wagon");
+		}
+	}
+   //SOI NEW CIVS siak
+	// if (kbUnitCount(cMyID, cUnitTypeSSurauWagon, cUnitStateAlive) > 0)
+	// {
+		// if (aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMadrasah) < 0)
+		// {
+			// planID = createSimpleBuildPlan(cUnitTypeSMadrasah, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 0);
+			// aiPlanAddUnitType(planID, cUnitTypeSSurauWagon, 1, 1, 1);
+            // echoMessage("I shall build madrasah with this wagon");
+		// }
+	// }
+        
 }
 
 
@@ -25101,8 +26937,9 @@ runImmediately
 	if (kbUnitCount(cMyID, cUnitTypeSMahligai, cUnitStateAlive) >= 1)
 		return;
 	
-	if (kbGetCiv() == cCivBritish)
+    if(civIsMalay() == true) 
 	{
+      //RizkyR: change cCivBritish to civIsMalay
 		int mahligaiPlanID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeSMahligai);
 		if (mahligaiPlanID < 0)
 			createSimpleBuildPlan(cUnitTypeSMahligai, 1, 100, true, cEconomyEscrowID, kbBaseGetMainID(cMyID), 1);
@@ -25131,28 +26968,56 @@ minInterval 60
 		(kbTechGetStatus(cTechturkcataphract) == cTechStatusActive) && 
 		(kbTechGetStatus(cTechsharpenedbamboo) == cTechStatusActive) && 
 		(kbTechGetStatus(cTechhardenedwood) == cTechStatusActive) && 
-		(kbTechGetStatus(cTechirontip) == cTechStatusActive))
+		(kbTechGetStatus(cTechirontip) == cTechStatusActive)
+        //RizkyR add armor, cavalry, & elephant techs
+         && 
+		(kbTechGetStatus(cTechshieldrattan) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechshieldcopper) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechshielddamask) == cTechStatusActive) &&
+        
+		(kbTechGetStatus(cTechheadcloth) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechhelmetbronze) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechhelmetdamask) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechtuak) == cTechStatusActive) && 
+		(kbTechGetStatus(cTecharak) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechliqueur) == cTechStatusActive) &&
+        
+		(kbTechGetStatus(cTechhay) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechlongbeans) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechbanana) == cTechStatusActive) &&
+        (kbTechGetStatus(cTechwoodenhowdah) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechdamaskhowdah) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechroyalhowdah) == cTechStatusActive) &&
+        
+        (kbTechGetStatus(cTechbronzealloy) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechdamasksteel) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechcarbonsteel) == cTechStatusActive) &&
+        (kbTechGetStatus(cTechblackpowderball) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechmalaygrapeshot) == cTechStatusActive) && 
+		(kbTechGetStatus(cTechrubbertire) == cTechStatusActive))
 	{
+        echoMessage("complete perpustakaan");
 		xsDisableSelf();
 		return;
 	}
-	
+
 	if (kbUnitCount(cMyID, cUnitTypeSPerpustakaan, cUnitStateAlive) < 1)
 		return;
 	
 	int perpustakaanPlanID = -1;
 	
 	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechmoroarmour);
-	if ( (kbTechGetStatus(cTechmoroarmour) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	if ( (kbTechGetStatus(cTechmoroarmour) == cTechStatusObtainable) && (perpustakaanPlanID < 0))
 	{
 		createSimpleResearchPlan(cTechmoroarmour, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
 		return;
 	}
 	
 	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsharpenedbamboo);
-	if ( (kbTechGetStatus(cTechsharpenedbamboo) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	if ( (kbTechGetStatus(cTechsharpenedbamboo) == cTechStatusObtainable) && (perpustakaanPlanID < 0))
 	{
 		createSimpleResearchPlan(cTechsharpenedbamboo, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+      echoMessage("researching sharpenedbamboo");
 		return;
 	}
 	
@@ -25171,7 +27036,7 @@ minInterval 60
 	}
 	
 	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechwoodenbow);
-	if ( (kbTechGetStatus(cTechwoodenbow) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	if ( (kbTechGetStatus(cTechwoodenbow) == cTechStatusObtainable) && (perpustakaanPlanID < 0))
 	{
 		createSimpleResearchPlan(cTechwoodenbow, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
 		return;
@@ -25206,7 +27071,7 @@ minInterval 60
 	}
 	
 	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechcompositebow);
-	if ( (kbTechGetStatus(cTechcompositebow) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	if ( (kbTechGetStatus(cTechcompositebow) == cTechStatusObtainable) && (perpustakaanPlanID < 0))
 	{
 		createSimpleResearchPlan(cTechcompositebow, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
 		return;
@@ -25220,7 +27085,7 @@ minInterval 60
 	}
 	
 	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechhardenedwood);
-	if ( (kbTechGetStatus(cTechhardenedwood) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	if ( (kbTechGetStatus(cTechhardenedwood) == cTechStatusObtainable) && (perpustakaanPlanID < 0))
 	{
 		createSimpleResearchPlan(cTechhardenedwood, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
 		return;
@@ -25267,4 +27132,270 @@ minInterval 60
 		createSimpleResearchPlan(cTechirontip, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
 		return;
 	}
+
+   // RizkyR add more techs
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechshieldrattan);
+	if ( (kbTechGetStatus(cTechshieldrattan) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechshieldrattan, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechshieldcopper);
+	if ( (kbTechGetStatus(cTechshieldcopper) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechshieldcopper, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechshielddamask);
+	if ( (kbTechGetStatus(cTechshielddamask) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechshielddamask, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+    
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechheadcloth);
+	if ( (kbTechGetStatus(cTechheadcloth) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechheadcloth, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechhelmetbronze);
+	if ( (kbTechGetStatus(cTechhelmetbronze) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechhelmetbronze, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechhelmetdamask);
+	if ( (kbTechGetStatus(cTechhelmetdamask) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechhelmetdamask, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+    
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechtuak);
+	if ( (kbTechGetStatus(cTechtuak) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechtuak, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTecharak);
+	if ( (kbTechGetStatus(cTecharak) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTecharak, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechliqueur);
+	if ( (kbTechGetStatus(cTechliqueur) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechliqueur, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechhay);
+	if ( (kbTechGetStatus(cTechhay) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechhay, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechlongbeans);
+	if ( (kbTechGetStatus(cTechlongbeans) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechlongbeans, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechbanana);
+	if ( (kbTechGetStatus(cTechbanana) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechbanana, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechwoodenhowdah);
+	if ( (kbTechGetStatus(cTechwoodenhowdah) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechwoodenhowdah, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechdamaskhowdah);
+	if ( (kbTechGetStatus(cTechdamaskhowdah) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechdamaskhowdah, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechroyalhowdah);
+	if ( (kbTechGetStatus(cTechroyalhowdah) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechroyalhowdah, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+      echoMessage("researching a waste of treasury");
+		return;
+	}
+
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechbronzealloy);
+	if ( (kbTechGetStatus(cTechbronzealloy) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechbronzealloy, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechdamasksteel);
+	if ( (kbTechGetStatus(cTechdamasksteel) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechdamasksteel, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechcarbonsteel);
+	if ( (kbTechGetStatus(cTechcarbonsteel) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechcarbonsteel, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechblackpowderball);
+	if ( (kbTechGetStatus(cTechblackpowderball) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechblackpowderball, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechmalaygrapeshot);
+	if ( (kbTechGetStatus(cTechmalaygrapeshot) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechmalaygrapeshot, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+	perpustakaanPlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechrubbertire);
+	if ( (kbTechGetStatus(cTechrubbertire) != cTechStatusActive) && (perpustakaanPlanID < 0))
+	{
+		createSimpleResearchPlan(cTechrubbertire, getUnit(cUnitTypeSPerpustakaan), cMilitaryEscrowID);
+		return;
+	}
+
 }
+
+rule settlerUpgradeMonitor
+inactive
+minInterval 180 // research to be started 3 minutes into Age 2
+{
+   int upgradePlanID = -1;
+
+   // Disable rule once the upgrades are available
+   if (civIsNative() == true)
+   {
+      if (kbTechGetStatus(cTechSpiritMedicine) == cTechStatusActive)
+      {
+         xsDisableSelf();
+         return;
+      }
+   }
+   else if (civIsAsian() == true)
+   {
+      if (kbTechGetStatus(cTechypMarketSpiritMedicine) == cTechStatusActive)
+      {
+         xsDisableSelf();
+         return;
+      }
+   }
+   //RizkyR: add javan tech
+   else if (civIsJavanese() == true){
+      if (kbTechGetStatus(cTechsjimat) == cTechStatusActive)
+      {
+         xsDisableSelf();
+         return;
+      }       
+   }
+   
+   else
+   {
+      if ((kbTechGetStatus(cTechGreatCoat) == cTechStatusActive) &&
+          (kbTechGetStatus(cTechBlunderbuss) == cTechStatusActive))
+      {
+         xsDisableSelf();
+         return;
+      }
+   }
+   // Get upgrades one at a time
+   if (kbTechGetStatus(cTechSpiritMedicine) == cTechStatusObtainable)
+   {
+      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechSpiritMedicine);
+      if (upgradePlanID >= 0)
+         aiPlanDestroy(upgradePlanID);
+      createSimpleResearchPlan(cTechSpiritMedicine, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
+      return;
+   }
+   if (kbTechGetStatus(cTechypMarketSpiritMedicine) == cTechStatusObtainable)
+   {
+      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechypMarketSpiritMedicine);
+      if (upgradePlanID >= 0)
+         aiPlanDestroy(upgradePlanID);
+      createSimpleResearchPlan(cTechypMarketSpiritMedicine, getUnit(cUnitTypeypTradeMarketAsian), cEconomyEscrowID, 50);
+      return;
+   }
+   if (kbTechGetStatus(cTechGreatCoat) == cTechStatusObtainable)
+   {
+      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechGreatCoat);
+      if (upgradePlanID >= 0)
+         aiPlanDestroy(upgradePlanID);
+      createSimpleResearchPlan(cTechGreatCoat, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
+      return;
+   }
+   if (kbTechGetStatus(cTechBlunderbuss) == cTechStatusObtainable)
+   {
+      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechBlunderbuss);
+      if (upgradePlanID >= 0)
+         aiPlanDestroy(upgradePlanID);
+      createSimpleResearchPlan(cTechBlunderbuss, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
+      return;
+   }
+   // RizkyR jimat for javanese
+   if (kbTechGetStatus(cTechsjimat) == cTechStatusObtainable)
+   {
+      upgradePlanID = aiPlanGetIDByTypeAndVariableType(cPlanResearch, cResearchPlanTechID, cTechsjimat);
+      if (upgradePlanID >= 0)
+         aiPlanDestroy(upgradePlanID);
+      createSimpleResearchPlan(cTechsjimat, getUnit(cUnitTypeMarket), cEconomyEscrowID, 50);
+      return;
+   }
+}
+
+//RizkyR: let Toba buffalo produce food
+//SOI NEW CIVS
+// rule TOBABUFFALO
+// inactive
+// group startup
+// minInterval 1
+// {
+    
+    // if(kbTechGetStatus(cTechSOIAIBuffaloAutogather) == cTechStatusObtainable){
+      // echoMessage("cheat tech obtainable");
+      // createSimpleResearchPlan(cTechSOIAIBuffaloAutogather, getUnit(cUnitTypeTownCenter), cRootEscrowID, 100);
+    // }
+    // else if(kbTechGetStatus(cTechSOIAIBuffaloAutogather) == cTechStatusUnobtainable){
+      // xsDisableSelf();
+      // return;
+    // }
+    
+    // if(kbTechGetStatus(cTechSOIAIBuffaloAutogather) == cTechStatusActive){
+      // echoMessage("use cheat tech");
+        // xsDisableSelf();
+    // }    
+// }
+
+// RizkyR Johor use cheat tech
+//SOI NEW CIVS
+// rule CHEATJOHOR
+// inactive
+// group startup
+// minInterval 1
+// {
+    
+    // if(kbTechGetStatus(cTechSOIAIJohor) == cTechStatusObtainable){
+      // echoMessage("cheat tech obtainable");
+      // createSimpleResearchPlan(cTechSOIAIJohor, getUnit(cUnitTypeTownCenter), cRootEscrowID, 100);
+    // }
+    // else if(kbTechGetStatus(cTechSOIAIJohor) == cTechStatusUnobtainable){
+      // xsDisableSelf();
+      // return;
+    // }
+    
+    // if(kbTechGetStatus(cTechSOIAIJohor) == cTechStatusActive){
+      // echoMessage("use cheat tech");
+        // xsDisableSelf();
+    // }    
+// }

@@ -914,6 +914,17 @@
 			<alwaysdisabledingrid>true</alwaysdisabledingrid>
 		</ability>
 	</ypspctokugawa>
+	<SParmossak>
+		<ability>
+			ypPowerDivineRight
+			<rof>45</rof>
+			<castonself>true</castonself>
+		</ability>
+		<ability>
+			ypPowerDivineBlow
+			<alwaysdisabledingrid>true</alwaysdisabledingrid>
+		</ability>
+	</SParmossak>
 	<SPost>
 		<ability>
 			ypUnitDaimyoAura
@@ -956,7 +967,37 @@
 			<rof>90</rof>
 		</ability>
 	</SUlama2>
+	<!-- //Jambi -->
+	<SUlamaJambi>
+		<ability>
+			PowerConvertGuardian
+			<rof>90</rof>
+		</ability>
+	</SUlamaJambi>
+	<SUlama2Jambi>
+		<ability>
+			PowerConvertGuardian
+			<rof>90</rof>
+		</ability>
+	</SUlama2Jambi>
 	<SPanglimaToba>
+		<ability>
+			PowerCrackshot
+			<tech>TobaSkillCrackshot</tech>
+			<rof>90</rof>
+		</ability>
+		<!-- <ability> -->
+			<!-- PowerCrackshot -->
+			<!-- <tech>Age0Toba</tech> -->
+			<!-- <rof>90</rof> -->
+		<!-- </ability> -->
+		<!-- //Nias -->
+		<ability>
+			PowerLOS
+			<tech>Age0Nias</tech>
+			<rof>120</rof>
+		</ability>
+		
 		<ability>
 			SPowerHatoban
 			<rof>360</rof>
@@ -967,15 +1008,86 @@
 			<rof>60</rof>
 		</ability>
 		<ability>
+			PowerSharpshooter
+			<tech>SOIAIBuffaloAutogather</tech>
+			<rof>60</rof>
+		<ability>
 			ypPowerDodge
 			<tech>ypDodge</tech>
 			<rof>60</rof>
 			<alwaysdisabledingrid>true</alwaysdisabledingrid>
 		</ability>
-		<ability>
-			PowerCrackshot
-			<tech>TobaSkillCrackshot</tech>
-			<rof>90</rof>
 		</ability>
 	</SPanglimaToba>
+<!-- //Borneo -->
+	<SKutta>
+		<ability>
+			PowerBroadside
+			<rof>60</rof>
+		</ability>
+	</SKutta>
+<!-- //Batak rework -->
+	<SDatuBatak>
+		<!-- Toba -->
+		<!-- karo -->
+		<ability>
+			SPowerKaroChloromancy0
+			<tech>BatakChloromancy2</tech>
+			<rof>60</rof>
+		</ability>
+		<ability>
+			SPowerKaroChloromancy1
+			<tech>BatakChloromancy3</tech>
+			<rof>60</rof>
+		</ability>
+		<ability>
+			SPowerKaroChloromancy2
+			<tech>BatakChloromancy4</tech>
+			<rof>60</rof>
+		</ability>
+		<ability>
+			SPowerKaroChloromancy3
+			<tech>BatakChloromancy5</tech>
+			<rof>60</rof>
+		</ability>
+	<!-- mandailing	 -->
+		<ability>
+			SPowerMandailingAlchemist
+			<tech>SBatakAlchemy</tech>
+			<rof>360</rof>
+		</ability>
+	</SDatuBatak>	
+	<SDatuGayo>	
+		<!-- gayo -->
+		<ability>
+			SPowerGayoExorcism
+			<tech>BatakExorcismAbility</tech>
+			<rof>180</rof>
+		</ability>
+		<ability>
+			PowerLOS
+			<tech>BatakOneiromancyAbility</tech>
+			<rof>60</rof>
+		</ability>
+	</SDatuGayo>	
+	<SGuruBatak>
+		<ability>
+			PowerBroadside
+			<rof>60</rof>
+		</ability>
+		<ability>
+			ypPowerSmokeBomb
+			<rof>60</rof>
+			<castonself>true</castonself>
+			<tech>SMandailingSmokeBomb</tech>
+		</ability>
+	</SGuruBatak>
+	<STetua>
+		<ability>
+			PowerCrackshot2
+			<rof>60</rof>
+			<tech>SMeriamPuntung</tech>
+		</ability>
+	</STetua>	
+	<!-- //Balinese -->	
 </abilities>

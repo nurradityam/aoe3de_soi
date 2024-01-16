@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //peranakan -->
+<tactics>
+	<action>
+		<name stringid="48958">GatherAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.010</modifymultiplier>
+		<modifyprotoid>SKuli</modifyprotoid>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">HPAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.30</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">HPAuraBuilding</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Building</modifyabstracttype>
+		<modifymultiplier>1.30</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GuardianAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<targetenemy>1</targetenemy>
+		<modifymultiplier>0.800</modifymultiplier>
+		<modifyabstracttype>Guardian</modifyabstracttype>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Normal
+		<action>GatherAura</action>
+		<action>HPAura</action>
+		<action>HPAuraBuilding</action>
+		<action>GuardianAura</action>
+	</tactic>
+</tactics>

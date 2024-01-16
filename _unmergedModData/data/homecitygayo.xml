@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<homecity>
+	<civ>GayoMain</civ>
+	<name>$$115005$$</name>
+	<heroname>$$09933$$</heroname>
+	<gatherpointunit>HomeCityGatherFlag</gatherpointunit>
+	<visual>iroquois\iroquois_homecity.xml</visual>
+	<watervisual>iroquois\iroquois_homecity_water.xml</watervisual>
+	<backgroundvisual>iroquois\iroquois_background.xml</backgroundvisual>
+	<pathdata>iroquois\pathable_area.gr2</pathdata>
+	<camera>iroquois\iroquois_homecity_camera.cam</camera>
+	<widescreencamera>iroquois\iroquois_homecity_widescreencamera.cam</widescreencamera>
+	<transportroundtriptime>1</transportroundtriptime>
+	<transportactivationtime>0</transportactivationtime>
+	<level>10</level>
+	<skillpoints>9</skillpoints>
+	<lightset>Japan</lightset>
+	<watertype>Japan_HC</watertype>
+	<numpropunlocksearned>0</numpropunlocksearned>
+	<ambientsounds>homecity\iroquoisambientsounds.xml</ambientsounds>
+	<xsai>generic_city</xsai>
+	<coffers>
+		<current>
+			<food>0</food>
+			<wood>0</wood>
+			<gold>0</gold>
+			<fame>0</fame>
+			<ships>0</ships>
+			<skillpoints>0</skillpoints>
+			<xp>0</xp>
+		</current>
+		<maximum>
+			<food>0</food>
+			<wood>0</wood>
+			<gold>0</gold>
+			<fame>0</fame>
+			<ships>0</ships>
+			<skillpoints>-1</skillpoints>
+			<xp>-1</xp>
+		</maximum>
+	</coffers>
+	<cards>
+		<card>
+			<name>SHCShipPenetah1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipPenetah2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipPenetah1</prereqtech>
+			<age>1</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipPenetah3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipPenetah2</prereqtech>
+			<age>0</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipPenetah4</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipPenetah3</prereqtech>
+			<age>1</age>
+			<displayunitcount>5</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipFoodCrates1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>300</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipFoodCrates2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>HCShipFoodCrates1</prereqtech>
+			<age>1</age>
+			<infiniteinlastage>1</infiniteinlastage>
+			<displayunitcount>600</displayunitcount>
+		</card>
+		<card>
+			<name>HCShipWoodCrates1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>300</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipWoodCrates2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>HCShipWoodCrates1</prereqtech>
+			<age>1</age>
+			<displayunitcount>600</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipCoinCrates1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>300</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCShipCoinCrates2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>HCShipCoinCrates1</prereqtech>
+			<age>1</age>
+			<displayunitcount>600</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates1</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>300</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>HCXPShipMixedCrates1</prereqtech>
+			<age>1</age>
+			<displayunitcount>600</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates3</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCXPShipMixedCrates2</prereqtech>
+			<age>2</age>
+			<displayunitcount>900</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates4</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCXPShipMixedCrates3</prereqtech>
+			<age>3</age>
+			<displayunitcount>1500</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates5</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCXPShipMixedCrates4</prereqtech>
+			<age>2</age>
+			<displayunitcount>1200</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCrates6</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCXPShipMixedCrates5</prereqtech>
+			<age>3</age>
+			<displayunitcount>1800</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCXPShipMixedCratesRepeat</name>
+			<maxcount>-1</maxcount>
+			<level>40</level>
+			<prereqtech>HCXPShipMixedCrates6</prereqtech>
+			<age>3</age>
+			<displayunitcount>1500</displayunitcount>
+		</card>
+		<card>
+			<name>SHCShipDatuTeam</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipSibaso2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipDatuTeam</prereqtech>
+			<age>3</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		
+		<card>
+			<name>SHCKuru</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>		
+		<card>
+			<name>SHCPetaweranGajah</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>		
+		<card>
+			<name>SHCGajahPuteh</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>			
+		<card>
+			<name>SHCKetike</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCMalemDiwa</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>			
+		<card>
+			<name>SHCScatteredResistances</name>
+			<maxcount>-1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>5</displayunitcount>
+		</card>			
+		<card>
+			<name>SHCShipCoveredWagonGayo</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>		
+		<card>
+			<name>SHCShipWildElephantTeam</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>4</displayunitcount>
+		</card>		
+		<card>
+			<name>SHCOrosOpat</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCRajahPelaris</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCTafsirMimpi</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCSelensung</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCBenangPancarona</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>			
+		<card>
+			<name>SHCPatingBerpucuk</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>			
+		<card>
+			<name>SHCPengguntur</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>			
+		<card>
+			<name>SHCPedangBerkunci</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>		
+		<card>
+			<name>SHCMountainWarfare</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCHikayatPrangSabi</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCKepiahTembege</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKelipeh</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCKepiahTembege</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCKejurunDamage</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKejurunHitpoints</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKejurunCombat</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCGajahDamage</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCGajahHitpoints</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCGajahCombat</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCShipAciAci1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipAciAci2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>12</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipPasukente1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipPasukente2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>10</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipPasukente3</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>14</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipParangan1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipParangan2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipParangan1</prereqtech>
+			<age>3</age>
+			<displayunitcount>9</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipParangan3</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipParangan2</prereqtech>
+			<age>2</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipUlubalang1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>5</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipUlubalang2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipUlubalang1</prereqtech>
+			<age>3</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipUlubalang3</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipUlubalang2</prereqtech>
+			<age>3</age>
+			<displayunitcount>8</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipInenMayak1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>4</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipInenMayak2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>7</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipAbangKul1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>2</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipAbangKul2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>4</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipGajahKenaikanRepeat</name>
+			<maxcount>-1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>2</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipKudePacu1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>3</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipKudePacu2</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>6</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipKudePacu3</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>7</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCPepiluk</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCShipKubu1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>1</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCShipKubu2</name>
+			<maxcount>1</maxcount>
+			<level>20</level>
+			<prereqtech>HCPioneers</prereqtech>
+			<age>3</age>
+			<displayunitcount>2</displayunitcount>
+		</card>
+		<card>
+			<name>SHCShipKubu3</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>SHCShipKubu2</prereqtech>
+			<age>2</age>
+			<displayunitcount>3</displayunitcount>
+		</card>	
+		<card>
+			<name>SHCGedabuhen</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCBantut</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCNaturalBarrier</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCEmpusKuning</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKekasihen</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCLamas</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCJung</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCRuyuh</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCApamKolak</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCTasakMatah</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCPenyerahniIlmu</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKeweDaun</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>5</displayunitcount>
+		</card>
+		<card>
+			<name>SHCGayoPlantation</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>1</displayunitcount>
+		</card>
+		<card>
+			<name>SHCDidisen</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>1</displayunitcount>
+		</card>
+		<card>
+			<name>SHCTurunMani</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCWondermanofGayo</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCAcehExpeditionaryCompany</name>
+			<maxcount>2</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+			<displayunitcount>6</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCAcehExpeditionaryForce1</name>
+			<maxcount>2</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCAcehExpeditionaryForce2</name>
+			<maxcount>2</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>13</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCAcehBrigade</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>16</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCDeliAllies1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCTrumonAllies1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCTrumonAllies2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCTrumonAllies3</name>
+			<maxcount>-1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKejurunBukitSupport</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>20</displayunitcount>
+		</card>
+		<card>
+			<name>SHCKejurunLingeSupport</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>10</displayunitcount>
+		</card>
+		<card>
+			<name>SHCKejurunSiahUtamaSupport</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>25</displayunitcount>
+		</card>
+		<card>
+			<name>SHCKejurunPetiamangSupport</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+			<displayunitcount>15</displayunitcount>
+		</card>
+
+		<!--<card>
+			<name>PLACEHOLDER</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCNativeCombat</prereqtech>
+			<age>3</age>
+		</card>-->
+		<card>
+			<name>HCAdvancedDock</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<!--<card>
+			<name>HCEngineeringSchool</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>-->
+		
+		<card>
+			<name>HCFishMarket</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCSchooners</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCFishMarket</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCNaniura</name>
+			<maxcount>1</maxcount>
+			<level>15</level>
+			<prereqtech>HCSchooners</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>HCSawmills</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCExoticHardwoods</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCSawmills</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCFurrierTeamBatak</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCSpiceTradeBatak</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCFurrierTeamBatak</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCAndaliman</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>1</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCMarsiadapari</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCBubus</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCAndaliman2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<!--<card>
+			<name>HCSustainableAgriculture</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCMarsiadapari</prereqtech>
+			<age>1</age>
+		</card>-->
+		<card>
+			<name>HCSilversmith</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCAndaliman</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>HCXPMedicineTeam</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCCamphorTrade</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCXPMedicineTeam</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCTulpang</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCXPMedicineTeam</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>HCRumDistillery</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCDaliniHorbo</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCMangalahatHorbo</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCDaliniHorbo</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCUlaonUnjuk</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCMangalahatHorbo</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>HCStonemasons</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>HCXPLandGrab</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>HCStonemasons</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCGorga</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCTarombo</name>
+			<maxcount>1</maxcount>
+			<level>40</level>
+			<prereqtech>-1</prereqtech>
+			<age>3</age>
+		</card>
+		
+		<!-- Batak rework HC -->
+		<card>
+			<name>SHCBedu</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<displayunitcount>10</displayunitcount>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCKalPituMata</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>-1</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCSilat</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCNewWaysBatak</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCExtensiveFortifications</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>HCHeavyFortifications</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCExtensiveFortifications</prereqtech>
+			<age>3</age>
+		</card>
+		<card>
+			<name>HCImprovedBuildings</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>HCExtensiveFortifications</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCRajah</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCAksaraGayoLinge</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCRajah</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCHadatuon</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCAksaraGayoLinge</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCBelah</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCAksaraGayoLinge</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCBeserinen</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCBelah</prereqtech>
+			<age>2</age>
+		</card>
+		<card>
+			<name>SHCAdvancedJabu</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCAdvancedMarketHall</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCAdvancedPalace</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCBattlefieldConstructionBatak</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCIkanJurung</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCMarsolu</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCBambooPalisade</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCGorga2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>-1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCShipBalianInfinite</name>
+			<maxcount>-1</maxcount>
+			<level>10</level>
+			<displayunitcount>1</displayunitcount>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCLesungBatuTeam</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCKincungTeam</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCAndaliman</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCManggore</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCRamuanTEAM</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCParbaringin</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCIncenseGum</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCBuffaloOrnament</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCJambarJuhut</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCMarsiadapari2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCOldWaysBatak</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>SHCIncenseTrade</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+		</card>
+		<card>
+			<name>HCXPShipFishingBoats</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>-1</prereqtech>
+			<age>0</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipSolu1</name>
+			<maxcount>1</maxcount>
+			<level>0</level>
+			<prereqtech>SHCShipFishingBoats</prereqtech>
+			<age>1</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipSoluBolon1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipSolu1</prereqtech>
+			<age>1</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipSoluBolon2</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipSoluBolon1</prereqtech>
+			<age>2</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipSoluBolon3</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipSoluBolon2</prereqtech>
+			<age>3</age>
+			<displayunitcount>4</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>HCNavalCombat</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipSolu1</prereqtech>
+			<age>1</age>
+		</card>
+		<card>
+			<name>SHCShipPinsalang1</name>
+			<maxcount>1</maxcount>
+			<level>10</level>
+			<prereqtech>SHCShipSoluBolon1</prereqtech>
+			<age>2</age>
+			<displayunitcount>2</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>
+		<card>
+			<name>SHCShipPinsalang2</name>
+			<maxcount>1</maxcount>
+			<level>25</level>
+			<prereqtech>SHCShipPinsalang1</prereqtech>
+			<age>3</age>
+			<displayunitcount>3</displayunitcount>
+			<infiniteinlastage>1</infiniteinlastage>
+		</card>		
+	</cards>
+	<decks>
+		<deck>
+			<name>$$41681$$</name>
+			<cards>
+				<card>SHCShipPenetah1</card>
+				<card>HCShipFoodCrates1</card>
+				<card>HCShipCoveredWagons</card>
+				<card>SHCJuhutBontar</card>
+				<card>SHCShipParmossak1</card>
+				<card>SHCShipParmossak2</card>
+				<card>SHCShipHujur1</card>
+				<card>SHCShipHupas1</card>
+				<card>SHCShipBambooRam</card>
+				<card>SHCShipAmbalang1</card>
+				<card>SHCShipRostaha1</card>
+				<card>HCXPTownDance</card>
+				<card>HCXPShipTravois1</card>
+				<card>SHCFurrierTeamBatak</card>
+				<card>HCXPShipFishingBoats</card>
+			</cards>
+		</deck>
+		<deck>
+			<name>$$41682$$</name>
+			<default/>
+			<cards>
+				<card>SHCShipPenetah1</card>
+				<card>HCShipFoodCrates1</card>
+				<card>HCShipCoveredWagons</card>
+				<card>SHCJuhutBontar</card>
+				<card>SHCShipParmossak1</card>
+				<card>SHCShipParmossak2</card>
+				<card>SHCShipHujur1</card>
+				<card>SHCShipHupas1</card>
+				<card>SHCShipBambooRam</card>
+				<card>SHCShipAmbalang1</card>
+				<card>SHCShipRostaha1</card>
+				<card>HCXPTownDance</card>
+				<card>HCXPShipTravois1</card>
+				<card>SHCFurrierTeamBatak</card>
+				<card>HCXPShipFishingBoats</card>
+			</cards>
+		</deck>
+	</decks>
+	<building>
+		<name>Estate</name>
+		<visual>
+			<file>iroquois\iroquois estate.xml</file>
+			<bone>bone_estate</bone>
+		</visual>
+		<uix>150</uix>
+		<uiy>200</uiy>
+		<camera>iroquois\iroquois_homecity_estate_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_estate_camera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\estate_icon</portrait>
+		<displaynamestringid>24968</displaynamestringid>
+		<rolloverstringid>25537</rolloverstringid>
+		<obtainabletechs/>
+		<activetechs/>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+		<mercbuilding>1</mercbuilding>
+	</building>
+	<building>
+		<name>Market</name>
+		<visual>
+			<file>iroquois\iroquois_tradecenter.xml</file>
+			<bone>bone_market</bone>
+			<animstatemachine>SM_IRO_Chief</animstatemachine>
+		</visual>
+		<uix>250</uix>
+		<uiy>375</uiy>
+		<camera>iroquois\iroquois_homecity_market_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_market_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\market_icon</portrait>
+		<displaynamestringid>43798</displaynamestringid>
+		<rolloverstringid>25536</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.7" y="1.0">SHCShipPenetah1</tech>
+			<tech x="0.7" y="2.0">SHCShipPenetah2</tech>
+			<tech x="0.7" y="3.0">SHCShipPenetah3</tech>
+			<tech x="0.7" y="4.0">SHCShipPenetah4</tech>
+			<tech x="0.7" y="5.0">SHCKuru</tech>
+			<tech x="0.7" y="6.0">SHCKalPituMata</tech>
+			<tech x="0.7" y="7.0">SHCScatteredResistances</tech>
+			<tech x="1.7" y="1.0">HCShipFoodCrates1</tech>
+			<tech x="2.5" y="1.0">HCShipWoodCrates1</tech>
+			<tech x="3.3" y="1.0">HCShipCoinCrates1</tech>
+			<tech x="1.7" y="2.0">HCShipFoodCrates2</tech>
+			<tech x="2.5" y="2.0">HCShipWoodCrates2</tech>
+			<tech x="3.3" y="2.0">HCShipCoinCrates2</tech>
+			<tech x="3.3" y="4.0">SHCPetaweranGajah</tech>
+			<tech x="3.3" y="5.0">SHCGajahPuteh</tech>
+			<tech x="4.3" y="1.0">HCXPShipMixedCrates1</tech>
+			<tech x="4.3" y="2.0">HCXPShipMixedCrates2</tech>
+			<tech x="4.3" y="3.0">HCXPShipMixedCrates3</tech>
+			<tech x="4.3" y="4.0">HCXPShipMixedCrates4</tech>
+			<tech x="4.3" y="5.0">HCXPShipMixedCrates5</tech>
+			<tech x="4.3" y="6.0">HCXPShipMixedCrates6</tech>
+			<tech x="4.3" y="7.0">HCXPShipMixedCratesRepeat</tech>
+			<tech x="5.3" y="2.0">SHCShipCoveredWagonGayo</tech>
+			<tech x="5.3" y="3.0">SHCKetike</tech>
+			<tech x="5.3" y="5.0">SHCMalemDiwa</tech>
+			<tech x="5.3" y="6.0"></tech>
+			<tech x="6.2" y="2.0">SHCShipBuffaloBatakTeam</tech>
+			<tech x="6.2" y="3.0">SHCShipWildElephantTeam</tech>
+			<tech x="6.2" y="4.0">SHCShipBuffalo1Batak</tech>
+			<tech x="6.2" y="5.0">SHCBedu</tech>
+			<tech x="5.3" y="1.0">SHCOrosOpat</tech>
+			<tech x="6.2" y="1.0">SHCRajahPelaris</tech>
+			<tech x="7.0" y="1.0">SHCTafsirMimpi</tech>
+			<tech x="7.8" y="1.0">SHCSelensung</tech>
+			<tech x="8.6" y="1.0">SHCBenangPancarona</tech>
+			<tech x="7.1" y="7.0"></tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech x="0.7" y="1.0">SHCShipPenetah1</tech>
+			<tech x="0.7" y="2.0">SHCShipPenetah2</tech>
+			<tech x="0.7" y="3.0">SHCShipPenetah3</tech>
+			<tech x="0.7" y="4.0">SHCShipPenetah4</tech>
+			<tech x="0.7" y="5.0">SHCKuru</tech>
+			<tech x="1.7" y="1.0">HCShipFoodCrates1</tech>
+			<tech x="2.5" y="1.0">HCShipWoodCrates1</tech>
+			<tech x="3.3" y="1.0">HCShipCoinCrates1</tech>
+			<tech x="1.7" y="2.0">HCShipFoodCrates2</tech>
+			<tech x="2.5" y="2.0">HCShipWoodCrates2</tech>
+			<tech x="3.3" y="2.0">HCShipCoinCrates2</tech>
+			<tech x="4.3" y="1.0">HCXPShipMixedCrates1</tech>
+			<tech x="4.3" y="2.0">HCXPShipMixedCrates2</tech>
+			<tech x="4.3" y="3.0">HCXPShipMixedCrates3</tech>
+			<tech x="4.3" y="4.0">HCXPShipMixedCrates4</tech>
+			<tech x="4.3" y="5.0">HCXPShipMixedCrates5</tech>
+			<tech x="4.3" y="6.0">HCXPShipMixedCrates6</tech>
+			<tech x="4.3" y="7.0">HCXPShipMixedCratesRepeat</tech>
+			<tech x="5.3" y="1.0">HCShipCoveredWagons</tech>
+			<tech x="5.3" y="3.0">SHCShipDatu</tech>
+			<tech x="5.3" y="5.0">SHCShipSibaso1</tech>
+			<tech x="5.3" y="6.0">SHCShipSibaso2</tech>
+			<tech x="6.2" y="1.0">SHCShipBuffalo1Batak</tech>
+			<tech x="6.2" y="2.0">SHCShipBuffalo2Batak</tech>
+			<tech x="6.2" y="3.0">SHCShipBuffalo3Batak</tech>
+			<tech x="6.2" y="4.0"></tech>
+			<tech x="6.2" y="6.0"></tech>
+			<tech x="7.1" y="1.0"></tech>
+			<tech x="7.1" y="2.0"></tech>
+			<tech x="7.1" y="3.0"></tech>
+			<tech x="7.1" y="7.0"></tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Academy</name>
+		<visual>
+			<file>iroquois\iroquois_academy.xml</file>
+			<bone>bone_academy</bone>
+			<animstatemachine>SM_IRO_WarLeader</animstatemachine>
+		</visual>
+		<uix>460</uix>
+		<uiy>125</uiy>
+		<camera>iroquois\iroquois_homecity_academy_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_academy_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\academy_icon</portrait>
+		<displaynamestringid>43799</displaynamestringid>
+		<rolloverstringid>29002</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.8" y="1.0">SHCShipInenMayak1</tech>
+			<tech x="0.8" y="2.0">SHCShipInenMayak2</tech>
+			<tech x="0.8" y="3.0">SHCPatingBerpucuk</tech>
+			<tech x="0.8" y="4.0">SHCPengguntur</tech>
+			<tech x="0.8" y="5.0"></tech>
+			<tech x="0.0" y="1.0">SHCShipPasukente1</tech>
+			<tech x="0.0" y="2.0">SHCShipPasukente2</tech>
+			<tech x="0.0" y="3.0"></tech>
+			<tech x="0.0" y="4.0">SHCShipPasukente3</tech>
+			<tech x="0.0" y="5.0"></tech>
+			<tech x="2.4" y="2.0">SHCShipParangan1</tech>
+			<tech x="2.4" y="3.0">SHCShipParangan2</tech>
+			<tech x="2.4" y="4.0">SHCShipParangan3</tech>
+			<tech x="2.4" y="6.0">SHCPedangBerkunci</tech>
+			<tech x="1.6" y="1.0"></tech>
+			<tech x="1.6" y="3.0"></tech>
+			<tech x="1.6" y="4.0">SHCMountainWarfare</tech>
+			<tech x="1.6" y="5.0">SHCHikayatPrangSabi</tech>
+			<tech x="1.6" y="6.0"></tech>
+			<tech x="3.2" y="1.0">SHCShipAciAci1</tech>
+			<tech x="3.2" y="2.0">SHCShipAciAci2</tech>
+			<tech x="3.2" y="3.0"></tech>
+			<tech x="3.2" y="4.0">SHCKepiahTembege</tech>
+			<tech x="3.2" y="5.0">SHCKelipeh</tech>
+			<tech x="3.2" y="6.0"></tech>
+			<tech x="4.0" y="1.0">SHCShipUlubalang1</tech>
+			<tech x="4.0" y="2.0">SHCShipUlubalang2</tech>
+			<tech x="4.0" y="3.0">SHCShipUlubalang3</tech>
+			<tech x="4.0" y="4.0">SHCKejurunDamage</tech>
+			<tech x="4.0" y="5.0">SHCKejurunHitpoints</tech>
+			<tech x="4.0" y="6.0">SHCKejurunCombat</tech>
+			<tech x="4.0" y="7.0"></tech>
+			<tech x="4.8" y="1.0">SHCShipKudePacu1</tech>
+			<tech x="4.8" y="2.0">SHCShipKudePacu2</tech>
+			<tech x="4.8" y="3.0">SHCShipKudePacu3</tech>
+			<tech x="4.8" y="5.0"></tech>
+			<tech x="5.6" y="1.0"></tech>
+			<tech x="5.6" y="2.0"></tech>
+			<tech x="6.4" y="1.0">SHCShipBambooRam</tech>
+			<tech x="6.4" y="5.0"></tech>
+			<tech x="6.4" y="7.0"></tech>
+			<!-- <tech x="7.2" y="1.0">SHCShipRostahaInfinite</tech> -->
+			<tech x="7.2" y="2.0">SHCGajahDamage</tech>
+			<tech x="7.2" y="3.0">SHCGajahHitpoints</tech>
+			<tech x="7.2" y="4.0">SHCGajahCombat</tech>
+			<tech x="7.2" y="6.0">SHCShipGajahKenaikanRepeat</tech>
+			<tech x="8.0" y="1.0">SHCShipAbangKul1</tech>
+			<tech x="8.0" y="2.0">SHCShipAbangKul2</tech>
+			<tech x="8.0" y="3.0"></tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech x="0.8" y="3.0"></tech>
+			<tech x="0.8" y="4.0"></tech>
+			<tech x="0.8" y="5.0"></tech>
+			<tech x="0.0" y="1.0">SHCShipPasukente1</tech>
+			<tech x="0.0" y="2.0">SHCShipPasukente2</tech>
+			<tech x="0.0" y="3.0"></tech>
+			<tech x="0.0" y="4.0"></tech>
+			<tech x="0.0" y="5.0">SHCShipParmossak5</tech>
+			<tech x="3.2" y="1.0">SHCShipHujur1</tech>
+			<tech x="3.2" y="2.0">SHCShipHujur2</tech>
+			<tech x="3.2" y="3.0">SHCHujurSiringis</tech>
+			<tech x="3.2" y="4.0">SHCShipHujur3</tech>
+			<tech x="3.2" y="5.0">SHCShipHujur4</tech>
+			<tech x="3.2" y="6.0">SHCShipHujur5</tech>
+			<tech x="2.4" y="2.0">SHCShipParangan1</tech>
+			<tech x="2.4" y="3.0">SHCShipParangan2</tech>
+			<tech x="2.4" y="5.0">SHCShipParangan3</tech>
+			<tech x="0.0" y="6.0"></tech>
+			<tech x="1.6" y="3.0"></tech>
+			<tech x="1.6" y="4.0"></tech>
+			<tech x="1.6" y="5.0"></tech>
+			<tech x="1.6" y="6.0"></tech>
+			<tech x="4.0" y="1.0">SHCShipUlubalang1</tech>
+			<tech x="4.0" y="2.0">SHCShipUlubalang2</tech>
+			<tech x="4.0" y="3.0"></tech>
+			<tech x="4.0" y="4.0"></tech>
+			<tech x="4.0" y="5.0"></tech>
+			<tech x="4.0" y="6.0"></tech>
+			<tech x="4.0" y="7.0"></tech>
+			<tech x="4.8" y="1.0">SHCShipHupas1</tech>
+			<tech x="4.8" y="3.0">SHCShipHupas2</tech>
+			<tech x="4.8" y="4.0">SHCShipHupas3</tech>
+			<tech x="4.8" y="5.0">SHCShipHupas4</tech>
+			<tech x="5.6" y="1.0">SHCShipAmbalang1</tech>
+			<tech x="5.6" y="2.0">SHCShipAmbalang2</tech>
+			<tech x="5.6" y="3.0"></tech>
+			<tech x="5.6" y="5.0"></tech>
+			<tech x="5.6" y="7.0"></tech>
+			<tech x="6.4" y="1.0"></tech>
+			<tech x="6.4" y="5.0">SHCHikayatPrangSabi</tech>
+			<tech x="6.4" y="7.0"></tech>
+			<tech x="7.2" y="1.0"></tech>
+			<tech x="7.2" y="5.0"></tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Cathedral</name>
+		<visual>
+			<file>iroquois\iroquois_cathedral.xml</file>
+			<bone>bone_cathedral</bone>
+			<animstatemachine>SM_IRO_Shaman</animstatemachine>
+		</visual>
+		<uix>80</uix>
+		<uiy>475</uiy>
+		<camera>iroquois\iroquois_homecity_cathedral_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_cathedral_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\cathedral_icon</portrait>
+		<displaynamestringid>43801</displaynamestringid>
+		<rolloverstringid>25538</rolloverstringid>
+		<obtainabletechs>
+			<tech x="0.7" y="1.0">SHCRajah</tech>
+			<tech x="0.7" y="2.0">SHCAksaraGayoLinge</tech>
+			<tech x="0.7" y="3.0">SHCHadatuon</tech>
+			<tech x="0.0" y="5.0">SHCBeserinen</tech>
+			<tech x="0.7" y="4.0">SHCBelah</tech>
+			<tech x="0.7" y="5.0"></tech>
+			<tech x="1.5" y="3.0">SHCSilat</tech>
+			<tech x="2.3" y="2.0"></tech>
+			<tech x="2.3" y="3.0">SHCGedabuhen</tech>
+			<tech x="2.3" y="5.0">SHCNewWaysBatak</tech>
+			<!-- <tech x="3.1" y="1.0">HCXPTownDance</tech> -->
+			<tech x="3.1" y="1.0">SHCShipKubu1</tech>
+			<tech x="3.1" y="2.0"></tech>
+			<tech x="3.1" y="3.0">SHCNaturalBarrier</tech>
+			<tech x="3.1" y="4.0">SHCShipKubu2</tech>
+			<tech x="3.1" y="5.0">SHCShipKubu3</tech>
+			<tech x="3.1" y="6.0"></tech>
+			<tech x="3.9" y="1.0">SHCJung</tech>
+			<tech x="3.9" y="2.0"></tech>
+			<tech x="3.9" y="3.0">HCImprovedBuildings</tech>
+			<tech x="3.9" y="4.0">SHCLamas</tech>
+			<tech x="4.7" y="1.0"></tech>
+			<tech x="4.7" y="2.0">HCExtensiveFortifications</tech>
+			<tech x="4.7" y="3.0">HCHeavyFortifications</tech>
+			<tech x="4.7" y="4.0">SHCBattlefieldConstructionBatak</tech>
+			<tech x="4.7" y="5.0"></tech>
+			<tech x="5.5" y="1.0">SHCEmpusKuning</tech>
+			<tech x="5.5" y="2.0">SHCApamKolak</tech>
+			<tech x="5.5" y="3.0"></tech>
+			
+			<tech x="6.3" y="1.0">SHCAdvancedJabu</tech>
+			<tech x="6.3" y="3.0">SHCAdvancedMarketHall</tech>
+			<tech x="6.3" y="5.0">SHCAdvancedPalace</tech>
+			<tech x="6.3" y="7.0">SHCKekasihen</tech>
+			<!-- <tech x="7.1" y="1.0">HCCheapDocksTeam</tech> -->
+			<tech x="7.1" y="3.0">HCAdvancedDock</tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech x="0.7" y="1.0">HCNativeLore</tech>
+			<tech x="0.7" y="2.0">HCNativeTreaties</tech>
+			<tech x="0.7" y="3.0">SHCHKBP</tech>
+			<tech x="0.0" y="5.0">HCAdvancedTradingPost</tech>
+			<tech x="0.7" y="4.0">HCNativeCombat</tech>
+			<tech x="0.7" y="5.0">HCNativeChampionsDutchTeam</tech>
+			<tech x="1.5" y="3.0">SHCOttomanAcademy</tech>
+			<tech x="2.3" y="2.0">HCPioneers</tech>
+			<tech x="2.3" y="3.0">SHCGorgaBoraspati</tech>
+			<tech x="2.3" y="5.0">SHCDalihannaTolu</tech>
+			<tech x="3.1" y="1.0">HCXPTownDance</tech>
+			<tech x="3.1" y="2.0"></tech>
+			<tech x="3.1" y="3.0">SHCLumban</tech>
+			<tech x="3.1" y="4.0">SHCHuta</tech>
+			<tech x="3.1" y="5.0">SHCHorja</tech>
+			<tech x="3.1" y="6.0">SHCBius</tech>
+			<tech x="3.9" y="3.0">HCImprovedBuildings</tech>
+			<tech x="3.9" y="4.0">HCCheapOutpostsTeam</tech>
+			<tech x="4.7" y="1.0">SHCGuriguri</tech>
+			<tech x="4.7" y="2.0">HCExtensiveFortifications</tech>
+			<tech x="4.7" y="3.0">HCHeavyFortifications</tech>
+			<tech x="4.7" y="4.0">SHCPearaja</tech>
+			<tech x="4.7" y="5.0">SHCHobonStone</tech>
+			<tech x="5.5" y="5.0">SHCLumbanraja</tech>
+			
+			<tech x="6.3" y="1.0">SHCAdvancedJabu</tech>
+			<tech x="6.3" y="3.0">HCAdvancedMarket</tech>
+			<tech x="6.3" y="5.0">HCAdvancedPlantations</tech>
+			<tech x="7.1" y="1.0">HCCheapDocksTeam</tech>
+			<tech x="7.1" y="3.0">HCAdvancedDock</tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>ManufacturingPlant</name>
+		<visual>
+			<file>iroquois\iroquois_manufacturingplant.xml</file>
+			<bone>bone_plant</bone>
+			<animstatemachine>SM_IRO_WiseWoman</animstatemachine>
+		</visual>
+		<uix>450</uix>
+		<uiy>275</uiy>
+		<camera>iroquois\iroquois_homecity_manufacturing_plant_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_plant_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\manufacturing_plant_icon</portrait>
+		<displaynamestringid>43802</displaynamestringid>
+		<rolloverstringid>25535</rolloverstringid>
+		<obtainabletechs>
+			<tech x="1.4" y="1.0"></tech>
+			<tech x="1.4" y="3.0">SHCManggore</tech>
+			<tech x="1.4" y="4.0">SHCPenyerahniIlmu</tech>
+			<tech x="1.4" y="7.0"></tech>
+			<tech x="2.2" y="1.0">SHCDidisen</tech>
+			<tech x="2.2" y="3.0">SHCMarsolu</tech>
+			<tech x="2.2" y="5.0"></tech>
+			<tech x="3.0" y="3.0">SHCBambooPalisade</tech>
+			<tech x="3.0" y="5.0"></tech>
+			<tech x="3.0" y="7.0"></tech>
+			<tech x="4.1" y="1.0">SHCTasakMatah</tech>
+			<tech x="4.1" y="3.0"></tech>
+			<tech x="4.1" y="5.0"></tech>
+			<tech x="4.1" y="6.0">SHCRuyuh</tech>
+			<tech x="4.9" y="1.0">SHCParbaringin</tech>
+			<tech x="4.9" y="3.0"></tech>
+			<tech x="4.9" y="6.0">SHCShipBalianInfinite</tech>
+			<tech x="5.7" y="1.0">SHCLesungBatuTeam</tech>
+			<tech x="5.7" y="2.0"></tech>
+			<tech x="5.7" y="3.0">SHCKeweDaun</tech>
+			<tech x="5.7" y="7.0">SHCGayoPlantation</tech>
+			<tech x="4.9" y="7.0">SHCIncenseTrade</tech>
+			<tech x="6.5" y="1.0"></tech>
+			<tech x="6.5" y="5.0">SHCMarsiadapari2</tech>
+			<tech x="6.5" y="6.0">SHCOldWaysBatak</tech>
+			<tech x="7.3" y="1.0"></tech>
+			<tech x="7.3" y="1.0"></tech>
+			<tech x="7.3" y="3.0">SHCBuffaloOrnament</tech>
+			<tech x="7.3" y="5.0"></tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech>HCXPShipTravois1</tech>
+			<tech>SHCFurrierTeamBatak</tech>
+		</activetechs>
+		<validunits/>
+		<trainbuilding>1</trainbuilding>
+	</building>
+	<building>
+		<name>Dock</name>
+		<visual>
+			<file>iroquois\iroquois_dock.xml</file>
+			<bone>bone_dock</bone>
+			<animstatemachine>SM_IRO_Messenger</animstatemachine>
+		</visual>
+		<uix>200</uix>
+		<uiy>250</uiy>
+		<camera>iroquois\iroquois_homecity_dock_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_dock_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\dock_icon</portrait>
+		<displaynamestringid>43800</displaynamestringid>
+		<rolloverstringid>35746</rolloverstringid>
+		<obtainabletechs>
+			<tech x="1.0" y="1.0">HCXPShipFishingBoats</tech>
+			<tech x="1.0" y="2.0">SHCShipSolu1</tech>
+			<tech x="1.0" y="3.0">SHCShipSoluBolon1</tech>
+			<tech x="1.0" y="4.0">SHCShipSoluBolon2</tech>
+			<tech x="1.0" y="5.0">SHCShipSoluBolon3</tech>
+			<tech x="2.0" y="1.0">SHCTurunMani</tech>
+			<tech x="2.0" y="3.0">HCNavalCombat</tech>
+			<!-- <tech x="2.0" y="4.0">HCXPWaterDance</tech> -->
+			<tech x="2.0" y="5.0"></tech>
+			<tech x="3.0" y="1.0">SHCKejurunBukitSupport</tech>
+			<tech x="4.0" y="1.0">SHCKejurunLingeSupport</tech>
+			<tech x="5.0" y="1.0">SHCKejurunPetiamangSupport</tech>
+			<tech x="6.0" y="1.0">SHCKejurunSiahUtamaSupport</tech>
+			<tech x="4.0" y="3.0">SHCWondermanofGayo</tech>
+			<tech x="3.0" y="2.0">SHCSiakAllies1</tech>
+			<tech x="3.0" y="3.0">SHCSiakAllies2</tech>
+			<tech x="3.0" y="4.0">SHCAlasAllies1</tech>
+			<tech x="3.0" y="5.0">SHCAlasAllies2</tech>
+			<tech x="3.0" y="6.0">SHCAlasAlliesRepeat</tech>
+			<tech x="3.0" y="7.0"></tech>
+			<tech x="4.0" y="4.0">SHCTrumonAllies1</tech>
+			<tech x="4.0" y="5.0">SHCTrumonAllies2</tech>
+			<tech x="4.0" y="6.0">SHCTrumonAlliesRepeat</tech>
+			<tech x="4.0" y="7.0"></tech>
+			<tech x="5.0" y="2.0">SHCAcehExpeditionaryCompany</tech>
+			<tech x="5.0" y="3.0">SHCAcehExpeditionaryForce1</tech>
+			<tech x="5.0" y="4.0">SHCAcehExpeditionaryForce2</tech>
+			<tech x="5.0" y="5.0">SHCAcehBrigade</tech>
+			<tech x="5.0" y="7.0"></tech>
+			<tech x="6.0" y="3.0"></tech>
+			<tech x="7.0" y="1.0">SHCDeliAllies1</tech>
+			<tech x="7.0" y="3.0"></tech>
+			<tech x="8.0" y="2.0"></tech>
+			<tech x="8.0" y="5.0"></tech>
+		</obtainabletechs>
+		<activetechs>
+			<tech x="1.0" y="1.0">HCXPShipFishingBoats</tech>
+		</activetechs>
+		<validunits/>
+		<units/>
+		<trainbuilding>1</trainbuilding>
+		<mercbuilding>1</mercbuilding>
+	</building>
+	<building>
+		<name>Customization</name>
+		<camera>iroquois\iroquois_homecity_camera.cam</camera>
+		<widescreencamera>iroquois\iroquois_homecity_widescreencamera.cam</widescreencamera>
+		<unlocklevel>0</unlocklevel>
+		<portrait>homecity\buildings_west\dock_icon</portrait>
+		<displaynamestringid>24966</displaynamestringid>
+		<rolloverstringid>25540</rolloverstringid>
+		<customizationbuilding>1</customizationbuilding>
+	</building>
+	<waypoints>
+		<waypoint>
+			<bone>bone_pathnode01</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode02</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode03</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode04</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode05</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode06</bone>
+		</waypoint>
+		<waypoint>
+			<bone>bone_pathnode07</bone>
+			<dock>1</dock>
+			<exit>1</exit>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start01</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start02</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start03</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start04</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start05</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start06</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_start07</bone>
+			<shipmentstart>1</shipmentstart>
+		</waypoint>
+		<waypoint>
+			<bone>bone_shipment_end</bone>
+			<shipmentend>1</shipmentend>
+		</waypoint>
+	</waypoints>
+	<obtainableprops>
+		<prop active="1">Iroquois_Lightset1</prop>
+		<prop>Iroquois_Lightset2</prop>
+	</obtainableprops>
+</homecity>

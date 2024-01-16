@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>26001</nameID>
+   <tooltipID>26002</tooltipID>
+   <forcedciv>Lingga</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_lingga</icon>
+   <chatset>hiawatha</chatset>
+   <playerNames>
+      <nameID>26001<civ>Lingga</civ></nameID> 
+	</playerNames>
+</AI>

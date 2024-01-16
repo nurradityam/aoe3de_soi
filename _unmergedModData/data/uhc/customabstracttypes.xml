@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbstractTypes>
+    <AbstractType>AbstractTrainLimitOne</AbstractType>
+    <AbstractType>AbstractEagleMan</AbstractType>
+    <AbstractType>AbstractOutlaw</AbstractType>
+    <AbstractType>AbstractHussar</AbstractType>
+    <AbstractType>AbstractTrampleCavalry</AbstractType>
+    <AbstractType>AbstractSwordsman</AbstractType>
+    <AbstractType>AbstractHeavyRangedInfantry</AbstractType>
+<!-- //eksperimen Borneo -->
+    <AbstractType>AbstractDayak</AbstractType>
+<!-- //eksperimen Peranakan -->
+    <AbstractType>AbstractRefinery</AbstractType>
+    <AbstractType>AbstractLightShip</AbstractType>
+    <AbstractType>AbstractHeavyShip</AbstractType>
+    <AbstractType>AbstractSiegeShip</AbstractType>
+    <AbstractType>AbstractMyth</AbstractType>
+</AbstractTypes>

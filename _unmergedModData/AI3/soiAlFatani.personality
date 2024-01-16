@@ -1,0 +1,14 @@
+<AI>
+<!--//Pattani -->
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>58003</nameID>
+   <tooltipID>58004</tooltipID>
+   <forcedciv>Pattani</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_pattani</icon>
+   <chatset>gall</chatset>
+   <playerNames>
+      <nameID>58003<civ>Pattani</civ></nameID> 
+	</playerNames>
+</AI>

@@ -1,0 +1,14 @@
+<AI>
+<!--//Jambi. -->
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>52003</nameID>
+   <tooltipID>52004</tooltipID>
+   <forcedciv>Jambi</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\singleplayer\cpai_avatar_jambi</icon>
+   <chatset>hiawatha</chatset>
+   <playerNames>
+      <nameID>52003<civ>Jambi</civ></nameID> 
+	</playerNames>
+</AI>

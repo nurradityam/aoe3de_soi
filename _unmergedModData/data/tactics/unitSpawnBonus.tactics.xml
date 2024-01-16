@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name>SpawnChineseBonus</name>
+		<type>Spawn</type>
+		<rate type="WOLMonkDisciple">1.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnItalianBonus</name>
+		<type>Spawn</type>
+		<rate type="Merchant">1.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+        <name>SpawnManaismBonus</name>
+        <type>Spawn</type>
+        <rate type="WOLLootingBonusFame">1.0</rate>
+        <singleuse>1</singleuse>
+        <animationrate>1</animationrate>
+        <active>0</active>
+        <persistent>1</persistent>
+    </action>
+    <action>
+        <name>SpawnMaoriDamageBonus</name>
+        <type>Spawn</type>
+        <rate type="SKillBonusDamage">1.0</rate>
+        <singleuse>1</singleuse>
+        <animationrate>1</animationrate>
+        <active>0</active>
+        <persistent>1</persistent>
+    </action>
+	<action>
+        <name>SpawnMokomokaimBonus</name>
+        <type>Spawn</type>
+        <rate type="WOLLootingBonusCoin">1.0</rate>
+        <singleuse>1</singleuse>
+        <animationrate>1</animationrate>
+        <active>0</active>
+        <persistent>1</persistent>
+    </action>
+    <action>
+        <name>SpawnSeviteBonus</name>
+        <type>Spawn</type>
+        <rate type="WOLZombi">1.0</rate>
+        <singleuse>1</singleuse>
+        <animationrate>1</animationrate>
+        <active>0</active>
+        <persistent>1</persistent>
+    </action> 
+	<!-- //Toba -->
+	<action>
+		<name>SpawnHatoban</name>
+		<type>Spawn</type>
+		<rate type="SHatoban">1.0</rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>	
+	<!--//Nias-->
+	<action>
+		<name stringid="90153">SpawnHPAura</name>
+		<type>Spawn</type>
+		<rate type="SKillBonusHitpoints">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<action>
+		<name stringid="43294">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+	</action>
+	<tactic>
+		Normal
+		<action>SpawnChineseBonus</action>
+		<action>SpawnItalianBonus</action>
+	    <action>SpawnManaismBonus</action>
+	    <action>SpawnSeviteBonus</action>
+	  	<action>SpawnMaoriDamageBonus</action>
+	    <action>SpawnMokomokaimBonus</action>	  	
+	    <action>SpawnHatoban</action>	  	
+	    <action>SpawnHPAura</action>	  	
+	    <action>AutoGatherCoin</action>	  	
+	</tactic>
+</tactics>

@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>131003</nameID>
+   <tooltipID>131004</tooltipID>
+   <forcedciv>NetherlandsIndie</forcedciv>
+   <rushboom>0</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_netherlands</icon>
+   <chatset>maurice</chatset>
+   <playerNames>
+      <nameID>131003<civ>NetherlandsIndie</civ></nameID> 
+	</playerNames>
+</AI>

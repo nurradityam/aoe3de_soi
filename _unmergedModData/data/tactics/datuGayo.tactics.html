@@ -1,0 +1,444 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="46491">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>20.0</maxrange>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38134">HandAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim>
+	</action>
+	<action>
+		<name stringid="42178">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="SHatoban">1.0</rate>
+		<rate type="SMarketHall">1.0</rate>
+	</action>
+	<action>
+		<name stringid="42136">ChopAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>GatherChop</anim>
+		<maxrange>1</maxrange>
+		<rate type="SHatoban">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="69151">Hunting</name>
+		<type>Hunting</type>
+		<maxrange>0</maxrange>
+		<rate type="SHatoban">1.0</rate>
+	</action>
+	<action>
+		<name stringid="69183">NoWork</name>
+		<type>NoWork</type>
+		<maxrange>10</maxrange>
+		<rate type="SHatoban">1.0</rate>
+		<typedmaxrange type="SHatoban">0</typedmaxrange>
+	</action>
+	<action>
+		<name stringid="69147">Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<active>1</active>
+		<maxrange>250.0</maxrange>
+		<rate type="Building">1.0</rate>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="48958">RangedDamageAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Ranged</modifyabstracttype>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ArtilleryDamageAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Ranged</modifyabstracttype>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- //Gayo -->
+	<action>
+		<name stringid="11507">GayoBlessing</name>
+		<type>Maintain</type>
+		<rate type="STembunuh">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="48958">GayoOneiromancyHP1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>42</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoOneiromancyDamage1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>42</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoOneiromancyHP2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>44</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoOneiromancyDamage2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>44</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoOneiromancyHP3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>56</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoOneiromancyDamage3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>56</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoOneiromancyHP4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>78</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoOneiromancyDamage4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>78</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Hero</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="115953">GayoCriticalAttack1</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<active>0</active>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name stringid="115954">GayoCriticalAttack2</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<active>0</active>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name stringid="115955">GayoCriticalAttack3</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<active>0</active>
+		<maxrange>1.0</maxrange>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>
+	<action>
+		<name stringid="115956">GayoCriticalAttack4</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<maxrange>1.0</maxrange>
+		<active>0</active>
+		<rate type="Military">1.0 </rate>
+		<rate type="Economic">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+	</action>	
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionHP1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionDamage1</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>22</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionHP2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionDamage2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionHP3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionDamage3</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>26</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionHP4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>28</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>	
+	<action>
+		<name stringid="48958">GayoSpiritualProtectionDamage4</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>28</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifymultiplier>1.15</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>
+		Melee
+		<action>Heal</action>
+		<action>Gather</action>
+		<action>Hunting</action>
+		<action>NoWork</action>
+		<action>Build</action>
+
+		<action>GayoBlessing</action>
+		<action>GayoOneiromancyDamage1</action>
+		<action>GayoOneiromancyDamage2</action>
+		<action>GayoOneiromancyDamage3</action>
+		<action>GayoOneiromancyDamage4</action>
+		<action>GayoOneiromancyHP1</action>
+		<action>GayoOneiromancyHP2</action>
+		<action>GayoOneiromancyHP3</action>
+		<action>GayoOneiromancyHP4</action>
+		<action>GayoOneiromancyDamage1</action>
+		<action>GayoOneiromancyDamage2</action>
+		<action>GayoOneiromancyDamage3</action>
+		<action>GayoOneiromancyDamage4</action>
+		<action>GayoOneiromancyHP1</action>
+		<action>GayoOneiromancyHP2</action>
+		<action>GayoOneiromancyHP3</action>
+		<action>GayoOneiromancyHP4</action>
+
+		<action priority="95">GayoCriticalAttack1</action>
+		<action priority="90">GayoCriticalAttack2</action>
+		<action priority="85">GayoCriticalAttack3</action>
+		<action priority="80">GayoCriticalAttack4</action>
+		
+		<action priority="25">HandAttack</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<!-- <transition> -->
+			<!-- <tactic>Stealth</tactic> -->
+			<!-- <length>2</length> -->
+			<!-- <anim>Cover_In</anim> -->
+			<!-- <exit>1</exit> -->
+		<!-- </transition> -->
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<!-- <tactic> -->
+		<!-- Stealth -->
+		<!-- <action>Stealth</action> -->
+		<!-- <checkifcanstealth range="20.0">1</checkifcanstealth> -->
+		<!-- <speedmodifier>0.5</speedmodifier> -->
+		<!-- <active>0</active> -->
+		<!-- <attacktype>LogicalTypeHandUnitsAttack</attacktype> -->
+		<!-- <transition> -->
+			<!-- <tactic>Melee</tactic> -->
+			<!-- <length>0.8</length> -->
+			<!-- <anim>Cover_Out</anim> -->
+			<!-- <exit>1</exit> -->
+			<!-- <automatic>1</automatic> -->
+			<!-- <commandautomatic>1</commandautomatic> -->
+		<!-- </transition> -->
+		<!-- <autoretarget>0</autoretarget> -->
+		<!-- <idleanim>Charge_idle</idleanim> -->
+		<!-- <boredanim>Charge_bored</boredanim> -->
+		<!-- <deathanim>Death_by_melee</deathanim> -->
+		<!-- <walkanim>Charge_walk</walkanim> -->
+		<!-- <joganim>Charge_jog</joganim> -->
+		<!-- <runanim>Charge_run</runanim> -->
+	<!-- </tactic> -->
+</tactics>

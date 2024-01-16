@@ -1,0 +1,116 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="69158">SpawnUlama</name>
+		<type>Maintain</type>
+		<rate type="SUlama">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnUlama2</name>
+		<type>Maintain</type>
+		<rate type="SUlama2">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="38133">RangedAttack</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.01</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Arrow</projectile>
+		<numberofprojectiles>3.0</numberofprojectiles>
+		<impacteffect>effects\impacts\arrow</impacteffect>
+		<rate type="Unit">1.0 </rate>
+	</action>
+	
+	<!--eksperimen riau-->
+	<action>
+		<name stringid="69158">SpawnUlamaLingga</name>
+		<type>Maintain</type>
+		<rate type="SUlamaLingga">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<!--//Jambi-->
+	<action>
+		<name stringid="69158">SpawnUlamaJambi</name>
+		<type>Maintain</type>
+		<rate type="SUlamaJambi">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69158">SpawnUlama2Jambi</name>
+		<type>Maintain</type>
+		<rate type="SUlama2Jambi">1.0 </rate>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<!--//Mandailing-->
+	<action>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<active>0</active>
+		<anim>Heal</anim>
+	</action>	
+	<action>
+		<name stringid="444186">GayoLamas</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>CondemnHeretic</anim>
+		<reloadanim>CondemnHeretic</reloadanim>
+		<idleanim>Idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>1</aimbonus>
+		<trackrating>12</trackrating>
+		<impacteffect>War of the Triple Alliance\Units\Priest\holyblow</impacteffect>
+		<minrange>5</minrange>
+		<rate type="Unit">1.0 </rate>
+		<damage>1.000000</damage>
+		<maxrange>10.000000</maxrange>
+		<rof>1.000000</rof>
+		<projectile>InvisibleProjectilenoTracer</projectile>
+		<perfectaccuracy>1</perfectaccuracy>
+		<active>0</active>
+		<chargeaction>1</chargeaction>
+	</action>
+	<tactic>
+		Normal
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<action priority="100">RangedAttack</action>
+		<action>SpawnUlama</action>
+		<action>SpawnUlama2</action>
+		<action>SpawnUlamaJambi</action>
+		<action>SpawnUlama2Jambi</action>
+		<action>SpawnUlamaLingga</action>
+		<action>Heal</action>
+		<action>GayoLamas</action>
+	</tactic>
+</tactics>

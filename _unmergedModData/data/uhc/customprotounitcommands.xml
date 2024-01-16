@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ProtoUnitCommandTypes>
+<!--eksperimen makassar-->
+    <CommandType>TransformTumabuttayya</CommandType>
+    <CommandType>TransformBalla</CommandType>
+    <CommandType>TransformBalla2</CommandType>
+    <CommandType>TransformUlama</CommandType>
+    <CommandType>TransformLumbung</CommandType>
+    <CommandType>TransformLumbung2</CommandType>
+    <CommandType>TransformPappinawang</CommandType>
+    <CommandType>TransformPakkinyarang</CommandType>
+    <CommandType>TransformEncik</CommandType>
+
+    <CommandType>DatuDance</CommandType>
+    <!-- toba -->
+    <CommandType>TortorSipituDance</CommandType>
+    <CommandType>ParlotingDance</CommandType>
+    <!-- karo -->
+    <CommandType>SimbisaDance</CommandType>    
+    <CommandType>GundalaGundalaDance</CommandType>    
+    <!-- mandailing -->
+    <CommandType>NamoraDance</CommandType>    
+    <!-- nias -->
+    <CommandType>SiuluDance</CommandType>    
+    <CommandType>FataeleDance</CommandType>    
+    <CommandType>TransformBohalimaMaturing</CommandType>
+    <CommandType>TransformIramatuaMaturing</CommandType>
+    <CommandType>TransformSamuiMaturing</CommandType>
+    <CommandType>TransformEmaliMaturing</CommandType>
+    <CommandType>TransformFamuraMaturing</CommandType>
+    <!-- gayo -->
+    <CommandType>SamanDance</CommandType>
+    <CommandType>GuelDance</CommandType>
+    <!-- //Balinese -->
+    <CommandType>TransformLembuBlack</CommandType>
+    <CommandType>TransformLembuWhite</CommandType>
+    <CommandType>BarisGedeDance</CommandType>
+    <CommandType>BarisBedilDance</CommandType>
+        
+    <CommandType>Pangkalima</CommandType>
+    <CommandType>Kayau</CommandType>
+    <CommandType>Temuai</CommandType>
+    <CommandType>Lesung</CommandType>
+    
+    <CommandType>EstateFood</CommandType>
+    <CommandType>EstateWood</CommandType>
+    <CommandType>EstateCoin</CommandType>
+    
+    <!-- <CommandType>BaleanDadas</CommandType> -->
+    <!-- <CommandType>Manganjan</CommandType> -->
+    <!-- <CommandType>Manasai</CommandType> -->
+    <!-- <CommandType>HugoHuda</CommandType> -->
+
+</ProtoUnitCommandTypes>

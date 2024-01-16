@@ -1,0 +1,30 @@
+<!-- converted from XMB to XML -->
+<!--eksperimen toraja-->
+<!--might better replaced with transform function in techtreey-->
+<tactics>
+	<action>
+		<name stringid="69158">SpawnPakkanyarang</name>
+		<type>Spawn</type>
+		<rate type="SPakkanyarang">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	
+	<tactic>
+		Normal
+		<action>SpawnPakkanyarang</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<transition>
+			<tactic>Defend</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<autoretarget>1</autoretarget>
+	</tactic>
+</tactics>

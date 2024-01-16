@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="48958">ExtraDamage</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.030</modifymultiplier>
+		<!-- <modifyprotoid>Military</modifyprotoid> -->
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamageMandailing</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.30</modifymultiplier>
+		<!-- <modifyprotoid>Military</modifyprotoid> -->
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- //siak -->
+	<action>
+		<name stringid="48958">SiakExtraDamage</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>1500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.330</modifymultiplier>
+		<!-- <modifyprotoid>Military</modifyprotoid> -->
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="51905">SiakEconomicAura</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>1500</maxrange>
+		<modifyabstracttype>AbstractVillager</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>GatherRate</modifytype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<modelattachment>effects\ypack_auras\econpower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- //jambi -->
+	<action>
+		<name stringid="48958">ExtraHitpointsJambi</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.20</modifymultiplier>
+		<!-- <modifyprotoid>Military</modifyprotoid> -->
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- //Karo -->
+	<action>
+		<name stringid="700306">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Food'>1.250001</Rate>
+	</action>	
+	<action>
+		<name stringid="700306">AutoGatherXP</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='XP'>5.0000</Rate>
+	</action>	
+	<action>
+		<name stringid="700306">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Gold'>5.0000</Rate>
+	</action>	
+	<!-- //nias -->
+	<action>
+		<name stringid="48958">ExtraHitpointsNias</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.030</modifymultiplier>
+		<!-- <modifyprotoid>Military</modifyprotoid> -->
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- //Gayo -->
+	<action>
+		<name stringid="48958">ExtraDamageGayo</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>30</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifyexclusive>1</modifyexclusive>
+		<modifymultiplier>1.500</modifymultiplier>
+		<modifyprotoid>SPenetah</modifyprotoid>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamageGayo2</name>
+		<type>AutoRangedModify</type>
+		<active>0</active>
+		<maxrange>500</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.30</modifymultiplier>
+		<modifyprotoid>SPenetah</modifyprotoid>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamageResistanceGayo</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>1000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>2.000</modifymultiplier>
+		<modifyprotoid>SPenetah</modifyprotoid>
+		<modelattachment>War of the Triple Alliance\Units\Priest\chestglow.xml</modelattachment>
+		<modelattachmentbone>HEAD</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">ExtraDamageResistanceGayo2</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<maxrange>1000</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.500</modifymultiplier>
+		<modifyprotoid>SInenMayak</modifyprotoid>
+		<modelattachment>War of the Triple Alliance\Units\Priest\chestglow.xml</modelattachment>
+		<modelattachmentbone>HEAD</modelattachmentbone>
+	</action>
+	<action>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>142</maxrange>
+		<rate type="LogicalTypeHealed">5.0 </rate>
+		<anim>Heal</anim> <!-- need this to work? -->
+		<active>0</active>
+	</action>
+	<action>
+		<name>SpawnDatuGayo</name>
+		<type>Spawn</type>
+		<rate type="SDatuGayo">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnPinandita</name>
+		<type>Spawn</type>
+		<rate type="SPinandita">1.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnWarriorNgadu</name>
+		<type>Spawn</type>
+		<rate type="xpWarrior">3.0 </rate>
+		<singleuse>1</singleuse>
+		<animationrate>1</animationrate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnCoin</name>
+		<type>Spawn</type>
+		<rate type="CrateofCoinLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<!-- <animationrate>1</animationrate> -->
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name>SpawnXP</name>
+		<type>Spawn</type>
+		<rate type="SCrateofXPLarge">1.0 </rate>
+		<singleuse>1</singleuse>
+		<!-- <animationrate>1</animationrate> -->
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>ExtraDamage</action>
+		<action>ExtraDamageMandailing</action>
+		<action>ExtraDamageGayo</action>
+		<action>ExtraDamageGayo2</action>
+		<action>ExtraDamageResistanceGayo</action>
+		<action>ExtraHitpointsJambi</action>
+		<action>ExtraHitpointsNias</action>
+		<action>Heal</action>
+		<action>AutoGatherXP</action>
+		<action>AutoGatherFood</action>
+		<action>AutoGatherCoin</action>
+		<action>SiakEconomicAura</action>
+		<action>SiakExtraDamage</action>
+		<action>SpawnDatuGayo</action>
+		<action>SpawnPinandita</action>
+		<action>SpawnWarriorNgadu</action>
+		<action>SpawnCoin</action>
+		<action>SpawnXP</action>
+	</tactic>
+</tactics>

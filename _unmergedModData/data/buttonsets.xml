@@ -505,4 +505,315 @@
 		<highlight>ui\ingame\flag_chilean_large_high</highlight>
 		<disabled>ui\ingame\flag_chilean_large_disable</disabled>
 	</set>
+	
+	<!--RizkyR: eksperimen Palembang-->
+
+	<set name="palembangFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_palembang_normal</normal>
+		<depressed>ui\eso\flag_palembang_clcik</depressed>
+		<highlight>ui\eso\flag_palembang_high</highlight>
+		<disabled>ui\eso\flag_palembang_disable</disabled>
+	</set>	
+	<set name="palembangFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_palembang_large_normal</normal>
+		<depressed>ui\ingame\flag_palembang_large_click</depressed>
+		<highlight>ui\ingame\flag_palembang_large_high</highlight>
+		<disabled>ui\ingame\flag_palembang_large_disable</disabled>
+	</set>
+	<set name="linggaFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_lingga_normal</normal>
+		<depressed>ui\eso\flag_lingga_clcik</depressed>
+		<highlight>ui\eso\flag_lingga_high</highlight>
+		<disabled>ui\eso\flag_lingga_disable</disabled>
+	</set>	
+	<set name="linggaFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_palembang_large_normal</normal>
+		<depressed>ui\ingame\flag_palembang_large_click</depressed>
+		<highlight>ui\ingame\flag_palembang_large_high</highlight>
+		<disabled>ui\ingame\flag_palembang_large_disable</disabled>
+	</set>
+	<!-- //Siak -->
+	<set name="siakFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_siak_normal</normal>
+		<depressed>ui\eso\flag_siak_clcik</depressed>
+		<highlight>ui\eso\flag_siak_high</highlight>
+		<disabled>ui\eso\flag_siak_disable</disabled>
+	</set>	
+	<set name="siakFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_siak_large_normal</normal>
+		<depressed>ui\ingame\flag_siak_large_click</depressed>
+		<highlight>ui\ingame\flag_siak_large_high</highlight>
+		<disabled>ui\ingame\flag_siak_large_disable</disabled>
+	</set>
+
+	<!-- //jambi -->
+	<set name="jambiFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_jambi_normal</normal>
+		<depressed>ui\eso\flag_jambi_clcik</depressed>
+		<highlight>ui\eso\flag_jambi_high</highlight>
+		<disabled>ui\eso\flag_jambi_disable</disabled>
+	</set>	
+	<set name="jambiFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_jambi_large_normal</normal>
+		<depressed>ui\ingame\flag_jambi_large_click</depressed>
+		<highlight>ui\ingame\flag_jambi_large_high</highlight>
+		<disabled>ui\ingame\flag_jambi_large_disable</disabled>
+	</set>
+
+	<!-- //kedah -->
+	<set name="kedahFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_kedah_normal</normal>
+		<depressed>ui\eso\flag_kedah_clcik</depressed>
+		<highlight>ui\eso\flag_kedah_high</highlight>
+		<disabled>ui\eso\flag_kedah_disable</disabled>
+	</set>	
+	<set name="kedahFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_kedah_large_normal</normal>
+		<depressed>ui\ingame\flag_kedah_large_click</depressed>
+		<highlight>ui\ingame\flag_kedah_large_high</highlight>
+		<disabled>ui\ingame\flag_kedah_large_disable</disabled>
+	</set>
+
+	<!-- //malaya -->
+	<set name="malayaFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_malaya_normal</normal>
+		<depressed>ui\eso\flag_malaya_clcik</depressed>
+		<highlight>ui\eso\flag_malaya_high</highlight>
+		<disabled>ui\eso\flag_malaya_disable</disabled>
+	</set>	
+	<set name="malayaFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_malaya_large_normal</normal>
+		<depressed>ui\ingame\flag_malaya_large_click</depressed>
+		<highlight>ui\ingame\flag_malaya_large_high</highlight>
+		<disabled>ui\ingame\flag_malaya_large_disable</disabled>
+	</set>
+	<!-- //deli -->
+	<set name="deliFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_deli_normal</normal>
+		<depressed>ui\eso\flag_deli_clcik</depressed>
+		<highlight>ui\eso\flag_deli_high</highlight>
+		<disabled>ui\eso\flag_deli_disable</disabled>
+	</set>	
+	<set name="deliFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_deli_large_normal</normal>
+		<depressed>ui\ingame\flag_deli_large_click</depressed>
+		<highlight>ui\ingame\flag_deli_large_high</highlight>
+		<disabled>ui\ingame\flag_deli_large_disable</disabled>
+	</set>
+	<!-- //pattani -->
+	<set name="pattaniFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_pattani_normal</normal>
+		<depressed>ui\eso\flag_pattani_clcik</depressed>
+		<highlight>ui\eso\flag_pattani_high</highlight>
+		<disabled>ui\eso\flag_pattani_disable</disabled>
+	</set>	
+	<set name="pattaniFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_pattani_large_normal</normal>
+		<depressed>ui\ingame\flag_pattani_large_click</depressed>
+		<highlight>ui\ingame\flag_pattani_large_high</highlight>
+		<disabled>ui\ingame\flag_pattani_large_disable</disabled>
+	</set>
+
+<!-- //Erucakran  -->
+	<set name="erucakranFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_erucakran_normal</normal>
+		<depressed>ui\eso\flag_erucakran_clcik</depressed>
+		<highlight>ui\eso\flag_erucakran_high</highlight>
+		<disabled>ui\eso\flag_erucakran_disable</disabled>
+	</set>
+	<set name="erucakranFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_erucakran_large_normal</normal>
+		<depressed>ui\ingame\flag_erucakran_large_click</depressed>
+		<highlight>ui\ingame\flag_erucakran_large_high</highlight>
+		<disabled>ui\ingame\flag_erucakran_large_disable</disabled>
+	</set>
+<!-- //Aceh -->
+	<set name="acehFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_aceh_normal</normal>
+		<depressed>ui\eso\flag_aceh_clcik</depressed>
+		<highlight>ui\eso\flag_aceh_high</highlight>
+		<disabled>ui\eso\flag_aceh_disable</disabled>
+	</set>
+	<set name="acehFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_aceh_large_normal</normal>
+		<depressed>ui\ingame\flag_aceh_large_click</depressed>
+		<highlight>ui\ingame\flag_aceh_large_high</highlight>
+		<disabled>ui\ingame\flag_aceh_large_disable</disabled>
+	</set>
+<!-- //Netherlands-Indie -->
+	<set name="netherlandsFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_netherlands_normal</normal>
+		<depressed>ui\eso\flag_netherlands_clcik</depressed>
+		<highlight>ui\eso\flag_netherlands_high</highlight>
+		<disabled>ui\eso\flag_netherlands_disable</disabled>
+	</set>
+	<set name="netherlandsFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_netherlands_large_normal</normal>
+		<depressed>ui\ingame\flag_netherlands_large_click</depressed>
+		<highlight>ui\ingame\flag_netherlands_large_high</highlight>
+		<disabled>ui\ingame\flag_netherlands_large_disable</disabled>
+	</set>
+
+<!-- //borneo -->
+	<set name="sambasFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_sambas_normal</normal>
+		<depressed>ui\eso\flag_sambas_clcik</depressed>
+		<highlight>ui\eso\flag_sambas_high</highlight>
+		<disabled>ui\eso\flag_sambas_disable</disabled>
+	</set>	
+	<set name="sambasFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_sambas_large_normal</normal>
+		<depressed>ui\ingame\flag_sambas_large_click</depressed>
+		<highlight>ui\ingame\flag_sambas_large_high</highlight>
+		<disabled>ui\ingame\flag_sambas_large_disable</disabled>
+	</set>
+<!-- //dayak -->
+	<set name="ibanFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_iban_normal</normal>
+		<depressed>ui\eso\flag_iban_clcik</depressed>
+		<highlight>ui\eso\flag_iban_high</highlight>
+		<disabled>ui\eso\flag_iban_disable</disabled>
+	</set>	
+	<set name="ibanFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_iban_large_normal</normal>
+		<depressed>ui\ingame\flag_iban_large_click</depressed>
+		<highlight>ui\ingame\flag_iban_large_high</highlight>
+		<disabled>ui\ingame\flag_iban_large_disable</disabled>
+	</set>
+<!-- //peranakan -->
+	<set name="lanfangFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_lanfang_normal</normal>
+		<depressed>ui\eso\flag_lanfang_clcik</depressed>
+		<highlight>ui\eso\flag_lanfang_high</highlight>
+		<disabled>ui\eso\flag_lanfang_disable</disabled>
+	</set>	
+	<set name="lanfangFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_lanfang_large_normal</normal>
+		<depressed>ui\ingame\flag_lanfang_large_click</depressed>
+		<highlight>ui\ingame\flag_lanfang_large_high</highlight>
+		<disabled>ui\ingame\flag_lanfang_large_disable</disabled>
+	</set>
+	<!-- //batak -->
+	<set name="karoFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_karo_normal</normal>
+		<depressed>ui\eso\flag_karo_clcik</depressed>
+		<highlight>ui\eso\flag_karo_high</highlight>
+		<disabled>ui\eso\flag_karo_disable</disabled>
+	</set>	
+	<set name="karoFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_karo_large_normal</normal>
+		<depressed>ui\ingame\flag_karo_large_click</depressed>
+		<highlight>ui\ingame\flag_karo_large_high</highlight>
+		<disabled>ui\ingame\flag_karo_large_disable</disabled>
+	</set>
+	<set name="mandailingFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_mandailing_normal</normal>
+		<depressed>ui\eso\flag_mandailing_clcik</depressed>
+		<highlight>ui\eso\flag_mandailing_high</highlight>
+		<disabled>ui\eso\flag_mandailing_disable</disabled>
+	</set>	
+	<set name="mandailingFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_mandailing_large_normal</normal>
+		<depressed>ui\ingame\flag_mandailing_large_click</depressed>
+		<highlight>ui\ingame\flag_mandailing_large_high</highlight>
+		<disabled>ui\ingame\flag_mandailing_large_disable</disabled>
+	</set>
+	<set name="niasFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_nias_normal</normal>
+		<depressed>ui\eso\flag_nias_clcik</depressed>
+		<highlight>ui\eso\flag_nias_high</highlight>
+		<disabled>ui\eso\flag_nias_disable</disabled>
+	</set>	
+	<set name="niasFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_nias_large_normal</normal>
+		<depressed>ui\ingame\flag_nias_large_click</depressed>
+		<highlight>ui\ingame\flag_nias_large_high</highlight>
+		<disabled>ui\ingame\flag_nias_large_disable</disabled>
+	</set>
+	<set name="gayoFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_gayo_normal</normal>
+		<depressed>ui\eso\flag_gayo_clcik</depressed>
+		<highlight>ui\eso\flag_gayo_high</highlight>
+		<disabled>ui\eso\flag_gayo_disable</disabled>
+	</set>	
+	<set name="gayoFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_gayo_large_normal</normal>
+		<depressed>ui\ingame\flag_gayo_large_click</depressed>
+		<highlight>ui\ingame\flag_gayo_large_high</highlight>
+		<disabled>ui\ingame\flag_gayo_large_disable</disabled>
+	</set>
+	
+	<set name="klungkungFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_klungkung_normal</normal>
+		<depressed>ui\eso\flag_klungkung_clcik</depressed>
+		<highlight>ui\eso\flag_klungkung_high</highlight>
+		<disabled>ui\eso\flag_klungkung_disable</disabled>
+	</set>	
+	<set name="klungkungFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_klungkung_large_normal</normal>
+		<depressed>ui\ingame\flag_klungkung_large_click</depressed>
+		<highlight>ui\ingame\flag_klungkung_large_high</highlight>
+		<disabled>ui\ingame\flag_klungkung_large_disable</disabled>
+	</set>
+	<set name="bulelengFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_buleleng_normal</normal>
+		<depressed>ui\eso\flag_buleleng_clcik</depressed>
+		<highlight>ui\eso\flag_buleleng_high</highlight>
+		<disabled>ui\eso\flag_buleleng_disable</disabled>
+	</set>	
+	<set name="bulelengFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_buleleng_large_normal</normal>
+		<depressed>ui\ingame\flag_buleleng_large_click</depressed>
+		<highlight>ui\ingame\flag_buleleng_large_high</highlight>
+		<disabled>ui\ingame\flag_buleleng_large_disable</disabled>
+	</set>
+	<set name="karangasemFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_karangasem_normal</normal>
+		<depressed>ui\eso\flag_karangasem_clcik</depressed>
+		<highlight>ui\eso\flag_karangasem_high</highlight>
+		<disabled>ui\eso\flag_karangasem_disable</disabled>
+	</set>	
+	<set name="karangasemFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_karangasem_large_normal</normal>
+		<depressed>ui\ingame\flag_karangasem_large_click</depressed>
+		<highlight>ui\ingame\flag_karangasem_large_high</highlight>
+		<disabled>ui\ingame\flag_karangasem_large_disable</disabled>
+	</set>
+	
+	<set name="straitsFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_straits_normal</normal>
+		<depressed>ui\eso\flag_straits_clcik</depressed>
+		<highlight>ui\eso\flag_straits_high</highlight>
+		<disabled>ui\eso\flag_straits_disable</disabled>
+	</set>	
+	<set name="straitsFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_straits_large_normal</normal>
+		<depressed>ui\ingame\flag_straits_large_click</depressed>
+		<highlight>ui\ingame\flag_straits_large_high</highlight>
+		<disabled>ui\ingame\flag_straits_large_disable</disabled>
+	</set>
+	<set name="bugisFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_bugis_normal</normal>
+		<depressed>ui\eso\flag_bugis_clcik</depressed>
+		<highlight>ui\eso\flag_bugis_high</highlight>
+		<disabled>ui\eso\flag_bugis_disable</disabled>
+	</set>	
+	<set name="bugisFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_bugis_large_normal</normal>
+		<depressed>ui\ingame\flag_bugis_large_click</depressed>
+		<highlight>ui\ingame\flag_bugis_large_high</highlight>
+		<disabled>ui\ingame\flag_bugis_large_disable</disabled>
+	</set>
+	<set name="makassarFlagBtn" texturecoords="0 0 0.5859375 0.75">
+		<normal>ui\eso\flag_makassar_normal</normal>
+		<depressed>ui\eso\flag_makassar_clcik</depressed>
+		<highlight>ui\eso\flag_makassar_high</highlight>
+		<disabled>ui\eso\flag_makassar_disable</disabled>
+	</set>	
+	<set name="makassarFlagBtnLarge" texturecoords="0 0 1 0.75">
+		<normal>ui\ingame\flag_makassar_large_normal</normal>
+		<depressed>ui\ingame\flag_makassar_large_click</depressed>
+		<highlight>ui\ingame\flag_makassar_large_high</highlight>
+		<disabled>ui\ingame\flag_makassar_large_disable</disabled>
+	</set>
 </buttonsets>

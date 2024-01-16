@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="61766">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<persistent>1</persistent>
+		<active>0</active>
+		<Rate type ='Food'>0.250001</Rate>
+	</action>
+	<action>
+		<name stringid="68961">GalungAura</name>
+		<type>AutoRangedModify</type>
+		<maxrange>16</maxrange>
+		<active>1</active>
+		<modifyprotoid>SLumbung</modifyprotoid>
+		<persistent>1</persistent>
+		<modifytype>AutoGatherRate</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+	</action>
+	<tactic>
+		Normal
+		<action>AutoGatherFood</action>
+		<action>GalungAura</action>
+	</tactic>
+</tactics>

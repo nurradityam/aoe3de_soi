@@ -67,7 +67,9 @@
 	<squadmode>
 		<name>Volley</name>
 		<tactic>Volley</tactic>
+		<unittype>AbstractHeavyRangedInfantry</unittype>
 		<unittype>AbstractRangedInfantry</unittype>
+		<unittype>AbstractEagleMan</unittype>
 		<targetunittype>All</targetunittype>
 		<stance>Defensive</stance>
 		<formationtype>Line</formationtype>
@@ -84,7 +86,9 @@
 	<squadmode>
 		<name>InfantryStagger</name>
 		<tactic>Stagger</tactic>
+		<unittype>AbstractHeavyRangedInfantry</unittype>
 		<unittype>AbstractRangedInfantry</unittype>
+		<unittype>AbstractEagleMan</unittype>
 		<targetunittype>All</targetunittype>
 		<stance>Defensive</stance>
 		<formationtype>Line</formationtype>

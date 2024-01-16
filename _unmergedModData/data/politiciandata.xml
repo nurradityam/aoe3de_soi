@@ -128,28 +128,50 @@
 	<spoliticianrebelprince portraitfilename="ui\ingame\politicians\rebel_prince"/>
 	<spoliticiancountpriangan portraitfilename="ui\ingame\politicians\count"/>
 	
-	
-	<PoliticianNed21 wondername="SMonumentNed21" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\ii_daendels"/>
-	<PoliticianNed22 wondername="SMonumentNed22" techslot="1" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\ii_janssens"/>
-	<PoliticianNed23 wondername="SMonumentNed23" techslot="2" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\ii_gerardus"/>
+<!-- //move monument to netherlandsIndie	 -->
+	<PoliticianNed21 wondername="SMonumentNed21" techslot="0" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\ii_daendels"/>
+	<PoliticianNed22 wondername="SMonumentNed22" techslot="1" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\ii_janssens"/>
+	<PoliticianNed23 wondername="SMonumentNed23" techslot="2" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\ii_gerardus"/>
 
-	<PoliticianNed31 wondername="SMonumentNed31" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iii_bosch"/>
-	<PoliticianNed32 wondername="SMonumentNed32" techslot="1" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iii_kock"/>
-	<PoliticianNed33 wondername="SMonumentNed33" techslot="2" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iii_capellen"/>
+	<PoliticianNed31 wondername="SMonumentNed31" techslot="0" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iii_bosch"/>
+	<PoliticianNed32 wondername="SMonumentNed32" techslot="1" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iii_kock"/>
+	<PoliticianNed33 wondername="SMonumentNed33" techslot="2" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iii_capellen"/>
 
-	<PoliticianNed41 wondername="SMonumentNed41" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iv_dekker"/>
-	<PoliticianNed42 wondername="SMonumentNed42" techslot="1" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iv_pahud"/>
-	<PoliticianNed43 wondername="SMonumentNed43" techslot="2" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\iv_hoevell"/>
+	<PoliticianNed41 wondername="SMonumentNed41" techslot="0" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iv_dekker"/>
+	<PoliticianNed42 wondername="SMonumentNed42" techslot="1" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iv_pahud"/>
+	<PoliticianNed43 wondername="SMonumentNed43" techslot="2" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\iv_hoevell"/>
 
-	<PoliticianNed51 wondername="SMonumentNed51" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\v_deventer"/>
-	<PoliticianNed52 wondername="SMonumentNed52" techslot="1" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\v_heutz"/>
-	<PoliticianNed53 wondername="SMonumentNed53" techslot="2" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\v_abendanon"/>
+	<PoliticianNed51 wondername="SMonumentNed51" techslot="0" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\v_deventer"/>
+	<PoliticianNed52 wondername="SMonumentNed52" techslot="1" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\v_heutz"/>
+	<PoliticianNed53 wondername="SMonumentNed53" techslot="2" nativeciv="NetherlandsIndie" portraitfilename="ui\ingame\politicians\v_abendanon"/>
 
 	<ConsulateJava portraitfilename="ui\ingame\politicians\consulate\consulate_java"/>
 	<ConsulateMadura portraitfilename="ui\ingame\politicians\consulate\consulate_madura"/>
 	<ConsulateBali portraitfilename="ui\ingame\politicians\consulate\consulate_bali"/>
 	<ConsulateCelebes portraitfilename="ui\ingame\politicians\consulate\consulate_celebes"/>
-	
+
+<!--Straits Settlements-->
+	<PoliticianStraits21 wondername="SMonumentStraits21" techslot="0" nativeciv="Straits" portraitfilename="ui\ingame\politicians\ii_daendels"/>
+	<PoliticianStraits22 wondername="SMonumentStraits22" techslot="1" nativeciv="Straits" portraitfilename="ui\ingame\politicians\ii_janssens"/>
+	<PoliticianStraits23 wondername="SMonumentStraits23" techslot="2" nativeciv="Straits" portraitfilename="ui\ingame\politicians\ii_gerardus"/>
+
+	<PoliticianStraits31 wondername="SMonumentStraits31" techslot="0" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iii_bosch"/>
+	<PoliticianStraits32 wondername="SMonumentStraits32" techslot="1" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iii_kock"/>
+	<PoliticianStraits33 wondername="SMonumentStraits33" techslot="2" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iii_capellen"/>
+
+	<PoliticianStraits41 wondername="SMonumentStraits41" techslot="0" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iv_dekker"/>
+	<PoliticianStraits42 wondername="SMonumentStraits42" techslot="1" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iv_pahud"/>
+	<PoliticianStraits43 wondername="SMonumentStraits43" techslot="2" nativeciv="Straits" portraitfilename="ui\ingame\politicians\iv_hoevell"/>
+
+	<PoliticianStraits51 wondername="SMonumentStraits51" techslot="0" nativeciv="Straits" portraitfilename="ui\ingame\politicians\v_deventer"/>
+	<PoliticianStraits52 wondername="SMonumentStraits52" techslot="1" nativeciv="Straits" portraitfilename="ui\ingame\politicians\v_heutz"/>
+	<PoliticianStraits53 wondername="SMonumentStraits53" techslot="2" nativeciv="Straits" portraitfilename="ui\ingame\politicians\v_abendanon"/>
+
+	<ConsulateChinese portraitfilename="ui\ingame\politicians\consulate\consulate_chinese"/>
+	<ConsulateIndia portraitfilename="ui\ingame\politicians\consulate\consulate_india"/>
+	<ConsulateMalay portraitfilename="ui\ingame\politicians\consulate\consulate_malay"/>
+	<ConsulateBencoolen portraitfilename="ui\ingame\politicians\consulate\consulate_bencoolen"/>
+
 	
 	<BatakRaja2 portraitfilename="ui\ingame\politicians_batak\raja" nativeciv="Iroquois" techslot="0"/>
 	<BatakRaja3 portraitfilename="ui\ingame\politicians_batak\raja" nativeciv="Iroquois" techslot="0"/>
@@ -171,7 +193,134 @@
 	<BatakBandar3 portraitfilename="ui\ingame\politicians_batak\bandar" nativeciv="Iroquois" techslot="3"/>
 	<BatakBandar4 portraitfilename="ui\ingame\politicians_batak\bandar" nativeciv="Iroquois" techslot="3"/>
 	<BatakBandar5 portraitfilename="ui\ingame\politicians_batak\bandar" nativeciv="Iroquois" techslot="3"/>
+
+
+	<BatakWitchcraft2 portraitfilename="ui\ingame\politicians_batak\witchcraft" nativeciv="Toba" techslot="0"/>
+	<BatakWitchcraft3 portraitfilename="ui\ingame\politicians_batak\witchcraft" nativeciv="Toba" techslot="0"/>
+	<BatakWitchcraft4 portraitfilename="ui\ingame\politicians_batak\witchcraft" nativeciv="Toba" techslot="0"/>
+	<BatakWitchcraft5 portraitfilename="ui\ingame\politicians_batak\witchcraft" nativeciv="Toba" techslot="0"/>
+	<BatakPoisonArts2 portraitfilename="ui\ingame\politicians_batak\poisonarts" nativeciv="Toba" techslot="4"/>
+	<BatakPoisonArts3 portraitfilename="ui\ingame\politicians_batak\poisonarts" nativeciv="Toba" techslot="4"/>
+	<BatakPoisonArts4 portraitfilename="ui\ingame\politicians_batak\poisonarts" nativeciv="Toba" techslot="4"/>
+	<BatakPoisonArts5 portraitfilename="ui\ingame\politicians_batak\poisonarts" nativeciv="Toba" techslot="4"/>
+	<BatakParalysis2 portraitfilename="ui\ingame\politicians_batak\paralysis" nativeciv="Toba" techslot="2"/>
+	<BatakParalysis3 portraitfilename="ui\ingame\politicians_batak\paralysis" nativeciv="Toba" techslot="2"/>
+	<BatakParalysis4 portraitfilename="ui\ingame\politicians_batak\paralysis" nativeciv="Toba" techslot="2"/>
+	<BatakParalysis5 portraitfilename="ui\ingame\politicians_batak\paralysis" nativeciv="Toba" techslot="2"/>
+	<BatakNecromancy2 portraitfilename="ui\ingame\politicians_batak\necromancy" nativeciv="Toba" techslot="1"/>
+	<BatakNecromancy3 portraitfilename="ui\ingame\politicians_batak\necromancy" nativeciv="Toba" techslot="1"/>
+	<BatakNecromancy4 portraitfilename="ui\ingame\politicians_batak\necromancy" nativeciv="Toba" techslot="1"/>
+	<BatakNecromancy5 portraitfilename="ui\ingame\politicians_batak\necromancy" nativeciv="Toba" techslot="1"/>
+	<BatakEnchantment2 portraitfilename="ui\ingame\politicians_batak\enchantment" nativeciv="Toba" techslot="3"/>
+	<BatakEnchantment3 portraitfilename="ui\ingame\politicians_batak\enchantment" nativeciv="Toba" techslot="3"/>
+	<BatakEnchantment4 portraitfilename="ui\ingame\politicians_batak\enchantment" nativeciv="Toba" techslot="3"/>
+	<BatakEnchantment5 portraitfilename="ui\ingame\politicians_batak\enchantment" nativeciv="Toba" techslot="3"/>
+
+	<BatakHerbalism2 portraitfilename="ui\ingame\politicians_batak\herbalism" nativeciv="Karo" techslot="0"/>
+	<BatakHerbalism3 portraitfilename="ui\ingame\politicians_batak\herbalism" nativeciv="Karo" techslot="0"/>
+	<BatakHerbalism4 portraitfilename="ui\ingame\politicians_batak\herbalism" nativeciv="Karo" techslot="0"/>
+	<BatakHerbalism5 portraitfilename="ui\ingame\politicians_batak\herbalism" nativeciv="Karo" techslot="0"/>
+	<BatakHallucination2 portraitfilename="ui\ingame\politicians_batak\hallucination" nativeciv="Karo" techslot="4"/>
+	<BatakHallucination3 portraitfilename="ui\ingame\politicians_batak\hallucination" nativeciv="Karo" techslot="4"/>
+	<BatakHallucination4 portraitfilename="ui\ingame\politicians_batak\hallucination" nativeciv="Karo" techslot="4"/>
+	<BatakHallucination5 portraitfilename="ui\ingame\politicians_batak\hallucination" nativeciv="Karo" techslot="4"/>
+	<BatakChloromancy2 portraitfilename="ui\ingame\politicians_batak\chloromancy" nativeciv="Karo" techslot="2"/>
+	<BatakChloromancy3 portraitfilename="ui\ingame\politicians_batak\chloromancy" nativeciv="Karo" techslot="2"/>
+	<BatakChloromancy4 portraitfilename="ui\ingame\politicians_batak\chloromancy" nativeciv="Karo" techslot="2"/>
+	<BatakChloromancy5 portraitfilename="ui\ingame\politicians_batak\chloromancy" nativeciv="Karo" techslot="2"/>
+	<BatakPhysiotherapy2 portraitfilename="ui\ingame\politicians_batak\physiotherapy" nativeciv="Karo" techslot="1"/>
+	<BatakPhysiotherapy3 portraitfilename="ui\ingame\politicians_batak\physiotherapy" nativeciv="Karo" techslot="1"/>
+	<BatakPhysiotherapy4 portraitfilename="ui\ingame\politicians_batak\physiotherapy" nativeciv="Karo" techslot="1"/>
+	<BatakPhysiotherapy5 portraitfilename="ui\ingame\politicians_batak\physiotherapy" nativeciv="Karo" techslot="1"/>
+	<BatakWeatherManipulation2 portraitfilename="ui\ingame\politicians_batak\weathermanipulation" nativeciv="Karo" techslot="3"/>
+	<BatakWeatherManipulation3 portraitfilename="ui\ingame\politicians_batak\weathermanipulation" nativeciv="Karo" techslot="3"/>
+	<BatakWeatherManipulation4 portraitfilename="ui\ingame\politicians_batak\weathermanipulation" nativeciv="Karo" techslot="3"/>
+	<BatakWeatherManipulation5 portraitfilename="ui\ingame\politicians_batak\weathermanipulation" nativeciv="Karo" techslot="3"/>
 	
+	<BatakProsperity2 portraitfilename="ui\ingame\politicians_batak\prosperity" nativeciv="Mandailing" techslot="0"/>
+	<BatakProsperity3 portraitfilename="ui\ingame\politicians_batak\prosperity" nativeciv="Mandailing" techslot="0"/>
+	<BatakProsperity4 portraitfilename="ui\ingame\politicians_batak\prosperity" nativeciv="Mandailing" techslot="0"/>
+	<BatakProsperity5 portraitfilename="ui\ingame\politicians_batak\prosperity" nativeciv="Mandailing" techslot="0"/>
+	<BatakAlchemy2 portraitfilename="ui\ingame\politicians_batak\alchemy" nativeciv="Mandailing" techslot="4"/>
+	<BatakAlchemy3 portraitfilename="ui\ingame\politicians_batak\alchemy" nativeciv="Mandailing" techslot="4"/>
+	<BatakAlchemy4 portraitfilename="ui\ingame\politicians_batak\alchemy" nativeciv="Mandailing" techslot="4"/>
+	<BatakAlchemy5 portraitfilename="ui\ingame\politicians_batak\alchemy" nativeciv="Mandailing" techslot="4"/>
+	<BatakTigerTaming2 portraitfilename="ui\ingame\politicians_batak\tigertaming" nativeciv="Mandailing" techslot="2"/>
+	<BatakTigerTaming3 portraitfilename="ui\ingame\politicians_batak\tigertaming" nativeciv="Mandailing" techslot="2"/>
+	<BatakTigerTaming4 portraitfilename="ui\ingame\politicians_batak\tigertaming" nativeciv="Mandailing" techslot="2"/>
+	<BatakTigerTaming5 portraitfilename="ui\ingame\politicians_batak\tigertaming" nativeciv="Mandailing" techslot="2"/>
+	<BatakCraftmanship2 portraitfilename="ui\ingame\politicians_batak\craftmanship" nativeciv="Mandailing" techslot="1"/>
+	<BatakCraftmanship3 portraitfilename="ui\ingame\politicians_batak\craftmanship" nativeciv="Mandailing" techslot="1"/>
+	<BatakCraftmanship4 portraitfilename="ui\ingame\politicians_batak\craftmanship" nativeciv="Mandailing" techslot="1"/>
+	<BatakCraftmanship5 portraitfilename="ui\ingame\politicians_batak\craftmanship" nativeciv="Mandailing" techslot="1"/>
+	<BatakBardmanship2 portraitfilename="ui\ingame\politicians_batak\bardmanship" nativeciv="Mandailing" techslot="3"/>
+	<BatakBardmanship3 portraitfilename="ui\ingame\politicians_batak\bardmanship" nativeciv="Mandailing" techslot="3"/>
+	<BatakBardmanship4 portraitfilename="ui\ingame\politicians_batak\bardmanship" nativeciv="Mandailing" techslot="3"/>
+	<BatakBardmanship5 portraitfilename="ui\ingame\politicians_batak\bardmanship" nativeciv="Mandailing" techslot="3"/>
+
+	<BatakCoronation2 portraitfilename="ui\ingame\politicians_batak\coronation" nativeciv="Nias" techslot="0"/>
+	<BatakCoronation3 portraitfilename="ui\ingame\politicians_batak\coronation" nativeciv="Nias" techslot="0"/>
+	<BatakCoronation4 portraitfilename="ui\ingame\politicians_batak\coronation" nativeciv="Nias" techslot="0"/>
+	<BatakCoronation5 portraitfilename="ui\ingame\politicians_batak\coronation" nativeciv="Nias" techslot="0"/>
+	<BatakHealing2 portraitfilename="ui\ingame\politicians_batak\healing" nativeciv="Nias" techslot="4"/>
+	<BatakHealing3 portraitfilename="ui\ingame\politicians_batak\healing" nativeciv="Nias" techslot="4"/>
+	<BatakHealing4 portraitfilename="ui\ingame\politicians_batak\healing" nativeciv="Nias" techslot="4"/>
+	<BatakHealing5 portraitfilename="ui\ingame\politicians_batak\healing" nativeciv="Nias" techslot="4"/>
+	<BatakSacrificial2 portraitfilename="ui\ingame\politicians_batak\sacrificial" nativeciv="Nias" techslot="2"/>
+	<BatakSacrificial3 portraitfilename="ui\ingame\politicians_batak\sacrificial" nativeciv="Nias" techslot="2"/>
+	<BatakSacrificial4 portraitfilename="ui\ingame\politicians_batak\sacrificial" nativeciv="Nias" techslot="2"/>
+	<BatakSacrificial5 portraitfilename="ui\ingame\politicians_batak\sacrificial" nativeciv="Nias" techslot="2"/>
+	<BatakDivination2 portraitfilename="ui\ingame\politicians_batak\divination" nativeciv="Nias" techslot="1"/>
+	<BatakDivination3 portraitfilename="ui\ingame\politicians_batak\divination" nativeciv="Nias" techslot="1"/>
+	<BatakDivination4 portraitfilename="ui\ingame\politicians_batak\divination" nativeciv="Nias" techslot="1"/>
+	<BatakDivination5 portraitfilename="ui\ingame\politicians_batak\divination" nativeciv="Nias" techslot="1"/>
+	<BatakApotropaic2 portraitfilename="ui\ingame\politicians_batak\apotropaic" nativeciv="Nias" techslot="3"/>
+	<BatakApotropaic3 portraitfilename="ui\ingame\politicians_batak\apotropaic" nativeciv="Nias" techslot="3"/>
+	<BatakApotropaic4 portraitfilename="ui\ingame\politicians_batak\apotropaic" nativeciv="Nias" techslot="3"/>
+	<BatakApotropaic5 portraitfilename="ui\ingame\politicians_batak\apotropaic" nativeciv="Nias" techslot="3"/>
+
+	<BatakExorcism2 portraitfilename="ui\ingame\politicians_batak\exorcism" nativeciv="GayoMain" techslot="0"/>
+	<BatakExorcism3 portraitfilename="ui\ingame\politicians_batak\exorcism" nativeciv="GayoMain" techslot="0"/>
+	<BatakExorcism4 portraitfilename="ui\ingame\politicians_batak\exorcism" nativeciv="GayoMain" techslot="0"/>
+	<BatakExorcism5 portraitfilename="ui\ingame\politicians_batak\exorcism" nativeciv="GayoMain" techslot="0"/>
+	<BatakBlessing2 portraitfilename="ui\ingame\politicians_batak\blessing" nativeciv="GayoMain" techslot="4"/>
+	<BatakBlessing3 portraitfilename="ui\ingame\politicians_batak\blessing" nativeciv="GayoMain" techslot="4"/>
+	<BatakBlessing4 portraitfilename="ui\ingame\politicians_batak\blessing" nativeciv="GayoMain" techslot="4"/>
+	<BatakBlessing5 portraitfilename="ui\ingame\politicians_batak\blessing" nativeciv="GayoMain" techslot="4"/>
+	<BatakOneiromancy2 portraitfilename="ui\ingame\politicians_batak\oneiromancy" nativeciv="GayoMain" techslot="2"/>
+	<BatakOneiromancy3 portraitfilename="ui\ingame\politicians_batak\oneiromancy" nativeciv="GayoMain" techslot="2"/>
+	<BatakOneiromancy4 portraitfilename="ui\ingame\politicians_batak\oneiromancy" nativeciv="GayoMain" techslot="2"/>
+	<BatakOneiromancy5 portraitfilename="ui\ingame\politicians_batak\oneiromancy" nativeciv="GayoMain" techslot="2"/>
+	<BatakPurification2 portraitfilename="ui\ingame\politicians_batak\purification" nativeciv="GayoMain" techslot="1"/>
+	<BatakPurification3 portraitfilename="ui\ingame\politicians_batak\purification" nativeciv="GayoMain" techslot="1"/>
+	<BatakPurification4 portraitfilename="ui\ingame\politicians_batak\purification" nativeciv="GayoMain" techslot="1"/>
+	<BatakPurification5 portraitfilename="ui\ingame\politicians_batak\purification" nativeciv="GayoMain" techslot="1"/>
+	<BatakSpiritualProtection2 portraitfilename="ui\ingame\politicians_batak\spiritualprotection" nativeciv="GayoMain" techslot="3"/>
+	<BatakSpiritualProtection3 portraitfilename="ui\ingame\politicians_batak\spiritualprotection" nativeciv="GayoMain" techslot="3"/>
+	<BatakSpiritualProtection4 portraitfilename="ui\ingame\politicians_batak\spiritualprotection" nativeciv="GayoMain" techslot="3"/>
+	<BatakSpiritualProtection5 portraitfilename="ui\ingame\politicians_batak\spiritualprotection" nativeciv="GayoMain" techslot="3"/>
+
+	<IbanTemuaiDatai2 portraitfilename="ui\ingame\politicians\politician_AZ_chief" nativeciv="Iban" techslot="3"/>
+	<IbanTemuaiDatai3 portraitfilename="ui\ingame\politicians\politician_AZ_chief" nativeciv="Iban" techslot="3"/>
+	<IbanTemuaiDatai4 portraitfilename="ui\ingame\politicians\politician_AZ_chief" nativeciv="Iban" techslot="3"/>
+	<IbanTemuaiDatai5 portraitfilename="ui\ingame\politicians\politician_AZ_chief" nativeciv="Iban" techslot="3"/>
+	<IbanNgajatLesung2 portraitfilename="ui\ingame\politicians\politician_AZ_shaman" nativeciv="Iban" techslot="1"/>
+	<IbanNgajatLesung3 portraitfilename="ui\ingame\politicians\politician_AZ_shaman" nativeciv="Iban" techslot="1"/>
+	<IbanNgajatLesung4 portraitfilename="ui\ingame\politicians\politician_AZ_shaman" nativeciv="Iban" techslot="1"/>
+	<IbanNgajatLesung5 portraitfilename="ui\ingame\politicians\politician_AZ_shaman" nativeciv="Iban" techslot="1"/>
+	<tribalibanwisewoman2 portraitfilename="ui\ingame\politicians\politician_AZ_wisewoman" nativeciv="Iban" techslot="4"/>
+	<tribalibanwisewoman3 portraitfilename="ui\ingame\politicians\politician_AZ_wisewoman" nativeciv="Iban" techslot="4"/>
+	<tribalibanwisewoman4 portraitfilename="ui\ingame\politicians\politician_AZ_wisewoman" nativeciv="Iban" techslot="4"/>
+	<tribalibanwisewoman5 portraitfilename="ui\ingame\politicians\politician_AZ_wisewoman" nativeciv="Iban" techslot="4"/>
+	<tribalibanwarrior2 portraitfilename="ui\ingame\politicians\politician_AZ_warleader" nativeciv="Iban" techslot="0"/>
+	<tribalibanwarrior3 portraitfilename="ui\ingame\politicians\politician_AZ_warleader" nativeciv="Iban" techslot="0"/>
+	<tribalibanwarrior4 portraitfilename="ui\ingame\politicians\politician_AZ_warleader" nativeciv="Iban" techslot="0"/>
+	<tribalibanwarrior5 portraitfilename="ui\ingame\politicians\politician_AZ_warleader" nativeciv="Iban" techslot="0"/>
+	<tribalibanyouth2 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Iban" techslot="2"/>
+	<tribalibanyouth3 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Iban" techslot="2"/>
+	<tribalibanyouth4 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Iban" techslot="2"/>
+	<tribalibanyouth5 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Iban" techslot="2"/>
+		
 	<!-- FIND REV -->
 	
 	<xprevolutionlouverture portraitfilename="ui\ingame\politicians\politician_REV_louverture"/>
@@ -242,7 +391,9 @@
 	<tribalaztecyouth3 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Aztec" techslot="2"/>
 	<tribalaztecyouth4 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Aztec" techslot="2"/>
 	<tribalaztecyouth5 portraitfilename="ui\ingame\politicians\politician_AZ_messenger" nativeciv="Aztec" techslot="2"/>
-	<!--<ypwonderchinesewhitepagoda2 wondername="ypWCWhitePagoda2" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\politician_white_pagoda" destructiontech="YPWonderChineseWhitePagodaDisable"/>
+
+<!-- return wonder to chinese -->
+	<ypwonderchinesewhitepagoda2 wondername="ypWCWhitePagoda2" techslot="0" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\politician_white_pagoda" destructiontech="YPWonderChineseWhitePagodaDisable"/>
 	<ypwonderchinesesummerpalace2 wondername="ypWCSummerPalace2" techslot="1" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\politician_summer_palace" destructiontech="YPWonderChineseSummerPalaceDisable"/>
 	<ypwonderchineseconfucianacademy2 wondername="ypWCConfucianAcademy2" techslot="2" nativeciv="Chinese" portraitfilename="buildings\wonders\confucian_academy\confucian_academy_icon_politician" destructiontech="YPWonderChineseConfucianAcademyDisable"/>
 	<ypwonderchinesetempleofheaven2 wondername="ypWCTempleOfHeaven2" techslot="3" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\politician_templeofheaven" destructiontech="YPWonderChineseTempleOfHeavenDisable"/>
@@ -262,7 +413,7 @@
 	<ypwonderchineseconfucianacademy5 wondername="ypWCConfucianAcademy5" techslot="2" nativeciv="Chinese" portraitfilename="buildings\wonders\confucian_academy\confucian_academy_icon_politician" destructiontech="YPWonderChineseConfucianAcademyDisable"/>
 	<ypwonderchinesetempleofheaven5 wondername="ypWCTempleOfHeaven5" techslot="3" nativeciv="Chinese" portraitfilename="ui\ingame\politicians\politician_templeofheaven" destructiontech="YPWonderChineseTempleOfHeavenDisable"/>
 	<ypwonderchineseporcelaintower5 wondername="ypWCPorcelainTower5" techslot="4" nativeciv="Chinese" portraitfilename="buildings\wonders\porcelain_tower\porcelain_tower_icon_politician" destructiontech="YPWonderChinesePorcelainTowerDisable"/>
-	-->
+	
 	<ypwonderindianagra2 wondername="ypWIAgraFort2" techslot="0" nativeciv="Indians" portraitfilename="buildings\wonders\agra_fort\agra_fort_icon_politician" destructiontech="YPWonderIndianAgraFortDisable"/>
 	<ypwonderindiancharminar2 wondername="ypWICharminarGate2" techslot="1" nativeciv="Indians" portraitfilename="buildings\wonders\charminar_gate\charminar_gate_icon_politician" destructiontech="YPWonderIndianCharminarDisable"/>
 	<ypwonderindiankarnimata2 wondername="ypWIKarniMata2" techslot="2" nativeciv="Indians" portraitfilename="buildings\wonders\karni_mata\karni_mata_icon_politician" destructiontech="YPWonderIndianKarniMataDisable"/>
@@ -319,4 +470,92 @@
 	<ypbigconsulatespcchina portraitfilename="ui\ingame\politicians\consulate_chinese"/>
 	<ypbigconsulatespcfrench portraitfilename="ui\ingame\politicians\consulate_french"/>
 	<ypbigconsulatespcottomans portraitfilename="ui\ingame\politicians\consulate_ottomans"/>
+
+<!-- borneo age up -->
+
+	<SBorneoAllyKanayatn2 portraitfilename="ui\ingame\politicians\politician_IR_warleader" nativeciv="Sambas" techslot="3"/>
+	<SBorneoAllyKanayatn3 portraitfilename="ui\ingame\politicians\politician_IR_warleader" nativeciv="Sambas" techslot="3"/>
+	<SBorneoAllyKanayatn4 portraitfilename="ui\ingame\politicians\politician_IR_warleader" nativeciv="Sambas" techslot="3"/>
+	<SBorneoAllyKanayatn5 portraitfilename="ui\ingame\politicians\politician_IR_warleader" nativeciv="Sambas" techslot="3"/>
+	<SBorneoAllyBidayuh2 portraitfilename="ui\ingame\politicians\politician_IR_shaman" nativeciv="Sambas" techslot="2"/>
+	<SBorneoAllyBidayuh3 portraitfilename="ui\ingame\politicians\politician_IR_shaman" nativeciv="Sambas" techslot="2"/>
+	<SBorneoAllyBidayuh4 portraitfilename="ui\ingame\politicians\politician_IR_shaman" nativeciv="Sambas" techslot="2"/>
+	<SBorneoAllyBidayuh5 portraitfilename="ui\ingame\politicians\politician_IR_shaman" nativeciv="Sambas" techslot="2"/>
+	<SBorneoAllyMualang2 portraitfilename="ui\ingame\politicians\politician_IR_messenger" nativeciv="Sambas" techslot="1"/>
+	<SBorneoAllyMualang3 portraitfilename="ui\ingame\politicians\politician_IR_messenger" nativeciv="Sambas" techslot="1"/>
+	<SBorneoAllyMualang4 portraitfilename="ui\ingame\politicians\politician_IR_messenger" nativeciv="Sambas" techslot="1"/>
+	<SBorneoAllyMualang5 portraitfilename="ui\ingame\politicians\politician_IR_messenger" nativeciv="Sambas" techslot="1"/>
+	<SBorneoAllyHakka2 portraitfilename="ui\ingame\politicians\politician_IR_chief" nativeciv="Sambas" techslot="4"/>
+	<SBorneoAllyHakka3 portraitfilename="ui\ingame\politicians\politician_IR_chief" nativeciv="Sambas" techslot="4"/>
+	<SBorneoAllyHakka4 portraitfilename="ui\ingame\politicians\politician_IR_chief" nativeciv="Sambas" techslot="4"/>
+	<SBorneoAllyHakka5 portraitfilename="ui\ingame\politicians\politician_IR_chief" nativeciv="Sambas" techslot="4"/>
+	<SBorneoAllyIban2 portraitfilename="ui\ingame\politicians\politician_IR_wisewoman" nativeciv="Sambas" techslot="5"/>
+	<SBorneoAllyIban3 portraitfilename="ui\ingame\politicians\politician_IR_wisewoman" nativeciv="Sambas" techslot="5"/>
+	<SBorneoAllyIban4 portraitfilename="ui\ingame\politicians\politician_IR_wisewoman" nativeciv="Sambas" techslot="5"/>
+	<SBorneoAllyIban5 portraitfilename="ui\ingame\politicians\politician_IR_wisewoman" nativeciv="Sambas" techslot="5"/>
+
+
+	<XPRevolutionSanggau portraitfilename="ui\ingame\politicians\politician_REV_louverture"/>
+	<XPRevolutionLandak portraitfilename="ui\ingame\politicians\politician_REV_washington"/>
+	<XPRevolutionMattan portraitfilename="ui\ingame\politicians\politician_REV_hidalgo"/>
+	<XPRevolutionSukadana portraitfilename="ui\ingame\politicians\politician_REV_bonifacio"/>
+	<XPRevolutionMempawah portraitfilename="ui\ingame\politicians\politician_REV_bolivar"/>
+	<XPRevolutionPontianak portraitfilename="ui\ingame\politicians\politician_REV_sanmartin"/>
+	<!-- <xprevolutionsantander portraitfilename="ui\ingame\politicians\politician_REV_santander"/> -->
+	<!-- <xprevolutionohiggins portraitfilename="ui\ingame\politicians\politician_REV_higgins"/> -->
+
+<!-- //eksperimen peranakan -->
+	<SIndustryBrick portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryDumpling portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryJewelry portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryLogging portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryOpium portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryPharmacy portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryPorcelain portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryPork portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryRubber portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustrySoy portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustrySugar portraitfilename="ui\ingame\politicians\cukong cina"/>
+	<SIndustryTea portraitfilename="ui\ingame\politicians\cukong cina"/>
+	
+	<!-- //balinese -->
+	<SPoliticianBaliSaraswati portraitfilename="ui\ingame\politicians\politician_cavalier" nativeciv="Klungkung" techslot="0"/>
+	<SPoliticianBaliGanesa portraitfilename="ui\ingame\politicians\politician_engineer" nativeciv="Klungkung" techslot="1"/>
+	<SPoliticianBaliBrahma portraitfilename="ui\ingame\politicians\politician_exiled_prince" nativeciv="Klungkung" techslot="2"/>
+	<SPoliticianBaliKumara portraitfilename="ui\ingame\politicians\politician_general" nativeciv="Klungkung" techslot="3"/>
+	<SPoliticianBaliSri portraitfilename="ui\ingame\politicians\politician_governor" nativeciv="Klungkung" techslot="4"/>
+	<SPoliticianBaliKuwera portraitfilename="ui\ingame\politicians\politician_grand_vizier" nativeciv="Klungkung" techslot="0"/>
+	<SPoliticianBaliIndra portraitfilename="ui\ingame\politicians\politician_marksman" nativeciv="Klungkung" techslot="1"/>
+	<SPoliticianBaliWisnu portraitfilename="ui\ingame\politicians\politician_mohawk_statesmen" nativeciv="Klungkung" techslot="2"/>
+	<SPoliticianBaliAswin portraitfilename="ui\ingame\politicians\politician_kings_musketeer" nativeciv="Klungkung" techslot="3"/>
+	<SPoliticianBaliWiswakarma portraitfilename="ui\ingame\politicians\politician_naturalist" nativeciv="Klungkung" techslot="4"/>
+	<SPoliticianBaliMarkandeya portraitfilename="ui\ingame\politicians\politician_philosopher_prince" nativeciv="Klungkung" techslot="0"/>
+	<SPoliticianBaliGayatri portraitfilename="ui\ingame\politicians\politician_gentlemen_pirate" nativeciv="Klungkung" techslot="1"/>
+	<SPoliticianBaliAnoman portraitfilename="ui\ingame\politicians\politician_el_presidente" nativeciv="Klungkung" techslot="2"/>
+	<SPoliticianBaliDurga portraitfilename="ui\ingame\politicians\politician_quarter_master" nativeciv="Klungkung" techslot="3"/>
+	<SPoliticianBaliAgni portraitfilename="ui\ingame\politicians\politician_scout" nativeciv="Klungkung" techslot="4"/>
+	<SPoliticianBaliSiwa portraitfilename="ui\ingame\politicians\politician_sergeant_arms" nativeciv="Klungkung" techslot="0"/>
+	<SPoliticianBaliSurya portraitfilename="ui\ingame\politicians\politician_tycoon" nativeciv="Klungkung" techslot="1"/>
+	<SPoliticianBaliKala portraitfilename="ui\ingame\politicians\politician_viceroy" nativeciv="Klungkung" techslot="2"/>
+	<SPoliticianBaliAntaboga portraitfilename="ui\ingame\politicians\politician_war_minister" nativeciv="Klungkung" techslot="3"/>
+	<SPoliticianBaliBudha portraitfilename="ui\ingame\politicians\politician_engineer" nativeciv="Klungkung" techslot="4"/>
+	
+	<!-- celebes -->
+	<MakassarRice2 portraitfilename="ui\ingame\politicians_batak\poisonarts" techslot="1"/>
+	<MakassarRice3 portraitfilename="ui\ingame\politicians_batak\poisonarts" techslot="1"/>
+	<MakassarRice4 portraitfilename="ui\ingame\politicians_batak\poisonarts" techslot="1"/>
+	<MakassarRice5 portraitfilename="ui\ingame\politicians_batak\poisonarts" techslot="1"/>
+	<MakassarLumber2 portraitfilename="ui\ingame\politicians_batak\paralysis" techslot="2"/>
+	<MakassarLumber3 portraitfilename="ui\ingame\politicians_batak\paralysis" techslot="2"/>
+	<MakassarLumber4 portraitfilename="ui\ingame\politicians_batak\paralysis" techslot="2"/>
+	<MakassarLumber5 portraitfilename="ui\ingame\politicians_batak\paralysis" techslot="2"/>
+	<MakassarCotton2 portraitfilename="ui\ingame\politicians_batak\necromancy" techslot="3"/>
+	<MakassarCotton3 portraitfilename="ui\ingame\politicians_batak\necromancy" techslot="3"/>
+	<MakassarCotton4 portraitfilename="ui\ingame\politicians_batak\necromancy" techslot="3"/>
+	<MakassarCotton5 portraitfilename="ui\ingame\politicians_batak\necromancy" techslot="3"/>
+	<MakassarChinaware2 portraitfilename="ui\ingame\politicians_batak\enchantment" techslot="4"/>
+	<MakassarChinaware3 portraitfilename="ui\ingame\politicians_batak\enchantment" techslot="4"/>
+	<MakassarChinaware4 portraitfilename="ui\ingame\politicians_batak\enchantment" techslot="4"/>
+	<MakassarChinaware5 portraitfilename="ui\ingame\politicians_batak\enchantment" techslot="4"/>
+
 </politicians>
